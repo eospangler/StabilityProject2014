@@ -1,0 +1,281 @@
+\documentclass[12pt]{article}
+\pagenumbering{arabic}
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+\setlength\textheight{9.0in}
+\setlength\textwidth{6.5in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+\setlength\parindent{0.25in}
+\setlength\parskip{0.25in}
+\parskip 0.0pt
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{float}
+\usepackage{dcolumn}
+\usepackage{natbib}
+
+\begin{document}  
+
+
+\begin{titlepage}
+	\begin{center}
+
+\vspace*{10 em}
+\toprule[1.0pt]\\[0.2cm]
+{ \huge \bfseries A Dynamic Model of Political Stability and Dissent \\[0.2cm] }
+\bottomrule[1.0pt]
+
+\large
+\\[1.2cm]
+\emph{Authors:}\\
+Ethan \textsc{Spangler}, Washington State University\\
+Ben \textsc{Smith}, University of Nebraska-Omaha 
+
+
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+\end{center}
+\end{titlepage}
+
+
+
+
+
+
+\begin{spacing}{1.5}
+
+%\noindent \textbf{Mad as Hell: a Dynamic Model of Political Dissent and Stability}\\
+%Ethan Spangler, PhD Student Washington State University \\
+%Ben O. Smith, Assistant Professor University of Nebraska at Omaha
+
+
+\section{Intro}
+The importance of political stability is well established and can affect all aspects of an economy. However, despite its significance, measurement of political stability has remained underdeveloped. As demonstrated by the recent uprisings in the Middle East, Thailand, and Ukraine; large scale political changes are difficult to predict. The three most used measures of political stability are Political Risk Services (PRS), the Business Environment Risk Intelligence Index (BERI), and the Economist Intelligence Unit (EIU). Each of these indexes combine political, financial, and economic factors to assess a nation's political stability (Howell, 1998). The financial and economic factors are predominately based on quantitative data (foreign debt, inflation, GDP per capita, etc) while political factors are far more subjective. 
+
+Political factors are determined and scored by panels of experts (Howell, 1998). These experts are usually former diplomats and scholars. While these teams of experts can be quite large and knowledgeable, it is still a relatively small group of people trying to assess an entire nation and without a theoretical basis for their decisions. Since each index has political factors compose 33-66\% of their measure, if these experts are misinformed the validity of the index could be greatly affected which in turn would affect all research based on these indexes. In a twenty year study, Tetlock (2005) was able to show that forecasts based on expert opinion were only marginally better than random chance.Thus it is the goal of this paper to establish the theoretical basis for a new index of political stability. 
+
+To highlight the issue of why a more robust measure of political stability is needed let us examine some examples and their related political stability analysis. The October 2005 PRS report on Thailand said ``unrest is not expected to threaten general stability, nor intensify to the point of endangering the [Thai Rak Thai Party's] dominant political position...the chances of the TRT being forced from power at any point during the five year forecast period are slim..." Less than a year later a military coup ousted the Prime Minister Shinawatra and outlawed his TRT party, beginning a period of political strife that continues to plague Thailand. The latest available PRS report on Ukraine, published October 2012, stated that ``a repeat of the Orange Revolution...is unlikely." and ``Ukrainians are disillusioned but in general they possess little appetite for protest." Mass protests began in November 2013 and by February 2014 the Yanukovych regime had fallen. The PRS report on Tunisia, published October 2010, called Tunisia an ``oasis of stability" and postulated a 85\% probability that Tunisian dictator Ben Ali would retain power within the 18 months. By January 2011, mass protests and revolt resulted in the dissolution of the ruling RCD party, the exile of Ben Ali to Saudi Arabia, and the establishment of an interim government. While it may be easy to critique these forecasts with the benefit of hindsight, these examples highlight the difficulty in predicting something as opaque and complex as political stability. A new method of analyzing political stability is needed. 
+
+The bulk of the literature concerning political stability focuses on the factors motivating revolt and revolution. Grossman (1991), Acemoglu and Robinson (2001), and MacCulloch (2001 and 2005) explore the role income inequality has in fomenting revolution. Other approaches concentrate on the role regime type plays (Guttman 2014; Goldstone et al 2010) or government institutions (Acemoglu et al., 2012; Fukuyama, 2014). Diverging from the top down approach, Cameron and Parikh (2000) model the individual choice to join a riot or not. It is felt by the authors of this paper that the focus on revolution, though valuable, does not capture the entirety of the situation. Revolution is the end point on a long process, a nation can exist for a long time in a state of low political stability but not descend into revolt. Thus, in a departure from the literature we will be focusing on the decisions and dynamics that precipitate a revolution. 
+
+Our model extends the work of previous scholars by focusing on the interactions of a non-altruistic government and citizenry. We can't predict that spark that will ignite a revolution, but we be able to establish a framework for measuring the environment that allows a spark to turn into a revolution. Through simulation we determine the maximum exogenous shock that does not result in a revolution. This translates to a probability of failure of the state. The end result is a framework which can be used to develop a new index of political stability. Whereas current measures have no clear interpretation, ours would have the defined statistical interpretation of a probability a given event occurring. This makes it a far more robust and useful measure.    
+
+\section{Theoretical Model}
+
+%Incorporate the work of Gordon Tullock, the Social Dilemma
+
+
+
+The model begins in period 0. The catalyst the model is the initial amount total dissent, $D_0$. This $D_0$ can be thought of as either anarchists or remnants of the previous regime, their origin doesn't really matter just that it exists. A government then forms to manage and organize affairs, setting initial policy choices. The government maximizes political stability by choosing its level of public and security spending, subject to a resource constraint and the level of discontent from the citizenry. In turn, each member of the public chooses their level of dissent based on their own preferences and the probability of punishment.
+ 
+\subsection{Individual's Problem}
+Initial framing of the individual begins in the general sense as a household problem, 
+
+\begin{equation}
+	U(c,l) \text{ s.t. } M
+\end{equation}
+
+\noindent where utility, $U(c,l)$, is a function of consumption and leisure subject to an income constraint, $M$. The individual finds a solution for themselves. This represents the aspects of an individual's life that they have control over. However, the world being the imperfect place that it is, there are some things that an individual can't control  
+
+The story is that in their daily lives, individuals face societal problems. It could be as mundane as a long line at the DMV. Perhaps they encountered a corrupt police officer. Another scenario could potential involve members of a different group harassing the individual. Maybe they saw a story about a wealthy, well-connected elite dodging criminal charges. Whatever the particular issue, it is a problem that the individual cannot directly solve themselves but it has negatively affected their life. These are societal issues that only a government could properly address. However, for whatever reason the government is unable/unwilling to address these problems completely to the satisfaction of the individual. The incongruousness between an individual's expectations of what a government should do and the reality of what a government does do is the origin of dissent. So without any direct power to alter their situation the individual does what people usually do in such situations, they dissent. The individual uses a portion of what would be their leisure and instead uses it to dissent, which provides a cathartic release and gives the individual some level of utility with how much extra utility dictated by parameters.
+
+\vspace{.5 em}
+\noindent Individual's Problem:
+\begin{equation}
+{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E_t} - P \left(d_{i,t} \Biggl|\frac{D_{t-1}}{S_t},\sigma \right)Ad_{i,t}
+\end{equation}
+
+$ d_{i,t} $ is the amount individual $i$ dissents in period $t$ and is treated as a level variable wherein each period an individual choices their level of dissent based on the situation they find themselves in and their own preferences. We assume that dissent takes only non-negative values, $d_{i,t}\geq0$. Different levels of $d_{i,t}$ have different interpretations. An individual with $d_{i,t}=0$ is interpreted as having no dissent, this person is either content with the government or too scared to dissent. Alternatively a positive value of $d_{i,t}$ can be interpreted as being more active; on the low end, $d_{i,t}>0$, could be contacting government representatives, attending open forums, voting for opposition parties, kvetching about politics with colleagues. At the extreme end, $d_{i,t}>>0$, dissent takes on a more revolutionary bent: protests, riots, molotovs.  
+
+$x_i$ is the exponent that represents an individual's level of activism with respect to dissenting. We assume $x_i \sim logN(0,1)$, the log-normal PDF. Different values of $x_i$ have different interpretations. An individual with a $x_i$ on the left of the distribution could be seen an individual with high anxiety when it comes to dissenting. At the mean, these individuals would be comfortable discussing their frustrations among close peers (``Dinner Party Dissenters") but more active actions is unlikely. As we move to the right of the mean each higher value of $x_i$ represents a more activist role the individual would be willing to undertake. Since we have made an assumption on the distribution of activism, this allows us to determine how much dissent there will be in a country each period for given government policy choices.    
+
+$E_t$ and $g_t$ reduce the amount of utility and individual gets from dissenting. $E_t$ is an exogenous parameter assessing an individual's environmental circumstances each period. By environment we mean an individual's living situation within a country: unemployment, healthcare, safety, equality, etc. $E_t$ allows us to weigh the validity of dissent for comparisons across countries. Dissent in a country where conditions are good (``first world problems")  are far less meaningful than in countries with more difficult situations. By weighing dissent based on the circumstances of a country, we are better able to establish an index of political stability that works for both developed and developing countries. $g_t$ is per capita government spending($g_t=\frac{G_t}{N_t}$ where $N_t$ is the population) and is treated as given in the individual's problem. How much the government services are given to each citizen. Since this is a pure public good, the government cannot restrict who receives this, thus the individual receives this benefit regardless of their level of dissent. 
+
+%Anti-hiprocacy assumption, that the utility from dissent is diminished the more the government gives. 
+
+%A Pareto Distribution might be more computationally effective. 
+
+
+$P \left(d_{i,t} \Biggl|\frac{D_{t-1}}{S_t},\sigma \right)$ is a the probability of being caught dissenting against the government and it is a Logistic CDF. $S_t$ government resources spent on quelling dissent and is treated as given in the individual's problem. $D_{t-1}$ is the preexisting total dissent. $\frac{\partial P}{\partial S_t}>0$ representing tighter restrictions on dissent and $\frac{\partial P}{\partial D_{t-1}}<0$ representing that the more dissent there is in the system the less likely it becomes that an single individual will be caught for dissenting, a lost in the crowd effect. $\sigma$ represent policing effectiveness. For low $\sigma$ the police are extremely prompt at arresting those that dissent beyond acceptable limits. For higher $\sigma$ it probability of being arrested becomes more spread out. For practical purposes $\sigma$ is the ratio of $\frac{\text{Total Reported Crime}}{\text{Arrests}}$. While not perfect, it does provide some insight into police effectiveness. $A$ this is the punishment parameter for dissenting. Since the punishment should fit the crime, an individual is punished based on their level of dissent. 
+
+%I could include a graph here to sell it better. 
+
+\subsection{Government's Problem} 
+
+In our view there is no reason to think a government exclusively seeks to maximizes social welfare. Evidence abounds with leaders less than sympathetic towards the plights of their constituents: North Korea, Syria, Congress. In fact, the only thing that leaders seem to care about is retaining power, obtaining some hidden benefit that is contingent upon sustained stability. Thus it then becomes the goal of government to maximize political stability. 
+
+The Government's problems begins with the with the Leader's problem. As stated previously stated, leaders receive some benefit from holding power. The leaders could be taking funds from the treasury, receiving a portion of resource export profits, or have firms they're heavily invested in receive lots of lucrative no-bid government contracts. Whatever the case, the leaders gets this benefit (and the utils) only if they are in power. So leaders seeks to maximize their own utility subject to political stability ($\Lambda_t$) remaining positive.
+
+\vspace{.5 em}
+\noindent Leaders' Problem:
+\begin{equation}
+	 \text{max } U_t(B_t) \begin{cases}
+		>0 \text{ if } \Lambda_t > 0 \\
+		= 0 \text{ otherwise} 	
+	\end{cases}
+\end{equation} 
+
+\noindent where $B_t$ is the benefit from holding power that the leader takes. However, this benefit is not costless and it diminishes the amount of resources the Government has to use to maintain stability, $B_t=R_t-C_t$ where $R_t$ is government resource and $C_t$ is the cost of maintaining stability. Thus the leader lines their pockets but must be careful not to take too much or they'll facilitate their own demise. With the leader's problem established, we move on to the task of maintaining stability.   
+\vspace{.5 em}
+
+\noindent Government's Problem:
+\begin{equation}
+{\underset{G_t,S_t}{\text{max }}} \sum\limits_{t=1}^{T^*} \beta^t {\Lambda}_t = \sum\limits_{t=1}^{T^*} \beta^t\left(\frac{G_t}{D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma   \text{s.t. } G_t+S_t=C_t
+\end{equation}
+
+It is the goal of the government to maximize it's stability over time. $G_t$ is government spending on government services. Basically $G_t$ provides all the things we expect a functioning government to provide (schools, hospitals, DMVs, etc). $S_t$ is security spending. If $G_t$ is the carrot, $S_t$ is the stick. These are resources that the government uses to suppress and control the people. 
+$\Phi$ and $\Omega$, are the anarchy parameters, representing the minimum amount of government and security spending needed order for the government to function. If either of these minimum conditions are not met for whatever reason, such as an exogenous shock, stability goes to zero and you have a revolution. This is why the problem is maximized to $T^*$ not $\infty$, since all government eventually fail. Should $\Lambda_t=0$, that would signify that the state has broken down and a revolution has taken place, resetting the system. $\beta^t$ is the government's discount factor for stability. 
+
+$\alpha$ and $\gamma $  are parameters that represent how much a government favors using $G_t$ and $S_t$ respectively. One would expect a democracy to favor $G$ over $S$ ($\alpha > \gamma$) but the opposite would hold for a totalitarian regime ($\alpha < \gamma $). $G_t+S_t=C_t$ is the Government resource constraint. No government can spend unlimited amounts of resources, so they face a constraint. $C_t$ is government resources available to the decision maker each period. 
+
+$D_{t-1}$ is total dissent. Dissent reduces the effectiveness of government policy and in turn makes it difficult for the government is retain power. As shown, the government reacts to previous period of dissent whereas the individual reacts to the current period. The government simply cannot keep up with the situation on the ground. This bureaucratic delay is the source of instability. When $D_t \approx D_{t-1}$ the instability is small, but when $D_t \not\approx D_{t-1}$ instability increases. Continued incongruences could result in the situation spiraling out of control. 
+
+%I need a fictional unit for Dissent..."punks", "molotovs", erises    
+
+\section{Solving the Model}
+
+This is a two stage dynamic interaction between the government and the public. In the initial period the government sets initial policy $G_1$ and $S_1$ based on some starting value of $D_0$, the initial total dissent. $D_0$ can be interpreted a handful of ways: they could be from a group of anarchists (they just hate all government) or maybe the losers in the contest that established the current government. Whatever their origins we just need an initial level of dissent to be greater than 0. Since no government has ever formed without some form of acrimony, this is not an unreasonable assumption. We can solve for an equilibrium through backwards induction, the goal being to determine dynamics of $D_t$. So we'll start with the individuals problem. 
+
+\subsection{Individual's solution}
+
+It must be stated that there is no analytic solution to anb individuals demand for dissent, which we will call $\overline{d}_{i,t}$. Demand for dissent must be numerically determined in simulations, which is discussed in the next section. What we can do is discuss the scenarios which do and do not facilitate dissent. This requires examining the first order and second order conditions.  
+
+\noindent Differentiating the individual problem with respect to $d_{i,t}$ we obtain the FOC: 
+\begin{equation}
+\frac{dU}{dd_{i,t}} = x_i \frac{{d_{i,t}}^{x_i -1}}{E_t g_t} - \left[P\left(d_{i,t} \Biggl|\frac{D_{t-1}}{S_t},\sigma \right)A +  P_d \left(d_{i,t} \Biggl|\frac{D_{t-1}}{S_t},\sigma \right)Ad_{i,t} \right]
+\end{equation}
+
+\noindent Differentiating again with respect to $d_{i,t}$ we obtain the SOC: 
+
+\begin{equation}
+\frac{d^2U}{dd_{i,t}^2}=(x_i -1) x_i \frac{{d_{i,t}}^{x_i -1}}{E_t g_t} - \left[2P_d\left(d_{i,t} \Biggr|\frac{D_{t-1}}{S_t},\sigma \right)A + P_{dd} \left(d_{i,t} \Biggr|\frac{D_{t-1}}{S_t} ,\sigma \right)Ad_{i,t} \right] 
+\end{equation}
+
+\noindent For the FOC and SOC Let:    
+\begin{center}
+$\underbrace{ x_i \frac{{d_{i,t}}^{x_i -1}}{E_t g_t}}_\textrm{J} - \underbrace{\left[P\left(d_{i,t} \Biggr|\frac{D_{t-1}}{S_t},\sigma \right)A + P_{d} \left(d_{i,t} \Biggr|\frac{D_{t-1}}{S_t} ,\sigma \right)Ad_{i,t} \right]}_\textrm{K}$  	
+\end{center}
+
+\noindent and: 
+
+\begin{center}
+$\underbrace{(x_i -1) x_i \frac{{d_{i,t}}^{x_i -2}}{E_t g_t}}}_\textrm{H} - \underbrace{\left[2P_d\left(d_{i,t} \Biggr|\frac{D_{t-1}}{S_t},\sigma \right)A + P_{dd} \left(d+{i,t} \Biggr|\frac{D_{t-1}}{S_t} ,\sigma \right)Ad_{i,t} \right]}_\textrm{I}$  
+\end{center}
+
+\noindent Then the various scenarios are: 
+\begin{enumerate}
+\item If $1>x_i>0$ and $K<J$, then $FOC < 0$ and $d_{i,t}=0$. 
+\item If $1>x_i>0$ and $K>J$, then $FOC > 0$, $SOC<0$, and $d_{i,t}>0$ 
+\item If $x_i>1$ and $K<J$, then $FOC < 0$ and $d_{i,t}=0$. 
+\item If $x_i>1$, $K>J$, and $H<I$, then $FOC > 0$, $SOC<0$, and $d_{i,t}>0$. 
+\item If $x_i>1$, $K>J$, and $H>I$, then $FOC > 0$, $SOC>0$, and $d_{i,t}\rightarrow \infty$. 
+\end{enumerate}
+
+Scenarios 1 through 4 pose very little to be concerned about, providing a nice distribution of dissenters amongst the populace. The $\text{5}^{\text{th}}$, however, requires implementations of constraints that bar the SOC from being positive. To avoid this in simulation, if a random draw of $x_i$ is one such that it makes the $SOC>0$ it will be automatically lowered to the maximal value, $x_{max}$, where $SOC<0$ holds. This constrains should not prove too onerous.       
+   
+\subsection{Total Dissent}
+ 
+To find the expected total dissent, we integrate $\overline{d}_{i,t}$ times the log normal PDF, $f(x)$, across the relevant range of $x_i$, $0$ to $x_{max}$, will give the average amount of dissent per capita in a country. Multiplying this by the population, $N_t$, gives the expected total dissent, $D_t$.
+
+\begin{equation}
+	\begin{aligned}
+D_t=& N_t \int_{0}^{x_{max}} \bar{d}_{i,t} f(x) dx \\	
+D_t	=& N_t \int_{0}^{x_{max}} \bar{d}_{i,t} \frac{1}{x\sigma \sqrt{2\pi}}exp  \left( -\frac{(lnx-\mu)^2}{2\sigma^2} \right)  dx \\	
+	\end{aligned}
+\end{equation}
+
+
+\subsection{Government Solution}
+
+To solve the government's problem we need a Lagrangian.
+\begin{equation}
+\mathcal{L} = \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^\gamma  +\lambda[R_t-G_t-S_t] 
+\end{equation}
+Take the FOCs and simplify.
+
+\begin{equation}
+    \begin{aligned}
+        G_t\text{: } \alpha \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  -\lambda &=0  \\
+S_t\text{: } \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^{\gamma -1} -\lambda &=0 \\
+\alpha \left(\frac{G_t}{D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  &= \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{ D_{t-1}} \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^{\gamma -1} \\
+\alpha \left(\frac{S_t}{ D_{t-1}}-\Omega \right) &= \gamma  \left( \frac{G_t}{ D_{t-1}}-\Phi \right) \\
+G_t&= D_{t-1}\left[\frac{\alpha}{\gamma } \left(\frac{S_t}{ D_{t-1}} -\Omega \right)+\Phi \right]
+    \end{aligned}
+\end{equation}
+
+
+\noindent Plug this into the government resource constraint. 
+
+
+\begin{equation}
+    \begin{aligned}
+        S_t+G_t&=R_t \\
+        S_t+  D_{t-1}\left[\frac{\alpha}{\gamma } \left(\frac{S_t}{ D_{t-1}} -\Omega \right) +\Phi \right]  &= R \\
+S_t+ \frac{\alpha S_t}{\gamma } -\frac{\alpha  D_{t-1} \Omega}{\gamma } +D_{t-1}\Phi &=R_t \\
+S_t\left(1+\frac{\alpha}{\gamma }\right) &= R_t+ \frac{\alpha D_{t-1} \Omega}{\gamma } - D_{t-1}\Phi \\
+S_t\left(\frac{\gamma  + \alpha}{\gamma }\right) &= R_t - D_{t-1} \left(\Phi - \frac{\alpha  \Omega}{\gamma } \right) 
+    \end{aligned}
+\end{equation}
+
+
+\noindent Solve for $S_t$ and we get
+\begin{equation}
+S_t=\frac{\gamma }{\gamma  +\alpha} \left[ R_t - D_{t-1} \left(\Phi - \frac{\alpha}{\gamma }\Omega \right) \right]
+\end{equation}
+\noindent This is the government's security equation. We repeat the same steps to find $G_t$. 
+\begin{equation}
+G_t=\frac{\alpha}{\gamma  +\alpha} \left[ R_t - D_{t-1} \left(\Omega - \frac{\gamma }{\alpha}\Phi \right) \right]
+\end{equation}
+
+\section{Simulation} 
+
+Given that an analytic solution is not possibly, numerical methods must be employed. To do this we came up with six country archetypes to test, which were based on real country data but scaled to the same initial population. The goal was to see how different types of countries were able to respond to varying levels of initial dissent. The parameters values given for each country are presented in Table 1. 
+
+\begin{figure}[htb]
+  \centerfloat{
+   \includegraphics[width=\textwidth]{simulations.png}}
+\end{figure}
+
+Initial simulations results have shown that countries are extremely sensitive to initial levels of dissent.
+
+\subsection{Shocks}
+
+(Work in progress)
+
+\section{Conclusion}
+
+
+(Work in progress)
+
+%It needs to be said that this models only applies to cases on internal strife and does not take into account the role of outside agitators. 
+
+
+
+\end{spacing}
+
+
+\pagebreak
+
+\bibliographystyle{apalike}
+\bibliography{Stability_Bibli}
+
+\nocite{*}
+
+
+
+
+
+\end{document}

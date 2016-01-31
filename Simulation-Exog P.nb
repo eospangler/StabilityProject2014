@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       416,          7]
-NotebookDataLength[    225741,       3885]
-NotebookOptionsPosition[    225360,       3859]
-NotebookOutlinePosition[    225717,       3875]
-CellTagsIndexPosition[    225674,       3872]
+NotebookDataLength[    230896,       4000]
+NotebookOptionsPosition[    230182,       3966]
+NotebookOutlinePosition[    230538,       3982]
+CellTagsIndexPosition[    230495,       3979]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -421,8 +421,20 @@ Cell[BoxData[{
 Cell["\<\
 Notes:
 > StartSimulation[\[Beta],\[Alpha],R_t,\[Phi],\[CapitalOmega],A,0,\[Mu], \
-\[Sigma],E_t,E_s,N_t,Error,Runs,Log Normal Sampling]
+\[Sigma],E_t,E_s,N_t,Start, Error,Runs,Log Normal Sampling]
 Where:
+\[Beta] = Gov preferences for Security (changed to \[Gamma] in the paper) 
+\[Alpha] = Gov preferences for Government Services 
+Rt = Government Resources 
+\[Phi] = minimum necessary amount of government serivces 
+\[CapitalOmega] = minimum necessary amount of security 
+A = the punishment for being caught dissenting. 
+\[Mu] = the mean for the distribution of dissentors, xi.  Is equal to 0.  
+\[Sigma] = the variance for the distribution of dissentors, xi. Is equal to 1. 
+Et = an individuals economic envrionment. Is (0,1). 
+Es = policing efficiency. 
+Nt = Population of a state. 
+Start = Initial total Dissent. 
 Error = The difference between the last level of dissent and the current \
 level where the simulation considers them to be converged.
 Runs = Number of complete time periods to complete before exiting the \
@@ -431,7 +443,8 @@ Log Normal Sampling = Number of random pulls from the log normal \
 distribution. Higher values result in a more accurate per capital dissent\
 \>", "Text",
  CellChangeTimes->{{3.660730203327305*^9, 3.660730553472969*^9}, {
-  3.6607305946506243`*^9, 3.660730632173834*^9}}],
+  3.6607305946506243`*^9, 3.660730632173834*^9}, {3.663093253503278*^9, 
+  3.663093289986505*^9}}],
 
 Cell[CellGroupData[{
 
@@ -3855,12 +3868,106 @@ Cell[BoxData[
 
 Cell[BoxData["\<\"data.mx\"\>"], "Output",
  CellChangeTimes->{3.662414962089079*^9}]
-}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+StartSimulation[\[Beta],\[Alpha],R_t,\[Phi],\[CapitalOmega],A,0,\[Mu], \
+\[Sigma],E_t,E_s,N_t,Error,Runs,Log Normal Sampling]\
+\>", "Text",
+ CellChangeTimes->{{3.662995088663233*^9, 3.662995094351466*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.662995081836194*^9, 3.662995081846982*^9}, 
+   3.662995146296591*^9}],
+
+Cell[BoxData[{
+ RowBox[{"dataFreedonia", " ", "=", " ", 
+  RowBox[{"StartSimulation", "[", 
+   RowBox[{
+   ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+    "1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",", "1",
+     ",", "100", ",", "50", ",", "1000"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataFreedonia.mx\>\"", ",", "dataFreedonia"}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.662996041237959*^9, 3.662996079539824*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"dataMerika", " ", "=", " ", 
+  RowBox[{"StartSimulation", "[", 
+   RowBox[{
+   ".2", ",", ".8", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+    "1", ",", "0", ",", "1", ",", " ", ".85", ",", "3", ",", "10000", ",", 
+    "1", ",", "100", ",", "50", ",", "1000"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataMerika.mx\>\"", ",", "dataMerika"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.662995101880056*^9, 3.6629951237544813`*^9}, {
+  3.662995215438702*^9, 3.6629953002000637`*^9}, {3.662995343427182*^9, 
+  3.662995394830081*^9}, {3.662995484144125*^9, 3.662995484260529*^9}, {
+  3.662995621832646*^9, 3.6629956221837053`*^9}, {3.662995678476618*^9, 
+  3.662995681837098*^9}, {3.6629958387715807`*^9, 3.662995840178219*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"dataKleptopia", " ", "=", " ", 
+  RowBox[{"StartSimulation", "[", 
+   RowBox[{
+   ".9", ",", ".1", ",", "50000000", ",", "5000000", ",", "5000000", ",", "6",
+     ",", "0", ",", "1", ",", " ", ".4", ",", "3", ",", "10000", ",", "1", 
+    ",", "100", ",", "50", ",", "1000"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataKleptopia.mx\>\"", ",", "dataKleptopia"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.662995398230529*^9, 3.662995496260025*^9}, {
+  3.662995547938487*^9, 3.662995568345044*^9}, {3.6629956261121492`*^9, 
+  3.662995628972849*^9}, {3.662995685380885*^9, 3.662995715190319*^9}, {
+  3.662995756493746*^9, 3.662995857706923*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dataCathy", " ", "=", " ", 
+    RowBox[{"StartSimulation", "[", 
+     RowBox[{
+     ".6", ",", ".4", ",", "15000000", ",", "1500000", ",", "1500000", ",", 
+      "6.5", ",", "0", ",", "1", ",", " ", ".4", ",", "6", ",", "10000", ",", 
+      "1", ",", "100", ",", "50", ",", "1000"}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Export", "[", 
+    RowBox[{"\"\<dataCathy.mx\>\"", ",", "dataCathy"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.662995781693226*^9, 3.662995804432406*^9}, {
+  3.662995862322159*^9, 3.662995862866152*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dataDRF", " ", "=", " ", 
+    RowBox[{"StartSimulation", "[", 
+     RowBox[{
+     ".5", ",", ".5", ",", "7000000", ",", "1400000", ",", " ", "1400000", 
+      ",", "5", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", 
+      ",", "1", ",", "100", ",", "50", ",", "1000"}], "]"}]}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Export", "[", 
+    RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6629958055170813`*^9, 3.6629958082144117`*^9}, {
+  3.662995872708852*^9, 3.662995945076305*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"dataDRF", " ", "=", " ", 
+  RowBox[{"StartSimulation", "[", 
+   RowBox[{
+   ".5", ",", ".5", ",", "275000000", ",", "55000000", ",", " ", "55000000", 
+    ",", "6", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", ",",
+     "1", ",", "100", ",", "50", ",", "1000"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.6629959605110197`*^9, 3.6629959616921387`*^9}, {
+  3.662995997078264*^9, 3.662996009364933*^9}}]
 },
 WindowSize->{1280, 916},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
-2015)",
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -3881,12 +3988,20 @@ Cell[1327, 35, 249, 4, 46, "Input"],
 Cell[1579, 41, 294, 4, 28, "Output"]
 }, Open  ]],
 Cell[1888, 48, 18119, 370, 908, "Input"],
-Cell[20010, 420, 697, 13, 125, "Text"],
+Cell[20010, 420, 1366, 26, 354, "Text"],
 Cell[CellGroupData[{
-Cell[20732, 437, 2166, 33, 46, "Input"],
-Cell[22901, 472, 202356, 3381, 585, "Output"],
-Cell[225260, 3855, 84, 1, 86, "Output"]
-}, Open  ]]
+Cell[21401, 450, 2166, 33, 46, "Input"],
+Cell[23570, 485, 202356, 3381, 585, "Output"],
+Cell[225929, 3868, 84, 1, 28, "Output"]
+}, Open  ]],
+Cell[226028, 3872, 215, 4, 30, "Text"],
+Cell[226246, 3878, 118, 2, 28, "Input"],
+Cell[226367, 3882, 533, 10, 63, "Input"],
+Cell[226903, 3894, 795, 13, 46, "Input"],
+Cell[227701, 3909, 699, 12, 46, "Input"],
+Cell[228403, 3923, 609, 13, 63, "Input"],
+Cell[229015, 3938, 609, 13, 63, "Input"],
+Cell[229627, 3953, 551, 11, 46, "Input"]
 }
 ]
 *)

@@ -10,10 +10,17 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       416,          7]
+<<<<<<< Updated upstream
 NotebookDataLength[     99389,       2406]
 NotebookOptionsPosition[     98604,       2369]
 NotebookOutlinePosition[     98962,       2385]
 CellTagsIndexPosition[     98919,       2382]
+=======
+NotebookDataLength[     29755,        658]
+NotebookOptionsPosition[     29058,        624]
+NotebookOutlinePosition[     29419,        640]
+CellTagsIndexPosition[     29376,        637]
+>>>>>>> Stashed changes
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -546,6 +553,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"{", 
+<<<<<<< Updated upstream
   RowBox[{
    RowBox[{"{", 
     RowBox[{"0", ",", 
@@ -2266,6 +2274,48 @@ Cell[BoxData[
        AutoDelete->True],
       ScientificForm[#, 5]& ]}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{3.6632689790051947`*^9}]
+=======
+  RowBox[{"{", 
+   RowBox[{"0", ",", 
+    TagBox[
+     RowBox[{
+      InterpretationBox["\<\"1000000\"\>",
+       1000000,
+       Editable->False], " ", 
+      RowBox[{"Mean", "[", 
+       RowBox[{"{", "}"}], "]"}]}],
+     ScientificForm[#, 5]& ], ",", 
+    TagBox[
+     InterpretationBox["\<\"-147\"\>",
+      -147,
+      Editable->False],
+     ScientificForm[#, 5]& ], ",", 
+    TagBox[
+     InterpretationBox["\<\"150\"\>",
+      150,
+      Editable->False],
+     ScientificForm[#, 5]& ], ",", 
+    TagBox[
+     RowBox[{"Abs", "[", 
+      RowBox[{
+       InterpretationBox[
+        RowBox[{"\<\"1.6052\"\>", "\[Times]", 
+         SuperscriptBox["10", "\<\"1355718576299609\"\>"]}],
+        1.60521676193366172702774105306375828321`15.954589770191005*^\
+1355718576299609,
+        AutoDelete->True], "-", 
+       RowBox[{
+        InterpretationBox["\<\"1000000\"\>",
+         1000000,
+         Editable->False], " ", 
+        RowBox[{"Mean", "[", 
+         RowBox[{"{", "}"}], "]"}]}]}], "]"}],
+     ScientificForm[#, 5]& ]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.662414961954743*^9, 3.663095773503998*^9}],
+
+Cell[BoxData["\<\"data.mx\"\>"], "Output",
+ CellChangeTimes->{3.662414961954743*^9, 3.663095773521389*^9}]
+>>>>>>> Stashed changes
 }, Open  ]],
 
 Cell["\<\
@@ -2355,7 +2405,7 @@ Cell[BoxData[
    3.662995872708852*^9, 3.662995945076305*^9}, 3.6632686760869303`*^9}],
 
 Cell[BoxData[{
- RowBox[{"dataDRF", " ", "=", " ", 
+ RowBox[{"dataBabylon", " ", "=", " ", 
   RowBox[{"StartSimulation", "[", 
    RowBox[{
    ".5", ",", ".5", ",", "275000000", ",", "55000000", ",", " ", "55000000", 
@@ -2363,14 +2413,24 @@ Cell[BoxData[{
      "1", ",", "100", ",", "50", ",", "1000", ",", " ", "0", ",", "0", ",", 
     "\"\<\>\""}], "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
-  RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}], "Input",
+  RowBox[{"\"\<dataBabylon.mx\>\"", ",", "dataBabylon"}], "]"}]}], "Input",
  CellChangeTimes->{{3.6629959605110197`*^9, 3.6629959616921387`*^9}, {
+<<<<<<< Updated upstream
    3.662995997078264*^9, 3.662996009364933*^9}, 3.6632686780068903`*^9}]
 },
 WindowSize->{1625, 1338},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
 2015)",
+=======
+  3.662995997078264*^9, 3.662996009364933*^9}, {3.6630953050572977`*^9, 
+  3.6630953234092197`*^9}}]
+},
+WindowSize->{1280, 916},
+WindowMargins->{{Automatic, -1680}, {Automatic, 46}},
+FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
+2014)",
+>>>>>>> Stashed changes
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -2397,6 +2457,7 @@ Cell[1866, 51, 125, 2, 28, "Output"]
 Cell[2006, 56, 20453, 419, 1027, "Input"],
 Cell[22462, 477, 1466, 27, 354, "Text"],
 Cell[CellGroupData[{
+<<<<<<< Updated upstream
 Cell[23953, 508, 2384, 36, 46, "Input"],
 Cell[26340, 546, 67667, 1721, 421, "Output"]
 }, Open  ]],
@@ -2408,6 +2469,20 @@ Cell[95845, 2311, 771, 13, 46, "Input"],
 Cell[96619, 2326, 677, 13, 63, "Input"],
 Cell[97299, 2341, 679, 13, 63, "Input"],
 Cell[97981, 2356, 619, 11, 46, "Input"]
+=======
+Cell[21401, 450, 2166, 33, 46, "Input"],
+Cell[23570, 485, 1145, 38, 35, "Output"],
+Cell[24718, 525, 106, 1, 28, "Output"]
+}, Open  ]],
+Cell[24839, 529, 215, 4, 30, "Text"],
+Cell[25057, 535, 118, 2, 28, "Input"],
+Cell[25178, 539, 533, 10, 63, "Input"],
+Cell[25714, 551, 795, 13, 46, "Input"],
+Cell[26512, 566, 699, 12, 46, "Input"],
+Cell[27214, 580, 609, 13, 63, "Input"],
+Cell[27826, 595, 609, 13, 63, "Input"],
+Cell[28438, 610, 616, 12, 46, "Input"]
+>>>>>>> Stashed changes
 }
 ]
 *)

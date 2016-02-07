@@ -10,24 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       416,          7]
-<<<<<<< HEAD
-NotebookDataLength[     99558,       2408]
-NotebookOptionsPosition[     98784,       2371]
-NotebookOutlinePosition[     99141,       2387]
-CellTagsIndexPosition[     99098,       2384]
-=======
-<<<<<<< Updated upstream
 NotebookDataLength[     99389,       2406]
 NotebookOptionsPosition[     98604,       2369]
 NotebookOutlinePosition[     98962,       2385]
 CellTagsIndexPosition[     98919,       2382]
-=======
-NotebookDataLength[     29755,        658]
-NotebookOptionsPosition[     29058,        624]
-NotebookOutlinePosition[     29419,        640]
-CellTagsIndexPosition[     29376,        637]
->>>>>>> Stashed changes
->>>>>>> 10ed1f827efecd86c7359213e5f4af79f2dfb611
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -128,9 +114,8 @@ Cell[BoxData[{
            RowBox[{"(", 
             RowBox[{
              RowBox[{"pfunc", "[", 
-              RowBox[{"Dj", ",", "St", ",", "Es"}], "]"}], 
-             RowBox[{"ndit", "^", "A"}]}], " ", ")"}]}]}], ";", 
-         "\[IndentingNewLine]", 
+              RowBox[{"Dj", ",", "St", ",", "Es"}], "]"}], "A"}], " ", 
+            ")"}]}]}], ";", "\[IndentingNewLine]", 
          RowBox[{"solFuncd", " ", "=", " ", 
           RowBox[{
            RowBox[{"D", "[", 
@@ -488,8 +473,7 @@ Cell[BoxData[{
    3.662377973540462*^9}, {3.662378004928533*^9, 3.6623780171343327`*^9}, {
    3.66237874753354*^9, 3.66237876420446*^9}, {3.662378804413582*^9, 
    3.662378804828624*^9}, {3.6632679940138187`*^9, 3.663268361795556*^9}, {
-   3.663268395375689*^9, 3.6632684145858994`*^9}, {3.663697858150098*^9, 
-   3.6636978598817*^9}}],
+   3.663268395375689*^9, 3.6632684145858994`*^9}}],
 
 Cell["\<\
 Notes:
@@ -562,7 +546,6 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"{", 
-<<<<<<< Updated upstream
   RowBox[{
    RowBox[{"{", 
     RowBox[{"0", ",", 
@@ -2283,48 +2266,6 @@ Cell[BoxData[
        AutoDelete->True],
       ScientificForm[#, 5]& ]}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{3.6632689790051947`*^9}]
-=======
-  RowBox[{"{", 
-   RowBox[{"0", ",", 
-    TagBox[
-     RowBox[{
-      InterpretationBox["\<\"1000000\"\>",
-       1000000,
-       Editable->False], " ", 
-      RowBox[{"Mean", "[", 
-       RowBox[{"{", "}"}], "]"}]}],
-     ScientificForm[#, 5]& ], ",", 
-    TagBox[
-     InterpretationBox["\<\"-147\"\>",
-      -147,
-      Editable->False],
-     ScientificForm[#, 5]& ], ",", 
-    TagBox[
-     InterpretationBox["\<\"150\"\>",
-      150,
-      Editable->False],
-     ScientificForm[#, 5]& ], ",", 
-    TagBox[
-     RowBox[{"Abs", "[", 
-      RowBox[{
-       InterpretationBox[
-        RowBox[{"\<\"1.6052\"\>", "\[Times]", 
-         SuperscriptBox["10", "\<\"1355718576299609\"\>"]}],
-        1.60521676193366172702774105306375828321`15.954589770191005*^\
-1355718576299609,
-        AutoDelete->True], "-", 
-       RowBox[{
-        InterpretationBox["\<\"1000000\"\>",
-         1000000,
-         Editable->False], " ", 
-        RowBox[{"Mean", "[", 
-         RowBox[{"{", "}"}], "]"}]}]}], "]"}],
-     ScientificForm[#, 5]& ]}], "}"}], "}"}]], "Output",
- CellChangeTimes->{3.662414961954743*^9, 3.663095773503998*^9}],
-
-Cell[BoxData["\<\"data.mx\"\>"], "Output",
- CellChangeTimes->{3.662414961954743*^9, 3.663095773521389*^9}]
->>>>>>> Stashed changes
 }, Open  ]],
 
 Cell["\<\
@@ -2342,21 +2283,21 @@ Cell[BoxData[{
   RowBox[{"StartSimulation", "[", 
    RowBox[{
    ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-    "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",", 
-    "1", ",", "100", ",", "50", ",", "1000", ",", " ", "0", ",", "0", ",", 
+    "1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",", "1",
+     ",", "100", ",", "50", ",", "1000", ",", " ", "0", ",", "0", ",", 
     "\"\<\>\""}], "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataFreedonia.mx\>\"", ",", "dataFreedonia"}], 
   "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.662996041237959*^9, 3.662996079539824*^9}, 
-   3.663268670551187*^9, {3.663697901795878*^9, 3.663697901939365*^9}}],
+   3.663268670551187*^9}],
 
 Cell[BoxData[{
  RowBox[{"dataMerika", " ", "=", " ", 
   RowBox[{"StartSimulation", "[", 
    RowBox[{
    ".2", ",", ".8", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-    "1.1", ",", "0", ",", "1", ",", " ", ".85", ",", "3", ",", "10000", ",", 
+    "1", ",", "0", ",", "1", ",", " ", ".85", ",", "3", ",", "10000", ",", 
     "1", ",", "100", ",", "50", ",", "1000", ",", " ", "0", ",", "0", ",", 
     "\"\<\>\""}], "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
@@ -2366,7 +2307,7 @@ Cell[BoxData[{
    3.662995394830081*^9}, {3.662995484144125*^9, 3.662995484260529*^9}, {
    3.662995621832646*^9, 3.6629956221837053`*^9}, {3.662995678476618*^9, 
    3.662995681837098*^9}, {3.6629958387715807`*^9, 3.662995840178219*^9}, 
-   3.663268671943022*^9, {3.6636979038597603`*^9, 3.663697903947527*^9}}],
+   3.663268671943022*^9}],
 
 Cell[BoxData[{
  RowBox[{"dataKleptopia", " ", "=", " ", 
@@ -2414,7 +2355,7 @@ Cell[BoxData[
    3.662995872708852*^9, 3.662995945076305*^9}, 3.6632686760869303`*^9}],
 
 Cell[BoxData[{
- RowBox[{"dataBabylon", " ", "=", " ", 
+ RowBox[{"dataDRF", " ", "=", " ", 
   RowBox[{"StartSimulation", "[", 
    RowBox[{
    ".5", ",", ".5", ",", "275000000", ",", "55000000", ",", " ", "55000000", 
@@ -2422,29 +2363,14 @@ Cell[BoxData[{
      "1", ",", "100", ",", "50", ",", "1000", ",", " ", "0", ",", "0", ",", 
     "\"\<\>\""}], "]"}]}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
-  RowBox[{"\"\<dataBabylon.mx\>\"", ",", "dataBabylon"}], "]"}]}], "Input",
+  RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}], "Input",
  CellChangeTimes->{{3.6629959605110197`*^9, 3.6629959616921387`*^9}, {
-<<<<<<< Updated upstream
    3.662995997078264*^9, 3.662996009364933*^9}, 3.6632686780068903`*^9}]
 },
 WindowSize->{1625, 1338},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-<<<<<<< HEAD
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
-2014)",
-=======
 FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
 2015)",
-=======
-  3.662995997078264*^9, 3.662996009364933*^9}, {3.6630953050572977`*^9, 
-  3.6630953234092197`*^9}}]
-},
-WindowSize->{1280, 916},
-WindowMargins->{{Automatic, -1680}, {Automatic, 46}},
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 4, \
-2014)",
->>>>>>> Stashed changes
->>>>>>> 10ed1f827efecd86c7359213e5f4af79f2dfb611
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -2465,26 +2391,12 @@ Cell[1327, 35, 249, 4, 46, "Input"],
 Cell[1579, 41, 125, 2, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1741, 48, 122, 1, 28, "Input"],
+Cell[1741, 48, 122, 1, 28, InheritFromParent],
 Cell[1866, 51, 125, 2, 28, "Output"]
 }, Open  ]],
-Cell[2006, 56, 20535, 421, 1027, "Input"],
-Cell[22544, 479, 1466, 27, 354, "Text"],
+Cell[2006, 56, 20453, 419, 1027, "Input"],
+Cell[22462, 477, 1466, 27, 354, "Text"],
 Cell[CellGroupData[{
-<<<<<<< HEAD
-Cell[24035, 510, 2384, 36, 46, "Input"],
-Cell[26422, 548, 67667, 1721, 387, "Output"]
-}, Open  ]],
-Cell[94104, 2272, 215, 4, 30, "Text"],
-Cell[94322, 2278, 118, 2, 28, "Input"],
-Cell[94443, 2282, 654, 12, 63, "Input"],
-Cell[95100, 2296, 922, 15, 46, "Input"],
-Cell[96025, 2313, 771, 13, 46, "Input"],
-Cell[96799, 2328, 677, 13, 63, "Input"],
-Cell[97479, 2343, 679, 13, 63, "Input"],
-Cell[98161, 2358, 619, 11, 46, "Input"]
-=======
-<<<<<<< Updated upstream
 Cell[23953, 508, 2384, 36, 46, "Input"],
 Cell[26340, 546, 67667, 1721, 421, "Output"]
 }, Open  ]],
@@ -2496,21 +2408,6 @@ Cell[95845, 2311, 771, 13, 46, "Input"],
 Cell[96619, 2326, 677, 13, 63, "Input"],
 Cell[97299, 2341, 679, 13, 63, "Input"],
 Cell[97981, 2356, 619, 11, 46, "Input"]
-=======
-Cell[21401, 450, 2166, 33, 46, "Input"],
-Cell[23570, 485, 1145, 38, 35, "Output"],
-Cell[24718, 525, 106, 1, 28, "Output"]
-}, Open  ]],
-Cell[24839, 529, 215, 4, 30, "Text"],
-Cell[25057, 535, 118, 2, 28, "Input"],
-Cell[25178, 539, 533, 10, 63, "Input"],
-Cell[25714, 551, 795, 13, 46, "Input"],
-Cell[26512, 566, 699, 12, 46, "Input"],
-Cell[27214, 580, 609, 13, 63, "Input"],
-Cell[27826, 595, 609, 13, 63, "Input"],
-Cell[28438, 610, 616, 12, 46, "Input"]
->>>>>>> Stashed changes
->>>>>>> 10ed1f827efecd86c7359213e5f4af79f2dfb611
 }
 ]
 *)

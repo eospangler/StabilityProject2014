@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       416,          7]
-NotebookDataLength[     33597,        723]
-NotebookOptionsPosition[     33197,        698]
-NotebookOutlinePosition[     33557,        714]
-CellTagsIndexPosition[     33514,        711]
+NotebookDataLength[     35503,        766]
+NotebookOptionsPosition[     34577,        722]
+NotebookOutlinePosition[     34934,        738]
+CellTagsIndexPosition[     34891,        735]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -490,17 +490,16 @@ distribution. Higher values result in a more accurate per capital dissent\
    3.663093289986505*^9}, {3.663268438893441*^9, 3.663268468636196*^9}, 
    3.665918317154127*^9}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{
-  RowBox[{"data", " ", "=", " ", 
-   RowBox[{"StartSimulation", "[", 
-    RowBox[{
-    ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-     "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",", 
-     "1", ",", "100", ",", "50", ",", "1000", ",", " ", "\"\<\>\"", ",", "0", 
-     ",", "0"}], "]"}]}], "\[IndentingNewLine]"}]], "Input",
+  RowBox[{
+   RowBox[{"data", " ", "=", " ", 
+    RowBox[{"StartSimulation", "[", 
+     RowBox[{
+     ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",",
+       "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",",
+       "1", ",", "100", ",", "50", ",", "1000", ",", " ", "\"\<\>\"", ",", 
+      "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.644854548453861*^9, 3.644854574303125*^9}, {
    3.644854834128633*^9, 3.6448548713037167`*^9}, {3.644855567940404*^9, 
    3.6448555690269537`*^9}, {3.6448556844153833`*^9, 3.644855702940412*^9}, {
@@ -530,100 +529,42 @@ Cell[BoxData[
    3.663268758548696*^9, 3.6632688425441093`*^9}, {3.663957079112666*^9, 
    3.663957079248147*^9}, {3.663957132659609*^9, 3.6639571328011627`*^9}, {
    3.6658549767670918`*^9, 3.665855014948308*^9}, {3.665919828480487*^9, 
-   3.665919861385703*^9}, 3.665922017960142*^9}],
+   3.665919861385703*^9}, 3.665922017960142*^9, 3.665922258410871*^9}],
 
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"0", ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.6619\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-2\"\>"]}],
-       0.036619455010325146`,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"6.3\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"7\"\>"]}],
-       6.3*^7,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"2.87\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"8\"\>"]}],
-       2.87*^8,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"1.6052\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"1355718576299609\"\>"]}],
-       1.60521676193366172702774105306375828321`15.954589770191005*^\
-1355718576299609,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.1562\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-2\"\>"]}],
-       0.03156200350533913,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.6025\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"7\"\>"]}],
-       3.602534474028911*^7,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.1397\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"8\"\>"]}],
-       3.139746552597109*^8,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"5.0575\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-3\"\>"]}],
-       0.005057451504986016,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{
-  3.6659219500521793`*^9, 3.66592199382646*^9, {3.665922025699752*^9, 
-   3.665922035073799*^9}}]
-}, Open  ]],
+Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{"dataFreedonia", " ", "=", " ", 
-  RowBox[{"StartSimulation", "[", 
-   RowBox[{
-   ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-    "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",", 
-    "1", ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ", "0", 
-    ",", "0"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dataFreedonia", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataFreedonia.mx\>\"", ",", "dataFreedonia"}], 
   "]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.662996041237959*^9, 3.662996079539824*^9}, 
    3.663268670551187*^9, {3.663957003201438*^9, 3.6639570032976313`*^9}, {
-   3.6658551218997507`*^9, 3.665855126983128*^9}}],
+   3.6658551218997507`*^9, 3.665855126983128*^9}, 3.665922261747657*^9, {
+   3.6659223866630363`*^9, 3.665922438760457*^9}}],
+
+Cell[BoxData["\<\"dataFreedonia.mx\"\>"], "Output",
+ CellChangeTimes->{3.665922332843522*^9, 3.6659224903398113`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{"dataMerika", " ", "=", " ", 
-  RowBox[{"StartSimulation", "[", 
-   RowBox[{
-   ".2", ",", ".8", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-    "1.1", ",", "0", ",", "1", ",", " ", ".85", ",", "3", ",", "10000", ",", 
-    "1", ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ", "0", 
-    ",", "0"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dataMerika", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".2", ",", ".8", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".85", ",", "3", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataMerika.mx\>\"", ",", "dataMerika"}], "]"}]}], "Input",
  CellChangeTimes->{{3.662995101880056*^9, 3.6629951237544813`*^9}, {
@@ -632,72 +573,155 @@ Cell[BoxData[{
    3.662995621832646*^9, 3.6629956221837053`*^9}, {3.662995678476618*^9, 
    3.662995681837098*^9}, {3.6629958387715807`*^9, 3.662995840178219*^9}, 
    3.663268671943022*^9, {3.6639570069216757`*^9, 3.663957007033814*^9}, 
-   3.665855132924316*^9}],
+   3.665855132924316*^9, 3.665922265426358*^9, {3.66592239565368*^9, 
+   3.6659224412804527`*^9}}],
+
+Cell[BoxData["\<\"dataMerika.mx\"\>"], "Output",
+ CellChangeTimes->{3.665922333793447*^9, 3.6659224989025784`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{"dataKleptopia", " ", "=", " ", 
-  RowBox[{"StartSimulation", "[", 
-   RowBox[{
-   ".9", ",", ".1", ",", "50000000", ",", "5000000", ",", "5000000", ",", "6",
-     ",", "0", ",", "1", ",", " ", ".4", ",", "3", ",", "10000", ",", "1", 
-    ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ", "0", ",", 
-    "0"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dataKleptopia", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".9", ",", ".1", ",", "50000000", ",", "5000000", ",", "5000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".4", ",", "3", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataKleptopia.mx\>\"", ",", "dataKleptopia"}], "]"}]}], "Input",
  CellChangeTimes->{{3.662995398230529*^9, 3.662995496260025*^9}, {
    3.662995547938487*^9, 3.662995568345044*^9}, {3.6629956261121492`*^9, 
    3.662995628972849*^9}, {3.662995685380885*^9, 3.662995715190319*^9}, {
    3.662995756493746*^9, 3.662995857706923*^9}, 3.663268673215191*^9, 
-   3.665855135129335*^9}],
+   3.665855135129335*^9, 3.665922267338932*^9, {3.665922400300015*^9, 
+   3.665922443395523*^9}}],
+
+Cell[BoxData["\<\"dataKleptopia.mx\"\>"], "Output",
+ CellChangeTimes->{3.665922334743413*^9, 3.665922507624848*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
   RowBox[{
-   RowBox[{"dataCathy", " ", "=", " ", 
-    RowBox[{"StartSimulation", "[", 
-     RowBox[{
-     ".6", ",", ".4", ",", "15000000", ",", "1500000", ",", "1500000", ",", 
-      "6.5", ",", "0", ",", "1", ",", " ", ".4", ",", "6", ",", "10000", ",", 
-      "1", ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ", "0",
-       ",", "0"}], "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dataCathy", " ", "=", " ", 
+     RowBox[{"StartSimulation", "[", 
+      RowBox[{
+      ".6", ",", ".4", ",", "15000000", ",", "1500000", ",", "1500000", ",", 
+       "6.5", ",", "0", ",", "1", ",", " ", ".4", ",", "6", ",", "10000", ",",
+        "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+       "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"Export", "[", 
     RowBox[{"\"\<dataCathy.mx\>\"", ",", "dataCathy"}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.662995781693226*^9, 3.662995804432406*^9}, {
    3.662995862322159*^9, 3.662995862866152*^9}, 3.663268674559081*^9, 
-   3.66585513787444*^9}],
+   3.66585513787444*^9, 3.665922268947773*^9, {3.6659224027062597`*^9, 
+   3.6659224183306217`*^9}, {3.6659224534459877`*^9, 3.6659224535992928`*^9}}],
+
+Cell[BoxData["\<\"dataCathy.mx\"\>"], "Output",
+ CellChangeTimes->{3.66592233613982*^9, 3.665922722271305*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"\[IndentingNewLine]", 
   RowBox[{
-   RowBox[{"dataDRF", " ", "=", " ", 
-    RowBox[{"StartSimulation", "[", 
-     RowBox[{
-     ".5", ",", ".5", ",", "7000000", ",", "1400000", ",", " ", "1400000", 
-      ",", "5", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", 
-      ",", "1", ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ",
-       "0", ",", "0"}], "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dataDRF", " ", "=", " ", 
+     RowBox[{"StartSimulation", "[", 
+      RowBox[{
+      ".5", ",", ".5", ",", "7000000", ",", "1400000", ",", " ", "1400000", 
+       ",", "5", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", 
+       ",", "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", 
+       " ", "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{"Export", "[", 
     RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}]}]], "Input",
  CellChangeTimes->{{3.6629958055170813`*^9, 3.6629958082144117`*^9}, {
    3.662995872708852*^9, 3.662995945076305*^9}, 3.6632686760869303`*^9, 
-   3.665855140787901*^9}],
+   3.665855140787901*^9, 3.6659222707813377`*^9, {3.665922404088809*^9, 
+   3.665922420636978*^9}, {3.665922455961856*^9, 3.6659224560968723`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "ovfl"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Overflow occurred in computation. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/ovfl\\\", ButtonNote -> \
+\\\"General::ovfl\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6659223367100773`*^9, 3.6659227268410053`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "ovfl"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Overflow occurred in computation. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/ovfl\\\", ButtonNote -> \
+\\\"General::ovfl\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6659223367100773`*^9, 3.665922726846109*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "ovfl"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Overflow occurred in computation. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/ovfl\\\", ButtonNote -> \
+\\\"General::ovfl\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6659223367100773`*^9, 3.665922726850868*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \
+\\\"ovfl\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during \
+this calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6659223367100773`*^9, 3.665922726855753*^9}],
+
+Cell[BoxData["\<\"dataDRF.mx\"\>"], "Output",
+ CellChangeTimes->{3.66592233697686*^9, 3.66592272848171*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[{
- RowBox[{"dataDRF", " ", "=", " ", 
-  RowBox[{"StartSimulation", "[", 
-   RowBox[{
-   ".5", ",", ".5", ",", "275000000", ",", "55000000", ",", " ", "55000000", 
-    ",", "6", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", ",",
-     "1", ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ", "0", 
-    ",", "0"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dataDRF", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".5", ",", ".5", ",", "275000000", ",", "55000000", ",", " ", "55000000", 
+     ",", "6", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", 
+     ",", "1", ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}], "Input",
  CellChangeTimes->{{3.6629959605110197`*^9, 3.6629959616921387`*^9}, {
    3.662995997078264*^9, 3.662996009364933*^9}, 3.6632686780068903`*^9, 
-   3.6658551441853323`*^9}]
+   3.6658551441853323`*^9, 3.665922272795244*^9}],
+
+Cell[BoxData["\<\"dataDRF.mx\"\>"], "Output",
+ CellChangeTimes->{3.665922337906302*^9, 3.665922729551433*^9}]
+}, Open  ]]
 },
-WindowSize->{1202, 1170},
-WindowMargins->{{Automatic, 424}, {Automatic, 0}},
+WindowSize->{1171, 916},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
 2015)",
 StyleDefinitions->"Default.nb"
@@ -713,18 +737,37 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[816, 20, 21659, 440, 1095, "Input"],
+Cell[816, 20, 21659, 440, 1129, "Input"],
 Cell[22478, 462, 1494, 28, 354, "Text"],
+Cell[23975, 492, 2621, 39, 46, "Input"],
 Cell[CellGroupData[{
-Cell[23997, 494, 2574, 38, 46, "Input"],
-Cell[26574, 534, 2082, 66, 93, "Output"]
+Cell[26621, 535, 808, 15, 63, "Input"],
+Cell[27432, 552, 117, 1, 28, "Output"]
 }, Open  ]],
-Cell[28671, 603, 708, 13, 63, "Input"],
-Cell[29382, 618, 948, 16, 46, "Input"],
-Cell[30333, 636, 797, 14, 46, "Input"],
-Cell[31133, 652, 702, 14, 63, "Input"],
-Cell[31838, 668, 705, 14, 63, "Input"],
-Cell[32546, 684, 647, 12, 46, "Input"]
+Cell[CellGroupData[{
+Cell[27586, 558, 1047, 18, 46, "Input"],
+Cell[28636, 578, 114, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28787, 584, 895, 16, 46, "Input"],
+Cell[29685, 602, 115, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29837, 608, 856, 16, 63, "Input"],
+Cell[30696, 626, 110, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30843, 632, 855, 16, 63, "Input"],
+Cell[31701, 650, 439, 9, 24, "Message"],
+Cell[32143, 661, 437, 9, 24, "Message"],
+Cell[32583, 672, 437, 9, 24, "Message"],
+Cell[33023, 683, 586, 12, 24, "Message"],
+Cell[33612, 697, 107, 1, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33756, 703, 693, 13, 46, "Input"],
+Cell[34452, 718, 109, 1, 86, "Output"]
+}, Open  ]]
 }
 ]
 *)

@@ -95,7 +95,7 @@ The story is that in their daily lives, individuals face societal problems. It c
 \vspace{.5 em}
 \noindent Individual's Problem:
 \begin{equation}
-{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E} - P \left(\frac{D_{t-1}}{S_t}\Bigg|\lambda \right)d_{i,t}^A
+{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E} - P \left(\frac{D_{t-1}}{S_t}\Bigg|\sigma \right)d_{i,t}^A
 \end{equation}
 
 $ d_{i,t} $ is the amount individual $i$ dissents in period $t$ and is treated as a level variable wherein each period an individual choices their level of dissent based on the situation they find themselves in and their own preferences. We assume that dissent takes only non-negative values, $d_{i,t}\geq0$. Different levels of $d_{i,t}$ have different interpretations. An individual with $d_{i,t}=0$ is interpreted as having no dissent, this person is either content with the government or too scared to dissent. Alternatively a positive value of $d_{i,t}$ can be interpreted as being more active; on the low end, $d_{i,t}>0$, could be contacting government representatives, attending open forums, voting for opposition parties, kvetching about politics with colleagues. At the extreme end, $d_{i,t}>>0$, dissent takes on a more revolutionary bent: protests, riots, molotovs. Since individuals dissent during time they would otherwise being using for leisure there is a maximum amount a single individual can dissent for a given period, $d_{i,t}^\star$.  
@@ -109,7 +109,7 @@ $E$ and $g_t$ reduce the amount of utility and individual gets from dissenting. 
 %A Pareto Distribution might be more computationally effective. 
 
 
-$P \left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)$ is a the probability of being caught dissenting against the government and it it follows the Poisson PMF. $S_t$ government resources spent on quelling dissent and is treated as given in the individual's problem. $D_{t-1}$ is the preexisting total dissent. $\lambda$ represent policing effectiveness. For low $\lambda$ the police are extremely prompt at arresting those that dissent beyond acceptable limits. For higher $\lambda$ it probability of being arrested becomes more spread out. For practical purposes $\lambda$ is the ratio of $\frac{\text{Total Reported Crime}}{\text{Arrests}}$. While not perfect, it does provide some insight into police effectiveness. $A$ this is the punishment parameter for dissenting and it structured such that $A>1$. Since the punishment should fit the crime, an individual is punished based on their level of dissent. An assumption with $P \left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)$ is that the amount an individual is dissent does not affect their probability of being caught for dissenting. The reasoning is that the amount of dissent a single individual could produce is insignificant within an entire nation ($d<<D$), a drop in the ocean so to speak. That said, if an individual is caught they will be punished on the amount they have dissented.   
+$P \left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)$ is a the probability of being caught dissenting against the government and it it follows the log Normal PDF. $S_t$ government resources spent on quelling dissent and is treated as given in the individual's problem. $D_{t-1}$ is the preexisting total dissent. $\sigma$ represent policing effectiveness. For low $\sigma$ the police are extremely prompt at arresting those that dissent beyond acceptable limits. For higher $\sigma$ it probability of being arrested becomes more spread out. For practical purposes $\sigma$ is the ratio of $\frac{\text{Total Reported Crime}}{\text{Arrests}}$. While not perfect, it does provide some insight into police effectiveness. $A$ this is the punishment parameter for dissenting and it structured such that $A>1$. Since the punishment should fit the crime, an individual is punished based on their level of dissent. An assumption with $P \left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)$ is that the amount an individual is dissent does not affect their probability of being caught for dissenting. The reasoning is that the amount of dissent a single individual could produce is insignificant within an entire nation ($d<<D$), a drop in the ocean so to speak. That said, if an individual is caught they will be punished on the amount they have dissented.   
 
 %I could include a graph here to sell it better. 
 
@@ -159,25 +159,25 @@ The first step in determining individual demand for dissent is first discussing 
 
 \noindent Differentiating the individual problem with respect to $d_{i,t}$ we obtain the FOC: 
 \begin{equation}
-\frac{dU}{dd_{i,t}} = x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)Ad_{i,t}^{A-1}  
+\frac{dU}{dd_{i,t}} = x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}  
 \end{equation}
 
 \noindent Differentiating again with respect to $d_{i,t}$ we obtain the SOC: 
 
 \begin{equation}
-\frac{d^2U}{dd_{i,t}^2}=(x_i -1) x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)(A-1)Ad_{i,t}^{A-2}  
+\frac{d^2U}{dd_{i,t}^2}=(x_i -1) x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)(A-1)Ad_{i,t}^{A-2}  
 \end{equation}
 
 \noindent For the $\frac{dU}{dd_{i,t}}$ and $\frac{d^2U}{dd_{i,t}^2}$ Let:    
 \begin{center}
-$\underbrace{ x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t}}_\textrm{H} - \underbrace{P\left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)Ad_{i,t}^{A-1}}_\textrm{I}$  	
+$\underbrace{ x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t}}_\textrm{H} - \underbrace{P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}}_\textrm{I}$  	
 \end{center}
 
 \noindent and: 
 
 \begin{center}
 $\underbrace{(x_i -1) x_i \frac{{d_{i,t}}^{x_i -2}}{E g_t}}}_\textrm{J} - \underbrace{
-P\left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)(A-1)Ad_{i,t}^{A-2}}_\textrm{K}$  
+P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)(A-1)Ad_{i,t}^{A-2}}_\textrm{K}$  
 \end{center}
 
 \noindent Then the various scenarios are: 
@@ -199,8 +199,8 @@ With our various scenarios outlined we can now move on to the process of derivin
 \begin{equation}
 	\begin{aligned}
 \frac{dU}{dd_{i,t}}=& 0\\ 
-x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} - P\left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)Ad_{i,t}^{A-1}=& 0 \\
-	x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} =& P\left(\frac{D_{t-1}}{S_t}\Big|\lambda \right)Ad_{i,t}^{A-1}\\
+x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} - P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}=& 0 \\
+	x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} =& P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}\\
 		d_{i,t}=& \left(\frac{g_tEP(S_t,D_{t-1})A}{x_i} \right)^{\frac{1}{x_i -A}}\\ 	
 	\end{aligned}
 \end{equation}
@@ -216,7 +216,7 @@ To find the expected total dissent, we integrate $\overline{d}_{i,t}$ times the 
 \begin{equation}
 	\begin{aligned}
 D_t=& N_t \int_{0}^{x_{max}} \bar{d}_{i,t} f(x) dx \\	
-D_t	=& N_t \int_{0}^{x_{max}} \bar{d}_{i,t} \frac{1}{x\lambda \sqrt{2\pi}}exp  \left( -\frac{(lnx-\mu)^2}{2\lambda^2} \right)  dx \\	
+D_t	=& N_t \int_{0}^{x_{max}} \bar{d}_{i,t} \frac{1}{x\sigma \sqrt{2\pi}}exp  \left( -\frac{(lnx-\mu)^2}{2\sigma^2} \right)  dx \\	
 	\end{aligned}
 \end{equation}
 
@@ -227,14 +227,14 @@ As you may be able to tell, a solution for total dissent can not be analytical d
 
 To solve the government's problem we need a Lagrangian.
 \begin{equation}
-\mathcal{L} = \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^\gamma  +\lambda[R_t-G_t-S_t] 
+\mathcal{L} = \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^\gamma  +\sigma[R_t-G_t-S_t] 
 \end{equation}
 Take the FOCs and simplify.
 
 \begin{equation}
     \begin{aligned}
-        G_t\text{: } \alpha \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  -\lambda &=0  \\
-S_t\text{: } \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^{\gamma -1} -\lambda &=0 \\
+        G_t\text{: } \alpha \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  -\sigma &=0  \\
+S_t\text{: } \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^{\gamma -1} -\sigma &=0 \\
 \alpha \left(\frac{G_t}{D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  &= \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{ D_{t-1}} \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^{\gamma -1} \\
 \alpha \left(\frac{S_t}{ D_{t-1}}-\Omega \right) &= \gamma  \left( \frac{G_t}{ D_{t-1}}-\Phi \right) \\
 G_t&= D_{t-1}\left[\frac{\alpha}{\gamma } \left(\frac{S_t}{ D_{t-1}} -\Omega \right)+\Phi \right]

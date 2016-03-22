@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       416,          7]
-NotebookDataLength[     37808,        840]
-NotebookOptionsPosition[     36767,        792]
-NotebookOutlinePosition[     37126,        808]
-CellTagsIndexPosition[     37083,        805]
+NotebookDataLength[     42077,        939]
+NotebookOptionsPosition[     40759,        884]
+NotebookOutlinePosition[     41117,        900]
+CellTagsIndexPosition[     41074,        897]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -80,8 +80,10 @@ Cell[BoxData[{
            RowBox[{"(", 
             RowBox[{
              RowBox[{"pfunc", "[", 
-              RowBox[{"Dj", ",", "St", ",", "Es"}], "]"}], "A"}], ")"}]}]}], 
-         ";", "\[IndentingNewLine]", 
+              RowBox[{"Dj", ",", "St", ",", "Es"}], "]"}], "*", "A", "*", 
+             SuperscriptBox["ndit", 
+              RowBox[{"A", "-", "1"}]]}], ")"}]}]}], ";", 
+         "\[IndentingNewLine]", 
          RowBox[{"solFuncd", " ", "=", " ", 
           RowBox[{
            RowBox[{"D", "[", 
@@ -453,7 +455,7 @@ Cell[BoxData[{
    3.665921520259973*^9, 3.66592156035085*^9}, {3.6659216020817413`*^9, 
    3.665921621139715*^9}, {3.6659219087029123`*^9, 3.665921909140511*^9}, {
    3.665921964749477*^9, 3.665921980048769*^9}, {3.666724179637993*^9, 
-   3.666724207572709*^9}}],
+   3.666724207572709*^9}, {3.667604945267693*^9, 3.667604963498166*^9}}],
 
 Cell["\<\
 Notes:
@@ -788,12 +790,102 @@ Cell[BoxData[
  CellChangeTimes->{
   3.666722803216075*^9, {3.666722878788982*^9, 3.6667229070342913`*^9}, 
    3.66672298354598*^9}]
-}, Open  ]]
+}, Open  ]],
+
+Cell["\<\
+I made some changes to the simulation parameters and added 2 new countries. \
+\>", "Text",
+ CellChangeTimes->{{3.667605009384385*^9, 3.667605040616926*^9}, {
+  3.667605120003289*^9, 3.6676051207396317`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataKleptopia2", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".9", ",", ".1", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".4", ",", "3", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataKleptopia2.mx\>\"", ",", "dataKleptopia2"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6676050577851562`*^9, 3.667605108368349*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataCathay2", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".6", ",", ".4", ",", "150000000", ",", "15000000", ",", "15000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".4", ",", "6", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataCathay2.mx\>\"", ",", "dataCathay2"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.667605110757804*^9, 3.667605188915148*^9}, {
+   3.667605231442525*^9, 3.667605232530423*^9}, 3.66760539653432*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataRentistan", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".5", ",", ".5", ",", "300000000", ",", "60000000", ",", "60000000", ",", 
+     "5", ",", "0", ",", "1", ",", " ", ".2", ",", "9", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataRentistan.mx\>\"", ",", "dataRentistan"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.667605195682699*^9, 3.667605292369829*^9}, 
+   3.667605353499864*^9, 3.667605393879407*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataDevelpolus", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".5", ",", ".5", ",", "100000000", ",", "20000000", ",", "20000000", ",", 
+     "5", ",", "0", ",", "1", ",", " ", ".2", ",", "9", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataDevelpolus.mx\>\"", ",", "dataDevelpolus"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6676053168775473`*^9, 3.667605360827745*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataBellicostia", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".9", ",", ".1", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".6", ",", "5", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataBelicostia.mx\>\"", ",", "dataBellicostia"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.667605413327289*^9, 3.6676054881448517`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataHippieberg", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".1", ",", ".9", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
+     "1", ",", "0", ",", "1", ",", " ", ".6", ",", "5", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataHippieberg.mx\>\"", ",", "dataHippieberg"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6676055078419867`*^9, 3.667605538984462*^9}}]
 },
-WindowSize->{1505, 1338},
-WindowMargins->{{28, Automatic}, {Automatic, 0}},
-FrontEndVersion->"10.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (December 10, \
-2015)",
+WindowSize->{1252, 768},
+WindowMargins->{{40, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
+2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -807,43 +899,49 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[816, 20, 21550, 435, 1034, "Input"],
-Cell[22369, 457, 1494, 28, 354, "Text"],
-Cell[23866, 487, 2681, 40, 46, "Input"],
+Cell[816, 20, 21684, 437, 1034, "Input"],
+Cell[22503, 459, 1494, 28, 354, "Text"],
+Cell[24000, 489, 2681, 40, 46, "Input"],
 Cell[CellGroupData[{
-Cell[26572, 531, 808, 15, 63, "Input"],
-Cell[27383, 548, 117, 1, 28, "Output"]
+Cell[26706, 533, 808, 15, 63, "Input"],
+Cell[27517, 550, 117, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[27537, 554, 1047, 18, 46, "Input"],
-Cell[28587, 574, 114, 1, 28, "Output"]
+Cell[27671, 556, 1047, 18, 46, "Input"],
+Cell[28721, 576, 114, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[28738, 580, 895, 16, 46, "Input"],
-Cell[29636, 598, 115, 1, 28, "Output"]
+Cell[28872, 582, 895, 16, 46, "Input"],
+Cell[29770, 600, 115, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29788, 604, 856, 16, 63, "Input"],
-Cell[30647, 622, 110, 1, 28, "Output"]
+Cell[29922, 606, 856, 16, 63, "Input"],
+Cell[30781, 624, 110, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30794, 628, 855, 16, 63, "Input"],
-Cell[31652, 646, 439, 9, 24, "Message"],
-Cell[32094, 657, 437, 9, 24, "Message"],
-Cell[32534, 668, 437, 9, 24, "Message"],
-Cell[32974, 679, 586, 12, 24, "Message"],
-Cell[33563, 693, 107, 1, 28, "Output"]
+Cell[30928, 630, 855, 16, 63, "Input"],
+Cell[31786, 648, 439, 9, 24, "Message"],
+Cell[32228, 659, 437, 9, 24, "Message"],
+Cell[32668, 670, 437, 9, 24, "Message"],
+Cell[33108, 681, 586, 12, 24, "Message"],
+Cell[33697, 695, 107, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33707, 699, 693, 13, 46, "Input"],
-Cell[34403, 714, 109, 1, 28, "Output"]
+Cell[33841, 701, 693, 13, 46, "Input"],
+Cell[34537, 716, 109, 1, 28, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34549, 720, 95, 1, 28, "Input"],
-Cell[34647, 723, 2104, 66, 35, "Output"]
-}, Open  ]]
+Cell[34683, 722, 95, 1, 28, "Input"],
+Cell[34781, 725, 2104, 66, 35, "Output"]
+}, Open  ]],
+Cell[36900, 794, 217, 4, 30, "Text"],
+Cell[37120, 800, 588, 12, 46, "Input"],
+Cell[37711, 814, 645, 12, 46, "Input"],
+Cell[38359, 828, 628, 12, 46, "Input"],
+Cell[38990, 842, 588, 12, 46, "Input"],
+Cell[39581, 856, 589, 12, 46, "Input"],
+Cell[40173, 870, 582, 12, 46, "Input"]
 }
 ]
 *)
 
-(* End of internal cache information *)

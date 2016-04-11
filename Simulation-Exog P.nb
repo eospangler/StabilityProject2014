@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       416,          7]
-NotebookDataLength[     43600,       1000]
-NotebookOptionsPosition[     41850,        927]
-NotebookOutlinePosition[     42208,        943]
-CellTagsIndexPosition[     42165,        940]
+NotebookDataLength[     47548,       1001]
+NotebookOptionsPosition[     46355,        956]
+NotebookOutlinePosition[     46712,        972]
+CellTagsIndexPosition[     46669,        969]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -480,12 +480,20 @@ level where the simulation considers them to be converged.
 Runs = Number of complete time periods to complete before exiting the \
 simulation (assuming the dissent doesn\[CloseCurlyQuote]t converge)
 Log Normal Sampling = Number of random pulls from the log normal \
-distribution. Higher values result in a more accurate per capital dissent\
+distribution. Higher values result in a more accurate per capital dissent
+Shock Variable=which parameters is being affected by the shock. 
+Shock Loop Count= when the shock occurs.  
+Shock Multiplier=how much the shock paramters is being affected by. 
+
+StartSimulation[\[Beta]0_,\[Alpha]0_,Rt0_, \[Phi]0_,\[CapitalOmega]0_,A0_,\
+\[Mu]0_,\[Sigma]0_, Et0_,Es0_,Nt0_,Start0_,err0_, \
+runs0_,acc0_,shock0_,shockcount0_,Multiplier0_]\
 \>", "Text",
  CellChangeTimes->{{3.660730203327305*^9, 3.660730553472969*^9}, {
    3.6607305946506243`*^9, 3.660730632173834*^9}, {3.663093253503278*^9, 
    3.663093289986505*^9}, {3.663268438893441*^9, 3.663268468636196*^9}, 
-   3.665918317154127*^9}],
+   3.665918317154127*^9, {3.668952957744946*^9, 3.66895296887399*^9}, {
+   3.669327276380465*^9, 3.669327332258953*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -527,9 +535,8 @@ Cell[BoxData[
    3.663957079248147*^9}, {3.663957132659609*^9, 3.6639571328011627`*^9}, {
    3.6658549767670918`*^9, 3.665855014948308*^9}, {3.665919828480487*^9, 
    3.665919861385703*^9}, 3.665922017960142*^9, 3.665922258410871*^9, {
-   3.6667228740297127`*^9, 3.6667229030603743`*^9}}],
-
-Cell[CellGroupData[{
+   3.6667228740297127`*^9, 3.6667229030603743`*^9}, {3.669326451289521*^9, 
+   3.6693264666557302`*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -537,23 +544,16 @@ Cell[BoxData[{
    RowBox[{"StartSimulation", "[", 
     RowBox[{
     ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-     "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "3", ",", "10000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "4", ",", "10000", ",", 
      "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
      "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
-  RowBox[{"\"\<dataFreedonia.mx\>\"", ",", "dataFreedonia"}], 
-  "]"}], "\[IndentingNewLine]"}], "Input",
+  RowBox[{"\"\<dataFreedonia.mx\>\"", ",", "dataFreedonia"}], "]"}]}], "Input",
  CellChangeTimes->{{3.662996041237959*^9, 3.662996079539824*^9}, 
    3.663268670551187*^9, {3.663957003201438*^9, 3.6639570032976313`*^9}, {
    3.6658551218997507`*^9, 3.665855126983128*^9}, 3.665922261747657*^9, {
-   3.6659223866630363`*^9, 3.665922438760457*^9}}],
-
-Cell[BoxData["\<\"dataFreedonia.mx\"\>"], "Output",
- CellChangeTimes->{3.665922332843522*^9, 3.6659224903398113`*^9, 
-  3.667751641484252*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
+   3.6659223866630363`*^9, 3.665922438760457*^9}, {3.668952991760223*^9, 
+   3.668952991888034*^9}, 3.669325990474284*^9}],
 
 Cell[BoxData[{
  RowBox[{
@@ -561,7 +561,7 @@ Cell[BoxData[{
    RowBox[{"StartSimulation", "[", 
     RowBox[{
     ".2", ",", ".8", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-     "1.1", ",", "0", ",", "1", ",", " ", ".85", ",", "3", ",", "10000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".85", ",", "4", ",", "10000", ",", 
      "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
      "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
@@ -573,259 +573,27 @@ Cell[BoxData[{
    3.662995681837098*^9}, {3.6629958387715807`*^9, 3.662995840178219*^9}, 
    3.663268671943022*^9, {3.6639570069216757`*^9, 3.663957007033814*^9}, 
    3.665855132924316*^9, 3.665922265426358*^9, {3.66592239565368*^9, 
-   3.6659224412804527`*^9}}],
-
-Cell[BoxData["\<\"dataMerika.mx\"\>"], "Output",
- CellChangeTimes->{3.665922333793447*^9, 3.6659224989025784`*^9, 
-  3.6677517383385353`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
+   3.6659224412804527`*^9}, {3.668952994288218*^9, 3.668952994439851*^9}}],
 
 Cell[BoxData[{
  RowBox[{
   RowBox[{"dataKleptopia", " ", "=", " ", 
    RowBox[{"StartSimulation", "[", 
     RowBox[{
-    ".9", ",", ".1", ",", "50000000", ",", "5000000", ",", "5000000", ",", 
-     "6", ",", "0", ",", "1", ",", " ", ".4", ",", "3", ",", "10000", ",", 
+    ".9", ",", ".1", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".7", ",", "4", ",", "10000", ",", 
      "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
      "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataKleptopia.mx\>\"", ",", "dataKleptopia"}], "]"}]}], "Input",
- CellChangeTimes->{{3.662995398230529*^9, 3.662995496260025*^9}, {
-   3.662995547938487*^9, 3.662995568345044*^9}, {3.6629956261121492`*^9, 
-   3.662995628972849*^9}, {3.662995685380885*^9, 3.662995715190319*^9}, {
-   3.662995756493746*^9, 3.662995857706923*^9}, 3.663268673215191*^9, 
-   3.665855135129335*^9, 3.665922267338932*^9, {3.665922400300015*^9, 
-   3.665922443395523*^9}}],
-
-Cell[BoxData["\<\"dataKleptopia.mx\"\>"], "Output",
- CellChangeTimes->{3.665922334743413*^9, 3.665922507624848*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"dataCathy", " ", "=", " ", 
-     RowBox[{"StartSimulation", "[", 
-      RowBox[{
-      ".6", ",", ".4", ",", "15000000", ",", "1500000", ",", "1500000", ",", 
-       "6.5", ",", "0", ",", "1", ",", " ", ".4", ",", "6", ",", "10000", ",",
-        "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
-       "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<dataCathy.mx\>\"", ",", "dataCathy"}], "]"}]}]}]], "Input",
- CellChangeTimes->{{3.662995781693226*^9, 3.662995804432406*^9}, {
-   3.662995862322159*^9, 3.662995862866152*^9}, 3.663268674559081*^9, 
-   3.66585513787444*^9, 3.665922268947773*^9, {3.6659224027062597`*^9, 
-   3.6659224183306217`*^9}, {3.6659224534459877`*^9, 3.6659224535992928`*^9}}],
-
-Cell[BoxData["\<\"dataCathy.mx\"\>"], "Output",
- CellChangeTimes->{3.66592233613982*^9, 3.665922722271305*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"dataDRF", " ", "=", " ", 
-     RowBox[{"StartSimulation", "[", 
-      RowBox[{
-      ".5", ",", ".5", ",", "7000000", ",", "1400000", ",", " ", "1400000", 
-       ",", "5", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", 
-       ",", "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", 
-       " ", "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"Export", "[", 
-    RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}]}]], "Input",
- CellChangeTimes->{{3.6629958055170813`*^9, 3.6629958082144117`*^9}, {
-   3.662995872708852*^9, 3.662995945076305*^9}, 3.6632686760869303`*^9, 
-   3.665855140787901*^9, 3.6659222707813377`*^9, {3.665922404088809*^9, 
-   3.665922420636978*^9}, {3.665922455961856*^9, 3.6659224560968723`*^9}}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"General", "::", "ovfl"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Overflow occurred in computation. \\!\\(\\*ButtonBox[\\\"\
-\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/General/ovfl\\\", ButtonNote -> \
-\\\"General::ovfl\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.6659223367100773`*^9, 3.6659227268410053`*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"General", "::", "ovfl"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Overflow occurred in computation. \\!\\(\\*ButtonBox[\\\"\
-\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/General/ovfl\\\", ButtonNote -> \
-\\\"General::ovfl\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.6659223367100773`*^9, 3.665922726846109*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"General", "::", "ovfl"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Overflow occurred in computation. \\!\\(\\*ButtonBox[\\\"\
-\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/General/ovfl\\\", ButtonNote -> \
-\\\"General::ovfl\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.6659223367100773`*^9, 3.665922726850868*^9}],
-
-Cell[BoxData[
- RowBox[{
-  StyleBox[
-   RowBox[{"General", "::", "stop"}], "MessageName"], 
-  RowBox[{
-  ":", " "}], "\<\"Further output of \
-\[NoBreak]\\!\\(\\*StyleBox[RowBox[{\\\"General\\\", \\\"::\\\", \
-\\\"ovfl\\\"}], \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during \
-this calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
-ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
-ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
-\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.6659223367100773`*^9, 3.665922726855753*^9}],
-
-Cell[BoxData["\<\"dataDRF.mx\"\>"], "Output",
- CellChangeTimes->{3.66592233697686*^9, 3.66592272848171*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"dataDRF", " ", "=", " ", 
-   RowBox[{"StartSimulation", "[", 
-    RowBox[{
-    ".5", ",", ".5", ",", "275000000", ",", "55000000", ",", " ", "55000000", 
-     ",", "6", ",", "0", ",", "1", ",", " ", ".4", ",", "9", ",", "10000", 
-     ",", "1", ",", "100", ",", "50", ",", "1000", ",", "\"\<\>\"", ",", " ", 
-     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"Export", "[", 
-  RowBox[{"\"\<dataDRF.mx\>\"", ",", "dataDRF"}], "]"}]}], "Input",
- CellChangeTimes->{{3.6629959605110197`*^9, 3.6629959616921387`*^9}, {
-   3.662995997078264*^9, 3.662996009364933*^9}, 3.6632686780068903`*^9, 
-   3.6658551441853323`*^9, 3.665922272795244*^9}],
-
-Cell[BoxData["\<\"dataDRF.mx\"\>"], "Output",
- CellChangeTimes->{3.665922337906302*^9, 3.665922729551433*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell[BoxData["data"], "Input",
- CellChangeTimes->{{3.666722801623948*^9, 3.66672280191963*^9}}],
-
-Cell[BoxData[
- RowBox[{"{", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"0", ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.3993\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-2\"\>"]}],
-       0.033993290250474456`,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.5\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"7\"\>"]}],
-       3.500000028*^7,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.15\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"8\"\>"]}],
-       3.1499999972*^8,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"1.6052\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"1355718576299609\"\>"]}],
-       1.60521676193366172702774105306375828321`15.954589770191005*^\
-1355718576299609,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.1121\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-2\"\>"]}],
-       0.031120798939066507`,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.5952\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"7\"\>"]}],
-       3.595181212701329*^7,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"3.1405\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"8\"\>"]}],
-       3.1404818787298673`*^8,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ], ",", 
-     TagBox[
-      InterpretationBox[
-       RowBox[{"\<\"2.8725\"\>", "\[Times]", 
-        SuperscriptBox["10", "\<\"-3\"\>"]}],
-       0.0028724913114079494`,
-       AutoDelete->True],
-      ScientificForm[#, 5]& ]}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{
-  3.666722803216075*^9, {3.666722878788982*^9, 3.6667229070342913`*^9}, 
-   3.66672298354598*^9}]
-}, Open  ]],
-
-Cell["\<\
-I made some changes to the simulation parameters and added 2 new countries. \
-\>", "Text",
- CellChangeTimes->{{3.667605009384385*^9, 3.667605040616926*^9}, {
-  3.667605120003289*^9, 3.6676051207396317`*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"dataKleptopia2", " ", "=", " ", 
-   RowBox[{"StartSimulation", "[", 
-    RowBox[{
-    ".9", ",", ".1", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
-     "6", ",", "0", ",", "1", ",", " ", ".7", ",", "3", ",", "10000", ",", 
-     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
-     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"Export", "[", 
-  RowBox[{"\"\<dataKleptopia2.mx\>\"", ",", "dataKleptopia2"}], 
-  "]"}]}], "Input",
  CellChangeTimes->{{3.6676050577851562`*^9, 3.667605108368349*^9}, {
-  3.667750717515532*^9, 3.6677507176094713`*^9}}],
-
-Cell[BoxData["\<\"dataKleptopia2.mx\"\>"], "Output",
- CellChangeTimes->{3.667750865484581*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
+   3.667750717515532*^9, 3.6677507176094713`*^9}, {3.668953051434054*^9, 
+   3.668953051552868*^9}, {3.669325601123004*^9, 3.669325611689683*^9}, 
+   3.669326589082266*^9}],
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"dataCathay2", " ", "=", " ", 
+  RowBox[{"dataCathay", " ", "=", " ", 
    RowBox[{"StartSimulation", "[", 
     RowBox[{
     ".6", ",", ".4", ",", "150000000", ",", "15000000", ",", "15000000", ",", 
@@ -833,16 +601,11 @@ Cell[BoxData[{
      "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
      "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
-  RowBox[{"\"\<dataCathay2.mx\>\"", ",", "dataCathay2"}], "]"}]}], "Input",
+  RowBox[{"\"\<dataCathay.mx\>\"", ",", "dataCathay"}], "]"}]}], "Input",
  CellChangeTimes->{{3.667605110757804*^9, 3.667605188915148*^9}, {
    3.667605231442525*^9, 3.667605232530423*^9}, 3.66760539653432*^9, {
-   3.6677507257698812`*^9, 3.667750725905702*^9}}],
-
-Cell[BoxData["\<\"dataCathay2.mx\"\>"], "Output",
- CellChangeTimes->{3.6677511532148323`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
+   3.6677507257698812`*^9, 3.667750725905702*^9}, {3.669325605161963*^9, 
+   3.669325614025753*^9}, {3.66932667250215*^9, 3.669326674845291*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -859,12 +622,6 @@ Cell[BoxData[{
    3.667605353499864*^9, 3.667605393879407*^9, {3.6677507339403*^9, 
    3.667750734036371*^9}}],
 
-Cell[BoxData["\<\"dataRentistan.mx\"\>"], "Output",
- CellChangeTimes->{3.667751250427781*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{"dataDevelpolus", " ", "=", " ", 
@@ -880,31 +637,20 @@ Cell[BoxData[{
  CellChangeTimes->{{3.6676053168775473`*^9, 3.667605360827745*^9}, {
   3.667750738228527*^9, 3.667750738340128*^9}}],
 
-Cell[BoxData["\<\"dataDevelpolus.mx\"\>"], "Output",
- CellChangeTimes->{3.667751348364852*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{"dataBellicostia", " ", "=", " ", 
    RowBox[{"StartSimulation", "[", 
     RowBox[{
     ".9", ",", ".1", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
-     "6", ",", "0", ",", "1", ",", " ", ".6", ",", "5", ",", "10000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".6", ",", "6", ",", "10000", ",", 
      "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
      "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataBelicostia.mx\>\"", ",", "dataBellicostia"}], 
   "]"}]}], "Input",
- CellChangeTimes->{{3.667605413327289*^9, 3.6676054881448517`*^9}}],
-
-Cell[BoxData["\<\"dataBelicostia.mx\"\>"], "Output",
- CellChangeTimes->{3.6677514458110857`*^9}]
-}, Open  ]],
-
-Cell[CellGroupData[{
+ CellChangeTimes->{{3.667605413327289*^9, 3.6676054881448517`*^9}, {
+  3.668953069640869*^9, 3.668953069736394*^9}}],
 
 Cell[BoxData[{
  RowBox[{
@@ -912,21 +658,304 @@ Cell[BoxData[{
    RowBox[{"StartSimulation", "[", 
     RowBox[{
     ".1", ",", ".9", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
-     "1.1", ",", "0", ",", "1", ",", " ", ".6", ",", "5", ",", "10000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".6", ",", "6", ",", "10000", ",", 
      "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
      "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"Export", "[", 
   RowBox[{"\"\<dataHippieberg.mx\>\"", ",", "dataHippieberg"}], 
   "]"}]}], "Input",
  CellChangeTimes->{{3.6676055078419867`*^9, 3.667605538984462*^9}, {
-  3.667750796778718*^9, 3.6677507969386377`*^9}}],
+  3.667750796778718*^9, 3.6677507969386377`*^9}, {3.668953073072403*^9, 
+  3.668953073184395*^9}}],
 
-Cell[BoxData["\<\"dataHippieberg.mx\"\>"], "Output",
- CellChangeTimes->{3.667751543309376*^9}]
-}, Open  ]]
+Cell[TextData[{
+ "\n",
+ StyleBox["Countries with high levels of initial dissent",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.668953608185783*^9, 3.668953625808242*^9}, {
+  3.6693256322335167`*^9, 3.6693256417848597`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataFreedoniaHD", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "4", ",", "10000", ",", 
+     "1000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataFreedoniaHD.mx\>\"", ",", "dataFreedoniaHD"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6693256518891478`*^9, 3.669325661544985*^9}, {
+  3.669325776495688*^9, 3.6693258061443663`*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataMerikaHD", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".2", ",", ".8", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".85", ",", "4", ",", "10000", ",", 
+     "1000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataMerikaHD.mx\>\"", ",", "dataMerikaHD"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.669325382176929*^9, 3.66932544582647*^9}, {
+  3.669325664681095*^9, 3.669325668312886*^9}, {3.669325772425042*^9, 
+  3.669325772871687*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataKleptopiaHD", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".9", ",", ".1", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".7", ",", "4", ",", "10000", ",", 
+     "1000000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", 
+     " ", "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataKleptopiaHD.mx\>\"", ",", "dataKleptopiaHD"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.668953629072571*^9, 3.668953661142728*^9}, 
+   3.668954592579463*^9, 3.668955088666531*^9, 3.668955223577087*^9, {
+   3.668955625711622*^9, 3.668955628254099*^9}, {3.6689558044763412`*^9, 
+   3.668955807580071*^9}, {3.669325672249016*^9, 3.669325686920457*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataCathyHD", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".6", ",", ".4", ",", "15000000", ",", "1500000", ",", "1500000", ",", 
+     "6.5", ",", "0", ",", "1", ",", " ", ".4", ",", "6", ",", "10000", ",", 
+     "1000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataCathyHD.mx\>\"", ",", "dataCathyHD"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.66895989629987*^9, 3.668959919498329*^9}, 
+   3.668960035517804*^9, {3.6693256948180523`*^9, 3.669325707336368*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataRentistanHD", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".5", ",", ".5", ",", "300000000", ",", "60000000", ",", "60000000", ",", 
+     "5", ",", "0", ",", "1", ",", " ", ".7", ",", "9", ",", "10000", ",", 
+     "1000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataRentistanHD.mx\>\"", ",", "dataRentistanHD"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.669325483278839*^9, 3.6693254994428167`*^9}, {
+  3.6693257092963467`*^9, 3.669325713848427*^9}, {3.669325779855586*^9, 
+  3.669325801927415*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataDevelpolusHD", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".5", ",", ".5", ",", "100000000", ",", "20000000", ",", "20000000", ",", 
+     "5", ",", "0", ",", "1", ",", " ", ".5", ",", "9", ",", "10000", ",", 
+     "1000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataDevelpolusHD.mx\>\"", ",", "dataDevelpolusHD"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.669325501939354*^9, 3.669325531445138*^9}, {
+  3.6693257156642513`*^9, 3.669325754263895*^9}, {3.6693257865911703`*^9, 
+  3.669325787135869*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataBellicostiaHD", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".9", ",", ".1", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".6", ",", "6", ",", "10000", ",", 
+     "1000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataBelicostiaHD.mx\>\"", ",", "dataBellicostiaHD"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{
+  3.6693255398577423`*^9, {3.669325724864224*^9, 3.669325740560081*^9}, {
+   3.669325788775487*^9, 3.669325798759376*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataHippiebergHD", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".1", ",", ".9", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".6", ",", "6", ",", "10000", ",", 
+     "1000", ",", "1", ",", "10000", ",", "10000", ",", "\"\<\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataHippiebergHD.mx\>\"", ",", "dataHippiebergHD"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.66932574279974*^9, 3.669325745575943*^9}, {
+  3.669325792687429*^9, 3.669325793231512*^9}}],
+
+Cell[TextData[StyleBox["\n\nShocks to Resources with low dissent",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.669326486487294*^9, 3.66932653351159*^9}, {
+  3.669326646902598*^9, 3.669326647421392*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataFreedoniaRSHOCK", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".1", ",", ".9", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".9", ",", "4", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "100", ",", "0.75"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataFreedoniaRSHOCK.mx\>\"", ",", "dataFreedoniaRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.662996041237959*^9, 3.662996079539824*^9}, 
+   3.663268670551187*^9, {3.663957003201438*^9, 3.6639570032976313`*^9}, {
+   3.6658551218997507`*^9, 3.665855126983128*^9}, 3.665922261747657*^9, {
+   3.6659223866630363`*^9, 3.665922438760457*^9}, {3.668952991760223*^9, 
+   3.668952991888034*^9}, 3.669325990474284*^9, {3.669326545257625*^9, 
+   3.669326556395866*^9}, {3.669327166568585*^9, 3.669327170615535*^9}, {
+   3.669327226970531*^9, 3.66932723448888*^9}}],
+
+Cell[BoxData["\<\"dataFreedoniaRSHOCK.mx\"\>"], "Output",
+ CellChangeTimes->{3.669327338220303*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataMerikaRSHOCK", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".2", ",", ".8", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".85", ",", "4", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataMerikaRSHOCK.mx\>\"", ",", "dataMerikaRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.662995101880056*^9, 3.6629951237544813`*^9}, {
+   3.662995215438702*^9, 3.6629953002000637`*^9}, {3.662995343427182*^9, 
+   3.662995394830081*^9}, {3.662995484144125*^9, 3.662995484260529*^9}, {
+   3.662995621832646*^9, 3.6629956221837053`*^9}, {3.662995678476618*^9, 
+   3.662995681837098*^9}, {3.6629958387715807`*^9, 3.662995840178219*^9}, 
+   3.663268671943022*^9, {3.6639570069216757`*^9, 3.663957007033814*^9}, 
+   3.665855132924316*^9, 3.665922265426358*^9, {3.66592239565368*^9, 
+   3.6659224412804527`*^9}, {3.668952994288218*^9, 3.668952994439851*^9}, {
+   3.6693265583319483`*^9, 3.6693265626102657`*^9}, 3.669327184386445*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataKleptopiaRSHOCK", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".9", ",", ".1", ",", "350000000", ",", "35000000", ",", "35000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".7", ",", "4", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataKleptopiaRSHOCK.mx\>\"", ",", "dataKleptopiaRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6676050577851562`*^9, 3.667605108368349*^9}, {
+   3.667750717515532*^9, 3.6677507176094713`*^9}, {3.668953051434054*^9, 
+   3.668953051552868*^9}, {3.669325601123004*^9, 3.669325611689683*^9}, {
+   3.669326571682214*^9, 3.66932657813975*^9}, 3.669327188082253*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataCathayRSHOCK", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".6", ",", ".4", ",", "150000000", ",", "15000000", ",", "15000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".7", ",", "6", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataCathayRSHOCK.mx\>\"", ",", "dataCathayRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.667605110757804*^9, 3.667605188915148*^9}, {
+   3.667605231442525*^9, 3.667605232530423*^9}, 3.66760539653432*^9, {
+   3.6677507257698812`*^9, 3.667750725905702*^9}, {3.669325605161963*^9, 
+   3.669325614025753*^9}, {3.669326654766399*^9, 3.669326665277998*^9}, 
+   3.669327190354237*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataRentistanRSHOCK", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".5", ",", ".5", ",", "300000000", ",", "60000000", ",", "60000000", ",", 
+     "5", ",", "0", ",", "1", ",", " ", ".7", ",", "9", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataRentistanRSHOCK.mx\>\"", ",", "dataRentistanRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.667605195682699*^9, 3.667605292369829*^9}, 
+   3.667605353499864*^9, 3.667605393879407*^9, {3.6677507339403*^9, 
+   3.667750734036371*^9}, {3.66932677922267*^9, 3.669326782616373*^9}, 
+   3.669327192155766*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataDevelpolusRSHOCK", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".5", ",", ".5", ",", "100000000", ",", "20000000", ",", "20000000", ",", 
+     "5", ",", "0", ",", "1", ",", " ", ".5", ",", "9", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataDevelpolusRSHOCK.mx\>\"", ",", "dataDevelpolusRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6676053168775473`*^9, 3.667605360827745*^9}, {
+   3.667750738228527*^9, 3.667750738340128*^9}, {3.669326784424107*^9, 
+   3.669326787880291*^9}, 3.669327195330351*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataBellicostiaRSHOCK", " ", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".9", ",", ".1", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
+     "6", ",", "0", ",", "1", ",", " ", ".6", ",", "6", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataBelicostiaRSHOCK.mx\>\"", ",", "dataBellicostiaRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.667605413327289*^9, 3.6676054881448517`*^9}, {
+   3.668953069640869*^9, 3.668953069736394*^9}, {3.6693267916308947`*^9, 
+   3.669326794976531*^9}, 3.6693271968360453`*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dataHippiebergRSHOCK", "=", " ", 
+   RowBox[{"StartSimulation", "[", 
+    RowBox[{
+    ".1", ",", ".9", ",", "50000000", ",", "10000000", ",", "10000000", ",", 
+     "1.1", ",", "0", ",", "1", ",", " ", ".6", ",", "6", ",", "10000", ",", 
+     "1", ",", "1", ",", "10000", ",", "10000", ",", "\"\<Rt\>\"", ",", " ", 
+     "0", ",", "0"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Export", "[", 
+  RowBox[{"\"\<dataHippiebergRSHOCK.mx\>\"", ",", "dataHippiebergRSHOCK"}], 
+  "]"}]}], "Input",
+ CellChangeTimes->{{3.6676055078419867`*^9, 3.667605538984462*^9}, {
+   3.667750796778718*^9, 3.6677507969386377`*^9}, {3.668953073072403*^9, 
+   3.668953073184395*^9}, {3.6693267972720423`*^9, 3.66932680062418*^9}, 
+   3.669327198772052*^9}]
 },
-WindowSize->{1252, 768},
-WindowMargins->{{40, Automatic}, {Automatic, 0}},
+WindowSize->{1022, 742},
+WindowMargins->{{Automatic, 7}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -942,66 +971,38 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[816, 20, 21684, 437, 1034, "Input"],
-Cell[22503, 459, 1494, 28, 354, "Text"],
-Cell[24000, 489, 2681, 40, 46, "Input"],
+Cell[816, 20, 21684, 437, 1119, "Input"],
+Cell[22503, 459, 1943, 36, 449, "Text"],
+Cell[24449, 497, 2733, 41, 63, "Input"],
+Cell[27185, 540, 854, 15, 63, "Input"],
+Cell[28042, 557, 1093, 18, 63, "Input"],
+Cell[29138, 577, 756, 14, 63, "Input"],
+Cell[29897, 593, 789, 14, 63, "Input"],
+Cell[30689, 609, 676, 13, 63, "Input"],
+Cell[31368, 624, 637, 13, 63, "Input"],
+Cell[32008, 639, 638, 13, 63, "Input"],
+Cell[32649, 654, 684, 14, 63, "Input"],
+Cell[33336, 670, 234, 6, 49, "Text"],
+Cell[33573, 678, 647, 13, 63, "Input"],
+Cell[34223, 693, 680, 13, 63, "Input"],
+Cell[34906, 708, 813, 15, 63, "Input"],
+Cell[35722, 725, 649, 12, 63, "Input"],
+Cell[36374, 739, 694, 14, 63, "Input"],
+Cell[37071, 755, 692, 14, 63, "Input"],
+Cell[37766, 771, 673, 14, 63, "Input"],
+Cell[38442, 787, 639, 13, 63, "Input"],
+Cell[39084, 802, 211, 3, 68, "Text"],
 Cell[CellGroupData[{
-Cell[26706, 533, 808, 15, 63, "Input"],
-Cell[27517, 550, 142, 2, 28, "Output"]
+Cell[39320, 809, 1027, 18, 63, "Input"],
+Cell[40350, 829, 99, 1, 28, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[27696, 557, 1047, 18, 46, "Input"],
-Cell[28746, 577, 141, 2, 86, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[28924, 584, 895, 16, 46, "Input"],
-Cell[29822, 602, 115, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[29974, 608, 856, 16, 63, "Input"],
-Cell[30833, 626, 110, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[30980, 632, 855, 16, 63, "Input"],
-Cell[31838, 650, 439, 9, 24, "Message"],
-Cell[32280, 661, 437, 9, 24, "Message"],
-Cell[32720, 672, 437, 9, 24, "Message"],
-Cell[33160, 683, 586, 12, 24, "Message"],
-Cell[33749, 697, 107, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[33893, 703, 693, 13, 46, "Input"],
-Cell[34589, 718, 109, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[34735, 724, 95, 1, 28, "Input"],
-Cell[34833, 727, 2104, 66, 35, "Output"]
-}, Open  ]],
-Cell[36952, 796, 217, 4, 30, "Text"],
-Cell[CellGroupData[{
-Cell[37194, 804, 639, 13, 46, "Input"],
-Cell[37836, 819, 94, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[37967, 825, 697, 13, 46, "Input"],
-Cell[38667, 840, 93, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[38797, 846, 676, 13, 46, "Input"],
-Cell[39476, 861, 93, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[39606, 867, 637, 13, 46, "Input"],
-Cell[40246, 882, 94, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[40377, 888, 589, 12, 46, "Input"],
-Cell[40969, 902, 96, 1, 28, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[41102, 908, 635, 13, 46, "Input"],
-Cell[41740, 923, 94, 1, 28, "Output"]
-}, Open  ]]
+Cell[40464, 833, 1192, 20, 63, "Input"],
+Cell[41659, 855, 824, 15, 63, "Input"],
+Cell[42486, 872, 839, 16, 63, "Input"],
+Cell[43328, 890, 770, 15, 63, "Input"],
+Cell[44101, 907, 730, 14, 63, "Input"],
+Cell[44834, 923, 735, 14, 63, "Input"],
+Cell[45572, 939, 779, 15, 63, "Input"]
 }
 ]
 *)

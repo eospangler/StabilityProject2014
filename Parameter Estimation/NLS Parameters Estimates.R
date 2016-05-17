@@ -13,7 +13,7 @@ rm(list = ls())
 #Minimize NLS
 
 #Freedonia
-Freedonia<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Freedonia.csv",
+Freedonia<- read.csv ("~/StabilityProject/Parameter Estimation/Freedonia.csv",
                       header=T,
                       na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Freedonia)
@@ -42,7 +42,7 @@ GEfNLeastSq
 mean(GDPf)
 
 #Merikia!
-Merika<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Merika.csv",
+Merika<- read.csv ("~/StabilityProject/Parameter Estimation/Merika.csv",
                    header=T,
                    na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Merika)
@@ -72,7 +72,7 @@ mean(GDPm)
 
 
 #Kleptopia
-Kleptopia<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Kleptopia.csv",
+Kleptopia<- read.csv ("~/StabilityProject/Parameter Estimation/Kleptopia.csv",
                    header=T,
                    na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Kleptopia)
@@ -100,7 +100,7 @@ GEkNLeastSq
 mean(GDPk)
 
 #Cathay
-Cathay<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Cathay.csv",
+Cathay<- read.csv ("~/StabilityProject/Parameter Estimation/Cathay.csv",
                    header=T,
                    na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Cathay)
@@ -130,7 +130,7 @@ mean(GDPc)
 
 #Rentistan
 
-Rentistan<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Rentistan.csv",
+Rentistan<- read.csv ("~/StabilityProject/Parameter Estimation/Rentistan.csv",
                    header=T,
                    na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Rentistan)
@@ -159,7 +159,7 @@ GErNLeastSq
 mean(GDPr)
 
 #Bellicostia
-Bellicostia<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Bellicostia.csv",
+Bellicostia<- read.csv ("~/StabilityProject/Parameter Estimation/Bellicostia.csv",
                    header=T,
                    na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Bellicostia)
@@ -189,7 +189,7 @@ mean(GDPb)
 
 
 #Hippieberg
-Hippieberg<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Hippieberg.csv",
+Hippieberg<- read.csv ("~/StabilityProject/Parameter Estimation/Hippieberg.csv",
                    header=T,
                    na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Hippieberg)
@@ -219,7 +219,7 @@ mean(GDPh)
 
 #Develpolus
 #Merikia!
-Develpolus<- read.csv ("~/Desktop/Stability Project/Parameter Estimation/Develpolus.csv",
+Develpolus<- read.csv ("~/StabilityProject/Parameter Estimation/Develpolus.csv",
                    header=T,
                    na.strings=c("#VALUE!", " ", "NA","na"))
 attach(Develpolus)

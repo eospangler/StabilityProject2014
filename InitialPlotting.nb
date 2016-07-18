@@ -10,14 +10,16 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    241770,       5372]
-NotebookOptionsPosition[    239881,       5311]
-NotebookOutlinePosition[    240239,       5327]
-CellTagsIndexPosition[    240196,       5324]
+NotebookDataLength[    241844,       5374]
+NotebookOptionsPosition[    239892,       5310]
+NotebookOutlinePosition[    240251,       5326]
+CellTagsIndexPosition[    240208,       5323]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell[BoxData[{
  RowBox[{
   RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}], 
@@ -29,6 +31,10 @@ Cell[BoxData[{
   3.6700203350170107`*^9}, {3.672305267915553*^9, 3.672305275056994*^9}, {
   3.672305471271903*^9, 3.6723054929129*^9}, {3.672305535075715*^9, 
   3.672305570086248*^9}, {3.6723056425281277`*^9, 3.672305649963022*^9}}],
+
+Cell[BoxData["\<\"/Users/ethanspangler/StabilityProject\"\>"], "Output",
+ CellChangeTimes->{3.6778571895057983`*^9}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -213,8 +219,10 @@ Cell[BoxData[
    RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
    RowBox[{"AxesLabel", "\[Rule]", 
     RowBox[{"{", 
-     RowBox[{"\"\<Time\>\"", ",", "\"\<\[CapitalLambda]\>\""}], "}"}]}]}], 
-  "]"}]], "Input",
+     RowBox[{
+     "\"\<Time\>\"", ",", 
+      "\"\<\!\(\*SubscriptBox[\(\[CapitalLambda]\), \(t\)]\)\>\""}], 
+     "}"}]}]}], "]"}]], "Input",
  CellChangeTimes->{{3.672304864740471*^9, 3.672304898771377*^9}, {
   3.672305070551483*^9, 3.6723051382757607`*^9}, {3.672305169405748*^9, 
   3.672305169615231*^9}, {3.672497164759831*^9, 3.672497175777816*^9}, {
@@ -224,58 +232,50 @@ Cell[BoxData[
   3.6725075716865253`*^9}, {3.67250760511933*^9, 3.672507619133992*^9}, {
   3.6725120751344423`*^9, 3.672512095675935*^9}, {3.672512270366356*^9, 
   3.67251238713004*^9}, {3.672613250251173*^9, 3.672613267091614*^9}, {
-  3.674389701511639*^9, 3.674389718005863*^9}}],
+  3.674389701511639*^9, 3.674389718005863*^9}, {3.677857230129743*^9, 
+  3.677857235893165*^9}}],
 
 Cell[BoxData[
- TemplateBox[{GraphicsBox[{{}, {{{}, {}, {}, {
-        Hue[0.9060679774997897, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[0, 0, 1]], 
-        LineBox[{{1., 9.1*^7}, {2., 7.096036521900867*^7}}]}, {}, {
-        Hue[0.37820393249936934`, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[1, 0.5, 0.5]], 
-        LineBox[{{1., 9.15*^7}, {1., 9.15*^7}}]}, {
+ TemplateBox[{GraphicsBox[{{}, {{{}, {}, {}, {}, {}, {}, {
         Hue[0.6142719099991583, 0.6, 0.6], 
         Directive[
-         PointSize[0.019444444444444445`], 
+         PointSize[0.01388888888888889], 
          AbsoluteThickness[1.6], 
          RGBColor[1, 0.5, 0]], 
-        LineBox[{{1., 1.5*^8}, {1., 1.5*^8}}]}, {
+        LineBox[CompressedData["
+1:eJxdyzlKREEARdGHkaGBgYGBioiIiPOs3e08D+2cisZuobYibqS24g5cgjaK
+8M+H+sWpyxt9fuu+9iV5+Tm9+/f7avX+H5/vnb+HdtP9eAAP4iE8jEfwGB7H
+E3gST+FpPINn8Ryexwt4ES/hZbyCV/EaXscbeBNv4W3cwu2mC06HjrNDx9ml
+4+zRcfbpOAd0nEM6zhEd55iOc0LHOaXjnNFxzuk4F3ScSzrOVdNtXHDFuWaP
+C644Xfa44Ipzwx4XXHFu2eOCK84de1xwxblnjwuuOA/sccEV55E9LrjiPP37
+G6QRO5E=
+         "]]}, {
         Hue[0.8503398874989481, 0.6, 0.6], 
         Directive[
-         PointSize[0.019444444444444445`], 
+         PointSize[0.01388888888888889], 
          AbsoluteThickness[1.6], 
          RGBColor[0.5, 0, 0.5]], 
-        LineBox[{{1., 5.*^7}, {1., 5.*^7}}]}, {
-        Hue[0.08640786499873876, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[1, 0, 1]], 
-        LineBox[{{1., 4.6*^7}, {1., 4.6*^7}}]}, {
-        Hue[0.3224758424985268, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[0.6, 0.4, 0.2]], 
-        LineBox[{{1., 4.*^6}, {1., 4.*^6}}]}}}, {}}, {
+        LineBox[CompressedData["
+1:eJxdyzlKREEARdGHkaGBgYGBioiIiPOs3e08D+2cisZuoQLBbdUu3IZL0EYR
+/vlQvzh1eaPPb93XviQvP6d3/35frd7//fOj8/fQbrofD+BBPISH8Qgew+N4
+Ak/iKTyNZ/AsnsPzeAEv4iW8jFfwKl7D63gDb+ItvI1buN10wenQcXboOLt0
+nD06zj4d54COc0jHOaLjHNNxTug4p3ScMzrOOR3ngo5zSce5arqNC6441+xx
+wRWnyx4XXHFu2OOCK84te1xwxbljjwuuOPfsccEV54E9LrjiPLLHBVecp39/
+A1a6IWU=
+         "]]}}}, {}}, {
     DisplayFunction -> Identity, PlotRangePadding -> {{
         Scaled[0.02], 
         Scaled[0.02]}, {
         Scaled[0.02], 
-        Scaled[0.05]}}, AxesOrigin -> {0.984375, 0}, 
-     PlotRange -> {{1., 2.}, {0, 2.695*^8}}, PlotRangeClipping -> True, 
+        Scaled[0.05]}}, AxesOrigin -> {0, 0}, 
+     PlotRange -> {{0, 100.}, {0, 2.695*^8}}, PlotRangeClipping -> True, 
      ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> 
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {
        FormBox["\"Time\"", TraditionalForm], 
-       FormBox["\"\[CapitalLambda]\"", TraditionalForm]}, 
-     AxesOrigin -> {0.984375, 0}, DisplayFunction :> Identity, 
+       FormBox[
+       "\"\\!\\(\\*SubscriptBox[\\(\[CapitalLambda]\\), \\(t\\)]\\)\"", 
+        TraditionalForm]}, AxesOrigin -> {0, 0}, DisplayFunction :> Identity, 
      Frame -> {{False, False}, {False, False}}, 
      FrameLabel -> {{None, None}, {None, None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
@@ -292,7 +292,7 @@ Cell[BoxData[
             Part[#, 2]]}& )}}, PlotLabel -> FormBox[
        StyleBox[
        "\"Stability with low initial dissent\"", FontSize -> 12, StripOnInput -> 
-        False], TraditionalForm], PlotRange -> {{1., 2.}, {0, 2.695*^8}}, 
+        False], TraditionalForm], PlotRange -> {{0, 100.}, {0, 2.695*^8}}, 
      PlotRangeClipping -> True, PlotRangePadding -> {{
         Scaled[0.02], 
         Scaled[0.02]}, {
@@ -316,7 +316,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0, 1, 0]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -325,7 +325,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0, 1, 0]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -337,7 +337,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0, 0, 1]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -346,7 +346,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0, 0, 1]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -358,7 +358,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0, 0]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -367,7 +367,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0, 0]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -379,7 +379,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0.5, 0.5]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -388,7 +388,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0.5, 0.5]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -400,7 +400,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0.5, 0]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -409,7 +409,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0.5, 0]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -421,7 +421,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.5, 0, 0.5]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -430,7 +430,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.5, 0, 0.5]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -442,7 +442,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0, 1]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -451,7 +451,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[1, 0, 1]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -463,7 +463,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.6, 0.4, 0.2]], {
                     LineBox[{{0, 10}, {20, 10}}]}}, {
@@ -472,7 +472,7 @@ Cell[BoxData[
                     Directive[
                     Opacity[0.3], 
                     GrayLevel[0]]], 
-                    PointSize[0.35], 
+                    PointSize[0.25], 
                     AbsoluteThickness[1.6], 
                     RGBColor[0.6, 0.4, 0.2]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
@@ -502,7 +502,7 @@ Cell[BoxData[
              RowBox[{
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -543,7 +543,7 @@ Cell[BoxData[
                     False]}], "]"}], ",", 
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -584,7 +584,7 @@ Cell[BoxData[
                     False]}], "]"}], ",", 
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -625,7 +625,7 @@ Cell[BoxData[
                     False]}], "]"}], ",", 
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -646,10 +646,9 @@ Cell[BoxData[
                     Dynamic[{
                     Automatic, 1.35 CurrentValue["FontCapHeight"]/
                     AbsoluteCurrentValue[Magnification]}]], 
-                    "RGBColor[1, 0.5, 0.5]"], Appearance -> None, 
-                    BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    "RGBColor[1, 0.5, 0.5]"], Appearance -> None, BaseStyle -> 
+                    {}, BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
+                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
                     If[
                     Not[
                     AbsoluteCurrentValue["Deployed"]], 
@@ -670,7 +669,7 @@ Cell[BoxData[
                     False]}], "]"}], ",", 
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -713,7 +712,7 @@ Cell[BoxData[
                     False]}], "]"}], ",", 
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -756,7 +755,7 @@ Cell[BoxData[
                     False]}], "]"}], ",", 
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -798,7 +797,7 @@ Cell[BoxData[
                     False]}], "]"}], ",", 
                RowBox[{"Directive", "[", 
                  RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
+                   RowBox[{"PointSize", "[", "0.01388888888888889`", "]"}], 
                    ",", 
                    RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
                    InterpretationBox[
@@ -894,7 +893,7 @@ Cell[BoxData[
    3.672507621380797*^9}, 3.672512158538516*^9, {3.672512308084381*^9, 
    3.672512388040049*^9}, 3.672599041108983*^9, 3.672613276821353*^9, 
    3.672614824171459*^9, 3.6743888061772747`*^9, 3.6743888706299543`*^9, {
-   3.674389707453664*^9, 3.6743897225626574`*^9}}]
+   3.674389707453664*^9, 3.6743897225626574`*^9}, 3.677857255446015*^9}]
 }, Open  ]],
 
 Cell[TextData[StyleBox["Initial Plotting with a R shock, ",
@@ -5310,7 +5309,7 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{923, 688},
-WindowMargins->{{105, Automatic}, {Automatic, 2}},
+WindowMargins->{{Automatic, 156}, {Automatic, 42}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -5326,53 +5325,56 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 563, 10, 46, "Input"],
 Cell[CellGroupData[{
-Cell[1146, 34, 113, 1, 28, InheritFromParent],
-Cell[1262, 37, 114, 1, 28, "Output"]
+Cell[580, 22, 563, 10, 46, "Input"],
+Cell[1146, 34, 116, 1, 28, "Output"]
 }, Open  ]],
-Cell[1391, 41, 157, 3, 30, "Text"],
-Cell[1551, 46, 1730, 45, 148, "Input"],
-Cell[3284, 93, 138, 1, 30, "Text"],
-Cell[3425, 96, 2078, 60, 148, "Input"],
 Cell[CellGroupData[{
-Cell[5528, 160, 2810, 66, 182, "Input"],
-Cell[8341, 228, 32560, 668, 244, "Output"]
+Cell[1299, 40, 113, 1, 28, "Input"],
+Cell[1415, 43, 114, 1, 28, "Output"]
 }, Open  ]],
-Cell[40916, 899, 155, 2, 30, "Text"],
-Cell[41074, 903, 1599, 42, 148, "Input"],
-Cell[42676, 947, 1819, 48, 148, "Input"],
+Cell[1544, 47, 157, 3, 30, "Text"],
+Cell[1704, 52, 1730, 45, 148, "Input"],
+Cell[3437, 99, 138, 1, 30, "Text"],
+Cell[3578, 102, 2078, 60, 148, "Input"],
 Cell[CellGroupData[{
-Cell[44520, 999, 2254, 58, 199, "Input"],
-Cell[46777, 1059, 32416, 670, 246, "Output"]
+Cell[5681, 166, 2908, 69, 182, "Input"],
+Cell[8592, 237, 32320, 658, 281, "Output"]
 }, Open  ]],
-Cell[79208, 1732, 245, 4, 30, "Text"],
-Cell[79456, 1738, 2768, 92, 148, "Input"],
-Cell[82227, 1832, 3408, 122, 148, "Input"],
+Cell[40927, 898, 155, 2, 30, "Text"],
+Cell[41085, 902, 1599, 42, 148, "Input"],
+Cell[42687, 946, 1819, 48, 148, "Input"],
 Cell[CellGroupData[{
-Cell[85660, 1958, 3213, 95, 216, "Input"],
-Cell[88876, 2055, 32516, 674, 246, "Output"]
+Cell[44531, 998, 2254, 58, 199, "Input"],
+Cell[46788, 1058, 32416, 670, 246, "Output"]
 }, Open  ]],
-Cell[121407, 2732, 300, 4, 30, "Text"],
-Cell[121710, 2738, 1998, 50, 148, "Input"],
-Cell[123711, 2790, 2305, 59, 148, "Input"],
+Cell[79219, 1731, 245, 4, 30, "Text"],
+Cell[79467, 1737, 2768, 92, 148, "Input"],
+Cell[82238, 1831, 3408, 122, 148, "Input"],
 Cell[CellGroupData[{
-Cell[126041, 2853, 2537, 61, 216, "Input"],
-Cell[128581, 2916, 32516, 674, 246, "Output"]
+Cell[85671, 1957, 3213, 95, 216, "Input"],
+Cell[88887, 2054, 32516, 674, 246, "Output"]
 }, Open  ]],
-Cell[161112, 3593, 335, 5, 30, "Text"],
-Cell[161450, 3600, 1763, 44, 148, "Input"],
-Cell[163216, 3646, 2145, 59, 148, "Input"],
+Cell[121418, 2731, 300, 4, 30, "Text"],
+Cell[121721, 2737, 1998, 50, 148, "Input"],
+Cell[123722, 2789, 2305, 59, 148, "Input"],
 Cell[CellGroupData[{
-Cell[165386, 3709, 2468, 62, 216, "Input"],
-Cell[167857, 3773, 32516, 674, 246, "Output"]
+Cell[126052, 2852, 2537, 61, 216, "Input"],
+Cell[128592, 2915, 32516, 674, 246, "Output"]
 }, Open  ]],
-Cell[200388, 4450, 396, 6, 30, "Text"],
-Cell[200787, 4458, 1813, 45, 148, "Input"],
-Cell[202603, 4505, 2194, 60, 148, "Input"],
+Cell[161123, 3592, 335, 5, 30, "Text"],
+Cell[161461, 3599, 1763, 44, 148, "Input"],
+Cell[163227, 3645, 2145, 59, 148, "Input"],
 Cell[CellGroupData[{
-Cell[204822, 4569, 2524, 63, 216, "Input"],
-Cell[207349, 4634, 32516, 674, 246, "Output"]
+Cell[165397, 3708, 2468, 62, 216, "Input"],
+Cell[167868, 3772, 32516, 674, 246, "Output"]
+}, Open  ]],
+Cell[200399, 4449, 396, 6, 30, "Text"],
+Cell[200798, 4457, 1813, 45, 148, "Input"],
+Cell[202614, 4504, 2194, 60, 148, "Input"],
+Cell[CellGroupData[{
+Cell[204833, 4568, 2524, 63, 216, "Input"],
+Cell[207360, 4633, 32516, 674, 246, "Output"]
 }, Open  ]]
 }
 ]

@@ -101,7 +101,7 @@ The individual uses a portion of what would be their leisure and instead uses it
 \vspace{.5 em}
 \noindent Individual's Problem:
 \begin{equation}
-{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E} - P \left(\frac{D_{t-1}}{S_t}\Bigg|\sigma \right)d_{i,t}^A
+{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E} - P \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)d_{i,t}^A
 \end{equation}
 
 $ d_{i,t} $ is the amount individual $i$ dissents in period $t$ and is treated as a level variable wherein each period an individual choices their level of dissent based on the situation they find themselves in and their own preferences. We assume that dissent takes only non-negative values, $d_{i,t}\geq0$. Different levels of $d_{i,t}$ have different interpretations. An individual with $d_{i,t}=0$ is interpreted as having no dissent, this person is either content with the government or too scared to dissent. Alternatively a positive value of $d_{i,t}$ can be interpreted as being more active; on the low end, $d_{i,t}>0$, could be contacting government representatives, attending open forums, voting for opposition parties, or kvetching about politics with colleagues. At the extreme end, $d_{i,t}>>0$, dissent takes on a more revolutionary bent: protests, riots, molotovs. Since individuals dissent during time they would otherwise be using for leisure there is a maximum amount a single individual can dissent for a given period, $d_{i,t}^\star$. 
@@ -110,7 +110,9 @@ $x_i$ is the exponent that represents an individual's level of activism with res
 
 $E$ and $g_t$ reduce the amount of utility and individual gets from dissenting. $E$ is an exogenous parameter assessing an individual's quality of life each period. By environment we mean an individual's living situation within a country: unemployment, healthcare, safety, equality, etc. $E$ allows us to weigh the validity of dissent for comparisons across countries. Dissent in a country where conditions are good (``first world problems")  are far less meaningful than in countries with more difficult situations. By weighing dissent based on the circumstances of a country, we are better able to establish an index of political stability that works for both developed and developing countries. $g_t$ is per capita government spending($g_t=\frac{G_t}{N_t}$ where $N_t$ is the population) and is treated as given in the individual's problem. $g_t$ represents how much the government services are given to each citizen. Since this is a pure public good, the government cannot restrict who receives this, thus the individual receives this benefit regardless of their level of dissent. 
 
-$P \left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)$ is a the probability of being caught dissenting against the government and it it follows the log Normal PDF. $S_t$ government resources spent on quelling dissent and is treated as given in the individual's problem. $D_{t-1}$ is the preexisting total dissent. $\sigma$ represent policing effectiveness. For low $\sigma$ the police are extremely prompt at arresting those that dissent beyond acceptable limits. For higher $\sigma$ it probability of being arrested becomes more spread out. For practical purposes $\sigma$ is the ratio of $\frac{\text{Total Reported Crime}}{\text{Crimes Cleared}}$. While not perfect, it does provide some insight into police effectiveness. $A$ this is the punishment parameter for dissenting and it structured such that $A>1$. Since the punishment should fit the crime, an individual is punished based on their level of dissent. An assumption with $P \left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)$ is that the amount an individual dissents does not affect their probability of being caught for dissenting. The reasoning is that the amount of dissent a single individual could produce is insignificant within an entire nation ($d<<D$), a drop in the ocean so to speak. That said, if an individual is caught they will be punished based on the amount they have dissented.   
+$ P \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)$ is a the probability of being caught dissenting against the government and it it follows the log Normal PDF. $S_t$ government resources spent on quelling dissent and is treated as given in the individual's problem. $D_{t-1}$ is the preexisting total dissent. $\bar{d}_{t-1}$ is the average individual dissent from the previous period. $\sigma$ represent policing effectiveness. For low $\sigma$ the police are extremely prompt at arresting those that dissent beyond acceptable limits. For higher $\sigma$ it probability of being arrested becomes more spread out. For practical purposes $\sigma$ is the ratio of $\frac{\text{Total Reported Crime}}{\text{Crimes Cleared}}$. While not perfect, it does provide some insight into police effectiveness. $A$ this is the punishment parameter for dissenting and it structured such that $A>1$. Since the punishment should fit the crime, an individual is punished based on their level of dissent. An assumption with $P \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)$ is that the amount an individual dissents does not affect their probability of being caught for dissenting. The reasoning is that the amount of dissent a single individual could produce is insignificant within an entire nation ($d<<D$), a drop in the ocean so to speak. That said, if an individual is caught they will be punished based on the amount they have dissented. The benefit of structuring $P$, is that even though it is exogenous to an individual, it is still endogenous to the system. This will allow the probability of being caught alter as conditions change.   
+
+
 
 %I could include a graph here to sell it better. 
 
@@ -163,25 +165,25 @@ The first step in determining individual demand for dissent is first discussing 
 
 \noindent Differentiating the individual problem with respect to $d_{i,t}$ we obtain the FOC: 
 \begin{equation}
-\frac{dU}{dd_{i,t}} = x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}  
+\frac{dU}{dd_{i,t}} = x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\bar{d}_{t-1} \Big|\frac{D_{t-1}}{S_t},\sigma \right)Ad_{i,t}^{A-1}  
 \end{equation}
 
 \noindent Differentiating again with respect to $d_{i,t}$ we obtain the SOC: 
 
 \begin{equation}
-\frac{d^2U}{dd_{i,t}^2}=(x_i -1) x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)(A-1)Ad_{i,t}^{A-2}  
+\frac{d^2U}{dd_{i,t}^2}=(x_i -1) x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t} - P\left(\bar{d}_{t-1} \Big|\frac{D_{t-1}}{S_t},\sigma \right)(A-1)Ad_{i,t}^{A-2}  
 \end{equation}
 
 \noindent For the $\frac{dU}{dd_{i,t}}$ and $\frac{d^2U}{dd_{i,t}^2}$ Let:    
 \begin{center}
-$\underbrace{ x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t}}_\textrm{H} - \underbrace{P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}}_\textrm{I}$  	
+$\underbrace{ x_i \frac{{d_{i,t}}^{x_i -1}}{E g_t}}_\textrm{H} - \underbrace{P\left(\bar{d}_{t-1} \Big|\frac{D_{t-1}}{S_t},\sigma \right)Ad_{i,t}^{A-1}}_\textrm{I}$  	
 \end{center}
 
 \noindent and: 
 
 \begin{center}
-$\underbrace{(x_i -1) x_i \frac{{d_{i,t}}^{x_i -2}}{E g_t}}}_\textrm{J} - \underbrace{
-P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)(A-1)Ad_{i,t}^{A-2}}_\textrm{K}$  
+$\underbrace{(x_i -1) x_i \frac{{d_{i,t}}^{x_i -2}}{E g_t}}}_\textrm{J} - 
+\underbrace{P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)(A-1)Ad_{i,t}^{A-2}}_\textrm{K}$  
 \end{center}
 
 \noindent Then the various scenarios are: 
@@ -203,13 +205,13 @@ With our various scenarios outlined we can now move on to the process of derivin
 \begin{equation}
 	\begin{aligned}
 \frac{dU}{dd_{i,t}}=& 0\\ 
-x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} - P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}=& 0 \\
-	x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} =& P\left(\frac{D_{t-1}}{S_t}\Big|\sigma \right)Ad_{i,t}^{A-1}\\
-		d_{i,t}=& \left(\frac{g_tEP(S_t,D_{t-1})A}{x_i} \right)^{\frac{1}{x_i -A}}\\ 	
+x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} - PAd_{i,t}^{A-1}=& 0 \\
+	x_i \frac{{d_{i,t}}^{x_i -1}}{g_t E} =& PAd_{i,t}^{A-1}\\
+		d_{i,t}=& \left(\frac{g_tEPA}{x_i} \right)^{\frac{1}{x_i -A}}\\ 	
 	\end{aligned}
 \end{equation}
 
-We shall all this solutions $\overline{d}_{i,t}$ and use it to determine the expected total dissent, $D_t$. 
+We shall call this solutions $\overline{d}_{i,t}$ and use it to determine the expected total dissent, $D_t$. 
 
 %To avoid this in simulation, if a random draw of $x_i$ is one such that it makes the $SOC>0$ it will be automatically lowered to the maximal value, $x_{max}$, where $SOC<0$ holds. This constrains should not prove too onerous.       
    
@@ -224,8 +226,7 @@ D_t	=& N_t \int_{0}^{x_{max}} \bar{d}_{i,t} \frac{1}{x\sigma \sqrt{2\pi}}exp  \l
 	\end{aligned}
 \end{equation}
 
-As you may be able to tell, a solution for total dissent can not be analytical determine so we must rely on numerical simulation which will be discussed in the next section. 
-
+As you may be able to tell, a solution for total dissent can not be analytically determined so we must rely on numerical simulation which will be discussed in the next section. 
 
 \subsection{Government Solution}
 

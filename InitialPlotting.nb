@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    263191,       5856]
-NotebookOptionsPosition[    260919,       5782]
-NotebookOutlinePosition[    261273,       5798]
-CellTagsIndexPosition[    261230,       5795]
+NotebookDataLength[    247010,       5447]
+NotebookOptionsPosition[    244733,       5373]
+NotebookOutlinePosition[    245092,       5389]
+CellTagsIndexPosition[    245049,       5386]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -33,7 +33,8 @@ Cell[BoxData[{
   3.672305570086248*^9}, {3.6723056425281277`*^9, 3.672305649963022*^9}}],
 
 Cell[BoxData["\<\"/Users/ethanspangler/StabilityProject\"\>"], "Output",
- CellChangeTimes->{3.6778571895057983`*^9, 3.683500554664917*^9}]
+ CellChangeTimes->{3.6778571895057983`*^9, 3.683500554664917*^9, 
+  3.6856448977225323`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -42,7 +43,8 @@ Cell[BoxData["\"\</Users/ethanspangler/StabilityProject\>\""], "Input",
  CellChangeTimes->{3.674388776044063*^9}],
 
 Cell[BoxData["\<\"/Users/ethanspangler/StabilityProject\"\>"], "Output",
- CellChangeTimes->{3.674388776134223*^9, 3.683500556772478*^9}]
+ CellChangeTimes->{3.674388776134223*^9, 3.683500556772478*^9, 
+  3.685644900782364*^9}]
 }, Open  ]],
 
 Cell["\<\
@@ -2207,223 +2209,119 @@ Cell[TextData[StyleBox["\[Phi] shock plotting, ",
   3.672658179590869*^9, 3.672658193610507*^9}, {3.672658252259008*^9, 
   3.6726582525153847`*^9}}],
 
-Cell[BoxData[{
+Cell[BoxData[
  RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Freedonia", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], " ", "=", 
+  RowBox[{"(*", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<\!\(\*
-StyleBox[\(dataFreedonia\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]SHOCK\)]\).mx\>\"", "]"}], " ", "//", " ", "Dataset"}]}],
-   ";"}], "\[IndentingNewLine]", 
- RowBox[{
+    RowBox[{"FreedoniaPhiSHOCK", " ", "=", 
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<dataFreedoniaPhiSHOCK.mx\>\"", "]"}], " ", "//",
+       " ", "Dataset"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
   RowBox[{
-   StyleBox[
-    RowBox[{"Merika", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], " ", "=", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<dataMerika\!\(\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]\)SHOCK.mx\>\"", "]"}], " ", "//", " ", "Dataset"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Kleptopia", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", 
+    RowBox[{"MerikaPhiSHOCK", " ", "=", 
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<dataMerikaPhiSHOCK.mx\>\"", "]"}], " ", "//",
+       " ", "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<dataKleptopia\!\(\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]\)SHOCK.mx\>\"", "]"}], "//", "Dataset"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Cathay", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", 
+    RowBox[{"KleptopiaPhiSHOCK", "=", 
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<dataKleptopiaPhiSHOCK.mx\>\"", "]"}], "//", 
+      "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<dataCathay\!\(\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]\)SHOCK.mx\>\"", "]"}], "//", "Dataset"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Rentistan", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", 
+    RowBox[{"CathayPhiSHOCK", "=", 
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<dataCathayPhiSHOCK.mx\>\"", "]"}], "//", 
+      "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<dataRentistan\!\(\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]\)SHOCK.mx\>\"", "]"}], "//", "Dataset"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Develpolus", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", 
+    RowBox[{"RentistanPhiSHOCK", "=", 
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<dataRentistanPhiSHOCK.mx\>\"", "]"}], "//", 
+      "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<dataDevelpolus\!\(\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]\)SHOCK.mx\>\"", "]"}], "//", "Dataset"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Bellicostia", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", 
-   RowBox[{
-    RowBox[{"Import", "[", "\"\<dataBellicostia\!\(\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]\)SHOCK.mx\>\"", "]"}], "//", "Dataset"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Hippieberg", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", 
-   RowBox[{
-    RowBox[{"Import", "[", "\"\<dataHippieberg\!\(\*
-StyleBox[\"\[Phi]\",
-FontWeight->\"Bold\"]\)SHOCK.mx\>\"", "]"}], "//", "Dataset"}]}], 
-  ";"}]}], "Input",
+    RowBox[{"DevelpolusPhiSHOCK", "=", 
+     RowBox[{
+      RowBox[{"Import", "[", "\"\<dataDevelpolusPhiSHOCK.mx\>\"", "]"}], "//",
+       "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"BellicostiaPhiSHOCK", "=", 
+      RowBox[{
+       RowBox[{"Import", "[", "\"\<dataBellicostiaPhiSHOCK.mx\>\"", "]"}], "//",
+        "Dataset"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"HippiebergPhiSHOCK", "=", 
+      RowBox[{
+       RowBox[{"Import", "[", "\"\<dataHippiebergPhiSHOCK.mx\>\"", "]"}], "//",
+        "Dataset"}]}], ";"}], "*)"}]}]}]], "Input",
  CellChangeTimes->{{3.672612980421198*^9, 3.6726130142136717`*^9}, 
    3.672613550264583*^9, 3.672613614814622*^9, {3.672658254590952*^9, 
-   3.672658283116098*^9}, {3.672658691308918*^9, 3.672658707191038*^9}}],
+   3.672658283116098*^9}, {3.672658691308918*^9, 3.672658707191038*^9}, {
+   3.685644781571847*^9, 3.685644821281851*^9}, {3.685645021664353*^9, 
+   3.685645039324909*^9}}],
 
-Cell[BoxData[{
+Cell[BoxData[
  RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Freedonia", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], " ", "=", " ", 
+  RowBox[{"(*", 
    RowBox[{
-    StyleBox[
-     RowBox[{"Freedonia", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
-    RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
+    RowBox[{"FreedoniaPhiSHOCK", " ", "=", " ", 
+     RowBox[{"FreedoniaPhiSHOCK", "/.", 
+      RowBox[{
+       RowBox[{"ScientificForm", "[", 
+        RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";"}], 
+   "*)"}], "\[IndentingNewLine]", 
   RowBox[{
-   StyleBox[
-    RowBox[{"Merika", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], " ", "=", " ", 
    RowBox[{
-    StyleBox[
-     RowBox[{"Merika", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
-    RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Kleptopia", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], " ", "=", " ", 
+    RowBox[{"MerikaPhiSHOCK", " ", "=", " ", 
+     RowBox[{"MerikaPhiSHOCK", "/.", 
+      RowBox[{
+       RowBox[{"ScientificForm", "[", 
+        RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
-    StyleBox[
-     RowBox[{"Kleptopia", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
-    RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Cathay", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", " ", 
+    RowBox[{"KleptopiaPhiSHOCK", " ", "=", " ", 
+     RowBox[{"KleptopiaPhiSHOCK", "/.", 
+      RowBox[{
+       RowBox[{"ScientificForm", "[", 
+        RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
-    StyleBox[
-     RowBox[{"Cathay", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
-    RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Rentistan", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", " ", 
+    RowBox[{"CathayPhiSHOCK", "=", " ", 
+     RowBox[{"CathayPhiSHOCK", "/.", 
+      RowBox[{
+       RowBox[{"ScientificForm", "[", 
+        RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
-    StyleBox[
-     RowBox[{"Rentistan", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
-    RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Develpolus", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", " ", 
+    RowBox[{"RentistanPhiSHOCK", "=", " ", 
+     RowBox[{"RentistanPhiSHOCK", "/.", 
+      RowBox[{
+       RowBox[{"ScientificForm", "[", 
+        RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
-    StyleBox[
-     RowBox[{"Develpolus", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
+    RowBox[{"DevelpolusPhiSHOCK", "=", " ", 
+     RowBox[{"DevelpolusPhiSHOCK", "/.", 
+      RowBox[{
+       RowBox[{"ScientificForm", "[", 
+        RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
     RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Bellicostia", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", " ", 
-   RowBox[{
-    StyleBox[
-     RowBox[{"Bellicostia", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
-    RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   StyleBox[
-    RowBox[{"Hippieberg", 
-     StyleBox["\[Phi]",
-      FontWeight->"Bold"], "SHOCK"}]], "=", " ", 
-   RowBox[{
-    StyleBox[
-     RowBox[{"Hippieberg", 
-      StyleBox["\[Phi]",
-       FontWeight->"Bold"], "SHOCK"}]], "/.", 
-    RowBox[{
-     RowBox[{"ScientificForm", "[", 
-      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
-  ";"}]}], "Input",
+     RowBox[{"BellicostiaPhiSHOCK", "=", " ", 
+      RowBox[{"BellicostiaPhiSHOCK", "/.", 
+       RowBox[{
+        RowBox[{"ScientificForm", "[", 
+         RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"HippiebergPhiSHOCK", "=", " ", 
+      RowBox[{"HippiebergPhiSHOCK", "/.", 
+       RowBox[{
+        RowBox[{"ScientificForm", "[", 
+         RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], ";"}], 
+    "*)"}]}]}]], "Input",
  CellChangeTimes->{{3.6726130541249313`*^9, 3.672613096427991*^9}, {
-  3.672658306401094*^9, 3.67265835296786*^9}}],
+  3.672658306401094*^9, 3.67265835296786*^9}, {3.6856451404214563`*^9, 
+  3.685645184354813*^9}}],
 
 Cell[CellGroupData[{
 
@@ -2431,77 +2329,54 @@ Cell[BoxData[
  RowBox[{"ListLinePlot", "[", 
   RowBox[{
    RowBox[{"{", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FreedoniaPhiSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ","}], "*)"}], 
+    "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{
+      RowBox[{"MerikaPhiSHOCK", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", 
       RowBox[{
-       StyleBox[
-        RowBox[{"Freedonia", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
+       RowBox[{
+        RowBox[{"KleptopiaPhiSHOCK", "[", 
+         RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], " ", ","}], 
+      "*)"}], "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"CathayPhiSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{
-       StyleBox[
-        RowBox[{"Merika", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
+      RowBox[{"RentistanPhiSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
+      RowBox[{"DevelpolusPhiSHOCK", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}]}], 
+    RowBox[{"(*", 
+     RowBox[{",", "\[IndentingNewLine]", 
       RowBox[{
-       StyleBox[
-        RowBox[{"Kleptopia", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
-       RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], " ", ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
+       RowBox[{"BellicostiaPhiSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+      "\[IndentingNewLine]", 
       RowBox[{
-       StyleBox[
-        RowBox[{"Cathay", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
-       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       StyleBox[
-        RowBox[{"Rentistan", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
-       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       StyleBox[
-        RowBox[{"Develpolus", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
-       RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       StyleBox[
-        RowBox[{"Bellicostia", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
-       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{
-       StyleBox[
-        RowBox[{"Hippieberg", 
-         StyleBox["\[Phi]",
-          FontWeight->"Bold"], "SHOCK"}]], "[", 
-       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], "}"}], ",", 
+       RowBox[{"HippiebergPhiSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], "*)"}], "}"}], 
+   ",", 
    RowBox[{"PlotLegends", "\[Rule]", 
     RowBox[{"{", 
+     RowBox[{"(*", 
+      RowBox[{"\"\<Freedonia\>\"", ","}], "*)"}], 
      RowBox[{
-     "\"\<Freedonia\>\"", ",", "\"\<Merika\>\"", ",", "\"\<Kleptopia\>\"", 
-      ",", "\"\<Cathay\>\"", ",", "\"\<Rentistan\>\"", ",", 
-      "\"\<Develpolus\>\"", ",", "\"\<Bellicostia\>\"", ",", 
-      "\"\<Hippieberg\>\""}], "}"}]}], ",", 
+     "\"\<Merika\>\"", ",", "\"\<Kleptopia\>\"", ",", "\"\<Cathay\>\"", ",", 
+      "\"\<Rentistan\>\"", ",", "\"\<Develpolus\>\""}], 
+     RowBox[{"(*", 
+      RowBox[{",", "\"\<Bellicostia\>\"", ",", "\"\<Hippieberg\>\""}], "*)"}],
+      "}"}]}], ",", 
    RowBox[{"PlotStyle", "->", 
     RowBox[{"{", 
      RowBox[{
@@ -2522,7 +2397,9 @@ FontWeight->\"Bold\"]\) shock\>\"", ",", " ",
   "]"}]], "Input",
  CellChangeTimes->{{3.672613118310802*^9, 3.672613150860641*^9}, {
   3.672613523713516*^9, 3.672613529351377*^9}, {3.6726583592810497`*^9, 
-  3.672658392003055*^9}}],
+  3.672658392003055*^9}, {3.6856448266342278`*^9, 3.6856448408581676`*^9}, {
+  3.685645062949885*^9, 3.685645112525385*^9}, {3.685645212395081*^9, 
+  3.685645217467255*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -2531,55 +2408,42 @@ Cell[BoxData[
          PointSize[0.019444444444444445`], 
          AbsoluteThickness[1.6], 
          RGBColor[0, 1, 0]], 
-        LineBox[{{1., 4.9*^7}, {1., 4.9*^7}}]}, {
-        Hue[0.9060679774997897, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[0, 0, 1]], 
-        LineBox[{{1., 8.05*^7}, {1., 8.05*^7}}]}, {
+        LineBox[{{1., 8.05*^7}, {2., 7.000056283091299*^7}, {3., 
+         7.0000157941819*^7}, {4., 7.000021591217075*^7}, {5., 
+         7.000021269919977*^7}, {6., 7.00001981405404*^7}, {7., 
+         7.0000189675951*^7}, {8., 7.000020033069131*^7}, {9., 
+         7.000020276495096*^7}, {10., 7.000020246662477*^7}}]}, {}, {
         Hue[0.1421359549995791, 0.6, 0.6], 
         Directive[
          PointSize[0.019444444444444445`], 
          AbsoluteThickness[1.6], 
          RGBColor[1, 0, 0]], 
-        LineBox[{{1., 2.695*^8}, {1., 2.695*^8}}]}, {
+        LineBox[{{1., 1.5*^8}, {2., 1.5*^8}, {3., 1.5*^8}, {4., 1.5*^8}, {5., 
+         1.5*^8}, {6., 1.5*^8}, {7., 1.5*^8}, {8., 1.5*^8}, {9., 1.5*^8}, {
+         10., 1.5*^8}}]}, {
         Hue[0.37820393249936934`, 0.6, 0.6], 
         Directive[
          PointSize[0.019444444444444445`], 
          AbsoluteThickness[1.6], 
          RGBColor[1, 0.5, 0.5]], 
-        LineBox[{{1., 9.15*^7}, {1., 9.15*^7}}]}, {
-        Hue[0.6142719099991583, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[1, 0.5, 0]], 
-        LineBox[{{1., 1.5*^8}, {1., 1.5*^8}}]}, {
-        Hue[0.8503398874989481, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[0.5, 0, 0.5]], 
-        LineBox[{{1., 5.*^7}, {1., 5.*^7}}]}, {
-        Hue[0.08640786499873876, 0.6, 0.6], 
-        Directive[
-         PointSize[0.019444444444444445`], 
-         AbsoluteThickness[1.6], 
-         RGBColor[1, 0, 1]], 
-        LineBox[{{1., 4.6*^7}, {1., 4.6*^7}}]}}}, {}}, {
+        LineBox[CompressedData["
+1:eJxTTMoPSmViYGAQBWIQDQEf7EFky/V2R6iAAyqfA40vgMYXQeNLoPFl0PgK
+aHwlNL4KGl8Nja+BxtdC4+ug8fXQ+AZofEM0vhEa3xiNb4LGN4XzAfjFN5g=
+
+         "]]}}}, {}, {}, {{}, {}}}, {
     DisplayFunction -> Identity, PlotRangePadding -> {{
         Scaled[0.02], 
         Scaled[0.02]}, {
         Scaled[0.02], 
-        Scaled[0.05]}}, AxesOrigin -> {0, 0}, 
-     PlotRange -> {{0, 2.}, {0, 2.695*^8}}, PlotRangeClipping -> True, 
+        Scaled[0.05]}}, AxesOrigin -> {0.6875000000000002, 0}, 
+     PlotRange -> {{1., 21.}, {0, 1.5*^8}}, PlotRangeClipping -> True, 
      ImagePadding -> All, DisplayFunction -> Identity, AspectRatio -> 
      NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
      AxesLabel -> {
        FormBox["\"Time\"", TraditionalForm], 
-       FormBox["\"Stability\"", TraditionalForm]}, AxesOrigin -> {0, 0}, 
-     DisplayFunction :> Identity, Frame -> {{False, False}, {False, False}}, 
+       FormBox["\"Stability\"", TraditionalForm]}, 
+     AxesOrigin -> {0.6875000000000002, 0}, DisplayFunction :> Identity, 
+     Frame -> {{False, False}, {False, False}}, 
      FrameLabel -> {{None, None}, {None, None}}, 
      FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
      GridLines -> {None, None}, GridLinesStyle -> Directive[
@@ -2594,18 +2458,19 @@ Cell[BoxData[
            (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
             Part[#, 2]]}& )}}, PlotLabel -> FormBox[
        StyleBox[
-       "\"Stability with R shock\"", FontSize -> 12, StripOnInput -> False], 
-       TraditionalForm], PlotRange -> {{0, 2.}, {0, 2.695*^8}}, 
-     PlotRangeClipping -> True, PlotRangePadding -> {{
+       "\"Stability with \
+\\!\\(\\*\\nStyleBox[\\\"\[Phi]\\\",\\nFontWeight->\\\"Bold\\\"]\\) shock\"", 
+        FontSize -> 12, StripOnInput -> False], TraditionalForm], 
+     PlotRange -> {{1., 21.}, {0, 1.5*^8}}, PlotRangeClipping -> True, 
+     PlotRangePadding -> {{
         Scaled[0.02], 
         Scaled[0.02]}, {
         Scaled[0.02], 
         Scaled[0.05]}}, Ticks -> {Automatic, Automatic}}],FormBox[
     FormBox[
      TemplateBox[{
-      "\"Freedonia\"", "\"Merika\"", "\"Kleptopia\"", "\"Cathay\"", 
-       "\"Rentistan\"", "\"Develpolus\"", "\"Bellicostia\"", 
-       "\"Hippieberg\""}, "LineLegend", DisplayFunction -> (FormBox[
+      "\"Merika\"", "\"Kleptopia\"", "\"Cathay\"", "\"Rentistan\"", 
+       "\"Develpolus\""}, "LineLegend", DisplayFunction -> (FormBox[
         StyleBox[
          StyleBox[
           PaneBox[
@@ -2696,91 +2561,7 @@ Cell[BoxData[
                     RGBColor[1, 0.5, 0.5]], {}}}, AspectRatio -> Full, 
                     ImageSize -> {20, 10}, PlotRangePadding -> None, 
                     ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #4}, {
-                   GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[1, 0.5, 0]], {
-                    LineBox[{{0, 10}, {20, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[1, 0.5, 0]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #5}, {
-                   GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[0.5, 0, 0.5]], {
-                    LineBox[{{0, 10}, {20, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[0.5, 0, 0.5]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #6}, {
-                   GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[1, 0, 1]], {
-                    LineBox[{{0, 10}, {20, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[1, 0, 1]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #7}, {
-                   GraphicsBox[{{
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[0.6, 0.4, 0.2]], {
-                    LineBox[{{0, 10}, {20, 10}}]}}, {
-                    Directive[
-                    EdgeForm[
-                    Directive[
-                    Opacity[0.3], 
-                    GrayLevel[0]]], 
-                    PointSize[0.35], 
-                    AbsoluteThickness[1.6], 
-                    RGBColor[0.6, 0.4, 0.2]], {}}}, AspectRatio -> Full, 
-                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
-                    ImagePadding -> Automatic, 
-                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #8}}, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #4}}, 
                  GridBoxAlignment -> {
                   "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, 
                  AutoDelete -> False, 
@@ -2821,12 +2602,11 @@ Cell[BoxData[
                     True, FrameStyle -> RGBColor[0., 0.6666666666666666, 0.], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[0, 1, 0]"], Appearance -> 
-                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    "RGBColor[0, 1, 0]"], Appearance -> None, BaseStyle -> {},
+                     BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
+                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
                     If[
                     Not[
                     AbsoluteCurrentValue["Deployed"]], 
@@ -2863,12 +2643,11 @@ Cell[BoxData[
                     True, FrameStyle -> RGBColor[0., 0., 0.6666666666666666], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[0, 0, 1]"], Appearance -> 
-                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    "RGBColor[0, 0, 1]"], Appearance -> None, BaseStyle -> {},
+                     BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
+                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
                     If[
                     Not[
                     AbsoluteCurrentValue["Deployed"]], 
@@ -2905,12 +2684,11 @@ Cell[BoxData[
                     True, FrameStyle -> RGBColor[0.6666666666666666, 0., 0.], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[1, 0, 0]"], Appearance -> 
-                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    "RGBColor[1, 0, 0]"], Appearance -> None, BaseStyle -> {},
+                     BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
+                    ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
                     If[
                     Not[
                     AbsoluteCurrentValue["Deployed"]], 
@@ -2950,10 +2728,10 @@ Cell[BoxData[
                     0.33333333333333337`], FrameTicks -> None, 
                     PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[1, 0.5, 0.5]"], Appearance -> 
-                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    "RGBColor[1, 0.5, 0.5]"], Appearance -> None, 
+                    BaseStyle -> {}, BaselinePosition -> Baseline, 
                     DefaultBaseStyle -> {}, ButtonFunction :> 
                     With[{Typeset`box$ = EvaluationBox[]}, 
                     If[
@@ -2973,183 +2751,9 @@ Cell[BoxData[
                     "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
                     Automatic, Method -> "Preemptive"], 
                     RGBColor[1, 0.5, 0.5], Editable -> False, Selectable -> 
-                    False]}], "]"}], ",", 
-               RowBox[{"Directive", "[", 
-                 RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
-                   ",", 
-                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    RGBColor[1, 0.5, 0], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, AspectRatio -> 1, Frame -> 
-                    True, FrameStyle -> 
-                    RGBColor[0.6666666666666666, 0.33333333333333337`, 0.], 
-                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[1, 0.5, 0]"], Appearance -> 
-                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    RGBColor[1, 0.5, 0]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["RGBColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    RGBColor[1, 0.5, 0], Editable -> False, Selectable -> 
-                    False]}], "]"}], ",", 
-               RowBox[{"Directive", "[", 
-                 RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
-                   ",", 
-                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    RGBColor[0.5, 0, 0.5], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, AspectRatio -> 1, Frame -> 
-                    True, FrameStyle -> 
-                    RGBColor[0.33333333333333337`, 0., 0.33333333333333337`], 
-                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[0.5, 0, 0.5]"], Appearance -> 
-                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    RGBColor[0.5, 0, 0.5]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["RGBColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    RGBColor[0.5, 0, 0.5], Editable -> False, Selectable -> 
-                    False]}], "]"}], ",", 
-               RowBox[{"Directive", "[", 
-                 RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
-                   ",", 
-                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    RGBColor[1, 0, 1], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, AspectRatio -> 1, Frame -> 
-                    True, FrameStyle -> 
-                    RGBColor[0.6666666666666666, 0., 0.6666666666666666], 
-                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[1, 0, 1]"], Appearance -> 
-                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
-                    DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    RGBColor[1, 0, 1]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["RGBColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    RGBColor[1, 0, 1], Editable -> False, Selectable -> 
-                    False]}], "]"}], ",", 
-               RowBox[{"Directive", "[", 
-                 RowBox[{
-                   RowBox[{"PointSize", "[", "0.019444444444444445`", "]"}], 
-                   ",", 
-                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}], ",", 
-                   InterpretationBox[
-                    ButtonBox[
-                    TooltipBox[
-                    GraphicsBox[{{
-                    GrayLevel[0], 
-                    RectangleBox[{0, 0}]}, {
-                    GrayLevel[0], 
-                    RectangleBox[{1, -1}]}, {
-                    RGBColor[0.6, 0.4, 0.2], 
-                    RectangleBox[{0, -1}, {2, 1}]}}, AspectRatio -> 1, Frame -> 
-                    True, FrameStyle -> 
-                    RGBColor[0.4, 0.2666666666666667, 0.13333333333333336`], 
-                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
-                    Dynamic[{
-                    Automatic, 
-                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                    Magnification])}]], "RGBColor[0.6, 0.4, 0.2]"], 
-                    Appearance -> None, BaseStyle -> {}, BaselinePosition -> 
-                    Baseline, DefaultBaseStyle -> {}, ButtonFunction :> 
-                    With[{Typeset`box$ = EvaluationBox[]}, 
-                    If[
-                    Not[
-                    AbsoluteCurrentValue["Deployed"]], 
-                    SelectionMove[Typeset`box$, All, Expression]; 
-                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
-                    FrontEnd`Private`$ColorSelectorInitialColor = 
-                    RGBColor[0.6, 0.4, 0.2]; 
-                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
-                    MathLink`CallFrontEnd[
-                    FrontEnd`AttachCell[Typeset`box$, 
-                    FrontEndResource["RGBColorValueSelector"], {
-                    0, {Left, Bottom}}, {Left, Top}, 
-                    "ClosingActions" -> {
-                    "SelectionDeparture", "ParentChanged", 
-                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
-                    Automatic, Method -> "Preemptive"], 
-                    RGBColor[0.6, 0.4, 0.2], Editable -> False, Selectable -> 
                     False]}], "]"}]}], "}"}], ",", 
            RowBox[{"{", 
-             
-             RowBox[{#, ",", #2, ",", #3, ",", #4, ",", #5, ",", #6, ",", #7, 
-               ",", #8}], "}"}], ",", 
+             RowBox[{#, ",", #2, ",", #3, ",", #4, ",", #5}], "}"}], ",", 
            RowBox[{"LegendMarkers", "\[Rule]", 
              RowBox[{"{", 
                RowBox[{
@@ -3160,21 +2764,11 @@ Cell[BoxData[
                  RowBox[{"{", 
                    RowBox[{"False", ",", "Automatic"}], "}"}], ",", 
                  RowBox[{"{", 
-                   RowBox[{"False", ",", "Automatic"}], "}"}], ",", 
-                 RowBox[{"{", 
-                   RowBox[{"False", ",", "Automatic"}], "}"}], ",", 
-                 RowBox[{"{", 
-                   RowBox[{"False", ",", "Automatic"}], "}"}], ",", 
-                 RowBox[{"{", 
-                   RowBox[{"False", ",", "Automatic"}], "}"}], ",", 
-                 RowBox[{"{", 
                    RowBox[{"False", ",", "Automatic"}], "}"}]}], "}"}]}], ",", 
            RowBox[{"Joined", "\[Rule]", 
              RowBox[{"{", 
-               
-               RowBox[{
-                "True", ",", "True", ",", "True", ",", "True", ",", "True", 
-                 ",", "True", ",", "True", ",", "True"}], "}"}]}], ",", 
+               RowBox[{"True", ",", "True", ",", "True", ",", "True"}], 
+               "}"}]}], ",", 
            RowBox[{"LabelStyle", "\[Rule]", 
              RowBox[{"{", "}"}]}], ",", 
            RowBox[{"LegendLayout", "\[Rule]", "\"Column\""}]}], "]"}]& ), 
@@ -3198,7 +2792,8 @@ Cell[BoxData[
          RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
  CellChangeTimes->{
   3.672613163507222*^9, {3.672613510575159*^9, 3.672613526341509*^9}, 
-   3.6726148432204123`*^9}]
+   3.6726148432204123`*^9, 3.6856449382709723`*^9, 3.6856450521852922`*^9, 
+   3.685645117175983*^9, {3.685645193010569*^9, 3.685645219240745*^9}}]
 }, Open  ]],
 
 Cell[TextData[StyleBox["\[CapitalOmega] shock plotting, ",
@@ -3209,116 +2804,111 @@ Cell[TextData[StyleBox["\[CapitalOmega] shock plotting, ",
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"Freedonia\[CapitalOmega]SHOCK", " ", "=", 
+  RowBox[{"FreedoniaOSHOCK", " ", "=", 
    RowBox[{
-    RowBox[{
-    "Import", "[", "\"\<dataFreedonia\[CapitalOmega]SHOCK.mx\>\"", "]"}], " ",
-     "//", " ", "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Import", "[", "\"\<dataFreedoniaOSHOCK.mx\>\"", "]"}], " ", "//",
+     " ", "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Merika\[CapitalOmega]SHOCK", " ", "=", 
+  RowBox[{"MerikaOSHOCK", " ", "=", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<dataMerika\[CapitalOmega]SHOCK.mx\>\"", "]"}],
-     " ", "//", " ", "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Import", "[", "\"\<dataMerikaOSHOCK.mx\>\"", "]"}], " ", "//", 
+    " ", "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Kleptopia\[CapitalOmega]SHOCK", "=", 
+  RowBox[{"KleptopiaOSHOCK", "=", 
    RowBox[{
-    RowBox[{
-    "Import", "[", "\"\<dataKleptopia\[CapitalOmega]SHOCK.mx\>\"", "]"}], "//",
-     "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Import", "[", "\"\<dataKleptopiaOSHOCK.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Cathay\[CapitalOmega]SHOCK", "=", 
+  RowBox[{"CathayOSHOCK", "=", 
    RowBox[{
-    RowBox[{"Import", "[", "\"\<dataCathay\[CapitalOmega]SHOCK.mx\>\"", "]"}],
-     "//", "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Import", "[", "\"\<dataCathayOSHOCK.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Rentistan\[CapitalOmega]SHOCK", "=", 
+  RowBox[{"RentistanOSHOCK", "=", 
    RowBox[{
-    RowBox[{
-    "Import", "[", "\"\<dataRentistan\[CapitalOmega]SHOCK.mx\>\"", "]"}], "//",
-     "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Import", "[", "\"\<dataRentistanOSHOCK.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Develpolus\[CapitalOmega]SHOCK", "=", 
+  RowBox[{"DevelpolusOSHOCK", "=", 
    RowBox[{
-    RowBox[{
-    "Import", "[", "\"\<dataDevelpolus\[CapitalOmega]SHOCK.mx\>\"", "]"}], "//",
-     "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Import", "[", "\"\<dataDevelpolusOSHOCK.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Bellicostia\[CapitalOmega]SHOCK", "=", 
+  RowBox[{"BellicostiaOSHOCK", "=", 
    RowBox[{
-    RowBox[{
-    "Import", "[", "\"\<dataBellicostia\[CapitalOmega]SHOCK.mx\>\"", "]"}], "//",
-     "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+    RowBox[{"Import", "[", "\"\<dataBellicostiaOSHOCK.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Hippieberg\[CapitalOmega]SHOCK", "=", 
+  RowBox[{"HippiebergOSHOCK", "=", 
    RowBox[{
-    RowBox[{
-    "Import", "[", "\"\<dataHippieberg\[CapitalOmega]SHOCK.mx\>\"", "]"}], "//",
-     "Dataset"}]}], ";"}]}], "Input",
+    RowBox[{"Import", "[", "\"\<dataHippiebergOSHOCK.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.672612980421198*^9, 3.6726130142136717`*^9}, 
    3.672613550264583*^9, 3.672613614814622*^9, {3.672658254590952*^9, 
    3.672658283116098*^9}, {3.672658443403738*^9, 3.672658469803804*^9}, {
-   3.67265867874115*^9, 3.672658680333159*^9}}],
+   3.67265867874115*^9, 3.672658680333159*^9}, {3.68564626920396*^9, 
+   3.685646302268426*^9}}],
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"Freedonia\[CapitalOmega]SHOCK", " ", "=", " ", 
-   RowBox[{"Freedonia\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"FreedoniaOSHOCK", " ", "=", " ", 
+   RowBox[{"FreedoniaOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Merika\[CapitalOmega]SHOCK", " ", "=", " ", 
-   RowBox[{"Merika\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"MerikaOSHOCK", " ", "=", " ", 
+   RowBox[{"MerikaOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Kleptopia\[CapitalOmega]SHOCK", " ", "=", " ", 
-   RowBox[{"Kleptopia\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"KleptopiaOSHOCK", " ", "=", " ", 
+   RowBox[{"KleptopiaOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Cathay\[CapitalOmega]SHOCK", "=", " ", 
-   RowBox[{"Cathay\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"CathayOSHOCK", "=", " ", 
+   RowBox[{"CathayOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Rentistan\[CapitalOmega]SHOCK", "=", " ", 
-   RowBox[{"Rentistan\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"RentistanOSHOCK", "=", " ", 
+   RowBox[{"RentistanOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Develpolus\[CapitalOmega]SHOCK", "=", " ", 
-   RowBox[{"Develpolus\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"DevelpolusOSHOCK", "=", " ", 
+   RowBox[{"DevelpolusOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Bellicostia\[CapitalOmega]SHOCK", "=", " ", 
-   RowBox[{"Bellicostia\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"BellicostiaOSHOCK", "=", " ", 
+   RowBox[{"BellicostiaOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Hippieberg\[CapitalOmega]SHOCK", "=", " ", 
-   RowBox[{"Hippieberg\[CapitalOmega]SHOCK", "/.", 
+  RowBox[{"HippiebergOSHOCK", "=", " ", 
+   RowBox[{"HippiebergOSHOCK", "/.", 
     RowBox[{
      RowBox[{"ScientificForm", "[", 
       RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
   ";"}]}], "Input",
  CellChangeTimes->{{3.6726130541249313`*^9, 3.672613096427991*^9}, {
   3.672658306401094*^9, 3.67265835296786*^9}, {3.672658473177986*^9, 
-  3.672658500299941*^9}}],
+  3.672658500299941*^9}, {3.68564630474074*^9, 3.6856463314757338`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -3328,35 +2918,35 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{
-      RowBox[{"Freedonia\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"FreedoniaOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"Merika\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"MerikaOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"Kleptopia\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"KleptopiaOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], " ", ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"Cathay\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"CathayOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"Rentistan\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"RentistanOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"Develpolus\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"DevelpolusOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"Bellicostia\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"BellicostiaOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
-      RowBox[{"Hippieberg\[CapitalOmega]SHOCK", "[", 
+      RowBox[{"HippiebergOSHOCK", "[", 
        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], "}"}], ",", 
    RowBox[{"PlotLegends", "\[Rule]", 
     RowBox[{"{", 
@@ -3383,7 +2973,8 @@ Cell[BoxData[
   "]"}]], "Input",
  CellChangeTimes->{{3.672613118310802*^9, 3.672613150860641*^9}, {
   3.672613523713516*^9, 3.672613529351377*^9}, {3.6726583592810497`*^9, 
-  3.672658392003055*^9}, {3.6726585032835617`*^9, 3.672658524699811*^9}}],
+  3.672658392003055*^9}, {3.6726585032835617`*^9, 3.672658524699811*^9}, {
+  3.685646335117385*^9, 3.685646346749131*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -5781,9 +5372,9 @@ Cell[BoxData[
 }, Open  ]]
 },
 WindowSize->{1106, 778},
-WindowMargins->{{36, Automatic}, {Automatic, 0}},
-FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
-2016)",
+WindowMargins->{{Automatic, 60}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -5799,64 +5390,64 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 563, 10, 54, "Input"],
-Cell[1146, 34, 138, 1, 32, "Output"]
+Cell[1146, 34, 165, 2, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1321, 40, 113, 1, 32, "Input"],
-Cell[1437, 43, 136, 1, 32, "Output"]
+Cell[1348, 41, 113, 1, 32, "Input"],
+Cell[1464, 44, 161, 2, 32, "Output"]
 }, Open  ]],
-Cell[1588, 47, 157, 3, 30, "Text"],
-Cell[1748, 52, 1730, 45, 180, "Input"],
-Cell[3481, 99, 138, 1, 30, "Text"],
-Cell[3622, 102, 2078, 60, 180, "Input"],
-Cell[5703, 164, 251, 5, 30, "Text"],
+Cell[1640, 49, 157, 3, 30, "Text"],
+Cell[1800, 54, 1730, 45, 180, "Input"],
+Cell[3533, 101, 138, 1, 30, "Text"],
+Cell[3674, 104, 2078, 60, 180, "Input"],
+Cell[5755, 166, 251, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[5979, 173, 2683, 72, 222, "Input"],
-Cell[8665, 247, 21955, 447, 236, "Output"]
+Cell[6031, 175, 2683, 72, 222, "Input"],
+Cell[8717, 249, 21955, 447, 236, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30657, 699, 2434, 66, 222, "Input"],
-Cell[33094, 767, 18312, 371, 236, "Output"]
+Cell[30709, 701, 2434, 66, 222, "Input"],
+Cell[33146, 769, 18312, 371, 236, "Output"]
 }, Open  ]],
-Cell[51421, 1141, 162, 2, 30, "Text"],
+Cell[51473, 1143, 162, 2, 30, "Text"],
 Cell[CellGroupData[{
-Cell[51608, 1147, 1099, 28, 75, "Input"],
-Cell[52710, 1177, 9129, 186, 250, "Output"]
+Cell[51660, 1149, 1099, 28, 75, "Input"],
+Cell[52762, 1179, 9129, 186, 216, "Output"]
 }, Open  ]],
-Cell[61854, 1366, 155, 2, 30, "Text"],
-Cell[62012, 1370, 1599, 42, 180, "Input"],
-Cell[63614, 1414, 1819, 48, 180, "Input"],
+Cell[61906, 1368, 155, 2, 30, "Text"],
+Cell[62064, 1372, 1599, 42, 180, "Input"],
+Cell[63666, 1416, 1819, 48, 180, "Input"],
 Cell[CellGroupData[{
-Cell[65458, 1466, 2254, 58, 222, "Input"],
-Cell[67715, 1526, 32516, 674, 246, "Output"]
+Cell[65510, 1468, 2254, 58, 222, "Input"],
+Cell[67767, 1528, 32516, 674, 246, "Output"]
 }, Open  ]],
-Cell[100246, 2203, 245, 4, 30, "Text"],
-Cell[100494, 2209, 2768, 92, 180, "Input"],
-Cell[103265, 2303, 3408, 122, 180, "Input"],
+Cell[100298, 2205, 245, 4, 30, "Text"],
+Cell[100546, 2211, 1976, 48, 180, "Input"],
+Cell[102525, 2261, 2293, 62, 180, "Input"],
 Cell[CellGroupData[{
-Cell[106698, 2429, 3213, 95, 264, "Input"],
-Cell[109914, 2526, 32516, 674, 246, "Output"]
+Cell[104843, 2327, 2804, 74, 264, "Input"],
+Cell[107650, 2403, 19039, 392, 244, "Output"]
 }, Open  ]],
-Cell[142445, 3203, 300, 4, 30, "Text"],
-Cell[142748, 3209, 1998, 50, 180, "Input"],
-Cell[144749, 3261, 2305, 59, 180, "Input"],
+Cell[126704, 2798, 300, 4, 30, "Text"],
+Cell[127007, 2804, 1793, 45, 180, "Input"],
+Cell[128803, 2851, 2128, 59, 180, "Input"],
 Cell[CellGroupData[{
-Cell[147079, 3324, 2537, 61, 264, "Input"],
-Cell[149619, 3387, 32516, 674, 246, "Output"]
+Cell[130956, 2914, 2474, 62, 264, "Input"],
+Cell[133433, 2978, 32516, 674, 246, "Output"]
 }, Open  ]],
-Cell[182150, 4064, 335, 5, 30, "Text"],
-Cell[182488, 4071, 1763, 44, 180, "Input"],
-Cell[184254, 4117, 2145, 59, 180, "Input"],
+Cell[165964, 3655, 335, 5, 30, "Text"],
+Cell[166302, 3662, 1763, 44, 180, "Input"],
+Cell[168068, 3708, 2145, 59, 180, "Input"],
 Cell[CellGroupData[{
-Cell[186424, 4180, 2468, 62, 264, "Input"],
-Cell[188895, 4244, 32516, 674, 246, "Output"]
+Cell[170238, 3771, 2468, 62, 264, "Input"],
+Cell[172709, 3835, 32516, 674, 246, "Output"]
 }, Open  ]],
-Cell[221426, 4921, 396, 6, 30, "Text"],
-Cell[221825, 4929, 1813, 45, 180, "Input"],
-Cell[223641, 4976, 2194, 60, 180, "Input"],
+Cell[205240, 4512, 396, 6, 30, "Text"],
+Cell[205639, 4520, 1813, 45, 180, "Input"],
+Cell[207455, 4567, 2194, 60, 180, "Input"],
 Cell[CellGroupData[{
-Cell[225860, 5040, 2524, 63, 264, "Input"],
-Cell[228387, 5105, 32516, 674, 246, "Output"]
+Cell[209674, 4631, 2524, 63, 264, "Input"],
+Cell[212201, 4696, 32516, 674, 246, "Output"]
 }, Open  ]]
 }
 ]

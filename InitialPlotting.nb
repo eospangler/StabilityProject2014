@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    332459,       6798]
-NotebookOptionsPosition[    328945,       6696]
-NotebookOutlinePosition[    329304,       6712]
-CellTagsIndexPosition[    329261,       6709]
+NotebookDataLength[    333157,       6795]
+NotebookOptionsPosition[    330907,       6727]
+NotebookOutlinePosition[    331266,       6743]
+CellTagsIndexPosition[    331223,       6740]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -164,16 +164,72 @@ Cell[BoxData[{
   3.672498635234902*^9}, {3.672507406079191*^9, 3.672507417340949*^9}, {
   3.674388852711625*^9, 3.6743888593096857`*^9}}],
 
-Cell["\<\
-The plots are a little two close together. I\[CloseCurlyQuote]m going to have \
-to break them up for clarity. I\[CloseCurlyQuote]m thinking 3 different \
-plots. \
-\>", "Text",
- CellChangeTimes->{{3.683500585408207*^9, 3.683500619773246*^9}}],
-
 Cell[CellGroupData[{
 
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Freedonia", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+     RowBox[{
+      RowBox[{"Merika", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Cathay", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], 
+    RowBox[{"(*", 
+     RowBox[{",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Rentistan", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Develpolus", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Bellicostia", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Hippieberg", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], "*)"}], "}"}], 
+   ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Freedonia\>\"", ",", "\"\<Merika\>\"", ",", "\"\<Cathay\>\""}], 
+     RowBox[{"(*", 
+      RowBox[{
+      ",", "\"\<Rentistan\>\"", ",", "\"\<Develpolus\>\"", ",", 
+       "\"\<Bellicostia\>\"", ",", "\"\<Hippieberg\>\""}], "*)"}], "}"}]}], 
+   ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{"Green", ",", "Blue", ",", "Pink"}], 
+     RowBox[{"(*", 
+      RowBox[{",", "Orange", ",", "Purple", ",", "Magenta", ",", "Brown"}], 
+      "*)"}], "}"}]}], ",", 
+   RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", "\[IndentingNewLine]", 
+   
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<Stability with low initial dissent\>\"", ",", " ", 
+        RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}]}], ","}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Time\>\"", ",", 
+      "\"\<\!\(\*SubscriptBox[\(\[CapitalLambda]\), \(t\)]\)\>\""}], 
+     "}"}]}]}], "]"}], "\[IndentingNewLine]", 
  RowBox[{"ListLinePlot", "[", 
   RowBox[{
    RowBox[{"{", 
@@ -236,15 +292,42 @@ Cell[BoxData[
      RowBox[{
      "\"\<Time\>\"", ",", 
       "\"\<\!\(\*SubscriptBox[\(\[CapitalLambda]\), \(t\)]\)\>\""}], 
-     "}"}]}]}], "]"}]], "Input",
+     "}"}]}]}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Kleptopia", "[", 
+      RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], " ", "}"}], ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"{", "\"\<Kleptopia\>\"", "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", "Red", "}"}]}], ",", 
+   RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", "\[IndentingNewLine]", 
+   
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"PlotLabel", "\[Rule]", 
+      RowBox[{"Style", "[", 
+       RowBox[{"\"\<Stability with low initial dissent\>\"", ",", " ", 
+        RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}]}], ","}], "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Time\>\"", ",", 
+      "\"\<\!\(\*SubscriptBox[\(\[CapitalLambda]\), \(t\)]\)\>\""}], 
+     "}"}]}]}], "]"}]}], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQA2IQ/WGj+JzYmNeO8usjFoDoA0svbgXRHJc99oHox791
+1:eJxTTMoPSmViYGCQAGIQ/WGj+JzYmNeO8usjFoDoA0svbgXRHJc99oHox791
 DoHon+uNwXRnwIzG3UD63uMfTSD69OelgnuAdMq9NB0QfYKTxQRET3r1DUw/
 mZeyF0RfKso5AqJPRT9vOwCkd4nHdYDoTUKxfSCa5UfpNBDde3HxLBC9yjNl
 DoiO8k05eQhIOy38ehpEG+w8/RBEe2mmfADRczg9DL4A6YZ3SUYgOjJ+w4zw
 BKD7DQ7MAtG31Y7s/JL22vH8lJpdIJrlY2jKjkKgOS0tqSD6rZtWHYjOevC7
 BUSHHcnoBNEC/qe7QLTMt+oJINom7zCYjqsXnQGi/052mwWiLbnuXAHRyzpX
-XQXRv7+n3gPR/+TmPwTRAJ5YxG4=
+XQXRv7+n3gPR/+TmPwTRLYcjH3xree0Y8NvsEYgOY0h9DaI9Xja8B9EAdf/Y
+MQ==
   "]],
 
 Cell[BoxData[
@@ -699,73 +782,11 @@ mbQT
 
 Cell[CellGroupData[{
 
-Cell[BoxData[
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{
-      RowBox[{"Freedonia", "[", 
-       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
-     RowBox[{
-      RowBox[{"Merika", "[", 
-       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"Cathay", "[", 
-       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], 
-    RowBox[{"(*", 
-     RowBox[{",", "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Rentistan", "[", 
-        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Develpolus", "[", 
-        RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Bellicostia", "[", 
-        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
-      "\[IndentingNewLine]", 
-      RowBox[{
-       RowBox[{"Hippieberg", "[", 
-        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], "*)"}], "}"}], 
-   ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<Freedonia\>\"", ",", "\"\<Merika\>\"", ",", "\"\<Cathay\>\""}], 
-     RowBox[{"(*", 
-      RowBox[{
-      ",", "\"\<Rentistan\>\"", ",", "\"\<Develpolus\>\"", ",", 
-       "\"\<Bellicostia\>\"", ",", "\"\<Hippieberg\>\""}], "*)"}], "}"}]}], 
-   ",", 
-   RowBox[{"PlotStyle", "->", 
-    RowBox[{"{", 
-     RowBox[{"Green", ",", "Blue", ",", "Pink"}], 
-     RowBox[{"(*", 
-      RowBox[{",", "Orange", ",", "Purple", ",", "Magenta", ",", "Brown"}], 
-      "*)"}], "}"}]}], ",", 
-   RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", "\[IndentingNewLine]", 
-   
-   RowBox[{"(*", 
-    RowBox[{
-     RowBox[{"PlotLabel", "\[Rule]", 
-      RowBox[{"Style", "[", 
-       RowBox[{"\"\<Stability with low initial dissent\>\"", ",", " ", 
-        RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}]}], ","}], "*)"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
-   RowBox[{"AxesLabel", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<Time\>\"", ",", 
-      "\"\<\!\(\*SubscriptBox[\(\[CapitalLambda]\), \(t\)]\)\>\""}], 
-     "}"}]}]}], "]"}]], "Input",
+Cell[BoxData["\[IndentingNewLine]"], "Input",
  CellChangeTimes->{{3.683500795950177*^9, 3.683500806660405*^9}, {
    3.6835008724928226`*^9, 3.6835009072196903`*^9}, {3.683501751697473*^9, 
-   3.683501755384822*^9}, 3.683501856406699*^9}],
+   3.683501755384822*^9}, 3.683501856406699*^9, {3.693590265030609*^9, 
+   3.6935902781243563`*^9}}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -1138,44 +1159,7 @@ A7fF9d/6/QfzMMGU
        RowBox[{"Placed", "[", 
          RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
  CellChangeTimes->{3.6835008091849747`*^9, 3.683500909377488*^9, 
-  3.683501768063846*^9, 3.68350186957303*^9}]
-}, Open  ]],
-
-Cell["The last plot, just Kleptopia  ", "Text",
- CellChangeTimes->{{3.683500660225834*^9, 3.683500666505385*^9}, {
-  3.683500700525214*^9, 3.683500707948565*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{
-     RowBox[{"Kleptopia", "[", 
-      RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], " ", "}"}], ",", 
-   RowBox[{"PlotLegends", "\[Rule]", 
-    RowBox[{"{", "\"\<Kleptopia\>\"", "}"}]}], ",", 
-   RowBox[{"PlotStyle", "->", 
-    RowBox[{"{", "Red", "}"}]}], ",", 
-   RowBox[{"GridLines", "\[Rule]", "Automatic"}], ",", "\[IndentingNewLine]", 
-   
-   RowBox[{"(*", 
-    RowBox[{
-     RowBox[{"PlotLabel", "\[Rule]", 
-      RowBox[{"Style", "[", 
-       RowBox[{"\"\<Stability with low initial dissent\>\"", ",", " ", 
-        RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}]}], ","}], "*)"}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
-   RowBox[{"AxesLabel", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-     "\"\<Time\>\"", ",", 
-      "\"\<\!\(\*SubscriptBox[\(\[CapitalLambda]\), \(t\)]\)\>\""}], 
-     "}"}]}]}], "]"}]], "Input",
- CellChangeTimes->{{3.683500715312127*^9, 3.683500777071415*^9}, {
-   3.6835017596099577`*^9, 3.683501762656201*^9}, 3.6835018635095797`*^9}],
+  3.683501768063846*^9, 3.68350186957303*^9}],
 
 Cell[BoxData[
  TemplateBox[{GraphicsBox[{{}, {{{}, {}, {
@@ -1311,11 +1295,12 @@ PzLeAQ==
                     True, FrameStyle -> RGBColor[0.6666666666666666, 0., 0.], 
                     FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
                     Dynamic[{
-                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
-                    AbsoluteCurrentValue[Magnification]}]], 
-                    "RGBColor[1, 0, 0]"], Appearance -> None, BaseStyle -> {},
-                    BaselinePosition -> Baseline, DefaultBaseStyle -> {}, 
-                   ButtonFunction :> With[{Typeset`box$ = EvaluationBox[]}, 
+                    Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}]], "RGBColor[1, 0, 0]"], Appearance -> 
+                   None, BaseStyle -> {}, BaselinePosition -> Baseline, 
+                   DefaultBaseStyle -> {}, ButtonFunction :> 
+                   With[{Typeset`box$ = EvaluationBox[]}, 
                     If[
                     Not[
                     AbsoluteCurrentValue["Deployed"]], 
@@ -1366,6 +1351,260 @@ PzLeAQ==
    3.683501764924911*^9, 3.683501865467749*^9}]
 }, Open  ]],
 
+Cell[TextData[StyleBox["Plotting of Initial High Dissent",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{{3.693589824292292*^9, 3.693589848819025*^9}, {
+  3.69358989184618*^9, 3.693589896066774*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"FreedoniaHD", " ", "=", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<dataFreedoniaHD.mx\>\"", "]"}], " ", "//", 
+    " ", "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MerikaHD", " ", "=", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<dataMerikaHD.mx\>\"", "]"}], " ", "//", " ", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"KleptopiaHD", "=", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<dataKleptopiaHD.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CathayHD", "=", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<dataCathayHD.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"RentistanHD", "=", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<dataRentistanHD.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DevelpolusHD", "=", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<dataDevelpolusHD.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"BellicostiaHD", "=", 
+   RowBox[{
+    RowBox[{"Import", "[", "\"\<dataBellicostiaHD.mx\>\"", "]"}], "//", 
+    "Dataset"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"HippiebergHD", "=", 
+    RowBox[{
+     RowBox[{"Import", "[", "\"\<dataHippiebergHD.mx\>\"", "]"}], "//", 
+     "Dataset"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"FreedoniaHD", " ", "=", " ", 
+   RowBox[{"FreedoniaHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"MerikaHD", " ", "=", " ", 
+   RowBox[{"MerikaHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"KleptopiaHD", " ", "=", " ", 
+   RowBox[{"KleptopiaHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"CathayHD", "=", " ", 
+   RowBox[{"CathayHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"RentistanHD", "=", " ", 
+   RowBox[{"RentistanHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DevelpolusHD", "=", " ", 
+   RowBox[{"DevelpolusHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"BellicostiaHD", "=", " ", 
+   RowBox[{"BellicostiaHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"HippiebergHD", "=", " ", 
+   RowBox[{"HippiebergHD", "/.", 
+    RowBox[{
+     RowBox[{"ScientificForm", "[", 
+      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}], 
+  ";"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.6935898986959133`*^9, 3.693589978101656*^9}}],
+
+Cell[BoxData[{
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"FreedoniaHD", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+     RowBox[{
+      RowBox[{"MerikaHD", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], 
+     RowBox[{"(*", 
+      RowBox[{",", 
+       RowBox[{
+        RowBox[{"Kleptopia", "[", 
+         RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}]}], "*)"}], 
+     " ", ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"CathayHD", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], 
+    RowBox[{"(*", 
+     RowBox[{",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"RentistanRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"DevelpolusRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"BellicostiaRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"HippiebergRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], "*)"}], "}"}], 
+   ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Freedonia\>\"", ",", "\"\<Merika\>\"", ",", 
+      RowBox[{"(*", 
+       RowBox[{"\"\<Kleptopia\>\"", ","}], "*)"}], "\"\<Cathay\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{"Green", ",", "Blue", 
+      RowBox[{"(*", 
+       RowBox[{",", "Red"}], "*)"}], ",", "Pink"}], 
+     RowBox[{"(*", 
+      RowBox[{
+      ",", "Orange", ",", "Purple", ",", "Brown", ",", " ", "Magenta"}], 
+      "*)"}], "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotLabel", "\[Rule]", 
+    RowBox[{"Style", "[", 
+     RowBox[{"\"\<Stability with R shock\>\"", ",", " ", 
+      RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Time\>\"", ",", "\"\<Stability\>\""}], "}"}]}], ",", " ", 
+   RowBox[{"GridLines", "\[Rule]", "Automatic"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"(*", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"FreedoniaRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+      RowBox[{
+       RowBox[{"MerikaRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+      RowBox[{
+       RowBox[{"KleptopiaRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], " ", ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"CathayRSHOCK", "[", 
+        RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ","}], "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"RentistanHD", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"DevelpolusHD", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"BellicostiaHD", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"HippiebergHD", "[", 
+       RowBox[{"All", ",", "3"}], "]"}], "//", "Normal"}]}], "}"}], ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"(*", 
+      RowBox[{
+      "\"\<Freedonia\>\"", ",", "\"\<Merika\>\"", ",", "\"\<Kleptopia\>\"", 
+       ",", "\"\<Cathay\>\"", ","}], "*)"}], 
+     RowBox[{
+     "\"\<Rentistan\>\"", ",", "\"\<Develpolus\>\"", ",", 
+      "\"\<Bellicostia\>\"", ",", "\"\<Hippieberg\>\""}], "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", 
+     RowBox[{"(*", 
+      RowBox[{"Green", ",", "Blue", ",", "Red", ",", "Pink", ","}], "*)"}], 
+     RowBox[{"Orange", ",", "Purple", ",", "Brown", ",", " ", "Magenta"}], 
+     "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotLabel", "\[Rule]", 
+    RowBox[{"Style", "[", 
+     RowBox[{"\"\<Stability with R shock\>\"", ",", " ", 
+      RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Time\>\"", ",", "\"\<Stability\>\""}], "}"}]}], ",", 
+   RowBox[{"GridLines", "\[Rule]", "Automatic"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"ListLinePlot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"KleptopiaHD", "[", 
+      RowBox[{"All", ",", "3"}], "]"}], " ", "//", "Normal"}], " ", "}"}], 
+   ",", 
+   RowBox[{"PlotLegends", "\[Rule]", 
+    RowBox[{"{", "\"\<Kleptopia\>\"", "}"}]}], ",", 
+   RowBox[{"PlotStyle", "->", 
+    RowBox[{"{", "Red", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotLabel", "\[Rule]", 
+    RowBox[{"Style", "[", 
+     RowBox[{"\"\<Stability with R shock\>\"", ",", " ", 
+      RowBox[{"FontSize", "\[Rule]", "12"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotRange", "\[Rule]", "Full"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Time\>\"", ",", "\"\<Stability\>\""}], "}"}]}], ",", 
+   RowBox[{"GridLines", "\[Rule]", "Automatic"}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.693590080454769*^9, 3.693590197060639*^9}}],
+
 Cell[TextData[StyleBox["Initial Plotting with a R shock, ",
  FontWeight->"Bold"]], "Text",
  CellChangeTimes->{{3.67261290821944*^9, 3.672612918550116*^9}}],
@@ -1413,8 +1652,6 @@ Cell[BoxData[{
     "Dataset"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.672612980421198*^9, 3.6726130142136717`*^9}, 
    3.672613550264583*^9, 3.672613614814622*^9}],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{"FreedoniaRSHOCK", " ", "=", " ", 
@@ -1465,179 +1702,6 @@ Cell[BoxData[{
     RowBox[{"ScientificForm", "[", 
      RowBox[{"n_", ",", "rest___"}], "]"}], "\[Rule]", "n"}]}]}]}], "Input",
  CellChangeTimes->{{3.6726130541249313`*^9, 3.672613096427991*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,47,1,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523659130082*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,47,2,21370627736111556251,"Local"},
-  
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523659215138*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.6915236592572517`*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,48,3,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523659366878*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,48,4,21370627736111556251,"Local"},
-  
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6915236594197083`*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.691523659429974*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,49,5,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6915236595343313`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,49,6,21370627736111556251,"Local"},
-  
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6915236595865803`*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.69152365959726*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,50,7,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.69152365970129*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,50,8,21370627736111556251,"Local"},
-  
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523659755265*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.691523659765883*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,51,9,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.69152365986976*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,51,10,21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523659920979*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.691523659930105*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,52,11,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523660035162*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,52,12,21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523660089402*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.691523660098049*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,53,13,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.69152366020337*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,53,14,21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523660255851*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.691523660265189*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","nomem",
-   "\"The current computation was aborted because there was insufficient \
-memory available to complete the computation.\"",2,54,15,21370627736111556251,
-   "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523660349708*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Throw","sysexc",
-   "\"Uncaught SystemException returned to top level. Can be caught with \
-Catch[\[Ellipsis], _SystemException].\"",2,54,16,21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523660368647*^9}],
-
-Cell[BoxData[
- RowBox[{"$Aborted", "[", "]"}]], "Output",
- CellChangeTimes->{{3.6915236514177217`*^9, 3.691523660379242*^9}}]
-}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -2814,8 +2878,6 @@ Cell[TextData[StyleBox["\[Phi] shock plotting, ",
   3.672658179590869*^9, 3.672658193610507*^9}, {3.672658252259008*^9, 
   3.6726582525153847`*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{"FreedoniaPhiSHOCK", " ", "=", 
@@ -2862,37 +2924,6 @@ Cell[BoxData[{
    3.672658283116098*^9}, {3.672658691308918*^9, 3.672658707191038*^9}, {
    3.685644781571847*^9, 3.685644821281851*^9}, {3.685645021664353*^9, 
    3.685645039324909*^9}, {3.691523959090087*^9, 3.691523966801175*^9}}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Import","nffil",
-   "\"File not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"",2,90,17,
-   21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523983366827*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Dataset`ExtractRawData","dataextr","\"Data extraction failed.\"",2,90,18,
-   21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.691523983388257*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Import","nffil",
-   "\"File not found during \\!\\(\\*RowBox[{\\\"Import\\\"}]\\).\"",2,91,19,
-   21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6915239834117804`*^9}],
-
-Cell[BoxData[
- TemplateBox[{
-  "Dataset`ExtractRawData","dataextr","\"Data extraction failed.\"",2,91,20,
-   21370627736111556251,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.6915239834342327`*^9}]
-}, Open  ]],
 
 Cell[BoxData[{
  RowBox[{
@@ -6723,83 +6754,49 @@ Cell[1662, 49, 157, 3, 30, "Text"],
 Cell[1822, 54, 1730, 45, 180, "Input"],
 Cell[3555, 101, 138, 1, 30, "Text"],
 Cell[3696, 104, 2078, 60, 180, "Input"],
-Cell[5777, 166, 251, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[6053, 175, 2683, 72, 222, "Input"],
-Cell[8739, 249, 21955, 447, 236, "Output"]
+Cell[5799, 168, 5923, 162, 495, "Input"],
+Cell[11725, 332, 21955, 447, 236, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30731, 701, 2434, 66, 222, "Input"],
-Cell[33168, 769, 18312, 371, 236, "Output"]
+Cell[33717, 784, 289, 4, 54, "Input"],
+Cell[34009, 790, 18312, 371, 236, "Output"],
+Cell[52324, 1163, 9151, 187, 216, "Output"]
 }, Open  ]],
-Cell[51495, 1143, 162, 2, 30, "Text"],
+Cell[61490, 1353, 203, 3, 30, "Text"],
+Cell[61696, 1358, 3401, 98, 390, "Input"],
+Cell[65100, 1458, 5560, 147, 495, "Input"],
+Cell[70663, 1607, 155, 2, 30, "Text"],
+Cell[70821, 1611, 1599, 42, 180, "Input"],
+Cell[72423, 1655, 1819, 48, 180, "Input"],
 Cell[CellGroupData[{
-Cell[51682, 1149, 1099, 28, 75, "Input"],
-Cell[52784, 1179, 9129, 186, 216, "Output"]
+Cell[74267, 1707, 5933, 151, 495, "Input"],
+Cell[80203, 1860, 18693, 377, 251, "Output"],
+Cell[98899, 2239, 21621, 441, 251, "Output"],
+Cell[120523, 2682, 9336, 189, 231, "Output"]
 }, Open  ]],
-Cell[61928, 1368, 155, 2, 30, "Text"],
-Cell[62086, 1372, 1599, 42, 180, "Input"],
+Cell[129874, 2874, 245, 4, 30, "Text"],
+Cell[130122, 2880, 1873, 45, 180, "Input"],
+Cell[131998, 2927, 2163, 59, 180, "Input"],
 Cell[CellGroupData[{
-Cell[63710, 1418, 1819, 48, 180, "Input"],
-Cell[65532, 1468, 298, 7, 24, "Message"],
-Cell[65833, 1477, 288, 7, 24, "Message"],
-Cell[66124, 1486, 127, 2, 32, "Output"],
-Cell[66254, 1490, 298, 7, 24, "Message"],
-Cell[66555, 1499, 290, 7, 24, "Message"],
-Cell[66848, 1508, 125, 2, 32, "Output"],
-Cell[66976, 1512, 300, 7, 24, "Message"],
-Cell[67279, 1521, 290, 7, 24, "Message"],
-Cell[67572, 1530, 124, 2, 32, "Output"],
-Cell[67699, 1534, 297, 7, 24, "Message"],
-Cell[67999, 1543, 288, 7, 24, "Message"],
-Cell[68290, 1552, 125, 2, 32, "Output"],
-Cell[68418, 1556, 297, 7, 24, "Message"],
-Cell[68718, 1565, 286, 6, 24, "Message"],
-Cell[69007, 1573, 125, 2, 32, "Output"],
-Cell[69135, 1577, 299, 7, 24, "Message"],
-Cell[69437, 1586, 286, 6, 24, "Message"],
-Cell[69726, 1594, 125, 2, 32, "Output"],
-Cell[69854, 1598, 298, 7, 24, "Message"],
-Cell[70155, 1607, 286, 6, 24, "Message"],
-Cell[70444, 1615, 125, 2, 32, "Output"],
-Cell[70572, 1619, 299, 7, 24, "Message"],
-Cell[70874, 1628, 286, 6, 24, "Message"],
-Cell[71163, 1636, 125, 2, 32, "Output"]
+Cell[134186, 2990, 5284, 130, 474, "Input"],
+Cell[139473, 3122, 13539, 275, 251, "Output"],
+Cell[153015, 3399, 124185, 2074, 251, "Output"],
+Cell[277203, 5475, 20012, 408, 236, "Output"],
+Cell[297218, 5885, 9239, 188, 230, "Output"]
 }, Open  ]],
-Cell[CellGroupData[{
-Cell[71325, 1643, 5933, 151, 495, "Input"],
-Cell[77261, 1796, 18693, 377, 251, "Output"],
-Cell[95957, 2175, 21621, 441, 251, "Output"],
-Cell[117581, 2618, 9336, 189, 231, "Output"]
-}, Open  ]],
-Cell[126932, 2810, 245, 4, 30, "Text"],
-Cell[CellGroupData[{
-Cell[127202, 2818, 1873, 45, 180, "Input"],
-Cell[129078, 2865, 243, 6, 24, "Message"],
-Cell[129324, 2873, 222, 5, 24, "Message"],
-Cell[129549, 2880, 245, 6, 24, "Message"],
-Cell[129797, 2888, 224, 5, 24, "Message"]
-}, Open  ]],
-Cell[130036, 2896, 2163, 59, 180, "Input"],
-Cell[CellGroupData[{
-Cell[132224, 2959, 5284, 130, 474, "Input"],
-Cell[137511, 3091, 13539, 275, 251, "Output"],
-Cell[151053, 3368, 124185, 2074, 285, "Output"],
-Cell[275241, 5444, 20012, 408, 236, "Output"],
-Cell[295256, 5854, 9239, 188, 230, "Output"]
-}, Open  ]],
-Cell[304510, 6045, 300, 4, 30, "Text"],
-Cell[304813, 6051, 1793, 45, 180, "Input"],
-Cell[306609, 6098, 2128, 59, 180, "Input"],
-Cell[308740, 6159, 3839, 100, 432, "Input"],
-Cell[312582, 6261, 335, 5, 30, "Text"],
-Cell[312920, 6268, 1763, 44, 180, "Input"],
-Cell[314686, 6314, 2145, 59, 180, "Input"],
-Cell[316834, 6375, 3846, 100, 432, "Input"],
-Cell[320683, 6477, 396, 6, 30, "Text"],
-Cell[321082, 6485, 1813, 45, 180, "Input"],
-Cell[322898, 6532, 2194, 60, 180, "Input"],
-Cell[325095, 6594, 3846, 100, 432, "Input"]
+Cell[306472, 6076, 300, 4, 30, "Text"],
+Cell[306775, 6082, 1793, 45, 180, "Input"],
+Cell[308571, 6129, 2128, 59, 180, "Input"],
+Cell[310702, 6190, 3839, 100, 432, "Input"],
+Cell[314544, 6292, 335, 5, 30, "Text"],
+Cell[314882, 6299, 1763, 44, 180, "Input"],
+Cell[316648, 6345, 2145, 59, 180, "Input"],
+Cell[318796, 6406, 3846, 100, 432, "Input"],
+Cell[322645, 6508, 396, 6, 30, "Text"],
+Cell[323044, 6516, 1813, 45, 180, "Input"],
+Cell[324860, 6563, 2194, 60, 180, "Input"],
+Cell[327057, 6625, 3846, 100, 432, "Input"]
 }
 ]
 *)

@@ -1,0 +1,2283 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     93995,       2275]
+NotebookOptionsPosition[     93280,       2245]
+NotebookOutlinePosition[     93637,       2261]
+CellTagsIndexPosition[     93594,       2258]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.699123431014835*^9, 3.699123449216456*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"PDF", "[", 
+    RowBox[{
+     RowBox[{"LogNormalDistribution", "[", 
+      RowBox[{"0", ",", "1"}], "]"}], ",", "x"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "5"}], "}"}], ",", 
+   RowBox[{"ColorFunction", "\[Rule]", 
+    RowBox[{"Function", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "y"}], "}"}], ",", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"x", ">", "0.3678794495424417"}], ",", "Red", ",", "Blue"}], 
+       "]"}]}], "]"}]}], ",", 
+   RowBox[{"ColorFunctionScaling", "\[Rule]", "False"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<\!\(\*SubscriptBox[\(x\), \(i\)]\)\>\"", ",", "\"\<logN(0,1)\>\""}],
+      "}"}]}], ",", " ", 
+   RowBox[{"PlotRange", "\[Rule]", "Automatic"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.699122790538807*^9, 3.699122790550289*^9}, {
+   3.6991232594958067`*^9, 3.699123268399304*^9}, {3.6991235824152184`*^9, 
+   3.699123631939061*^9}, {3.6991236640197897`*^9, 3.699123664408341*^9}, {
+   3.6991241252475967`*^9, 3.699124150766625*^9}, {3.699124194481711*^9, 
+   3.6991242087598047`*^9}, {3.6991242476934032`*^9, 3.69912428210846*^9}, {
+   3.699124314030941*^9, 3.6991243329458523`*^9}, {3.69912438823602*^9, 
+   3.699124389139991*^9}, 3.699124461329879*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{GraphicsComplexBox[CompressedData["
+1:eJwVlnk41dsXxo0lJJzqqswphZTmUt4vopLcK1RXqBSKqGQsNxVCIVwdQ5kz
+ixSJ5JrKfEzHOcfY4XxPXENdIWP6nd8f+9l/7L3Xs561P++7lpLt9VN2Anx8
+fF946/97/F3bZVqX7+jErEpTED6auCe5IfHmqEIJbK7ol/g/bUNefnDPNc0G
+qC5I4XHxABzQFjvm2gGXk3JyVdkkXLhbOYV5Xaj787Lg+AwJUSV/1c/72Zh2
+SSnSXeIgTLJRLfkCB5Zpg0Mz1EHY9pj/I9j0BWt3r2apjLJx86O/7XXVETyx
+PvlV43k/Cm6Im8kcH4dCV80r2YYeJN9xGtlx5j/QrdQ04pdYeJC4aDo1NgHH
+cP03US8Y4OtgE2W3J5Hdv6mzLYKOzW72XuZq0/gi9um8x5N2kNPRp8U+/MD1
+zP6SBk4rjLiOf0XenIWpSG7VXCgNJmS4urz8PBh7pJYuljdipNr2Xt3LBSwl
+1eYx7OuhKcWQ0z//Ew+DrT8ZKdVCFNMXeyeXYFCSvmCv/RFHxy1nlC34iLTp
+iirnS9VgVV3mt9TgJ2wSksef11SiKKjGRnGan8hwMn/KdqiAvbA7m0YTIPyk
+uq/obSrHJdc7ReJxgoSkjM/iLe57bHdQpxlfFCLCswKoymQJWqQ1xNwPCBN2
+Lv/Wm40U433eg2cagsuI3Ye0k+UPv8UdfrU/mvqWEfr++S2hTwsh2nv7mEvh
+cuLn+PficxvegJuuFJXoI0L4SJbRilgFiNqyTqjEYgWRn/JR/ETMK4TH2dde
+VBQlbgRFvTging/LKGua+JAo8UQzW2lW9iVmj6TNJZaLESOT2mEmmjngcPW8
+qgLFib2ax15oBmQh5bDWhuaLK4lTDbvydHsz8DLAXcphmwQRpMxMVHJJR6DF
+pROC0xJEjuB2v9NKadjTm5wV2LyK2HvbWk+8IxUxW5+9bD4hSZh2rWJ9LUiB
+b0VozIkSSSJi+asxmyfJOLnBIq1BRYoY0XByUQhMgq5L7TmpYClijpZeFK2f
+iERZW5WmaSnCM3zHyVi3eKhUZ1BNzkkT898lVGYHniF8W5Vae7k0cS7Xz7L5
+RhzsJ4Xa6tUoxKrfPWRS52NgW/BdMfgJhXj9XPyYWWE0yic3z/36RSH4bSxL
+RS5QsbxnUHVcIQuVkmP8Jcpv4dugYaR1vhrJAaqKzPO9SBRr9JMyaMUYK6Q1
+NJMDx8i/ylvDGdia3SJ8eTkXlZR1sQck+zDQ97lImkqiKUZ1a0XTAP5wfqjH
+OMVBeLt4aE0thXjY6sdWWR6NjoUrUf8pxKJMIUNN+VAEWvMXBVS//QOh5Ljg
+YjcmPDhPJo5aNaO4zE/rcscghq+o5vbzd8LHLmjf6X9JxPgo6Xie74FvqUux
+cwuJ0V6LzBaBAXwsiSrTyeFgrvIXIz2HQoyevP982ioa0s/rBCaYr/GSsiTw
+SLoWaw/3SLd8+oSm8zJUcXU2/DbRJH71tGG79WXSWo/E2PuO1ioFFp6uibFM
+F+ViJFtyaqGiHz1alfSLv5NQ5azTH+RQCF85/wzWayquHXZ3nlEIhnL+9Mng
+2AvYf9jkYHBgGULn6vNqkumIrA+xt/zYiPMrJl+t+n0QW8wXU+wO0nEv/xbj
+AY2EYEGa5NrAbgx7SZ8Q+UJifmnMgRnPxr8lLQP+nRzkHZhbiI6nEH//7nTC
+NSga1BWl1CGHfGjtU03QHqtAg6C/Jh/lIx57bnC19+pHRIzx8SDJNiiw470P
+LHKgnpFZe/wsE2slqsLExbk4/TnqU9xwHwr+yN67y41EryXlSkcnheiLPPWO
+1kuFV65YyXdmClz9PXQON2Zgd0SnnW1OJY5YdZwpWdENy5+RPnsmabgfdihI
+ypCDrL9OFZ2p78SGmE3HxRdJaByLd2Lt60V4l+y+xEISth47Z+Jv1+HoF5cE
+rSU23F//TnfPaIffl6o123xIvGxd6tIeYkH9ucnZGkEuXJ0U5ScmKIRNdE+m
+bjAV8RWhCsKK3nB3O9YjU7sRY4IzFqUdpVDX+ZdpqtyBpENiyZy5Biwj2M+b
+hAdRV28vn8XoQHX3BVbzBxL7G4e8ueu7wYgZ44/7RkIg/N3Rc05smNRYvflt
+hIOgafewcCqFOGxTrHk6IRomribnR/Rzsd9hrs6//z1UHM6WyRyogVw6/HJu
+9UGm/fGXpuxWGNg+o26hc9AgS9EPnWLg8fVWuh+Pl5A5xnZHnz7QvN6LBQaQ
+eLs2fL6RRiGMjouWjE9QYatGCI46JGKdfpxZalUCwqayJm+3VWC/mtP3tbUs
+XLkhVVyuSoOL4xjJlODg2GTZjmd2ndiSPRKdOcmrp+1nekZjD4bv+JgGVJEo
+61oW8DapFgdun/0wE83G4mjYzVLddhSbpY9+uEDC2PCqha8fC6vPjWzs5enV
+WDX+1b8jFOLEWfnT/AlUHGmO2PSDGQl591KXCMu78D8todEW3oSvEfd/Pfx7
+EEH9EarKCXTICzyoXewlQaNeyjCc7MZC3q5Tx3tI3EjKTxoa+wg9J8pJB5fP
+ED2/Mlffow2+i50jw4okQrR0jJeVMSH9wK9Fisdfhb7nf98W0pAl1DLzqfoV
+REWGD6zexoDcXwEvYgS4+OoluU9rZQdGZb+vpEWRkDgXZTNr1AWLH5V215d4
++s9PfTw7SyFk2E99Y92o+PWp3E9R8Sp232qO99vcp2Po0MhpnyuBeuZbl/vW
+7VD1MNLZEtWA4KEbX0w+DyBGSLa34UUHrk1SYqN4fJqxgjSbyS60m0p7j/Hq
++/Bswj65U2wMaeodPDjFgbtZIVP8bwqhJe0WaZoVjez0mOrRgmwom0vHScy8
+Q3uMnuCmpmqsNNPmZo32otdFfc83z1Z8HXkj3FLOQdyZOr78KgZICVvpLSu4
+SF/mRZoa9uGGjlXWl1ASqW40/WONFMLcus/g4SIV6/+mN47rP4fvlnXVvo+j
+ob056mDg5Qrc2Cg02svzpW9Zf5gLVjVD6X32ocyJQchoun4t29UJ2pL1h/Kv
+JP66fi/4ydMe3JkX3bK+nsRVsYnGql21MBzqVLWyZaMiSLOiV6IdZ+WvHfpq
+SkL2vjwl2ZSFpIb1fNd4+R0M6JmzG6IQaV7HRBwzqZh3Mu6dcHgCKaNY2iOj
+mxALP1m/Rr0J/8zGvBq4OYiz645y9a/RUbdG4b4wg8RwqpCV5oduBFqJX2lm
+k5Brjx2a9P2I34bqcvZN94O2kDtvp9+GWQ/R4XkJElbXJldsecSEjOg6Zx0e
+H7JeleYTV1/gnEebyin/XHTrxc/sWeiEkC7fj8e/SLxe8yrArLsdzs/NtTuD
+SPQ/PS67fl0X3ubo+RP8XASsHKS7TVOIGO+StJG7VPRJJCwtMh+g5sO1Ce3J
+o5gNK7gQKEJHPr+M881PPL8dsA5w2sxE+5l7nd5iXNDZFnJTBsnYc3R0PN8+
+FV7vlt/yju7EfwcbGtbOkvARK4y2LmLB94U3d1aYp/fLP60mF56CWVUgfKkp
+EO9Se6/ytdJRYrvyuxOHp88fQWHkOBM3hSqXB/PiH2ze6fPdhoGgDRYye3jv
+dRQ/JzF8urA1YMXXUwskckzt9HwWKUSFiNtOE0cqajoUjc8o/gnvPw5/K/z7
+kc5UTJHa55AS9Il4hnPn2jAiPRJidLEB197q76M2DoAv5Udpz+MOLI8PLSvP
+J8G26RKprO9CaHSE4sw0ibpDEdvvGrDhKbvRQXeOg2sPzBaNIijEO+l/Utry
+osGq+OA+NpyF5vncIt1HxcgsKN6c87Qai91mBtrpvdA5fMfqnk0rGEMZbxrf
+cCAwnfL5nywGzB+56piJcLE7tK7cQL0PYedeHhSMJBGX6nzlYT2F6G3e1Ubn
+j4ZHrfyObwVxULHx2pplEAVprLBZqVmBCV/1w7UNTLw2/C9l05NmbH59Vzlr
+cBD3Go2bm9d34nB22b31Y7z5+0frJb/bPfihwt1r3ESCULH/duznJ/gXeJ8Z
+NWRD+czdIefpNsQ+YjnrGJHwl5+bKNjPQocYH99qnj/vKLwt/4JLITZeFIxL
+eknFGzr7xZR+CIw/LJTvfHYFNI3x3/bPNuJky9nshAuDqHirVGNuRscqhDRb
+tJPwULPYq5zSjeoYXSU33v9OjUiI3T7+ESGGBb8dKe7HjoZFpZmtbdjR7ThW
+KEyiZgVteP9NJjyLRG9p8fg2ivyy7HtSKkKMi7d8lsuGHtuTYTjYiW0qO3O7
+f5JYTf7KJSvasW4hzSL6AQnDXSoLanxd4FNfvy+E548+h+7PvZ6kEEuNjk5r
+/KnQ+HY57JeDLzQKBu8qi+/HBY0QxHzrwJhBjsJOXn+w9d1/2WclE3uDHezE
+ePwJLNxumfJJws3cxuTrZ5LBthg0fXS3E43l73985fFBZoZ5uDxn4XQ/794y
+LoZjjlZOXY2ClHRg6saDflDULT4mVUxHobyzhgFP3ypRl5yn6Uw8cjVpYvHi
+pziuPCdoyIDu+Y2lU7x+nv6hxHfoUhe0JRw8RnjzQco9IYfSeQpx/4qK/K3r
+VEhEvn0lynKFT8VHG78Ly7GzdFwpoYcBZ3EB+iDPjwo5+rvDHVlQ9Z5LzOPx
+lcTfGzxjEIGjp3Y92nzSE1M0GfXfUpno2nexbhevvq5pVTKbVjNwZIfnPUWe
+H6ikr9g7vxAAJ8X3Zpu55og84pduCSbeNE3dauHlu2PHm9mJ0Gg8UY29IDUY
+AvM/8/I7lrFANIo3KPPO27efjR/wZEDFdtsaS149CpU/yeks8fLPEC5Ts6Pi
+fxOTKGw=
+    "], {{}, {}, 
+     TagBox[
+      {RGBColor[0.368417, 0.506779, 0.709798], Thickness[Large], Opacity[1.], 
+       LineBox[{1, 173, 127, 219, 93, 207, 161, 225, 71, 195, 149, 222, 115, 
+        213, 167, 227, 58, 186, 140, 106, 210, 164, 84, 202, 156, 122, 51, 
+        180, 134, 100, 78, 65, 2, 174, 128, 94, 72, 59, 187, 141, 107, 85, 52,
+         181, 135, 101, 79, 199, 153, 119, 66, 191, 145, 111, 89, 3, 175, 129,
+         95, 73, 196, 150, 116, 60, 188, 142, 108, 86, 53, 182, 136, 102, 80, 
+        200, 154, 120, 67, 192, 146, 112, 90, 204, 158, 124, 4, 176, 130, 96, 
+        208, 162, 74, 197, 151, 117, 214, 168, 61, 189, 143, 109, 211, 165, 
+        87, 203, 157, 224, 123, 216, 170, 229, 54, 183, 137, 220, 103, 209, 
+        163, 226, 81, 201, 155, 223, 121, 215, 169, 228, 68, 193, 147, 221, 
+        113, 212, 166, 91, 205, 159, 125, 217, 171, 5, 177, 131, 97, 75, 198, 
+        152, 118, 62, 190, 144, 110, 88, 55, 184, 138, 104, 82, 69, 6, 178, 
+        132, 98, 76, 63, 56, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
+        20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 
+        37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 179, 133, 99, 77, 
+        64, 57, 185, 139, 105, 83, 70, 194, 148, 114, 92, 206, 160, 126, 218, 
+        172, 230, 50},
+        VertexColors->Automatic]},
+      Annotation[#, "Charting`Private`Tag$25748#1"]& ]},
+    VertexColors->CompressedData["
+1:eJztlLENgDAMBC2YhEnYgRGQqNmamhFgARcOb71tHCnNSflcEuWX/dyOSUSu
+d86ijXvFcnRe8+bN/8u992vPGj4ar+rJ8kHlRDtXdk+WDyqH1VesHGt+tHfP
+7snyQeVk+S/ePNq7a5zVP9Hup/sE64PK6T4ZW+fto/GqfYLyse5r5d89H6Ja
+Et4=
+     "]], {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox[
+    "\"\\!\\(\\*SubscriptBox[\\(x\\), \\(i\\)]\\)\"", TraditionalForm], 
+    FormBox["\"logN(0,1)\"", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0., 4.999999897959183}, {0., 0.6577446108643157}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.6991241322426777`*^9, 3.6991241535245533`*^9}, {
+   3.699124197806448*^9, 3.699124210728653*^9}, 3.699124393550205*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FindMaximum", "[", 
+  RowBox[{
+   RowBox[{"PDF", "[", 
+    RowBox[{
+     RowBox[{"LogNormalDistribution", "[", 
+      RowBox[{"0", ",", "1"}], "]"}], ",", "x"}], "]"}], ",", "x"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.699122906263686*^9, 3.699122915486246*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"0.6577446234794568`", ",", 
+   RowBox[{"{", 
+    RowBox[{"x", "\[Rule]", "0.3678794495424417`"}], "}"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{3.69912291648916*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"PDF", "[", 
+    RowBox[{
+     RowBox[{"LogNormalDistribution", "[", 
+      RowBox[{"0", ",", "1"}], "]"}], ",", "x"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "5"}], "}"}], ",", 
+   RowBox[{"ColorFunction", "\[Rule]", 
+    RowBox[{"Function", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "y"}], "}"}], ",", 
+      RowBox[{
+       RowBox[{"ColorData", "[", "\"\<BlueGreenYellow\>\"", "]"}], "[", "x", 
+       "]"}]}], "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"PlotStyle", "\[Rule]", "Thick"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<\!\(\*SubscriptBox[\(x\), \(i\)]\)\>\"", ",", "\"\<logN(0,1)\>\""}],
+      "}"}]}], ",", " ", 
+   RowBox[{"PlotRange", "\[Rule]", "Automatic"}], ",", " ", 
+   RowBox[{"Filling", "->", "Axis"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.699124557939496*^9, 3.699124592180957*^9}, {
+  3.699124690311535*^9, 3.699124759055286*^9}, {3.69912492565301*^9, 
+  3.699124964670079*^9}, {3.69912499561837*^9, 3.6991250409458942`*^9}, {
+  3.699125200035151*^9, 3.699125246506319*^9}, {3.699125276628316*^9, 
+  3.699125304138134*^9}, {3.6991255131765614`*^9, 3.699125518340929*^9}, {
+  3.6991255795594482`*^9, 3.699125584373032*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{GraphicsComplexBox[CompressedData["
+1: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
+RJn0650//2lfZ3AEXNW9sUelOQis/3iUWjVKCEyxUpG29Pcr5+2I/ujBBx2H
+uRNtpZ9Huvb76cbD0q8/cWSWnuN/7k+cL//b+H6ijP9/ynj+oYzff8r4/KOM
+nw9lPN9SxvuHMr4/KOP3kzKeTyjj9UkZn8+U8ftPGecVyvg8o4zvc8p4HqSM
+9ytlfF9RxvM8ZXweUcb3MWU8z1HG+ZIyvm8o43mLMp7XKeO8RBnnQ8qYF1HG
+9zFlPI9SxnmGMs6TlHF+pozvV8p4vqSM8wllnA8pY55AGc8XlPF8TRnnM8o4
+H1PG9zdlPL9SxvmHMuYNlPH8QhnP75Rx/qOM8zdlzD8p4/mSMs5XlHE+p4z5
+CGU8j1HGeYQyzrOUMW+ijOdRyjiPUcZ5njLmKZQxf6OM53HKOI9SxjyDMuZJ
+lPG8SxnnPcqYF1DGfI4ynvcp47xLGfMSyphXUcbzOmWcVylj3kEZ9xGUcd6j
+jHkHZczLKOM8QRnnacqYd1LG+Yoy5guUMZ+ijPMKZZzXKWP+TBnnU8qYz1DG
+fI8yzmeUMZ+gjPksZZw/KWP+QhnnLcqY71HGeZEy5iWUcT6jjPsKyphfUMb8
+jjLOq5QxH6aM8zllzKco4zxLGfN/yphPUMZ8jjLO35Qx/6WM+QFlzM8o47xO
+Gfc5lDEfooz5KGXMJyhj/k4Z8xbKmDdSxv0J5f/PjwhjfkoZ83fKmO9QxnyT
+Mu7XKWN+SRnze8q4/6GM+zfKmPdRxrybMu5LKOM+kzLmnZQx76eM+yLKuK+j
+jPtdypj3UsZ9B2Xcl1HGfSVl3M9Sxr4GZczDKeM+iDLuEynjPpcy7q8p4z6d
+MvZPKGMfhTL2UyhjX4Uy9lcoY5+FMvZbKGPfhTL2XyhjH4Yy9mMoY1+GMvZn
+KGOfhjL2ayhj34Yy9m8oYx+HMvZzKGNfhzL2dyhjn4cy9nsoY9+HMvZ/KGMf
+iDL2gyhjX4gy9ocoY5+IMvaLKGPfiDL2jyhjH4ky9pMoY1+JMvaXKGOfiTL2
+myhj34ky9p8oYx+KMvajKON+lDL2Ayhjv4Qy9nsoY5+JMvarKOP+lTL2Dyhj
+f4Uy9ocoY1+KMu5jKWMfgTL2WShjn4gy7lMpY5+AMvZRKOO+kzLu+ynjvpEy
+9vnQ/wN7bz5G
+    "], {
+     {GrayLevel[0.5], EdgeForm[None], 
+      GraphicsGroupBox[{PolygonBox[{{1, 231, 173}}], 
+        PolygonBox[CompressedData["
+1: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
+         "]]}]}, {{}, {}, 
+      TagBox[
+       {RGBColor[0.368417, 0.506779, 0.709798], Thickness[Large], Opacity[1.],
+         LineBox[{1, 173, 127, 219, 93, 207, 161, 225, 71, 195, 149, 222, 115,
+          213, 167, 227, 58, 186, 140, 106, 210, 164, 84, 202, 156, 122, 51, 
+         180, 134, 100, 78, 65, 2, 174, 128, 94, 72, 59, 187, 141, 107, 85, 
+         52, 181, 135, 101, 79, 199, 153, 119, 66, 191, 145, 111, 89, 3, 175, 
+         129, 95, 73, 196, 150, 116, 60, 188, 142, 108, 86, 53, 182, 136, 102,
+          80, 200, 154, 120, 67, 192, 146, 112, 90, 204, 158, 124, 4, 176, 
+         130, 96, 208, 162, 74, 197, 151, 117, 214, 168, 61, 189, 143, 109, 
+         211, 165, 87, 203, 157, 224, 123, 216, 170, 229, 54, 183, 137, 220, 
+         103, 209, 163, 226, 81, 201, 155, 223, 121, 215, 169, 228, 68, 193, 
+         147, 221, 113, 212, 166, 91, 205, 159, 125, 217, 171, 5, 177, 131, 
+         97, 75, 198, 152, 118, 62, 190, 144, 110, 88, 55, 184, 138, 104, 82, 
+         69, 6, 178, 132, 98, 76, 63, 56, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
+          17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 
+         34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 179, 
+         133, 99, 77, 64, 57, 185, 139, 105, 83, 70, 194, 148, 114, 92, 206, 
+         160, 126, 218, 172, 230, 50},
+         VertexColors->Automatic]},
+       Annotation[#, "Charting`Private`Tag$30797#1"]& ]}},
+    VertexColors->CompressedData["
+1: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
+MMqp5ybl1L2dcuq9mHLqHKacugdSTuU2lFPPNcqpezXl1Hsr5VQeSzl1T6Oc
+ek+knMphKKdyPMqpvJRyao5GOXWvppx6r6ecys0op3JXyql8m3LqPkw59T5O
+OZV3UU7lpZRTcwfKqfcRyqk8hHIqb6Scyqspp+7nlFP5AOVU/kY5NaegnHo/
+opzKZyin8k/Kqfyccmr+Tjn1Pk45lQdSTuXtlFPzGsqp90rKqVyLcio3ppya
+01FOvddTTuWKlFO5PeXU3Idyan5KOZWrUE7lupRTcxPKqbkb5VTOQDmVc1JO
+zREop+atlFM5D+VUzkw5NcehnJoDUk7lMJRTOTDl1JyFcmqviXIq56ScmrNQ
+Ts0xKadyJ8qp3Jtyas5OOZUHUk7NIyin5n2UUzkY5VQOTzm1v0E5lfdSTs2b
+KKfmuZRTeSPl1LyDcmrfgHIqv6Wcmh9RTuWElFPzXMqpHJVyao5DOZU3Uk7t
+QVFOzUcop+azlFM5MOXUvgTlVN5OOTXvo5zKjSmn9n8op+YdlFPzVsqp/Jxy
+av+Bcmq+QDk136ScyuEpp/bWKKfmZZRT83rKqXkH5dT+DOXUnIhyak5NObXf
+RTk1X6Ocmu9TTu3PUE7Nsyin5umUU/vwlFPzccqp/RzKqf03yqn9ScqpOS/l
+1J4J5dQeF+XU3izl1JydcmrPh3Jqj45yag+TcmqfmXJqz4Fyas+KcmqPkXJq
+D5Zyat+YcqqHQjm1l0I5tRdHObV3Sjm1t0w5tR9OObX3TjnV3xG31yNu30fc
+HpC4/SBxe0Pi9onE7RmJ2z8St5ckbl9J3B6TuP0mcXtP4vahxO1JidufErdX
+JW7fStwelrj9LHF7W+L2ucTteYnb/xK3FyZuX0zcHpm4/TJxe2fi9tHE7amJ
+218Tt9cmbt9N3B6cuP04cXtz4vbpxO3Zidu/E7eXJ25fj3JqX5dyqi9AOdXH
+oZzqc1FO9eYop/qAlFP7w5RT/QXKqX4Q5VS/jHKqx0c5tVdMOdVroJzqDVFO
+9c4op/Z+Kad6B5RTvR7KqT1byqk9f8qpPVXKqd7u/wEWn6R+
+     "]], {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox[
+    "\"\\!\\(\\*SubscriptBox[\\(x\\), \\(i\\)]\\)\"", TraditionalForm], 
+    FormBox["\"logN(0,1)\"", TraditionalForm]},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}, "AxesInFront" -> True},
+  PlotRange->{{0., 4.999999897959183}, {0., 0.6577446108643157}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.699124739492549*^9, 3.699124761772933*^9}, {
+   3.699125018256084*^9, 3.699125044636879*^9}, {3.699125208692513*^9, 
+   3.6991252340416803`*^9}, {3.6991252846872272`*^9, 3.6991253066810417`*^9}, 
+   3.699125520453614*^9, 3.699125586239305*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"Sin", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", 
+     RowBox[{"2", " ", "Pi"}]}], "}"}], ",", 
+   RowBox[{"ColorFunction", "\[Rule]", 
+    RowBox[{"Function", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"x", ",", "y"}], "}"}], ",", 
+      RowBox[{"Hue", "[", "x", "]"}]}], "]"}]}], ",", 
+   RowBox[{"Filling", "\[Rule]", "Axis"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.699124494144266*^9, 3.6991245022411547`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{GraphicsComplexBox[CompressedData["
+1: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
+0F7LPi8X0XHe6XR5FscsRreZaH4W0Uk7FgubOznWbBRQJbYT076OrZbr8jh2
+44hNmk+JmFZJnHSdVTmm+yXbIWUNv/7kD00c/lTKcpSnXeL/6VOfm+eHhd+8
+xkotjuTGhZ0hhgdjXi/nv3bpvCljY6Rkbk3v2WbWNWT4u8QuH2/Xkyk2wcOq
+Y+tIxeFNjp9vNRKz2LOzpntIieW0+z778pvJ9wWDw0cUycjeORkjBuW1kpYD
+Otu+xHNk3tjgW0ty5KQj0XZIOP/8Z+rXVht/UZK16024Me85MqcmZc+h4nby
+7cj9lG9DONJXzWVAofIfGWuiLtf5JSU2YVufbApSoXoeMbdDh0pIpF7Z5THH
+VOm7zI1frmnXktLoaYGarTp0epj1vwuG1SxStfGGlr+Abq17/8Q1qJaZeGTN
+miAXUPeMrgtuH5cwWe/4bocChfRfqOmJCeNkrGn6f65T/gnpL+8Wj6p5HBt0
+9VO9+JiIDo3z/vm5kmPzvmz7dU9DTP1fHKCOco69XqjQ8jwiptMci7z7hXAs
+8G+C06oeulS6b1z+gvMy5jNs58IbJ3Xpt8OZz5NGSVnuhkl+dbp69HcfOnT6
+0Dp2paSg37J4fXpi17NhesU5rGxv9PLbNxvImWSvOOtwCamIiouQPWwiq1JP
+7tKbKCPfVg2y8XzRQlSDZ1anWHNkSnCGtpC1kccjPYzm/eSIdUXR7n1vFGTX
+I1HRezlHlhdtXD7q01/yql573Y2THBkl9CsoqOkg6afnV+qclxH/usv+3pkC
+euKPWPIwrI653J/ytnaGkD4tnCCt9pCyY99ks5IfCelogZWj2wsZK3d4sSJ9
+jogOPuU21SGBY15zHp3o/lxEOw7n/D76j18v5/vt3zRPTDNqxj7dUMQxP1Gx
+0+58MT020UiNM+ZY6Pxl6z4u0qUJ0bt1K+ql7MgaFdlfiT7N9x9XnxRwi4kL
+3CpaF7SQWaEBe/PFHFm1KSPSYE4bcTVrPlX8giP53UxCq+YrSKul37q7/Pql
+0Tp8QLz9X9KtIcd/QTJHql9NW+djJKJSqzVjrvtz7KXnwpk68SIa7bqpOKmF
+Y40h3vd7DBVTn/QAp7Qajg0eV53qFS+m++qsc7wcOJZQXfqgxqKVXBycnP11
+H0fEdzICNc3lpOR0vL5+E0cKs33X6q5QkrdW/bzaqzlSJLWzaXUVUTetU7nq
+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
+mDfDDPO/mGFeCzPczwb+HxuHEqY=
+    "], {
+     {GrayLevel[0.5], EdgeForm[None], 
+      GraphicsGroupBox[{PolygonBox[{{432, 26, 844}, {25, 843, 432}}], 
+        PolygonBox[CompressedData["
+1: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
+V23KHIz/D8GxRUc=
+         "]]}]}, {{}, {}, 
+      TagBox[
+       {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
+        Opacity[1.], LineBox[CompressedData["
+1:eJwt1GW4FVUABdAnXdLdj5DulA5pC+yWZxcIShpYoAIKFgiCEoI02N2CLXYr
+2N2KHWt/nz/W2/uce+fcmTMzr7Bo/JhxuxUUFGzxJznCnx/lOs5iFF0oRnFK
+UJJSlKYMIx3zk1zP2exNV8rmeJ/9LDcwiX3oxljz5XhMn8NxlMux5n6RG5nM
+vnSnyHx5Htfncjzls565XXITU9iPCebq8rJ+Az2yvnEFntCv4ASmGTfhbX0l
+FfJ7xr/KzUzlAuNWfKDvz0S9Hq/oS+iZczHena36lczU2/OpfiLT9aa8oy+U
+A7g55yG7862+VA7NOrkG+ZtcJrfIq2QvpukXytas4kPjRXIQGxideybrs5JX
+ja+T/VjHUuPZsgu38FX2R+7FJvbMvsiKLGeb8TWyD/P0WbIDn+kncY7ejHf1
+Vbl2vQff6RWzX/rv8tbsARcZt+EjfUyeFb0Br+k30iv7ZVyJJ/X5nEwlRpv7
+Q96W3+UAeuc8zFfmqewTp1A565v7U97OuRxIH6rkWJ/9Je/gPA6iL1XzPZ/9
+Le/kfA6mH9WoTg1qUova1Pn/3akr61GfBjSkEY2zvs//kXcxg0PoT2HW99m/
+8u48axzKgFy3+So8rV/NqTTJsXlJuSfPAocxMNdtrirP5J5xGk2zXt5r7s3+
+cziDsp65ajyrX8vpNMt65opxn34xRzDJuCGv6zcxOOsbV+e5PGNcqnfkc/2M
+7LnenPf01TTPbxsX5379kqyvt+Vj/Ugm6414Q18g+7NMnyO78rW+RA7JM5tz
+ljVYwfO5DtmXtSwwvkx2YjVfGC+Wg9nIuNx7uUfeRd43vl4OZH3eD+N5sidr
++D7PqByWY7IvsgQP5P7I3szMdcl2fKIfxRS9MW/qy5mrd+MbfUj2Sq/JC/pC
+Ltc786U+Ps+g3oId+hpaZK+MS/KgPoujmWpcyFv6CoaSf+y12J5r40xa5rzM
+leKh3DeOYVh+z1xtXtQXMYFWWd9caR7OnnIsw2mdY82X4ZGcO2MZQRva0o72
+dKAjnXK875flUX02RYzM+Zmrw0u5V0zM+2Lckp36Wubn/xQ/5FmUw9mcPTP+
+D24ev24=
+         "],
+         VertexColors->Automatic]},
+       Annotation[#, "Charting`Private`Tag$26597#1"]& ]}},
+    VertexColors->{
+      Hue[0.], 
+      Hue[0.019628641594536176`], 
+      Hue[0.04090833834702348], 
+      Hue[0.06077786564271804], 
+      Hue[0.08025763168653448], 
+      Hue[0.10138845288830205`], 
+      Hue[0.12110910463327687`], 
+      Hue[0.14248081153620282`], 
+      Hue[0.16346275718725067`], 
+      Hue[0.18303453338150574`], 
+      Hue[0.20425736473371195`], 
+      Hue[0.22407002662912542`], 
+      Hue[0.24349292727266078`], 
+      Hue[0.2645668830741473], 
+      Hue[0.284230669418841], 
+      Hue[0.30554551092148585`], 
+      Hue[0.32647059117225263`], 
+      Hue[0.3459855019662266], 
+      Hue[0.3671514679181518], 
+      Hue[0.38690726441328416`], 
+      Hue[0.4083141160663677], 
+      Hue[0.4293312064675731], 
+      Hue[0.44893812741198574`], 
+      Hue[0.47019610351434954`], 
+      Hue[0.4900439101599206], 
+      Hue[0.5095019555536136], 
+      Hue[0.5306110561052576], 
+      Hue[0.5503099872001089], 
+      Hue[0.5716599734529113], 
+      Hue[0.5926201984538356], 
+      Hue[0.6121702539979672], 
+      Hue[0.63337136470005], 
+      Hue[0.6531623059453399], 
+      Hue[0.6725634859387517], 
+      Hue[0.6936157210901148], 
+      Hue[0.7132577867846852], 
+      Hue[0.7345509076372067], 
+      Hue[0.7544338590329354], 
+      Hue[0.773927049176786], 
+      Hue[0.7950712944785877], 
+      Hue[0.8148053703235966], 
+      Hue[0.8361905013265567], 
+      Hue[0.8571858710776387], 
+      Hue[0.876771071371928], 
+      Hue[0.8980073268241684], 
+      Hue[0.9178334128196161], 
+      Hue[0.9372697375631855], 
+      Hue[0.9583571174647062], 
+      Hue[0.978034327909434], 
+      Hue[1.], 
+      Hue[0.00981432079726809], 
+      Hue[0.15297178436172673`], 
+      Hue[0.1732486452843782], 
+      Hue[0.19364594905760882`], 
+      Hue[0.21416369568141871`], 
+      Hue[0.2337814769508931], 
+      Hue[0.254029905173404], 
+      Hue[0.2743987762464941], 
+      Hue[0.2948880901701635], 
+      Hue[0.31600805104686924`], 
+      Hue[0.33622804656923966`], 
+      Hue[0.35656848494218923`], 
+      Hue[0.6432668353226949], 
+      Hue[0.6628628959420457], 
+      Hue[0.6830896035144333], 
+      Hue[0.7034367539374], 
+      Hue[0.7239043472109459], 
+      Hue[0.7444923833350711], 
+      Hue[0.7641804541048608], 
+      Hue[0.7844991718276869], 
+      Hue[0.8049383324010922], 
+      Hue[0.8254979358250767], 
+      Hue[0.8466881862020976], 
+      Hue[0.9890171639547172], 
+      Hue[0.004907160398634045], 
+      Hue[0.14772629794896477`], 
+      Hue[0.16835570123581445`], 
+      Hue[0.18834024121955728`], 
+      Hue[0.20921053020756533`], 
+      Hue[0.2289257517900093], 
+      Hue[0.2487614162230324], 
+      Hue[0.26948282966032067`], 
+      Hue[0.28955937979450225`], 
+      Hue[0.31077678098417755`], 
+      Hue[0.3313493188707461], 
+      Hue[0.35127699345420793`], 
+      Hue[0.6383191000113724], 
+      Hue[0.6580126009436927], 
+      Hue[0.6778265447265925], 
+      Hue[0.6985262375137574], 
+      Hue[0.7185810669978157], 
+      Hue[0.7395216454861389], 
+      Hue[0.7593071565688981], 
+      Hue[0.7792131105022365], 
+      Hue[0.80000481343984], 
+      Hue[0.8201516530743367], 
+      Hue[0.8414393437643272], 
+      Hue[0.9835257459320755], 
+      Hue[0.17814158933294197`], 
+      Hue[0.19895165689566036`], 
+      Hue[0.21911686115527207`], 
+      Hue[0.2386372021117769], 
+      Hue[0.25929839412377564`], 
+      Hue[0.27931472283266756`], 
+      Hue[0.30021680054582467`], 
+      Hue[0.6677131909403987], 
+      Hue[0.688352662302274], 
+      Hue[0.7083472703610426], 
+      Hue[0.7292276274240762], 
+      Hue[0.7494631211840033], 
+      Hue[0.7690537516408233], 
+      Hue[0.7897852331531373], 
+      Hue[0.8098718513623443], 
+      Hue[0.9945085819773587], 
+      Hue[0.002453580199317022], 
+      Hue[0.14510355474258382`], 
+      Hue[0.16590922921153256`], 
+      Hue[0.18568738730053153`], 
+      Hue[0.20673394747063864`], 
+      Hue[0.22649788920956734`], 
+      Hue[0.2461271717478466], 
+      Hue[0.267024856367234], 
+      Hue[0.2868950246066716], 
+      Hue[0.30816114595283167`], 
+      Hue[0.3289099550214994], 
+      Hue[0.3486312477102173], 
+      Hue[0.6358452323557112], 
+      Hue[0.6555874534445162], 
+      Hue[0.6751950153326721], 
+      Hue[0.6960709793019361], 
+      Hue[0.7159194268912504], 
+      Hue[0.7370362765616728], 
+      Hue[0.7568705078009167], 
+      Hue[0.7765700798395112], 
+      Hue[0.7975380539592137], 
+      Hue[0.8174785116989666], 
+      Hue[0.838814922545442], 
+      Hue[0.9807800369207548], 
+      Hue[0.17569511730866008`], 
+      Hue[0.1962988029766346], 
+      Hue[0.21664027841834538`], 
+      Hue[0.23620933953133502`], 
+      Hue[0.25666414964858986`], 
+      Hue[0.27685674953958084`], 
+      Hue[0.2975524453579941], 
+      Hue[0.6652880434412223], 
+      Hue[0.6857211329083537], 
+      Hue[0.7058920121492213], 
+      Hue[0.7265659873175111], 
+      Hue[0.7469777522595371], 
+      Hue[0.766617102872842], 
+      Hue[0.7871422024904121], 
+      Hue[0.8074050918817183], 
+      Hue[0.9917628729660379], 
+      Hue[0.21168711294449202`], 
+      Hue[0.23135361437045118`], 
+      Hue[0.2513956606982182], 
+      Hue[0.2719408029534074], 
+      Hue[0.7212427071043808], 
+      Hue[0.7420070144106049], 
+      Hue[0.7617438053368795], 
+      Hue[0.7818561411649617], 
+      Hue[0.22159344389219873`], 
+      Hue[0.24106506469221886`], 
+      Hue[0.2619326385989615], 
+      Hue[0.7318892675306414], 
+      Hue[0.7519484901084693], 
+      Hue[0.7714904004088046], 
+      Hue[0.9972542909886795], 
+      Hue[0.0012267900996585112`], 
+      Hue[0.14379218313939332`], 
+      Hue[0.1646859931993916], 
+      Hue[0.18436096034101862`], 
+      Hue[0.2054956561021753], 
+      Hue[0.2252839579193464], 
+      Hue[0.24481004951025367`], 
+      Hue[0.2657958697206906], 
+      Hue[0.2855628470127563], 
+      Hue[0.3068533284371588], 
+      Hue[0.327690273096876], 
+      Hue[0.34730837483822197`], 
+      Hue[0.6346082985278805], 
+      Hue[0.654374879694928], 
+      Hue[0.6738792506357119], 
+      Hue[0.6948433501960255], 
+      Hue[0.7145886068379679], 
+      Hue[0.7357935920994397], 
+      Hue[0.7556521834169261], 
+      Hue[0.7752485645081485], 
+      Hue[0.7963046742189007], 
+      Hue[0.8161419410112817], 
+      Hue[0.8375027119359993], 
+      Hue[0.9794071824150944], 
+      Hue[0.17447188129651914`], 
+      Hue[0.19497237601712172`], 
+      Hue[0.21540198704988203`], 
+      Hue[0.23499540824111403`], 
+      Hue[0.25534702741099696`], 
+      Hue[0.2756277628930375], 
+      Hue[0.2962202677640788], 
+      Hue[0.664075469691634], 
+      Hue[0.6844053682113935], 
+      Hue[0.7046643830433107], 
+      Hue[0.7252351672642284], 
+      Hue[0.745735067797304], 
+      Hue[0.7653987784888514], 
+      Hue[0.7858206871590495], 
+      Hue[0.8061717121414053], 
+      Hue[0.9903900184603776], 
+      Hue[0.21044882157602868`], 
+      Hue[0.23013968308023022`], 
+      Hue[0.25007853846062533`], 
+      Hue[0.27071181630686403`], 
+      Hue[0.7199118870510982], 
+      Hue[0.7407643299483719], 
+      Hue[0.7605254809528887], 
+      Hue[0.7805346258335992], 
+      Hue[0.2203551525237354], 
+      Hue[0.2398511334019979], 
+      Hue[0.2606155163613686], 
+      Hue[0.7305584474773589], 
+      Hue[0.7507058056462362], 
+      Hue[0.770272076024814], 
+      Hue[0.9958814364830191], 
+      Hue[0.2277118204997883], 
+      Hue[0.2474442939854395], 
+      Hue[0.2682538430137773], 
+      Hue[0.7382789610239058], 
+      Hue[0.7580888321849074], 
+      Hue[0.23742327082155598`], 
+      Hue[0.25798127188618275`], 
+      Hue[0.7278968073707937], 
+      Hue[0.7482204367217702], 
+      Hue[0.7678354272568326], 
+      Hue[0.2527127829358111], 
+      Hue[0.743249698872838], 
+      Hue[0.7629621297208702], 
+      Hue[0.2422789959824398], 
+      Hue[0.2632497608365543], 
+      Hue[0.7531911745707024], 
+      Hue[0.9986271454943397], 
+      Hue[0.0006133950498292555], 
+      Hue[0.14313649733779807`], 
+      Hue[0.16407437519332113`], 
+      Hue[0.1836977468612622], 
+      Hue[0.2048765104179436], 
+      Hue[0.2246769922742359], 
+      Hue[0.2441514883914572], 
+      Hue[0.2651813763974189], 
+      Hue[0.28489675821579863`], 
+      Hue[0.30619941967932235`], 
+      Hue[0.32708043213456434`], 
+      Hue[0.3466469384022243], 
+      Hue[0.6339898316139653], 
+      Hue[0.6537685928201339], 
+      Hue[0.6732213682872318], 
+      Hue[0.6942295356430702], 
+      Hue[0.7139231968113265], 
+      Hue[0.7351722498683232], 
+      Hue[0.7550430212249308], 
+      Hue[0.7745878068424673], 
+      Hue[0.7956879843487442], 
+      Hue[0.8154736556674392], 
+      Hue[0.836846606631278], 
+      Hue[0.9787207551622642], 
+      Hue[0.17386026329044868`], 
+      Hue[0.19430916253736527`], 
+      Hue[0.21478284136565037`], 
+      Hue[0.23438844259600355`], 
+      Hue[0.2546884662922005], 
+      Hue[0.2750132695697658], 
+      Hue[0.2955541789671211], 
+      Hue[0.6634691828168399], 
+      Hue[0.6837474858629133], 
+      Hue[0.7040505684903554], 
+      Hue[0.7245697572375873], 
+      Hue[0.7451137255661876], 
+      Hue[0.7647896162968562], 
+      Hue[0.7851599294933682], 
+      Hue[0.8055550222712488], 
+      Hue[0.9897035912075473], 
+      Hue[0.209829675891797], 
+      Hue[0.22953271743511977`], 
+      Hue[0.24941997734182883`], 
+      Hue[0.27009732298359235`], 
+      Hue[0.7192464770244569], 
+      Hue[0.7401429877172554], 
+      Hue[0.7599163187608934], 
+      Hue[0.7798738681679178], 
+      Hue[0.21973600683950373`], 
+      Hue[0.23924416775688742`], 
+      Hue[0.2599569552425721], 
+      Hue[0.7298930374507175], 
+      Hue[0.7500844634151197], 
+      Hue[0.7696629138328187], 
+      Hue[0.9951950092301888], 
+      Hue[0.2271048548546778], 
+      Hue[0.24678573286664302`], 
+      Hue[0.2676393496905057], 
+      Hue[0.7376576187927892], 
+      Hue[0.757479669992912], 
+      Hue[0.23681630517644553`], 
+      Hue[0.2573227107673863], 
+      Hue[0.7272313973441523], 
+      Hue[0.7475990944906536], 
+      Hue[0.7672262650648374], 
+      Hue[0.25205422181701465`], 
+      Hue[0.7426283566417214], 
+      Hue[0.7623529675288749], 
+      Hue[0.2416720303373293], 
+      Hue[0.2625911997177579], 
+      Hue[0.7525698323395859], 
+      Hue[0.9979407182415095], 
+      Hue[0.24546861062905015`], 
+      Hue[0.7562613456089213], 
+      Hue[0.25600558852979344`], 
+      Hue[0.7463564100284206], 
+      Hue[0.2507370995794218], 
+      Hue[0.7413856721794884], 
+      Hue[0.24045809904710838`], 
+      Hue[0.7513271478773528], 
+      Hue[0.24810285510423596`], 
+      Hue[0.7488417789528867], 
+      Hue[0.2533713440546076], 
+      Hue[0.7438710411039545], 
+      Hue[0.24288596162755027`], 
+      Hue[0.7538125168018189], 
+      Hue[0.9993135727471698], 
+      Hue[0.0003066975249146278], 
+      Hue[0.14280865443700047`], 
+      Hue[0.16376856619028593`], 
+      Hue[0.18336614012138397`], 
+      Hue[0.2045669375758278], 
+      Hue[0.22437350945168066`], 
+      Hue[0.243822207832059], 
+      Hue[0.2648741297357831], 
+      Hue[0.2845637138173198], 
+      Hue[0.30587246530040413`], 
+      Hue[0.32677551165340846`], 
+      Hue[0.3463162201842255], 
+      Hue[0.6336805981570075], 
+      Hue[0.653465449382737], 
+      Hue[0.6728924271129918], 
+      Hue[0.6939226283665926], 
+      Hue[0.7135904917980059], 
+      Hue[0.7348615787527648], 
+      Hue[0.7547384401289331], 
+      Hue[0.7742574280096266], 
+      Hue[0.7953796394136659], 
+      Hue[0.8151395129955178], 
+      Hue[0.8365185539789174], 
+      Hue[0.9783775415358491], 
+      Hue[0.17355445428741345`], 
+      Hue[0.19397755579748704`], 
+      Hue[0.21447326852353452`], 
+      Hue[0.23408495977344831`], 
+      Hue[0.25435918573280225`], 
+      Hue[0.27470602290812995`], 
+      Hue[0.2952211345686423], 
+      Hue[0.6631660393794427], 
+      Hue[0.6834185446886732], 
+      Hue[0.7037436612138777], 
+      Hue[0.7242370522242665], 
+      Hue[0.7448030544506292], 
+      Hue[0.7644850352008584], 
+      Hue[0.7848295506605276], 
+      Hue[0.8052466773361704], 
+      Hue[0.9893603775811322], 
+      Hue[0.20952010304968116`], 
+      Hue[0.22922923461256453`], 
+      Hue[0.24909069678243062`], 
+      Hue[0.2697900763219565], 
+      Hue[0.7189137720111363], 
+      Hue[0.739832316601697], 
+      Hue[0.7596117376648958], 
+      Hue[0.7795434893350772], 
+      Hue[0.21942643399738787`], 
+      Hue[0.23894068493433215`], 
+      Hue[0.2596276746831739], 
+      Hue[0.7295603324373969], 
+      Hue[0.7497737922995614], 
+      Hue[0.769358332736821], 
+      Hue[0.9948517956037737], 
+      Hue[0.22680137203212256`], 
+      Hue[0.2464564523072448], 
+      Hue[0.26733210302886984`], 
+      Hue[0.737346947677231], 
+      Hue[0.7571750888969143], 
+      Hue[0.23651282235389026`], 
+      Hue[0.2569934302079881], 
+      Hue[0.7268986923308317], 
+      Hue[0.7472884233750953], 
+      Hue[0.7669216839688398], 
+      Hue[0.25172494125761646`], 
+      Hue[0.7423176855261632], 
+      Hue[0.7620483864328772], 
+      Hue[0.24136854751477405`], 
+      Hue[0.2622619191583597], 
+      Hue[0.7522591612240275], 
+      Hue[0.9975975046150946], 
+      Hue[0.24513933006965194`], 
+      Hue[0.7559567645129237], 
+      Hue[0.2556763079703952], 
+      Hue[0.7460457389128623], 
+      Hue[0.25040781902002357`], 
+      Hue[0.7410750010639301], 
+      Hue[0.24015461622455314`], 
+      Hue[0.7510164767617945], 
+      Hue[0.24777357454483775`], 
+      Hue[0.7485311078373283], 
+      Hue[0.25304206349520936`], 
+      Hue[0.7435603699883961], 
+      Hue[0.24258247880499503`], 
+      Hue[0.7535018456862606], 
+      Hue[0.9989703591207547], 
+      Hue[0.24448076895085544`], 
+      Hue[0.25501774685159867`], 
+      Hue[0.7454243966817459], 
+      Hue[0.24974925790122707`], 
+      Hue[0.7503951345306781], 
+      Hue[0.24711501342604125`], 
+      Hue[0.747909765606212], 
+      Hue[0.2523835023764129], 
+      Hue[0.7528805034551441], 
+      Hue[0.746667081143979], 
+      Hue[0.25106638013882], 
+      Hue[0.7516378189929112], 
+      Hue[0.2484321356636342], 
+      Hue[0.749152450068445], 
+      Hue[0.25370062461400583`], 
+      Hue[0.999656786373585], 
+      Hue[0.4900439101599206], 
+      Hue[0.], 
+      Hue[0.0003066975249146278], 
+      Hue[0.0003066975249146278], 
+      Hue[0.0006133950498292555], 
+      Hue[0.0006133950498292555], 
+      Hue[0.0012267900996585112`], 
+      Hue[0.0012267900996585112`], 
+      Hue[0.002453580199317022], 
+      Hue[0.002453580199317022], 
+      Hue[0.004907160398634045], 
+      Hue[0.004907160398634045], 
+      Hue[0.00981432079726809], 
+      Hue[0.00981432079726809], 
+      Hue[0.019628641594536176`], 
+      Hue[0.019628641594536176`], 
+      Hue[0.04090833834702348], 
+      Hue[0.04090833834702348], 
+      Hue[0.06077786564271804], 
+      Hue[0.06077786564271804], 
+      Hue[0.08025763168653448], 
+      Hue[0.08025763168653448], 
+      Hue[0.10138845288830205`], 
+      Hue[0.10138845288830205`], 
+      Hue[0.12110910463327687`], 
+      Hue[0.12110910463327687`], 
+      Hue[0.14248081153620282`], 
+      Hue[0.14248081153620282`], 
+      Hue[0.14280865443700047`], 
+      Hue[0.14280865443700047`], 
+      Hue[0.14313649733779807`], 
+      Hue[0.14313649733779807`], 
+      Hue[0.14379218313939332`], 
+      Hue[0.14379218313939332`], 
+      Hue[0.14510355474258382`], 
+      Hue[0.14510355474258382`], 
+      Hue[0.14772629794896477`], 
+      Hue[0.14772629794896477`], 
+      Hue[0.15297178436172673`], 
+      Hue[0.15297178436172673`], 
+      Hue[0.16346275718725067`], 
+      Hue[0.16346275718725067`], 
+      Hue[0.16376856619028593`], 
+      Hue[0.16376856619028593`], 
+      Hue[0.16407437519332113`], 
+      Hue[0.16407437519332113`], 
+      Hue[0.1646859931993916], 
+      Hue[0.1646859931993916], 
+      Hue[0.16590922921153256`], 
+      Hue[0.16590922921153256`], 
+      Hue[0.16835570123581445`], 
+      Hue[0.16835570123581445`], 
+      Hue[0.1732486452843782], 
+      Hue[0.1732486452843782], 
+      Hue[0.17355445428741345`], 
+      Hue[0.17355445428741345`], 
+      Hue[0.17386026329044868`], 
+      Hue[0.17386026329044868`], 
+      Hue[0.17447188129651914`], 
+      Hue[0.17447188129651914`], 
+      Hue[0.17569511730866008`], 
+      Hue[0.17569511730866008`], 
+      Hue[0.17814158933294197`], 
+      Hue[0.17814158933294197`], 
+      Hue[0.18303453338150574`], 
+      Hue[0.18303453338150574`], 
+      Hue[0.18336614012138397`], 
+      Hue[0.18336614012138397`], 
+      Hue[0.1836977468612622], 
+      Hue[0.1836977468612622], 
+      Hue[0.18436096034101862`], 
+      Hue[0.18436096034101862`], 
+      Hue[0.18568738730053153`], 
+      Hue[0.18568738730053153`], 
+      Hue[0.18834024121955728`], 
+      Hue[0.18834024121955728`], 
+      Hue[0.19364594905760882`], 
+      Hue[0.19364594905760882`], 
+      Hue[0.19397755579748704`], 
+      Hue[0.19397755579748704`], 
+      Hue[0.19430916253736527`], 
+      Hue[0.19430916253736527`], 
+      Hue[0.19497237601712172`], 
+      Hue[0.19497237601712172`], 
+      Hue[0.1962988029766346], 
+      Hue[0.1962988029766346], 
+      Hue[0.19895165689566036`], 
+      Hue[0.19895165689566036`], 
+      Hue[0.20425736473371195`], 
+      Hue[0.20425736473371195`], 
+      Hue[0.2045669375758278], 
+      Hue[0.2045669375758278], 
+      Hue[0.2048765104179436], 
+      Hue[0.2048765104179436], 
+      Hue[0.2054956561021753], 
+      Hue[0.2054956561021753], 
+      Hue[0.20673394747063864`], 
+      Hue[0.20673394747063864`], 
+      Hue[0.20921053020756533`], 
+      Hue[0.20921053020756533`], 
+      Hue[0.20952010304968116`], 
+      Hue[0.20952010304968116`], 
+      Hue[0.209829675891797], 
+      Hue[0.209829675891797], 
+      Hue[0.21044882157602868`], 
+      Hue[0.21044882157602868`], 
+      Hue[0.21168711294449202`], 
+      Hue[0.21168711294449202`], 
+      Hue[0.21416369568141871`], 
+      Hue[0.21416369568141871`], 
+      Hue[0.21447326852353452`], 
+      Hue[0.21447326852353452`], 
+      Hue[0.21478284136565037`], 
+      Hue[0.21478284136565037`], 
+      Hue[0.21540198704988203`], 
+      Hue[0.21540198704988203`], 
+      Hue[0.21664027841834538`], 
+      Hue[0.21664027841834538`], 
+      Hue[0.21911686115527207`], 
+      Hue[0.21911686115527207`], 
+      Hue[0.21942643399738787`], 
+      Hue[0.21942643399738787`], 
+      Hue[0.21973600683950373`], 
+      Hue[0.21973600683950373`], 
+      Hue[0.2203551525237354], 
+      Hue[0.2203551525237354], 
+      Hue[0.22159344389219873`], 
+      Hue[0.22159344389219873`], 
+      Hue[0.22407002662912542`], 
+      Hue[0.22407002662912542`], 
+      Hue[0.22437350945168066`], 
+      Hue[0.22437350945168066`], 
+      Hue[0.2246769922742359], 
+      Hue[0.2246769922742359], 
+      Hue[0.2252839579193464], 
+      Hue[0.2252839579193464], 
+      Hue[0.22649788920956734`], 
+      Hue[0.22649788920956734`], 
+      Hue[0.22680137203212256`], 
+      Hue[0.22680137203212256`], 
+      Hue[0.2271048548546778], 
+      Hue[0.2271048548546778], 
+      Hue[0.2277118204997883], 
+      Hue[0.2277118204997883], 
+      Hue[0.2289257517900093], 
+      Hue[0.2289257517900093], 
+      Hue[0.22922923461256453`], 
+      Hue[0.22922923461256453`], 
+      Hue[0.22953271743511977`], 
+      Hue[0.22953271743511977`], 
+      Hue[0.23013968308023022`], 
+      Hue[0.23013968308023022`], 
+      Hue[0.23135361437045118`], 
+      Hue[0.23135361437045118`], 
+      Hue[0.2337814769508931], 
+      Hue[0.2337814769508931], 
+      Hue[0.23408495977344831`], 
+      Hue[0.23408495977344831`], 
+      Hue[0.23438844259600355`], 
+      Hue[0.23438844259600355`], 
+      Hue[0.23499540824111403`], 
+      Hue[0.23499540824111403`], 
+      Hue[0.23620933953133502`], 
+      Hue[0.23620933953133502`], 
+      Hue[0.23651282235389026`], 
+      Hue[0.23651282235389026`], 
+      Hue[0.23681630517644553`], 
+      Hue[0.23681630517644553`], 
+      Hue[0.23742327082155598`], 
+      Hue[0.23742327082155598`], 
+      Hue[0.2386372021117769], 
+      Hue[0.2386372021117769], 
+      Hue[0.23894068493433215`], 
+      Hue[0.23894068493433215`], 
+      Hue[0.23924416775688742`], 
+      Hue[0.23924416775688742`], 
+      Hue[0.2398511334019979], 
+      Hue[0.2398511334019979], 
+      Hue[0.24015461622455314`], 
+      Hue[0.24015461622455314`], 
+      Hue[0.24045809904710838`], 
+      Hue[0.24045809904710838`], 
+      Hue[0.24106506469221886`], 
+      Hue[0.24106506469221886`], 
+      Hue[0.24136854751477405`], 
+      Hue[0.24136854751477405`], 
+      Hue[0.2416720303373293], 
+      Hue[0.2416720303373293], 
+      Hue[0.2422789959824398], 
+      Hue[0.2422789959824398], 
+      Hue[0.24258247880499503`], 
+      Hue[0.24258247880499503`], 
+      Hue[0.24288596162755027`], 
+      Hue[0.24288596162755027`], 
+      Hue[0.24349292727266078`], 
+      Hue[0.24349292727266078`], 
+      Hue[0.243822207832059], 
+      Hue[0.243822207832059], 
+      Hue[0.2441514883914572], 
+      Hue[0.2441514883914572], 
+      Hue[0.24448076895085544`], 
+      Hue[0.24448076895085544`], 
+      Hue[0.24481004951025367`], 
+      Hue[0.24481004951025367`], 
+      Hue[0.24513933006965194`], 
+      Hue[0.24513933006965194`], 
+      Hue[0.24546861062905015`], 
+      Hue[0.24546861062905015`], 
+      Hue[0.2461271717478466], 
+      Hue[0.2461271717478466], 
+      Hue[0.2464564523072448], 
+      Hue[0.2464564523072448], 
+      Hue[0.24678573286664302`], 
+      Hue[0.24678573286664302`], 
+      Hue[0.24711501342604125`], 
+      Hue[0.24711501342604125`], 
+      Hue[0.2474442939854395], 
+      Hue[0.2474442939854395], 
+      Hue[0.24777357454483775`], 
+      Hue[0.24777357454483775`], 
+      Hue[0.24810285510423596`], 
+      Hue[0.24810285510423596`], 
+      Hue[0.2484321356636342], 
+      Hue[0.2484321356636342], 
+      Hue[0.2487614162230324], 
+      Hue[0.2487614162230324], 
+      Hue[0.24909069678243062`], 
+      Hue[0.24909069678243062`], 
+      Hue[0.24941997734182883`], 
+      Hue[0.24941997734182883`], 
+      Hue[0.24974925790122707`], 
+      Hue[0.24974925790122707`], 
+      Hue[0.25007853846062533`], 
+      Hue[0.25007853846062533`], 
+      Hue[0.25040781902002357`], 
+      Hue[0.25040781902002357`], 
+      Hue[0.2507370995794218], 
+      Hue[0.2507370995794218], 
+      Hue[0.25106638013882], 
+      Hue[0.25106638013882], 
+      Hue[0.2513956606982182], 
+      Hue[0.2513956606982182], 
+      Hue[0.25172494125761646`], 
+      Hue[0.25172494125761646`], 
+      Hue[0.25205422181701465`], 
+      Hue[0.25205422181701465`], 
+      Hue[0.2523835023764129], 
+      Hue[0.2523835023764129], 
+      Hue[0.2527127829358111], 
+      Hue[0.2527127829358111], 
+      Hue[0.25304206349520936`], 
+      Hue[0.25304206349520936`], 
+      Hue[0.2533713440546076], 
+      Hue[0.2533713440546076], 
+      Hue[0.25370062461400583`], 
+      Hue[0.25370062461400583`], 
+      Hue[0.254029905173404], 
+      Hue[0.254029905173404], 
+      Hue[0.25435918573280225`], 
+      Hue[0.25435918573280225`], 
+      Hue[0.2546884662922005], 
+      Hue[0.2546884662922005], 
+      Hue[0.25501774685159867`], 
+      Hue[0.25501774685159867`], 
+      Hue[0.25534702741099696`], 
+      Hue[0.25534702741099696`], 
+      Hue[0.2556763079703952], 
+      Hue[0.2556763079703952], 
+      Hue[0.25600558852979344`], 
+      Hue[0.25600558852979344`], 
+      Hue[0.25666414964858986`], 
+      Hue[0.25666414964858986`], 
+      Hue[0.2569934302079881], 
+      Hue[0.2569934302079881], 
+      Hue[0.2573227107673863], 
+      Hue[0.2573227107673863], 
+      Hue[0.25798127188618275`], 
+      Hue[0.25798127188618275`], 
+      Hue[0.25929839412377564`], 
+      Hue[0.25929839412377564`], 
+      Hue[0.2596276746831739], 
+      Hue[0.2596276746831739], 
+      Hue[0.2599569552425721], 
+      Hue[0.2599569552425721], 
+      Hue[0.2606155163613686], 
+      Hue[0.2606155163613686], 
+      Hue[0.2619326385989615], 
+      Hue[0.2619326385989615], 
+      Hue[0.2622619191583597], 
+      Hue[0.2622619191583597], 
+      Hue[0.2625911997177579], 
+      Hue[0.2625911997177579], 
+      Hue[0.2632497608365543], 
+      Hue[0.2632497608365543], 
+      Hue[0.2645668830741473], 
+      Hue[0.2645668830741473], 
+      Hue[0.2648741297357831], 
+      Hue[0.2648741297357831], 
+      Hue[0.2651813763974189], 
+      Hue[0.2651813763974189], 
+      Hue[0.2657958697206906], 
+      Hue[0.2657958697206906], 
+      Hue[0.267024856367234], 
+      Hue[0.267024856367234], 
+      Hue[0.26733210302886984`], 
+      Hue[0.26733210302886984`], 
+      Hue[0.2676393496905057], 
+      Hue[0.2676393496905057], 
+      Hue[0.2682538430137773], 
+      Hue[0.2682538430137773], 
+      Hue[0.26948282966032067`], 
+      Hue[0.26948282966032067`], 
+      Hue[0.2697900763219565], 
+      Hue[0.2697900763219565], 
+      Hue[0.27009732298359235`], 
+      Hue[0.27009732298359235`], 
+      Hue[0.27071181630686403`], 
+      Hue[0.27071181630686403`], 
+      Hue[0.2719408029534074], 
+      Hue[0.2719408029534074], 
+      Hue[0.2743987762464941], 
+      Hue[0.2743987762464941], 
+      Hue[0.27470602290812995`], 
+      Hue[0.27470602290812995`], 
+      Hue[0.2750132695697658], 
+      Hue[0.2750132695697658], 
+      Hue[0.2756277628930375], 
+      Hue[0.2756277628930375], 
+      Hue[0.27685674953958084`], 
+      Hue[0.27685674953958084`], 
+      Hue[0.27931472283266756`], 
+      Hue[0.27931472283266756`], 
+      Hue[0.284230669418841], 
+      Hue[0.284230669418841], 
+      Hue[0.2845637138173198], 
+      Hue[0.2845637138173198], 
+      Hue[0.28489675821579863`], 
+      Hue[0.28489675821579863`], 
+      Hue[0.2855628470127563], 
+      Hue[0.2855628470127563], 
+      Hue[0.2868950246066716], 
+      Hue[0.2868950246066716], 
+      Hue[0.28955937979450225`], 
+      Hue[0.28955937979450225`], 
+      Hue[0.2948880901701635], 
+      Hue[0.2948880901701635], 
+      Hue[0.2952211345686423], 
+      Hue[0.2952211345686423], 
+      Hue[0.2955541789671211], 
+      Hue[0.2955541789671211], 
+      Hue[0.2962202677640788], 
+      Hue[0.2962202677640788], 
+      Hue[0.2975524453579941], 
+      Hue[0.2975524453579941], 
+      Hue[0.30021680054582467`], 
+      Hue[0.30021680054582467`], 
+      Hue[0.30554551092148585`], 
+      Hue[0.30554551092148585`], 
+      Hue[0.30587246530040413`], 
+      Hue[0.30587246530040413`], 
+      Hue[0.30619941967932235`], 
+      Hue[0.30619941967932235`], 
+      Hue[0.3068533284371588], 
+      Hue[0.3068533284371588], 
+      Hue[0.30816114595283167`], 
+      Hue[0.30816114595283167`], 
+      Hue[0.31077678098417755`], 
+      Hue[0.31077678098417755`], 
+      Hue[0.31600805104686924`], 
+      Hue[0.31600805104686924`], 
+      Hue[0.32647059117225263`], 
+      Hue[0.32647059117225263`], 
+      Hue[0.32677551165340846`], 
+      Hue[0.32677551165340846`], 
+      Hue[0.32708043213456434`], 
+      Hue[0.32708043213456434`], 
+      Hue[0.327690273096876], 
+      Hue[0.327690273096876], 
+      Hue[0.3289099550214994], 
+      Hue[0.3289099550214994], 
+      Hue[0.3313493188707461], 
+      Hue[0.3313493188707461], 
+      Hue[0.33622804656923966`], 
+      Hue[0.33622804656923966`], 
+      Hue[0.3459855019662266], 
+      Hue[0.3459855019662266], 
+      Hue[0.3463162201842255], 
+      Hue[0.3463162201842255], 
+      Hue[0.3466469384022243], 
+      Hue[0.3466469384022243], 
+      Hue[0.34730837483822197`], 
+      Hue[0.34730837483822197`], 
+      Hue[0.3486312477102173], 
+      Hue[0.3486312477102173], 
+      Hue[0.35127699345420793`], 
+      Hue[0.35127699345420793`], 
+      Hue[0.35656848494218923`], 
+      Hue[0.35656848494218923`], 
+      Hue[0.3671514679181518], 
+      Hue[0.3671514679181518], 
+      Hue[0.38690726441328416`], 
+      Hue[0.38690726441328416`], 
+      Hue[0.4083141160663677], 
+      Hue[0.4083141160663677], 
+      Hue[0.4293312064675731], 
+      Hue[0.4293312064675731], 
+      Hue[0.44893812741198574`], 
+      Hue[0.44893812741198574`], 
+      Hue[0.47019610351434954`], 
+      Hue[0.47019610351434954`], 
+      Hue[0.4900439101599206], 
+      Hue[0.4900439101599206], 
+      Hue[0.5095019555536136], 
+      Hue[0.5095019555536136], 
+      Hue[0.5306110561052576], 
+      Hue[0.5306110561052576], 
+      Hue[0.5503099872001089], 
+      Hue[0.5503099872001089], 
+      Hue[0.5716599734529113], 
+      Hue[0.5716599734529113], 
+      Hue[0.5926201984538356], 
+      Hue[0.5926201984538356], 
+      Hue[0.6121702539979672], 
+      Hue[0.6121702539979672], 
+      Hue[0.63337136470005], 
+      Hue[0.63337136470005], 
+      Hue[0.6336805981570075], 
+      Hue[0.6336805981570075], 
+      Hue[0.6339898316139653], 
+      Hue[0.6339898316139653], 
+      Hue[0.6346082985278805], 
+      Hue[0.6346082985278805], 
+      Hue[0.6358452323557112], 
+      Hue[0.6358452323557112], 
+      Hue[0.6383191000113724], 
+      Hue[0.6383191000113724], 
+      Hue[0.6432668353226949], 
+      Hue[0.6432668353226949], 
+      Hue[0.6531623059453399], 
+      Hue[0.6531623059453399], 
+      Hue[0.653465449382737], 
+      Hue[0.653465449382737], 
+      Hue[0.6537685928201339], 
+      Hue[0.6537685928201339], 
+      Hue[0.654374879694928], 
+      Hue[0.654374879694928], 
+      Hue[0.6555874534445162], 
+      Hue[0.6555874534445162], 
+      Hue[0.6580126009436927], 
+      Hue[0.6580126009436927], 
+      Hue[0.6628628959420457], 
+      Hue[0.6628628959420457], 
+      Hue[0.6631660393794427], 
+      Hue[0.6631660393794427], 
+      Hue[0.6634691828168399], 
+      Hue[0.6634691828168399], 
+      Hue[0.664075469691634], 
+      Hue[0.664075469691634], 
+      Hue[0.6652880434412223], 
+      Hue[0.6652880434412223], 
+      Hue[0.6677131909403987], 
+      Hue[0.6677131909403987], 
+      Hue[0.6725634859387517], 
+      Hue[0.6725634859387517], 
+      Hue[0.6728924271129918], 
+      Hue[0.6728924271129918], 
+      Hue[0.6732213682872318], 
+      Hue[0.6732213682872318], 
+      Hue[0.6738792506357119], 
+      Hue[0.6738792506357119], 
+      Hue[0.6751950153326721], 
+      Hue[0.6751950153326721], 
+      Hue[0.6778265447265925], 
+      Hue[0.6778265447265925], 
+      Hue[0.6830896035144333], 
+      Hue[0.6830896035144333], 
+      Hue[0.6834185446886732], 
+      Hue[0.6834185446886732], 
+      Hue[0.6837474858629133], 
+      Hue[0.6837474858629133], 
+      Hue[0.6844053682113935], 
+      Hue[0.6844053682113935], 
+      Hue[0.6857211329083537], 
+      Hue[0.6857211329083537], 
+      Hue[0.688352662302274], 
+      Hue[0.688352662302274], 
+      Hue[0.6936157210901148], 
+      Hue[0.6936157210901148], 
+      Hue[0.6939226283665926], 
+      Hue[0.6939226283665926], 
+      Hue[0.6942295356430702], 
+      Hue[0.6942295356430702], 
+      Hue[0.6948433501960255], 
+      Hue[0.6948433501960255], 
+      Hue[0.6960709793019361], 
+      Hue[0.6960709793019361], 
+      Hue[0.6985262375137574], 
+      Hue[0.6985262375137574], 
+      Hue[0.7034367539374], 
+      Hue[0.7034367539374], 
+      Hue[0.7037436612138777], 
+      Hue[0.7037436612138777], 
+      Hue[0.7040505684903554], 
+      Hue[0.7040505684903554], 
+      Hue[0.7046643830433107], 
+      Hue[0.7046643830433107], 
+      Hue[0.7058920121492213], 
+      Hue[0.7058920121492213], 
+      Hue[0.7083472703610426], 
+      Hue[0.7083472703610426], 
+      Hue[0.7132577867846852], 
+      Hue[0.7132577867846852], 
+      Hue[0.7135904917980059], 
+      Hue[0.7135904917980059], 
+      Hue[0.7139231968113265], 
+      Hue[0.7139231968113265], 
+      Hue[0.7145886068379679], 
+      Hue[0.7145886068379679], 
+      Hue[0.7159194268912504], 
+      Hue[0.7159194268912504], 
+      Hue[0.7185810669978157], 
+      Hue[0.7185810669978157], 
+      Hue[0.7189137720111363], 
+      Hue[0.7189137720111363], 
+      Hue[0.7192464770244569], 
+      Hue[0.7192464770244569], 
+      Hue[0.7199118870510982], 
+      Hue[0.7199118870510982], 
+      Hue[0.7212427071043808], 
+      Hue[0.7212427071043808], 
+      Hue[0.7239043472109459], 
+      Hue[0.7239043472109459], 
+      Hue[0.7242370522242665], 
+      Hue[0.7242370522242665], 
+      Hue[0.7245697572375873], 
+      Hue[0.7245697572375873], 
+      Hue[0.7252351672642284], 
+      Hue[0.7252351672642284], 
+      Hue[0.7265659873175111], 
+      Hue[0.7265659873175111], 
+      Hue[0.7268986923308317], 
+      Hue[0.7268986923308317], 
+      Hue[0.7272313973441523], 
+      Hue[0.7272313973441523], 
+      Hue[0.7278968073707937], 
+      Hue[0.7278968073707937], 
+      Hue[0.7292276274240762], 
+      Hue[0.7292276274240762], 
+      Hue[0.7295603324373969], 
+      Hue[0.7295603324373969], 
+      Hue[0.7298930374507175], 
+      Hue[0.7298930374507175], 
+      Hue[0.7305584474773589], 
+      Hue[0.7305584474773589], 
+      Hue[0.7318892675306414], 
+      Hue[0.7318892675306414], 
+      Hue[0.7345509076372067], 
+      Hue[0.7345509076372067], 
+      Hue[0.7348615787527648], 
+      Hue[0.7348615787527648], 
+      Hue[0.7351722498683232], 
+      Hue[0.7351722498683232], 
+      Hue[0.7357935920994397], 
+      Hue[0.7357935920994397], 
+      Hue[0.7370362765616728], 
+      Hue[0.7370362765616728], 
+      Hue[0.737346947677231], 
+      Hue[0.737346947677231], 
+      Hue[0.7376576187927892], 
+      Hue[0.7376576187927892], 
+      Hue[0.7382789610239058], 
+      Hue[0.7382789610239058], 
+      Hue[0.7395216454861389], 
+      Hue[0.7395216454861389], 
+      Hue[0.739832316601697], 
+      Hue[0.739832316601697], 
+      Hue[0.7401429877172554], 
+      Hue[0.7401429877172554], 
+      Hue[0.7407643299483719], 
+      Hue[0.7407643299483719], 
+      Hue[0.7410750010639301], 
+      Hue[0.7410750010639301], 
+      Hue[0.7413856721794884], 
+      Hue[0.7413856721794884], 
+      Hue[0.7420070144106049], 
+      Hue[0.7420070144106049], 
+      Hue[0.7423176855261632], 
+      Hue[0.7423176855261632], 
+      Hue[0.7426283566417214], 
+      Hue[0.7426283566417214], 
+      Hue[0.743249698872838], 
+      Hue[0.743249698872838], 
+      Hue[0.7435603699883961], 
+      Hue[0.7435603699883961], 
+      Hue[0.7438710411039545], 
+      Hue[0.7438710411039545], 
+      Hue[0.7444923833350711], 
+      Hue[0.7444923833350711], 
+      Hue[0.7448030544506292], 
+      Hue[0.7448030544506292], 
+      Hue[0.7451137255661876], 
+      Hue[0.7451137255661876], 
+      Hue[0.7454243966817459], 
+      Hue[0.7454243966817459], 
+      Hue[0.745735067797304], 
+      Hue[0.745735067797304], 
+      Hue[0.7460457389128623], 
+      Hue[0.7460457389128623], 
+      Hue[0.7463564100284206], 
+      Hue[0.7463564100284206], 
+      Hue[0.746667081143979], 
+      Hue[0.746667081143979], 
+      Hue[0.7469777522595371], 
+      Hue[0.7469777522595371], 
+      Hue[0.7472884233750953], 
+      Hue[0.7472884233750953], 
+      Hue[0.7475990944906536], 
+      Hue[0.7475990944906536], 
+      Hue[0.747909765606212], 
+      Hue[0.747909765606212], 
+      Hue[0.7482204367217702], 
+      Hue[0.7482204367217702], 
+      Hue[0.7485311078373283], 
+      Hue[0.7485311078373283], 
+      Hue[0.7488417789528867], 
+      Hue[0.7488417789528867], 
+      Hue[0.749152450068445], 
+      Hue[0.749152450068445], 
+      Hue[0.7494631211840033], 
+      Hue[0.7494631211840033], 
+      Hue[0.7497737922995614], 
+      Hue[0.7497737922995614], 
+      Hue[0.7500844634151197], 
+      Hue[0.7500844634151197], 
+      Hue[0.7503951345306781], 
+      Hue[0.7503951345306781], 
+      Hue[0.7507058056462362], 
+      Hue[0.7507058056462362], 
+      Hue[0.7510164767617945], 
+      Hue[0.7510164767617945], 
+      Hue[0.7513271478773528], 
+      Hue[0.7513271478773528], 
+      Hue[0.7516378189929112], 
+      Hue[0.7516378189929112], 
+      Hue[0.7519484901084693], 
+      Hue[0.7519484901084693], 
+      Hue[0.7522591612240275], 
+      Hue[0.7522591612240275], 
+      Hue[0.7525698323395859], 
+      Hue[0.7525698323395859], 
+      Hue[0.7528805034551441], 
+      Hue[0.7528805034551441], 
+      Hue[0.7531911745707024], 
+      Hue[0.7531911745707024], 
+      Hue[0.7535018456862606], 
+      Hue[0.7535018456862606], 
+      Hue[0.7538125168018189], 
+      Hue[0.7538125168018189], 
+      Hue[0.7544338590329354], 
+      Hue[0.7544338590329354], 
+      Hue[0.7547384401289331], 
+      Hue[0.7547384401289331], 
+      Hue[0.7550430212249308], 
+      Hue[0.7550430212249308], 
+      Hue[0.7556521834169261], 
+      Hue[0.7556521834169261], 
+      Hue[0.7559567645129237], 
+      Hue[0.7559567645129237], 
+      Hue[0.7562613456089213], 
+      Hue[0.7562613456089213], 
+      Hue[0.7568705078009167], 
+      Hue[0.7568705078009167], 
+      Hue[0.7571750888969143], 
+      Hue[0.7571750888969143], 
+      Hue[0.757479669992912], 
+      Hue[0.757479669992912], 
+      Hue[0.7580888321849074], 
+      Hue[0.7580888321849074], 
+      Hue[0.7593071565688981], 
+      Hue[0.7593071565688981], 
+      Hue[0.7596117376648958], 
+      Hue[0.7596117376648958], 
+      Hue[0.7599163187608934], 
+      Hue[0.7599163187608934], 
+      Hue[0.7605254809528887], 
+      Hue[0.7605254809528887], 
+      Hue[0.7617438053368795], 
+      Hue[0.7617438053368795], 
+      Hue[0.7620483864328772], 
+      Hue[0.7620483864328772], 
+      Hue[0.7623529675288749], 
+      Hue[0.7623529675288749], 
+      Hue[0.7629621297208702], 
+      Hue[0.7629621297208702], 
+      Hue[0.7641804541048608], 
+      Hue[0.7641804541048608], 
+      Hue[0.7644850352008584], 
+      Hue[0.7644850352008584], 
+      Hue[0.7647896162968562], 
+      Hue[0.7647896162968562], 
+      Hue[0.7653987784888514], 
+      Hue[0.7653987784888514], 
+      Hue[0.766617102872842], 
+      Hue[0.766617102872842], 
+      Hue[0.7669216839688398], 
+      Hue[0.7669216839688398], 
+      Hue[0.7672262650648374], 
+      Hue[0.7672262650648374], 
+      Hue[0.7678354272568326], 
+      Hue[0.7678354272568326], 
+      Hue[0.7690537516408233], 
+      Hue[0.7690537516408233], 
+      Hue[0.769358332736821], 
+      Hue[0.769358332736821], 
+      Hue[0.7696629138328187], 
+      Hue[0.7696629138328187], 
+      Hue[0.770272076024814], 
+      Hue[0.770272076024814], 
+      Hue[0.7714904004088046], 
+      Hue[0.7714904004088046], 
+      Hue[0.773927049176786], 
+      Hue[0.773927049176786], 
+      Hue[0.7742574280096266], 
+      Hue[0.7742574280096266], 
+      Hue[0.7745878068424673], 
+      Hue[0.7745878068424673], 
+      Hue[0.7752485645081485], 
+      Hue[0.7752485645081485], 
+      Hue[0.7765700798395112], 
+      Hue[0.7765700798395112], 
+      Hue[0.7792131105022365], 
+      Hue[0.7792131105022365], 
+      Hue[0.7795434893350772], 
+      Hue[0.7795434893350772], 
+      Hue[0.7798738681679178], 
+      Hue[0.7798738681679178], 
+      Hue[0.7805346258335992], 
+      Hue[0.7805346258335992], 
+      Hue[0.7818561411649617], 
+      Hue[0.7818561411649617], 
+      Hue[0.7844991718276869], 
+      Hue[0.7844991718276869], 
+      Hue[0.7848295506605276], 
+      Hue[0.7848295506605276], 
+      Hue[0.7851599294933682], 
+      Hue[0.7851599294933682], 
+      Hue[0.7858206871590495], 
+      Hue[0.7858206871590495], 
+      Hue[0.7871422024904121], 
+      Hue[0.7871422024904121], 
+      Hue[0.7897852331531373], 
+      Hue[0.7897852331531373], 
+      Hue[0.7950712944785877], 
+      Hue[0.7950712944785877], 
+      Hue[0.7953796394136659], 
+      Hue[0.7953796394136659], 
+      Hue[0.7956879843487442], 
+      Hue[0.7956879843487442], 
+      Hue[0.7963046742189007], 
+      Hue[0.7963046742189007], 
+      Hue[0.7975380539592137], 
+      Hue[0.7975380539592137], 
+      Hue[0.80000481343984], 
+      Hue[0.80000481343984], 
+      Hue[0.8049383324010922], 
+      Hue[0.8049383324010922], 
+      Hue[0.8052466773361704], 
+      Hue[0.8052466773361704], 
+      Hue[0.8055550222712488], 
+      Hue[0.8055550222712488], 
+      Hue[0.8061717121414053], 
+      Hue[0.8061717121414053], 
+      Hue[0.8074050918817183], 
+      Hue[0.8074050918817183], 
+      Hue[0.8098718513623443], 
+      Hue[0.8098718513623443], 
+      Hue[0.8148053703235966], 
+      Hue[0.8148053703235966], 
+      Hue[0.8151395129955178], 
+      Hue[0.8151395129955178], 
+      Hue[0.8154736556674392], 
+      Hue[0.8154736556674392], 
+      Hue[0.8161419410112817], 
+      Hue[0.8161419410112817], 
+      Hue[0.8174785116989666], 
+      Hue[0.8174785116989666], 
+      Hue[0.8201516530743367], 
+      Hue[0.8201516530743367], 
+      Hue[0.8254979358250767], 
+      Hue[0.8254979358250767], 
+      Hue[0.8361905013265567], 
+      Hue[0.8361905013265567], 
+      Hue[0.8365185539789174], 
+      Hue[0.8365185539789174], 
+      Hue[0.836846606631278], 
+      Hue[0.836846606631278], 
+      Hue[0.8375027119359993], 
+      Hue[0.8375027119359993], 
+      Hue[0.838814922545442], 
+      Hue[0.838814922545442], 
+      Hue[0.8414393437643272], 
+      Hue[0.8414393437643272], 
+      Hue[0.8466881862020976], 
+      Hue[0.8466881862020976], 
+      Hue[0.8571858710776387], 
+      Hue[0.8571858710776387], 
+      Hue[0.876771071371928], 
+      Hue[0.876771071371928], 
+      Hue[0.8980073268241684], 
+      Hue[0.8980073268241684], 
+      Hue[0.9178334128196161], 
+      Hue[0.9178334128196161], 
+      Hue[0.9372697375631855], 
+      Hue[0.9372697375631855], 
+      Hue[0.9583571174647062], 
+      Hue[0.9583571174647062], 
+      Hue[0.978034327909434], 
+      Hue[0.978034327909434], 
+      Hue[0.9783775415358491], 
+      Hue[0.9783775415358491], 
+      Hue[0.9787207551622642], 
+      Hue[0.9787207551622642], 
+      Hue[0.9794071824150944], 
+      Hue[0.9794071824150944], 
+      Hue[0.9807800369207548], 
+      Hue[0.9807800369207548], 
+      Hue[0.9835257459320755], 
+      Hue[0.9835257459320755], 
+      Hue[0.9890171639547172], 
+      Hue[0.9890171639547172], 
+      Hue[0.9893603775811322], 
+      Hue[0.9893603775811322], 
+      Hue[0.9897035912075473], 
+      Hue[0.9897035912075473], 
+      Hue[0.9903900184603776], 
+      Hue[0.9903900184603776], 
+      Hue[0.9917628729660379], 
+      Hue[0.9917628729660379], 
+      Hue[0.9945085819773587], 
+      Hue[0.9945085819773587], 
+      Hue[0.9948517956037737], 
+      Hue[0.9948517956037737], 
+      Hue[0.9951950092301888], 
+      Hue[0.9951950092301888], 
+      Hue[0.9958814364830191], 
+      Hue[0.9958814364830191], 
+      Hue[0.9972542909886795], 
+      Hue[0.9972542909886795], 
+      Hue[0.9975975046150946], 
+      Hue[0.9975975046150946], 
+      Hue[0.9979407182415095], 
+      Hue[0.9979407182415095], 
+      Hue[0.9986271454943397], 
+      Hue[0.9986271454943397], 
+      Hue[0.9989703591207547], 
+      Hue[0.9989703591207547], 
+      Hue[0.9993135727471698], 
+      Hue[0.9993135727471698], 
+      Hue[0.999656786373585], 
+      Hue[0.999656786373585], 
+      Hue[1.]}], {}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0, 0},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->All,
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}, "AxesInFront" -> True},
+  PlotRange->
+   NCache[{{0, 2 Pi}, {-0.9999998592131705, 0.9999998782112116}}, {{
+     0, 6.283185307179586}, {-0.9999998592131705, 0.9999998782112116}}],
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.69912449716641*^9, 3.699124505032784*^9}}]
+}, Open  ]]
+},
+WindowSize->{826, 660},
+WindowMargins->{{5, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 178, 3, 54, "Input"],
+Cell[CellGroupData[{
+Cell[761, 27, 1436, 33, 96, "Input"],
+Cell[2200, 62, 8063, 145, 244, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10300, 212, 290, 8, 32, "Input"],
+Cell[10593, 222, 207, 6, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10837, 233, 1306, 30, 96, "Input"],
+Cell[12146, 265, 19942, 340, 278, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32125, 610, 518, 14, 32, "Input"],
+Cell[32646, 626, 60618, 1616, 229, "Output"]
+}, Open  ]]
+}
+]
+*)
+

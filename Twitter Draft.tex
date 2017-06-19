@@ -1,0 +1,181 @@
+\documentclass[12pt]{article}
+\pagenumbering{arabic}
+\pdfpagewidth 8.5in
+\pdfpageheight 11in
+\setlength\topmargin{0in}
+\setlength\headheight{0in}
+\setlength\headsep{0in}
+\setlength\textheight{9.0in}
+\setlength\textwidth{6.5in}
+\setlength\oddsidemargin{0in}
+\setlength\evensidemargin{0in}
+\setlength\parindent{0.25in}
+\setlength\parskip{0.25in}
+\parskip 0.0pt
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\usepackage{float}
+\usepackage{dcolumn}
+\usepackage{natbib}
+
+
+
+\begin{document}  
+
+
+\begin{titlepage}
+	\begin{center}
+
+\vspace*{10 em}
+\toprule
+{\huge \bfseries Let Them Tweet Cake: Estimating Political Stability using Twitter \\[0.2cm]}
+\bottomrule
+\large
+\vspace*{1 em}
+\emph{Authors:}\\
+Ethan \textsc{Spangler}, Washington State University\\
+Ben \textsc{Smith}, University of Nebraska-Omaha 
+
+
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+\end{center}
+
+\begin{abstract}
+Traditional methods of estimating political stability have been shown to be unreliable, unable to adapt quickly to the realities on the ground. Thus it is the goal of this paper to create a new measure of political stability, one with a firm theoretical foundation and utilizes advances in social media technology. Twitter is a micro-blogging website that allows users to post short messages (tweets) that can be viewed and shared by other users, creating a vast network of freely and easily observable information. Tweets containing specified words or phrases voicing dissatisfaction with their government are collected, scored, and aggregated; forming the basis for the measure. Combining these estimates of aggregated dissent with macroeconomic data of the country within an established theoretical framework, one can obtain an overall estimation of a country's political stability. A case study focusing on Canada and Kenya, has provided proof of concept.
+\end{abstract}
+
+\end{titlepage}
+
+\begin{spacing}{1.5}
+
+\section*{Intro}
+
+The importance of political stability is well established and can affect all aspects of an economy (Kaufmann et al. 1999b). Additionally, there is a propensity for one country's political stability issues to leak beyond it's borders, negatively affecting their neighbors' stability and creating large scale welfare implications. However, despite its significance, measurement of political stability has remained underdeveloped. As demonstrated by the recent uprisings in the Middle East, Thailand, and Ukraine; large scale political changes are difficult to predict. The three commonly used measures of political stability are Political Risk Services (PRS), the Business Environment Risk Intelligence Index (BERI), and the Economist Intelligence Unit (EIU). Each of these indexes combine political, financial, and economic factors to assess a nation's political stability (Howell, 1998). The financial and economic portions are predominately based on quantitative data (foreign debt, inflation, GDP per capita, etc) while political factors are far more subjective. 
+
+Political factors are determined and scored by panels of experts (Howell, 1998). These experts are usually former diplomats and scholars. While these teams of experts can be quite large and knowledgeable, it is still a relatively small group of people trying to assess an entire nation and without a theoretical basis for their decisions. Since each index has political factors compose 33-66\% of their measure (Howell, 1998), if these experts are misinformed the validity of the index could be greatly affected which in turn would affect all research based on these indexes. Additionally, over a twenty year study Tetlock (2005) was able to show that political forecasts based on expert opinion were only marginally better than random chance. It becomes quite apparent that a new method of assessing political stability is needed.  
+
+To highlight the issue of why a more robust measure of political stability is needed let us examine some contemporary examples and their related political stability analysis. The October 2005 PRS report on Thailand said ``unrest is not expected to threaten general stability, nor intensify to the point of endangering the [Thai Rak Thai Party's (TRT)] dominant political position...the chances of the TRT being forced from power at any point during the five year forecast period are slim..." Less than a year later a military coup ousted the Prime Minister Shinawatra and outlawed his TRT party, and began a period of political strife that continues to plague Thailand. The PRS report on Ukraine, published October 2012, stated that ``a repeat of the Orange Revolution...is unlikely." and ``Ukrainians are disillusioned but in general they possess little appetite for protest." Mass protests began in November 2013 and by February 2014 the Yanukovych regime had fallen. The PRS report on Tunisia, published October 2010, called Tunisia an ``oasis of stability" and postulated a 85\% probability that Tunisian dictator Ben Ali would retain power for the next 18 months. By January 2011, mass protests and revolt resulted in the dissolution of the ruling RCD party, the exile of Ben Ali to Saudi Arabia, and the establishment of an interim government. While it may be easy to critique these forecasts with the benefit of hindsight, these examples highlight the inherent difficulty in predicting something as opaque and complex as political stability.\footnote{It should be noted that PRS publishes monthly reports on its surveyed countries but those are only available to its subscribers.} 
+
+A shared limitation of previous political stability measurements was a lack of both a theoretical framework and quality data. Thankfully, advancements in both areas have arisen that substantially mitigate these issues. Spangler and Smith (2017) established a theoretical structure for political stability based on the interactions of a government and its citizens; the central premise being that public dissent forms the root of political instability. Regarding the issue of data concerning public dissent, the spread of social media platforms such as Twitter and development of text analysis techniques now means researchers can tap into the zeitgeist of a population like never before. Whereas previous measures of political stability relied on expert opinion, polling, or other traditional methodology; this paper seeks to develop a measure of political stability based on data collected from Twitter. 
+
+The following sections of this paper will review literature concerning measuring political stability and other relevant topics, explanation of the methodology employed in this paper, proof of concept case studies using Canada and Kenya, and finally conclusion. 
+
+\section*{Related Literature}   
+
+We have already discussed the predominant methods measuring political stability (Howell 1998) and their potential flaws, but there are other methods that need to be addressed. Kaufmann et al. (1999a) proposes using 'aggregate governance indicators' which combines hundreds of different variables and indicators (including those built by PRS, BERI, and EUI) together to evaluate several factors of governmental quality to get the most out of available data. Kaufmann et al.'s approach does work to smooth out some of the issues of a single indicator but ultimately Kaufmann et al. concludes that contemporary methods "point to the inadequacy of existing governance measures." (Kaufmann et al. 1999a, 31). Other methods of evaluating government effectiveness rely on crowd souring, polling, and surveying; but all have their own flaws. 
+
+%Diverging from the top down approaches detailed by Howell and Kaufmann; crowd sourcing, polling, and surveying are popular ways to evaluate government effectiveness. 
+
+Ungar et al. (2012) relies on expert opinion, but instead of just a few experts Ungar et al. employ thousands, using a mixture of crowd sourcing and simplification of complex issues. Ungar et al.'s approach works by getting their army (over 2000 individuals) of forecasters to assign probability estimates of specific events happening within a given time constraint (Q:``Will there be large protests in \textit{Country A} before March 15\textsuperscript{th}?", A: Yes, 42\% probability.), updating their prediction as needed before the deadline. Finally, all predictions are combined to form a single aggregated forecast of the event. 
+
+Ungar et al.'s method, and prediction markets in general, are extremely effective in harnessing the wisdom of crowds, but at the same time they are hamstrung by the simplifications needed in order to harness that wisdom. They work best when asking the crowd simple questions, which may not capture all the nuances and complexities necessary to understand an issue, especially when attempting to gauge a country's overall political stability. Additionally, in dealing with esoteric issues, there might only be a few experts with area knowledge, which leaves this method vulnerable to the same problems as described earlier (Tetlock 2005). Finally, maintaining and incentivizing a vast number of forecasters is likely very costly and time intensive, as one must wait must wait for forecasters to make and adjust their judgements. 
+
+Polling and survey are also costly and time consuming, but they have their own unique issues as well that are difficult for researchers to overcome. The biggest hurdle is the issue of honesty, since respondents often have little incentive to be honest, to varying degrees of malevolence. One issue is the `social desirability bias', wherein respondents have a tendency to provide what they perceive to be the socially acceptable answer to questions regardless of how they actually feel on the issue (Setphens-Davidowitz 2017). This especially could be an problem if someone is being asked about popular government policies but they are in the opposition to. 
+
+The issue is further compounded with the fact that many places where accurate measurement of political stability is most needed, might also be places where honest public speech is not safe. According to Freedom House (2017), of the 195 countries evaluated, only 44\% were regarded as `free' in regards to political rights, meaning that in most countries a person might be unwilling to provide their honest thoughts to a stranger asking them about their government. On the other extreme, respondents may provide strategic answers with the intend of influences potential policy that may be based on poll results, which also biases results (Morgan and Stocken 2008). Finally, results could be biased because respondents provide false information purely for their own trollish amusement (Setphens-Davidowitz 2017). Thankfully, the rise of the internet and associated social media platforms has provided a wealth of new data that help overcome the problems of previous methods. 
+
+One social media platform that has proven to be especially useful to researchers is Twitter. Twitter is a micro-blogging website that allows users to post short messages (tweets) that can be viewed and shared by other users. These posts can also include tags that allow users to link posts with a common theme. All of this creates a vast network of information that can be freely and publicly observed. With an active monthly user base of over 300 million (Twitter 2016) spread across the world, all sharing their opinions and thoughts on a myriad of topics, there is vast potential for this data source. 
+
+Twitter data has already been shown to useful in several areas, often preforming better than traditional data sources. Asur and Huberman (2010) were able to use Twitter chatter to predict film box office returns better than the industry standard. Bollen et al. (2011) show that Twitter data can be used to forecast stock market fluctuations. Smith and Wooten (2014) shows that people use Twitter as a sources of information and were able to estimate demand for this information. In terms of politics, O'Conner et al. (2010) and Lampos et al. (2013) use Twitter as a more accurate source for political forecasting. 
+
+There is also interesting research concerning issues of political stability using Twitter data. Carly et al. (2013) find that Twitter chatter increases as large scale political events unfold, demonstrating that online behavior reflects real world events. This point is further reinforced by research showing that twitter can be used in protest recruitment (Gonz{\'a}lez-Bail{\'o}n et al. 2011) and attempts to predict protest participation (Kallus 2014). This line of research has been deemed so promising that the US Department of Defense has funded several ongoing projects in this area (Minerva Initiative 2014).  
+
+This paper add to the work on political stability, by attempting to build a measure of political stability with the core of its measure based on Twitter data but also supported by macroeconomic data. By examining Twitter data directly, we mitigate much of the issues involving measures that rely heavily on expert opinion, polls, or surveys. Also, by combining our measure with macroeconomic data, we can get a much broader picture of a country's political stability than previous street level Twitter studies and allow for cross country analysis using the same methodology. Overall we feel that this is an approach that could greatly aid in assessing which countries are in risk of governmental failure before reaching the headlines.      
+
+\section*{Methodology}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Online behavior translate into the real world (Setphens-Davidowitz 2013 and 2017) 
+
+
+
+
+
+
+
+
+this paper is the continuation of the work started in Spangler and Smith (2016). Wherein Spangler and Smith built a theoretical framework of political stability, this paper is the empirical application of said theory. 
+
+Social media provides a way of capturing public dissent against the government.   
+
+Thus it is the goal of this paper to establish a new index of political stability. The index of political stability will an empirical application of the theoretical structure developed 
+
+
+
+
+Rothchild (2013) showed that a properly statistically weighted non representative sample can be just as effective for forecasting. Given the social media populations (I REALLY NEED A CITATION FOR THIS, maybe the Characterizing twitter paper), with Twitter in particular, have a tendency to be younger and urban. 
+
+while our method has its own sampling biases, we actually see that as an asset that enhances our measure. What is the demographic most likely to use social media, the young and educated. What is the demographic most likely to advocate for large scale political change, the young and educated. Thus by forming the basis of our measure on dissent on social media, we're actually able to account for the group most likely to take to the streets. 
+
+
+\section*{Methodology}
+
+This paper employs and combines the methods used in Smith and Wooten (YEAR?) and Spangler and Smith (Year?) 
+
+More than merely accounting for if a specified term is used, we employ regular expressions to asses the content of the tweet. 
+
+%using regular expression in our analysis 
+
+
+Accounting for sarcasm. Tweets containing political messages, even those are are sarcastic in nature, do not happen in a vacuum. 
+
+Our methodology is robust enough that we do not need to specifically account for tone in the message. Merely mentioning the topic is sufficient. 
+
+
+Defensive statements. If someone is tweeting in defense of their government, again that is not happening in a vacuum. They are reacting to the environment which they inhabit.  
+
+Step 1. Our code words. Taken from all out Twitter 
+
+Step 2. Word clouds. What other words came up most often with out chosen code words. Necessary because we don't have an intuitive understanding of the sample countries. 
+
+Step 3. Regular expressions and scoring. 
+
+Regular expressions are important because some words have different cultural meanings that might create bias if only a simple word count was employed. For example, in Kenya one of our code words `anarchy' is using in the very traditional style of discussing issues involving lack of government and lawlessness. However, in Canada the vast majority of tweets containing `anarchy' were discussing the TV show \textit{Sons of Anarchy}, which is not relevant to our purposes. 
+
+
+in very few cases did we only use a word count. 
+
+
+
+Conclusions
+
+What we have presented in this paper, is not designed as a replacement for traditional means of measuring political stability. Instead, it is meant as an enhancement. Know what expressions people use for expressing dissent and how to properly judge the validity of those statements still requires an expert's knowledge and opinion. However, using this framework would help in mitigating the subjective nature of interpreting political stability. 
+
+
+
+
+\end{spacing}
+
+\pagebreak
+
+\bibliographystyle{chicago}
+\bibliography{Twitter_Bibli}
+
+\nocite{*}
+
+
+
+\end{document}	
+

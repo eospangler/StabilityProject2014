@@ -30,7 +30,11 @@
 %\usepackage{authblk}
 \usepackage{footmisc}
 
-
+\makeatletter
+\makeatletter
+\renewcommand*{\@fnsymbol}[1]{\ifcase#1\or*\or a\or b\else\@arabic{#1}\fi}
+\makeatother
+\makeatother
 
 \begin{document}  
 
@@ -40,15 +44,12 @@
 
 
 
-
 %	\begin{center}
 
-\title{A Dynamic Model of Political Stability and Dissent\footnote{This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors. Conflicts of interest: none}}
+\title{A Dynamic Model of Political Stability and Dissent\thanks{This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors. Conflicts of interest: none}}
 
-\author{
-Ethan Spangler, Washington State University\footnote{Corresponding Author. Email: {\href{mailto:ethan.spangler@wsu.edu}{ethan.spangler@wsu.edu}}; Tel: 801-458-9923; School of Economic Sciences Hulbert Hall 101, Pullman, WA 99164, United States}  \\
-Ben Smith, University of Nebraska-Omaha\footnote{Email: {\href{mailto:bosmith@unomaha.edu}{bosmith@unomaha.edu}} Mammel Hall, Suite 332, 6708 Pine Street, Omaha, NE 68182, United States}
-}
+\author{Ethan Spangler, Washington State University\thanks{Corresponding Author. Email: {\href{mailto:ethan.spangler@wsu.edu}{ethan.spangler@wsu.edu}}; Tel: 801-458-9923; School of Economic Sciences Hulbert Hall 101, Pullman, WA 99164, United States}  \\
+Ben Smith, University of Nebraska-Omaha\thanks{Email: {\href{mailto:bosmith@unomaha.edu}{bosmith@unomaha.edu}} Mammel Hall, Suite 332, 6708 Pine Street, Omaha, NE 68182, United States}}
 
 
 

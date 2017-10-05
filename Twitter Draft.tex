@@ -24,7 +24,8 @@
 \usepackage{float}
 \usepackage{dcolumn}
 \usepackage{natbib}
-
+\usepackage{subfigure}
+\usepackage{xcolor}
 
 
 \begin{document}  
@@ -35,7 +36,7 @@
 
 
 
-\title{Let Them Tweet Cake: Estimating Political Stability using Twitter}
+\title{Let Them Tweet Cake: Estimating Public Dissent and Political Stability using Twitter}
 
 
 
@@ -49,7 +50,7 @@ Ben Smith\thanks{Email: {\href{mailto:bosmith@unomaha.edu}{bosmith@unomaha.edu}}
 \maketitle
 
 \begin{abstract}
-\noindent Traditional methods of estimating political stability have been unreliable, unable to adapt quickly to the realities on the ground. Thus it is the goal of this paper to create a new measure of political stability, one with a firm theoretical foundation and utilizes advances in social media. Twitter is a micro-blogging website that allows users to post short messages (tweets) that can be viewed and shared by other users, creating a vast network of freely and easily observable information. We collect tweets containing specified words or phrases voicing dissatisfaction with their government. Collected tweets are then scored and aggregated; forming the basis of the measure. Combining these estimates of aggregated dissent with macroeconomic data of the country within an established theoretical framework, we obtain an overall estimation of a country's political stability. A case study focusing on Canada and Kenya, provides proof of concept.
+\noindent Traditional methods of estimating political stability have been unreliable, unable to adapt quickly to the realities on the ground. Thus it is the goal of this paper to create a new measure of political stability, one with a firm theoretical foundation and utilizes advances in social media. Twitter is a micro-blogging website that allows users to post short messages (tweets) that can be viewed and shared by other users, creating a vast network of freely and easily observable information. We collect tweets containing specified words or phrases voicing dissatisfaction with their government. Collected tweets are then scored and aggregated; forming the basis of the measure of public dissent. Combining these estimates of dissent with macroeconomic data of the country within an established theoretical framework, an overall estimation of a country's political stability is made. A case study focusing on Canada and Kenya, provides proof of concept.
 \end{abstract}
 
 \noindent \textit{Keywords}: Twitter, Political Stability, Dissent \\
@@ -81,7 +82,7 @@ To highlight the issue of why a more robust measure of political stability is ne
 
 A shared limitation of previous political stability measurements was a lack of both a theoretical framework and quality data. Thankfully, advancements in both areas have arisen that substantially mitigate these issues. Spangler and Smith (2017) establish a theoretical framework for understanding political stability. Spangler and Smith base their theory on the interactions of a government and its citizens; the central premise being that public dissent and political stability have a dynamic relationship. Regarding data, the spread of social media platforms such as Twitter and development of text analysis techniques means that researchers can tap into the zeitgeist of a population like never before. 
 
-In this paper we use online political dissent against a government as a basis for examining a country's political stability. Whereas previous measures of political stability relied on expert opinion, polling, or other traditional methodology; this paper seeks to develop a measure of political stability based on data collected from Twitter. The following sections of this paper will review literature concerning measuring political stability and other relevant topics, theoretical model, explanation of the methodology employed in this paper, proof of concept case studies using Canada and Kenya, and finally conclusion. 
+In this paper we use online public dissent against a government as a basis for examining a country's political stability. Whereas previous measures of political stability relied on expert opinion, polling, or other traditional methodology; this paper seeks to develop a measure of political stability based on data collected from Twitter. The following sections of this paper will review literature concerning measuring political stability and other relevant topics, theoretical model, explanation of the methodology employed in this paper, proof of concept case studies using Canada and Kenya, and finally conclusion. 
 
 \section*{Related Literature}   
 
@@ -112,35 +113,55 @@ This paper adds to the work on political stability by attempting to build a empi
 
 The central premise of this paper is that people use online platforms, specifically Twitter, to kvetch about politics and express dissent against their government. Previous methods of evaluating governmental quality generally tried to find some quantifiable way to evaluate government institutions. Instead, we are interested in the public's perceptions of these institutions. A well functioning government should be like air, if it's working well, no one will talk about it. The idea is that the more dysfunctional a government and its institutions are, the more demand there will be for dissent against the government.
 
-The theoretical foundation for demand for dissent is from Spangler and Smith (2017), wherein a non-altruistic government and its citizens dynamically interact. The government maximizes its own stability, $\Lambda_t$, by choosing its level of public services, $G_t$, and security, $S_t$, allotments subject to a resource constraint, $R_t$, and total dissent from the citizenry, $D_{t-1}$. In turn, each member of the public maximizes their utility by choosing their level of dissent, $d_{i,t}$, based on their own preferences and the risk of punishment. 
+The theoretical foundation for demand for dissent is from Spangler and Smith (2017), wherein a non-altruistic government and its citizens dynamically interact. The government maximizes its own stability, $\Lambda_t$, by choosing its level of public services, $G_t$, and security, $S_t$, allotments subject to a resource constraint, $R_t$, and total dissent from the citizenry, $D_{t-1}$. In turn, each member of the public maximizes their utility by choosing their level of dissent, $d_{i,t}$, based on their own preferences and the risk of punishment. Equation (1) shows the general form, but for estimation purposes later the functional form shown in Equation (2) is used.   
 
 \vspace{.5 em}
 
 \noindent Government's problem:
 \begin{equation}
+{\underset{G_t,S_t}{\text{max }}} \sum\limits_{t=1}^{T^*} \beta^t {\Lambda}_t = \sum\limits_{t=1}^{T^*} \beta^t\left(G_t,\alpha, S_t,\gamma ,D_{t-1},R_t,\Phi,\Omega \right)   
+\end{equation}
+
+
+
+The government chooses it's allocations of $G_t$ and $S_t$ based on its preferences for each, $\alpha$ and $\gamma$ respectively. A minimum amount of resources must be allocated to $G_t$ and $S_t$ to operate a minimum capacity and avoid anarchy, denoted by $\Phi$ and $\Omega$. For practical estimation $G_t$ and $S_t$ can be represented by yearly government and military expenditures. This function is optimized across time to $T_*$, the inevitable point of eventual state failure, and discounted at rate $\Beta$.  
+
+\vspace{.5 em}
+
+\noindent Government's problem functional form:
+\begin{equation}
 {\underset{G_t,S_t}{\text{max }}} \sum\limits_{t=1}^{T^*} \beta^t {\Lambda}_t = \sum\limits_{t=1}^{T^*} \beta^t\left(\frac{G_t}{D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma   \text{s.t. } G_t+S_t=R_t
 \end{equation}
 
-The government chooses it's allocations of $G_t$ and $S_t$ based on its preferences for each, $\alpha$ and $\gamma$ respectively. A minimum amount of resources must be allocated to $G_t$ and $S_t$ to avoid anarchy, denoted by $\Phi$ and $\Omega$. This function is optimized across time to $T_*$, the inevitable point of eventual state failure, and discounted at rate $\Beta$.  
-
-The source of instability is the bureaucratic lag between periods, since the government responds to the total dissent from the previous period $D_{t_1}$ while citizens react to the current period. When, $D_t \approx D_{t-1}$, there is minimal instability. However, when $D_t \not\approx D_{t-1}$ the situation can spiral out of control and result in governmental failure. 
+The source of instability is the bureaucratic lag between periods, since the government responds to the total dissent from the previous period $D_{t_1}$ while citizens react to the current period. When, $D_t \approx D_{t-1}$, there is minimal instability. However, when $D_t \not\approx D_{t-1}$ the government misallocates its resources and the situation can spiral out of control, possibly resulting in governmental failure. 
 
 \vspace{.5 em}
 \noindent Individual's Problem:
+%\begin{equation}
+%{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E_{i,t}} - P_t %\left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)d_{i,t}^A
+%\end{equation}
+
+%\vspace{.5 em}
 \begin{equation}
-{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E} - P_t \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)d_{i,t}^A
+{\underset{d_{i,t}}{\text{max }}}  U_{i,t}= (d_{i,t},x_i,g_t, E_{i,t},P_t, A)
 \end{equation}
 
-An individual's utility from dissent, $U_{i,t}$, is a function of their individual activism preference, $x_i$, which is distributed $LogN(0,1)$. For some values of $x_i$ an individual will would actually receive disutility from dissent, so they elect not to, $d_{i,t}=0$. Higher values of $x_i$ mean that the individual receives utility from dissenting, $d_{i,t}>0$. This heterogeneity amongst the population means that each period for given policy choices ($G_t$,$S_t$) there is a spread of people that do not dissent and variation in the level of dissent among those that do.  
 
-The benefits and services the individual receives from the government is $g_t$, with $g_t=\frac{G_t}{N_t}$ and $N_t$ is total population, their quality of life, $E$, the probability of being caught dissenting, $P_t$, and the severity of punishment for dissenting, $A$. $P_t$ the log-Normal PDF and is determined by average individual dissent from the previous period, $\bar{d}_{t-1}$, the ratio of previous total dissent to security allocations, $\frac{D_{t-1}}{S_t}$, and policing effectiveness, $\sigma$. 
+Equation (3) shows the general form of an individual's utility from dissent, $U_{i,t}$. An important component of this function is an individual's activism preference, $x_i$, which is distributed $LogN(0,1)$ across the population. For some values of $x_i$ an individual will would receive disutility from dissent, so they will elect not to, $d_{i,t}=0$. Whereas higher values of $x_i$ means that the individual receives utility from dissenting, $d_{i,t}>0$. This heterogeneity amongst the population means that each period for given policy choices ($G_t$,$S_t$) there is a spread of people that do not dissent and variation in the level of dissent among those that do.  
 
 Maximization of individual utility w.r.t. to $d_{i,t}$ yields $d_{i,t}^*$, individual demand for dissent.  
 
 \vspace{.5 em}
+%\begin{equation}
+%d_{i,t}^*=& \left(\frac{g_tE_{i,t}P_t A}{x_i} \right)^{\frac{1}{x_i -A}}
+%\end{equation}
+
 \begin{equation}
-d_{i,t}^*=& \left(\frac{g_tEP_t A}{x_i} \right)^{\frac{1}{x_i -A}}
+d_{i,t}^*=(x_i,g_t,E_{i,t},P_t,A)
 \end{equation}
+
+The benefits and services the individual receives from the government is $g_t$, with $g_t=\frac{G_t}{N_t}$ and $N_t$ is total population, their quality of life, $E_{i,t}$, the probability of being caught dissenting, $P_t$, and the severity of punishment for dissenting, $A$. $P_t$ the log-Normal PDF and is determined by average individual dissent from the previous period, $\bar{d}_{t-1}$, the ratio of previous total dissent to security allocations, $\frac{D_{t-1}}{S_t}$, and policing effectiveness, $\sigma$. 
+
 
 Individual's demand for dissent is a reflection of perceived governmental quality. Everyday individuals face societal issues they themselves cannot overcome but these issues negatively affect their life. These are issues such as crime, corruption, and other societal issues that only a government could properly address, but for whatever reason the government is unable to address sufficiently for the individual. The simultaneous frustration with governmental expectations and the inability to do anything about the issues themselves, leads the individual to do the only thing they can do, dissent. Dissenting provides a cathartic release for the individual, making them feel slightly better.
 
@@ -152,63 +173,86 @@ Integrating ${d_{i,t}}^*$ times the PDF of $x_i$, which is $LogN(0,1)$, with res
 D_t	=& N_t \int_{0}^{x_{max}} {{d}_{i,t}}^* \frac{1}{x \sqrt{2\pi}}exp  \left( -\frac{(lnx)^2}{2\sigma^2} \right)  dx 
 \end{equation}
 
+
+
+
 This theoretical model allows for better understanding of how shocks at the governmental and individual level may impact a country’s overall level of political stability. Also, by varying the governmental and individual parameters, cross country comparisons can be done allowing this to be used as the theoretical foundations for a measure of political stability. However, while many of these parameter shocks would not be easily detectable as they happen, we are able to observe the increase in Twitter chatter that would likely accompany such a shock. Thus, by examining how the public expresses anger online, we can see how politically stable a country is. 
 
 \section*{Methodology}
 
 An issue in transitioning from the theoretical model to the empirical model, is how does one acquire an estimate for $D_t$, total dissent. All other variables and parameters can be obtained through existing data or internal estimation. The spread of social media, specifically Twitter, allows us to capture people voicing dissent. A central premise of this project is that digital behavior is representative of physical behavior. This paper follows a similar method as Smith and Wooten (2016) and Carly et al. (2013), but expanded to capture the more open ended nature of political stability. 
 
-%Our process began by forming a codex of words and phrase one would use to express dissent against the government. 
 
-%Our process begins by collecting tweets containing any words from a list we judged to consistent with the language one would use to dissent against the government. 
+Our process began by first forming a list of words expected to be consistent with the language one would use to express dissent against the government. The list included words and phrases such as: ``police", ``rule of law", ``corruption", ``molotov", as well as the names of important political figures and institutions in our sample countries, Canada and Kenya. We then collect any tweet containing at least one of our words. Technical limitations bar collection of more than 1\% of all incoming Twitter traffic, constraining the amount of target words we would be able to collect from. 
 
- %head off potential criticism, give more detail 
+While by no means exhaustive, the goal was to collect as many tweets as possible that might express dissent against the government. The authors of this paper do not claim to be experts on either Canada or Kenya, but extensive research and care was taken to ensure that the collection list reflected the contemporary political landscape of each country. Initial data collection of tweets containing words from our predetermined list began June 13, 2016 and ran to September 13, 2016. 
 
-Our process began by first forming a list of words consistent with the language one would use to express dissent against the government. The list included words and phrases such as: ``police", ``rule of law", ``corruption", ``molotov", as well as the names of important political figures and institutions in our sample countries, Canada and Kenya. We then collect any tweet containing at least one of our words. Technical limitations bar collect of more than 1\% of all incoming twitter traffic, constraining the amount of target words we would be able to collect from. Additionally, the majority of tweets are sent though mobile devices (Twitter, 2016) and this general location information is collected along with the tweet. 
+%Collection ran from  6-13-2016 to 9-11-2016
 
-While by no means exhaustive, the goal was to collect as many tweets as possible that might express dissent against the government. The authors of this paper do not claim to be experts on either Canada or Kenya, but extensive research and care was taken to ensure that the collection list reflected the contemporary political landscape of each country. Data collection of tweets containing words from our predetermined list began June 2016 and ran to September 2016, obtaining millions of tweets.
+The next step is to run our collected tweets through regular expressions, which allows us to go beyond a simple word count but instead account for the context of the tweet. Controlling for context using regular expressions is important for several reasons. First, location information is only known if the user voluntarily provides it on their Twitter profile, which relatively few do. Explicitly coding regular expressions to focus on Canadian or Kenyan issues ensures that we analyze the right tweets.   
 
-%(THE DATES OF DATA COLLECTION! and how many tweets from our COUNTRIES OF INTEREST were captured). 
+Second, some words have different cultural meanings that might create bias if only a simple word count was employed. For example, one of our code words is `anarchy' and in Kenya it is used in the very traditional style of discussing issues involving lack of government and lawlessness. However, in Canada the vast majority of tweets containing `anarchy' were discussing the TV show \textit{Sons of Anarchy}. Though this seems to be quite the endorsement of that TV program, it is not relevant to our purposes. 
 
-The next step is to run our collected tweets through regular expressions, which allows us to go beyond a simple word count but instead account for the context of the tweet. Each regular expression is scored on a scale of 1 to 5, with 1 being low dissent and 5 being high dissent. Controlling for context using regular expressions is important because some words have different cultural meanings that might create bias if only a simple word count was employed. 
+The potential for bias is why single word counts were used sparingly in this paper. Single word counts were only used when collecting tweets in languages other than English (Swahili and French) or with very specific terms used only in a negative context (e.g. `nairobbery'). The issue of translation should be minimal since in both Canada (Poblete et al., 2011) and Kenya (The Economist, 2014) the predominant language of choice on Twitter is English. 
 
-For example, one of our code words is `anarchy' and in Kenya it is used in the very traditional style of discussing issues involving lack of government and lawlessness. However, in Canada the vast majority of tweets containing `anarchy' were discussing the TV show \textit{Sons of Anarchy}, which is not relevant to our purposes. The potential for bias is why single word count scores were used very sparingly in this paper. Single word counts were only used when collecting tweets in languages other than English (Swahili and French) or with very specific terms used in only a negative context (e.g. `nairobbery'). The issue of translation should be minimal since in both Canada (Poblete et al., 2011) and Kenya (The Economist, 2014) the predominant language of choice on Twitter is English. 
+A possible criticism of this analysis is that even with our regular expressions we are not able to fully control and quantify the tone of a tweet. For example, how do we deal with sarcasm. To answer this potential criticism, we feel that any tweet containing a political message, even one clearly satirical in nature, does not happen in a vacuum. The tweet authors have encountered something in their life that causes them to respond. The fact that they've responded sarcastically is just a choice of phrasing and is inconsequential for our purposes. It only matters that they posted the tweet. The same logic can also be applied to people tweeting in defense of their government and institutions. Again, this is not happening in a vacuum; these people are reacting to something and we are capturing that in their tweet.
 
-A single Tweet can be scored multiple times, depending on its contents. The more expressive a tweet, the more an individual is dissenting. Take this example tweet: 
+\subsection*{Scoring Tweets}
+
+Each regular expression is scored on a scale of 1 to 5, with 1 being low dissent and 5 being high dissent. A single Tweet can be scored multiple times depending on its contents. The more expressive a tweet, the more an individual is dissenting. Take this example tweet admonishing some unspecified political leader: 
 
 \vspace{.5 em}
-(example tweet here.)     
 
-\noindent This tweet would be scored by the following regular expressions:
+\begin{figure}[htb]
+\centering 
+\includegraphics
+[width=0.45\textwidth]{exampletweet.eps} 
+\end{figure}
+     
+\noindent A regex meant to capture the sentiment of this tweet would look like:
+
+\begin{center}$([^.?!]\star)(\backslash b(Leader)\backslash b)([^.?!]\star)(corrupt)$
+\end{center}
+
+\noindent This regex would capture any tweet that mentions the Leader and ‘corrupt’ in the same tweet. Since this is a fairly standard political critique, it wouldbe scored as 2. The regex could also be expanded to included words thatmight convey a similar sentiment.
+
+\begin{center}
+$([^.?!]*) (\backslash b(Leader)\backslash b)([^.?!]*)((idiot(ic)?)|(stupid)|(corrupt)|(crook(ed)?))$ -Score 1
+\end{center}
+
+
+\noindent This tweet also contains other inflammatory statements we would want to capture and score with the following regular expressions:  
+
 \vspace{.5 em}
-\\
-(Which regexes that we used and their score)  
 
-%our time interval
+\begin{center}
+$([^.?!]*)(\backslash b(Leader)\backslash b)([^.?!]*)(tyrant)$ -Score 2
 
-%a plot of total angry tweets in each country, broken down by week. 
+%([^.?!]*)(\backslash b((government)|(govt)\backslash b)([^.?!]*)((incompetence)|(incompetent))) -Score 2 
+\vspace{.5 em}
 
-The final score of this tweet would be (A NUMBER). The final score of a tweet is an individual's estimated $\hat{d_{i,t}}$. Individual scores are aggregated weekly to form estimates of total dissent in a country, $\hat{D_t}$. The end result is a estimate of public dissent that lets us know what people are angry about, to what degree, and where. 
+$([^.?!]*)(\backslash b(Leader)\backslash b)([^.?!]*)(impeach(ed)?)$ -Score 4
+\end{center}
+
+
+\noindent The final score of this tweet would be 7. The final score of a tweet is an individual's estimated $\hat{d_{i,t}}$. Individual scores are aggregated weekly to form estimates of total dissent in a country, $\hat{D_t}$. The end result is a estimate of public dissent that lets us know what people are angry about and to what degree. 
 
 While previous work used various measures and proxies to assess government institutional quality, many of those measures have the same subjectivity problem as the political stability measures discussed previously or can only be used ex-post. By focusing on dissent and weighting it by quantitative data we can get a more accurate view of institutional quality by looking at how frustrated people are with these institutions. 
 
-%Save for the conclusions 
-
-A possible criticism of this analysis is that even with our regular expressions we are not able to fully control and quantify the tone of a tweet. For example, how do we deal with sarcasm. To answer this potential criticism, we feel that any tweet containing a political message, even one clearly satirical in nature, does not happen in a vacuum. The tweet authors have encountered something in their life that causes them to respond. The fact that they've responded sarcastically is just a choice of phrasing and is inconsequential for our purposes. It only matters that they posted the tweet. The same logic can also be applied to people tweeting in defense of their government and institutions. Again, this is not happening in a vacuum; these people are reacting to something and we are capturing that in their tweet.   
-
-%might save this for the conclusions 
-
-Another critique is that by using social media data, we have inherent bias because these platforms tend to have a younger user base. This is certainly the case with Twitter users in Canada (Insights West, 2016) and Kenya (Simon et al., 2014), where the average Twitter user is in their twenties. However, Rothchild (2015) shows that a properly statistically weighted non representative sample can still be effective for poll forecasting. Additionally, this potential bias may even be an asset that enhances our measure. The demographic group most likely to use social media, the young, are also the most likely to advocate for large scale political change. Thus by forming the basis of our measure on dissent on social media, we're actually able to account for the group most likely to take to the streets.
-
 \subsection*{Case Studies: Canada and Kenya}
 
-Two sample countries were selected as case studies to provide proof of concept: Canada and Kenya. Each country was selected for their similarities and differences. First, both countries use English as their primary language, especially online. Having a shared language significantly reduces the potential for misidentification that translation would entail. Second, there are different a priori expectations of each’s political stability. Canada is a developed country that often ranks amongst the top of nations in terms of development, citizen happiness, and governmental transparency. Conversely, Kenya is a developing country with a history of political instability, corruption, and ethnic tension. Most notable, the substantial post election violence in 2007 following the election of former Kenyan President Mwai Kibaki. This unrest resulted in the deaths of 1,200 people and displaced of hundreds of thousands of others (Blair, 2016). Our measure of political stability should be robust enough to account for the substantial differences between the two.  Finally and most importantly, the populations of each country are prolific users of Twitter. In Canada there are over 7 million monthly active users on Twitter (Statista, 2017). In Kenya, there are an estimated 700 thousand monthly active users (Kemibaro, 2014). This means that Twitter provides an easy way of surveying the political moods of large sections of the Canadian and Kenyan populations. 
+Two sample countries were selected as case studies to provide proof of concept: Canada and Kenya. Each country was selected for their similarities and differences. First, both countries use English as their primary language, especially online. Having a shared language significantly reduces the potential for misidentification that translation would entail. Second, there are different a priori expectations of each’s political stability. Canada is a developed country that often ranks amongst the top of nations in terms of development, citizen happiness, and governmental transparency. Conversely, Kenya is a developing country with a history of political instability, corruption, and ethnic tension. Most notable, the substantial post election violence in 2007 following the election of former Kenyan President Mwai Kibaki. This unrest resulted in the deaths of 1,200 people and displaced of hundreds of thousands of others (Blair, 2016). A measure of political stability should be robust enough to account for the substantial differences between the two.  
 
-%How many unique users did we get during that time period? 
+\begin{figure}[htb]
+\centering 
+\subfigure{\includegraphics
+[width=0.55\textwidth]{Canada_density.eps}}
+\subfigure{\includegraphics
+[width=0.30\textwidth]{Kenya_density.eps}} 
+\caption{Tweet distribution and densities in Canada and Kenya}
+\end{figure}
+Finally and most importantly, the populations of each country are prolific users of Twitter. In Canada there are over 7 million monthly active users on Twitter (Statista, 2017). In Kenya, there are an estimated 700 thousand monthly active users (Kemibaro, 2014). This means that Twitter provides an easy way of surveying the political moods of large sections of the Canadian and Kenyan populations. Figure 1 shows the distribution and concentration of the analyzed tweets, which follow the major population centers of each country. 
 
-
-
-%find population density maps 
 
 %get the peripheral data: G, S, GDP, Crime data. 
 
@@ -218,20 +262,96 @@ Two sample countries were selected as case studies to provide proof of concept: 
 %How do you quantify that level of complaining 
 
 %How do we deal with re-tweets 
-  \section*{Estimation}   
+\section*{Data and Estimation}   
 
-(Work in progress)
+Summary statistics from the regular expression analysis are in presented in Table 1. These are tweets that are explicitly political issues of either Canada or Kenya. During the period of analysis we observed 73,511 and 37,603 unique tweets concerning political issues in Canada and Kenya respectively. Though there were more tweets from Canada, each tweet averaged less individual dissent than in Kenya, $\hat{d_{C,t}}$ of 1.48 compared to $\hat{d_{K,t}}$ of 4.74.  
+
+\begin{table}[]
+\centering
+\begin{tabular}{lcc}
+\toprule
+\multicolumn{1}{l}{} & \multicolumn{1}{l}{\textbf{Canada}} & \multicolumn{1}{l}{\textbf{Kenya}} \\ \hline
+\textit{N} & 73,511 & 37,603 \\
+Mean $\hat{d_{i,t}}$ & 1.48 & 4.74 \\
+Std. dev. $\hat{d_{i,t}}$ & 0.86 & 0.76 \\
+Mode $\hat{d_{i,t}}$ & 1 & 5 \\
+Max $\hat{d_{i,t}}$ & 12 & 10 \\
+& & \\
+Mean $\hat{D_t}$ & 12,123.78 & 19,816.89 \\
+Std. dev. $\hat{D_t}$ & 10,494.53 & 30,713.60 \\
+\hline
+\end{tabular}
+\caption{Twitter Data Summary Statistics}
+\end{table}
+
+Figure 2 shows the summed weekly estimated dissent levels for low(1-2), medium(3-5), and high(6+) dissent tweets and Figure 3 shows the combined total $\hat{D_t}$ for each country. Figures 2 and 3 show that even though there were less tweets in Kenya, on average each tweet expressed more dissent. This result makes sense given Kenya's previously stated issues. 
+
+\begin{figure}[htb]
+\centering 
+\subfigure{\includegraphics
+[width=0.45\textwidth]{Canada_Dissent.eps}}
+\subfigure{\includegraphics
+[width=0.45\textwidth]{Kenya_Dissent.eps}} 
+\caption{Weekly Dissent levels in Canada and Kenya}
+\end{figure}
+
+\begin{figure}[htb]
+\centering 
+\includegraphics
+[width=0.45\textwidth]{Total_Dissent.eps} 
+\caption{Weekly Total Dissent levels in Canada and Kenya}
+\end{figure}
+
+Another interesting result of our analysis can be seen in Figures 2 and 3. Towards the end of June, there is a massive spike in dissent for both countries. Examination of news articles in each country during this period reveals no significant events that would explain the spike. 
+However, broadening the scope to the world levels does uncover an explanatory event: Brexit. 
+
+\begin{figure}[htb]
+\centering 
+\includegraphics
+[width=0.45\textwidth]{Brexit.eps} 
+\caption{Daily Internet Searches for `Brexit' in Canada and Kenya}
+\end{figure}
+
+
+The UK referendum on whether or not to continue membership in the European Union, colloquially known as 'Brexit', occurred on June 23, 2016. The slight skew towards the beginning of July on the time line is a result of scaling the original time series from daily to weekly. Search history for 'Brexit' from Google Trends (Figure 4) for each country, confirms that citizens from each country were interested in the events of Brexit. Given that Canada and Kenya were UK colonies and each maintains friendly relationships with the UK, it's logical that UK politics would be of interest to citizens of each. However, that past relationship alone does not explain why we see a spike in dissent in each after Brexit. 
+
+A possible explanation is that the events of Breixt may have encouraged people to begin discussing their own country's issues. Since people use Twitter as a news source (Smith and Wooten, 2016; Twitter, 2016), it is entirely plausible that they logged on to Twitter to see/discuss what was going on with Brexit and then stayed to discuss political events relevant to their own country. This reveals an unexpected sensitivity to outside large scale events this type of analysis might have. However, as we know from the Arab Spring (The Economist 2016), events in one country can often inspire events in another. This is especially true when it comes to issues of political stability.  
+
+
+\begin{figure}[htb]
+\centering 
+\includegraphics
+[width=0.45\textwidth]{Political_Stability.eps} 
+\caption{Weekly Estimated Political Stability in Canada and Kenya}
+\end{figure}
+
+Weighing our $\hat{D_t}$ estimates with 2016 values of government and military expenditures from each country, we can get final estimates of political stability as shown in Figure 4. Again, the results adhere to a priori expectations. Canada appears to be more politically stable than Kenya. This means that Canada is likely more resilient to potential exogenous shocks (recession, terrorist attacks, natural disaster, health crisis, etc) than Kenya would be to the same shock. Canada's developed economy, efficient government, and strong civil society likely factor heavily in this result. While showing that Canada is more politically stable than Kenya may seem like an obvious result, it is nonetheless important. The disparity between the estimates of the two signifies that this is a valid method of cross country comparison. 
 
 \section*{Conclusion}
 
-What we have presented in this paper is not designed as a replacement for traditional means of measuring political stability. Instead, it is meant as an enhancement. Knowing what expressions people use for expressing dissent and how to properly judge the validity of those statements still requires an expert's knowledge and opinion. However, using this framework would help mitigate the subjective nature of interpreting political stability. 
+%What we did
+This paper has presented a new method of estimating public dissent and political stability. By collecting tweets expressing dissent against the government and weighting with government and military expenditures, we were able to obtain estimates of political stability for Canada and Kenya. Our estimates showed that Canada is likely more political stable than Kenya. While this paper used data from Twitter as it's basis, the methodology could easily be employed to other similarly structured social media platforms one has access too.    
 
+%Why it's important
 
-%Critique- while this method of estimating political stability is highly contingent upon the the social media population. However, smart phone usage is rising across the world (Poushter, 2016) and with it social media usage. 
+Knowing what countries are potentialyl in crisis is important for several reasons. First, being able to intervene before a country falls apart is far easier than trying to reassemble the broken pieces. Second, these failed states often become havens for criminals, terrorists, and other misanthropes. Third, instability in one country has a nasty habit of leaking beyond its borders. The failed state of Somalia is an unfortunate testament to all three. As the whole world becomes more integrated knowing where potential crises may emerge becomes ever more critical. 
 
-%Manipulation by outside forces (bot armies) 
+%Criticisms 
+
+As important as this line of research is, it is not impervious to criticism. A primary issue with this method of estimating political stability is that it is highly dependent upon the social media population. The smaller the population using Twitter in a country, the less useful this estimate will be. However, growing the user base, especially in developing countries, is a strategic goal of Twitter Inc (Twitter, 2016). The steady rise in smart phone usage across the world (Poushter, 2016) should aid Twitter's market penetration. 
+
+Another issue is that some governments have taken to manipulating social media for their own benefit (King, 2016). This is a concern but one that is likely overinflated. Only a few countries in the world have both the desire and the means to negatively affect social media platforms. Furthermore, a social media company's entire business is predicated upon it's ability to maintain users. If consumers do not feel that they are getting an honest experience on a platform, they will go elsewhere. Thus it becomes the goal of multibillion dollar firms to counter the machinations of rogue states. 
+
+The final critique of using social media data is that we have inherent bias because these platforms tend to have a younger user base. This is certainly the case with Twitter users in Canada (Insights West, 2016) and Kenya (Simon et al., 2014), where the average Twitter user is in their twenties. However, Rothchild (2015) shows that a properly statistically weighted non representative sample can still be effective for poll forecasting. Additionally, this potential bias may even be an asset that enhances our measure. The demographic group most likely to use social media, the young, are also the most likely to advocate for large scale political change. Thus by forming the basis of our measure on dissent on social media, we're actually able to account for the group most likely to take to the streets.
+
 
 %China's manipulation of social media (King, 2016). 
+
+A possible criticism of this analysis is that even with our regular expressions we are not able to fully control and quantify the tone of a tweet. For example, how do we deal with sarcasm. To answer this potential criticism, we feel that any tweet containing a political message, even one clearly satirical in nature, does not happen in a vacuum. The tweet authors have encountered something in their life that causes them to respond. The fact that they've responded sarcastically is just a choice of phrasing and is inconsequential for our purposes. It only matters that they posted the tweet. The same logic can also be applied to people tweeting in defense of their government and institutions. Again, this is not happening in a vacuum; these people are reacting to something and we are capturing that in their tweet.   
+
+
+The goal of this paper is not to replacement for traditional means of measuring political stability. Instead, it is meant as an enhancement that incorporates societal and technological changes to mitigate potential biases. Knowing what expressions people use for expressing dissent and how to properly judge the validity of those statements still requires an expert's knowledge and opinion. However, using this framework would help reduce the subjective nature of interpreting political stability. 
+
 
 \end{spacing}
 

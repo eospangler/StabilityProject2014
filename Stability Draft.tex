@@ -180,17 +180,19 @@ $\alpha$ and $\gamma $ are parameters representing how much a government favors 
 
 $D_{t-1}$ is total dissent from the previous period. Dissent reduces the effectiveness of government policy and in turn makes it difficult for the government to retain power. Ruling those that do not wish to be controlled will always be more difficult than a placid population. Thus, the more dissent that exists in the system, the more difficult it will be for the government to maintain stability.  
 
-
 As shown, the government reacts to the previous period of dissent whereas the individual reacts to the current period. The result is that the government cannot keep up with the situation on the ground. This bureaucratic delay is the source of instability. When $D_t \approx D_{t-1}$ the instability is small and manageable, but when $D_t \not\approx D_{t-1}$ the state may misallocate resources and the possibility of state failure increases. Continued incongruences could result in the situation spiraling out of control. 
 
-\section{Solving the Model}
+Absent from the model are prices and taxes. These were primarily left out to reduce unnecessary complexity, but there are theoretical and practical justifications as well. In government demand for military expenditures literature, models often include a ratio of military and civilian prices, $\frac{P_S}{P_G}$ (Sandler and Hartley, 2007). Unity is assumed between the two and the ratio cancels out. This assumption has some empirical backing showing that civilian and military prices co-move (SIPRI, 1983), but has more recently been disputed (Solomon, 2005). Since most countries separately don't track military prices, we defer to the norms of the literature and do not include prices as a factor. 
 
+Regarding taxes, one could argue that this is fatal omission of the model. After all one primary motivators of the US Revolution was taxes. However, over the course of 200 years the role of government and cultural norms concerning taxation have changed. Researchers have suggested that there is a 'tax morale' wherein people do not seem to mind paying taxes (Djanali and Sheehan-Connor, 2012). This result is likely contingent upon the perceived quality of the government (Fox, 2001; Cummings et al., 2009). So the issue isn't taxation as a concept, it's paying taxes to a potentially corrupt government that is. This is something the model already accounts for and to include taxes would be a redundant.  
+
+ 
+\section{Solving the Model}
 
 This is a two stage dynamic interaction between the government and the public. In the initial period the government sets initial policy $G_1$ and $S_1$ based on some starting value of $D_0$, initial total dissent. $D_0$ can be interpreted a handful of ways: they could be from a group of anarchists (they hate all government) or maybe the losers in the contest that established the current government. Whatever their origins, we just need an initial level of dissent to be greater than 0. Since no government has ever formed without some degree of acrimony, this is not an unreasonable assumption. We can solve for an equilibrium through backwards induction, the goal being to determine dynamics of $D_t$. We will begin with the individual's problem. 
 
  
 \subsection{Individual's solution}
-
 
 Determining individual demand for dissent starts first by discussing the scenarios which do and do not facilitate individual dissent. This requires examining the first order and second order conditions. 
  
@@ -258,7 +260,7 @@ D_t	=& N_t \int_{0}^{x_{max}} {{d}_{i,t}}^* \frac{1}{x \sqrt{2\pi}}exp  \left( -
 \end{equation}
 
 
-A solution for total dissent cannot be analytically determined so we must rely on numerical simulation, which will be discussed in Section 5. 
+A solution for total dissent cannot be analytically determined so we turn to numerical simulation, which will be discussed in Section 5. While an analytic solution was explored, the necessary additions and assumptions to make that possible would have been onerous as well as substantially reduce the parsimony of the model.  
 
 \subsection{Government Solution}
 

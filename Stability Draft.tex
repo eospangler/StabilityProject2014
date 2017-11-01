@@ -60,7 +60,7 @@ Ben Smith\thanks{Email: {\href{mailto:bosmith@unomaha.edu}{bosmith@unomaha.edu}}
 
 
 \begin{abstract}
-\noindent The importance of political stability is well established and can affect all aspects of an economy. However, despite its significance, theoretical models of political stability remain underdeveloped. As demonstrated by the recent uprisings in the Middle East and populist fervor in the US and Europe, current models inadequately explain either. Our model extends the work of previous scholars by focusing on the interactions of a non-altruistic government and its citizenry. The government maximizes its own stability by choosing its level of public and security allocations, subject to a resource constraint and the level of discontent from the citizenry. In turn, each member of the public chooses their level of dissent, based on their own preferences and the risk of punishment. Through simulation we determine how exogenous shocks at the government and individual levels affect political stability. The end goal is a model that can help provide new insights into evaluating a country's political stability. Our findings suggest that countries can be stable in their political instability and that courties with a preference for using government services over suppression are more likely to be politically stable.      
+\noindent The importance of political stability is well established and can affect all aspects of an economy. However, despite its significance, theoretical models of political stability remain underdeveloped. As demonstrated by the recent uprisings in the Middle East and populist fervor in the US and Europe, current models inadequately explain either. Our model extends the work of previous scholars by focusing on the interactions of a non-altruistic government and its citizenry. The government maximizes its own stability by choosing its level of public and security allocations, subject to a resource constraint and the level of discontent from the citizenry. In turn, each member of the public chooses their level of dissent, based on their own preferences and the risk of punishment. Through simulation we show how exogenous shocks at the government and individual levels can affect political stability. The end goal is a model that can help provide new insights into evaluating a country's political stability. Our findings suggest that countries can be stable in their political instability and that counties with a preference for using government services over suppression are more likely to be politically stable.      
 
 
 \end{abstract}
@@ -169,10 +169,10 @@ The government's problems begins with the with the leader's problem. As stated p
 
 \noindent Government's Problem:
 \begin{equation}
-{\underset{G_t,S_t}{\text{max }}} \sum\limits_{t=1}^{T^*} \beta^t {\Lambda}_t = \sum\limits_{t=1}^{T^*} \beta^t\left(\frac{G_t}{D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma   \text{s.t. } G_t+S_t=R_t
+{\underset{G_t,S_t}{\text{max }}} \sum\limits_{t=1}^{T^*} \beta^t {\Lambda}_t = \sum\limits_{t=1}^{T^*} \beta^t\left(\frac{G_t}{D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma   \text{s.t. } P_G G_t+P_S S_t=R_t
 \end{equation}
 
-It is the goal of the government to maximize stability over time. The stability function uses a Stone-Geary functional form. $G_t$ is government resources used for government services. Basically $G_t$ provides all the things we expect a functioning government to provide (schools, hospitals, DMVs, etc). $S_t$ is security resources, used to suppress the population. If $G_t$ is the carrot, $S_t$ is the stick. $G_t$ and $S_t$ are the two tools the government uses to either placate/suppress the public and maintain order. $R_t$ is government resources available to the decision makers each period and is exogenous. This makes $G_t+S_t=R_t$ the government resource constraint. No government can spend unlimited amounts of resources, so they face a constraint. 
+It is the goal of the government to maximize stability over time. The stability function uses a Stone-Geary functional form. $G_t$ is government resources used for government services. Basically $G_t$ provides all the civil resources we expect a functioning government to provide (schools, hospitals, DMVs, etc). $S_t$ is security resources, used to suppress the population. If $G_t$ is the carrot, $S_t$ is the stick. $G_t$ and $S_t$ are the two tools the government uses to either placate/suppress the public and maintain order, with $P_G$ and $P_S$ their mutual prices . $R_t$ is government income available to the decision makers each period and is exogenous. This makes $P_G G_t+P_S S_t=R_t$ the government budget constraint. No government can spend unlimited amounts of resources, so they face a constraint. 
 
 $\Phi$ and $\Omega$, are the anarchy conditions, representing the minimum amount of public services and security resources needed in order for the government to function at even a basic level. If either of these minimum conditions are not met for whatever reason, such as an exogenous shock, stability goes to zero and there is a revolution. This is why the problem is maximized to $T^*$ not $\infty$, since all governments eventually fail. Should $\Lambda_t \leq 0$, that would signify the state has broken down and a revolution has taken place, resetting the system. $\beta^t$ is the government's discount factor for stability. 
 
@@ -182,9 +182,11 @@ $D_{t-1}$ is total dissent from the previous period. Dissent reduces the effecti
 
 As shown, the government reacts to the previous period of dissent whereas the individual reacts to the current period. The result is that the government cannot keep up with the situation on the ground. This bureaucratic delay is the source of instability. When $D_t \approx D_{t-1}$ the instability is small and manageable, but when $D_t \not\approx D_{t-1}$ the state may misallocate resources and the possibility of state failure increases. Continued incongruences could result in the situation spiraling out of control. 
 
-Absent from the model are prices and taxes. These were primarily left out to reduce unnecessary complexity, but there are theoretical and practical justifications as well. In government demand for military expenditures literature, models often include a ratio of military and civilian prices, $\frac{P_S}{P_G}$ (Sandler and Hartley, 2007). Unity is assumed between the two and the ratio cancels out. This assumption has some empirical backing showing that civilian and military prices co-move (SIPRI, 1983), but has more recently been disputed (Solomon, 2005). Since most countries separately don't track military prices, we defer to the norms of the literature and do not include prices as a factor. 
+%Absent from the model are prices and taxes. These were primarily left out to reduce unnecessary complexity, but there are theoretical and practical justifications as well. In government demand for military expenditures literature, models often include a ratio of military and civilian prices, $\frac{P_S}{P_G}$ (Sandler and Hartley, 2007). Unity is assumed between the two and the ratio cancels out. This assumption has some empirical backing showing that civilian and military prices do not differ (SIPRI, 1983), but has more recently been disputed (Solomon, 2005). Since most countries don't separately track military prices, we defer to the norms of the literature and do not include prices as a factor. 
 
-Regarding taxes, one could argue that this is fatal omission of the model. After all one primary motivators of the US Revolution was taxes. However, over the course of 200 years the role of government and cultural norms concerning taxation have changed. Researchers have suggested that there is a 'tax morale' wherein people do not seem to mind paying taxes (Djanali and Sheehan-Connor, 2012). This result is likely contingent upon the perceived quality of the government (Fox, 2001; Cummings et al., 2009). So the issue isn't taxation as a concept, it's paying taxes to a potentially corrupt government that is. This is something the model already accounts for and to include taxes would be a redundant.  
+
+
+Absent from the model are taxes. These were primarily left out to reduce unnecessary complexity, but there are theoretical and practical justifications as well. One could argue that this is fatal omission of the model. After all one of the primary motivators of the US Revolution was taxes. However, over the course of 200 years the role of government and cultural norms concerning taxation have changed. Researchers have suggested that there is a 'tax morale' wherein people do not seem to resent paying taxes (Djanali and Sheehan-Connor, 2012). This result is likely contingent upon the perceived quality of the government (Fox, 2001; Cummings et al., 2009). So the issue isn't taxation as a concept, it's paying taxes to a potentially corrupt government that is. This is something the model already accounts for and to include taxes would be a redundant.  
 
  
 \section{Solving the Model}
@@ -264,41 +266,42 @@ A solution for total dissent cannot be analytically determined so we turn to num
 
 \subsection{Government Solution}
 
-To solve the government's problem we need a Lagrangian.
+To solve the government's problem the first step is to normalize prices with respect to $P_G$ and take a Lagrangian. Let $\rho = \frac{P_S}{P_G}$. 
+
 \begin{equation}
-\mathcal{L} = \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^\gamma  +\lambda[R_t-G_t-S_t] 
+\mathcal{L} = \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^\gamma  +\lambda[R_t- G_t - \rho S_t] 
 \end{equation}
 Take the FOCs with respect to $G_t$ and $S_t$, then simplify:
 
 \begin{equation}
     \begin{aligned}
-        G_t\text{: } \alpha \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  -\lambda &=0  \\
-S_t\text{: } \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^{\gamma -1} -\lambda &=0 \\
-\alpha \left(\frac{G_t}{D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  &= \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{ D_{t-1}} \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^{\gamma -1} \\
-\alpha \left(\frac{S_t}{ D_{t-1}}-\Omega \right) &= \gamma  \left( \frac{G_t}{ D_{t-1}}-\Phi \right) \\
-G_t&= D_{t-1}\left[\frac{\alpha}{\gamma } \left(\frac{S_t}{ D_{t-1}} -\Omega \right)+\Phi \right]
+        G_t\text{: } \alpha \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  -\lambda &=0  \\   
+S_t\text{: } \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^{\gamma -1} -\lambda \rho &=0 \\
+\rho \alpha \left(\frac{G_t}{D_{t-1}}-\Phi\right)^{\alpha-1} \frac{1}{ D_{t-1}} \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma  &= \gamma  \left(\frac{G_t}{ D_{t-1}}-\Phi\right)^{\alpha} \frac{1}{ D_{t-1}} \left(\frac{S_t}{ D_{t-1}}-\Omega\right)^{\gamma -1} \\
+\rho \alpha \left(\frac{S_t}{ D_{t-1}}-\Omega \right) &= \gamma  \left( \frac{G_t}{ D_{t-1}}-\Phi \right) \\
+G_t&= D_{t-1}\left[\rho \frac{\alpha}{\gamma } \left(\frac{S_t}{ D_{t-1}} -\Omega \right)+\Phi \right]
     \end{aligned}
 \end{equation}
 
-\noindent Insert this into the government resource constraint. 
+\noindent Insert this into the government resource constraint.  
 
 \begin{equation}
     \begin{aligned}
-        S_t+G_t&=R_t \\
-        S_t+  D_{t-1}\left[\frac{\alpha}{\gamma } \left(\frac{S_t}{ D_{t-1}} -\Omega \right) +\Phi \right]  &= R \\
-S_t+ \frac{\alpha S_t}{\gamma } -\frac{\alpha  D_{t-1} \Omega}{\gamma } +D_{t-1}\Phi &=R_t \\
-S_t\left(1+\frac{\alpha}{\gamma }\right) &= R_t+ \frac{\alpha D_{t-1} \Omega}{\gamma } - D_{t-1}\Phi \\
-S_t\left(\frac{\gamma  + \alpha}{\gamma }\right) &= R_t - D_{t-1} \left(\Phi - \frac{\alpha  \Omega}{\gamma } \right) 
+        \rho S_t+G_t&=R_t \\
+       \rho S_t+  D_{t-1}\left[\rho \frac{\alpha}{\gamma } \left(\frac{S_t}{ D_{t-1}} -\Omega \right) +\Phi \right]  &= R \\
+\rho S_t+ \frac{\rho \alpha S_t}{\gamma } -\frac{\rho \alpha  D_{t-1} \Omega}{\gamma } +D_{t-1}\Phi &=R_t \\
+S_t\left(\rho+\rho  \frac{\alpha}{\gamma }\right) &= R_t+ \frac{\alpha D_{t-1} \Omega}{\gamma } - D_{t-1}\Phi \\
+S_t\left(\frac{\rho(\gamma+\alpha)}{\gamma }\right) &= R_t - D_{t-1} \left(\Phi - \frac{\alpha}{\gamma }\Omega \right) 
     \end{aligned}
 \end{equation}
 
 \noindent Solve for $S_t$ and we get
 \begin{equation}
-S_t=\frac{\gamma }{\gamma  +\alpha} \left[ R_t - D_{t-1} \left(\Phi - \frac{\alpha}{\gamma }\Omega \right) \right]
+S_t=\frac{\gamma }{ \rho(\gamma+\alpha)} \left[ R_t - D_{t-1} \left(\Phi - \frac{\alpha}{\gamma} \Omega \right) \right]
 \end{equation}
 \noindent This is the government's security equation. We repeat the same steps to find $G_t$. 
 \begin{equation}
-G_t=\frac{\alpha}{\gamma  +\alpha} \left[ R_t - D_{t-1} \left(\Omega - \frac{\gamma }{\alpha}\Phi \right) \right]
+G_t=\frac{\alpha}{\gamma  +\alpha} \left[ R_t - D_{t-1} \left(\frac{\rho(\alpha-\gamma)-\alpha}{\gamma}\Omega - \frac{\gamma}{\alpha} \Phi \right) \right]
 \end{equation}
 
 
@@ -307,27 +310,29 @@ G_t=\frac{\alpha}{\gamma  +\alpha} \left[ R_t - D_{t-1} \left(\Omega - \frac{\ga
 
 Given that a complete analytic solution for the theoretical model is not possible, numerical simulation must be employed. To do this we developed eight country archetypes to test. While there are endless possible combination of the parameters, these eight were chosen because they represent a broad range of characteristics and provide the most theoretical insight as to how differing parameter values affect stability. The values used in the simulations are based on extrapolations of real world data but are stylized to fit within the confines of the simulation. The explanation of each simulated country includes a list of which real world countries were used as a basis for forming the parameters values. 
 
+\begin{spacing}{1}
 \begin{table}[]
 \centering
 \footnotesize
-
 \begin{tabular}{llll}
 \toprule
 \textbf{Label} & \textbf{Variable} & \textbf{Basis} & \textbf{Source} \\ \hline
 $\alpha$ & preference for G & specified &  \\
 \textbf{$\gamma$} & preference for S & specified &  \\
+$\rho$ & price ratio, $\frac{P_S}{P_G}$ & specified & \\
 \textbf{$R$} & Government resources & GDP & World Bank \\
 $\Phi$ & S fixed costs & estimated & World Bank \\
 \textbf{$\Omega$} & G fixed costs & estimated & World Bank \\
 \textbf{$\sigma$} & Security effectiveness & $\frac{\text{Total Reported Crime}}{\text{Cleared Crimes}}$ & US FBI Crime Statistics \\
 \textbf{$A$} & Dissent punishment & Political Freedom Score & Freedom House \\
 \textbf{$E_{i,t}$} & Quality of life & Human Development Index & UN \\ \hline
-
 \end{tabular}
 \caption{Parameter Basis}
 \end{table}
+\end{spacing}
 
-Table 1 details the origin of the values used for the parameters in the simulations. Preference($\alpha$ and $\gamma$) values were specified by the authors to provide theoretical contrast between countries, but were influenced in part by estimates taken from the same analysis used for the anarchy conditions ($\Omega$ and $\Phi$) based on data from sample countries estimated from nonlinear least squares. Government resources, $R$, are based on GDP figures. $\sigma$ represents the effectiveness of security forces in suppressing dissent. 
+
+Table 1 details the origin of the values used for the parameters in the simulations. Preference($\alpha$ and $\gamma$) values were specified by the authors to provide theoretical contrast between countries, but were influenced in part by estimates taken from the same analysis used for the anarchy conditions ($\Omega$ and $\Phi$) based on data from sample countries estimated from nonlinear least squares. $\rho$ is specified as 1 since military and civilian prices are often equivalent and co-move, allowing unity to be assumed ((SIPRI, 1983; Sandler and Hartley, 2007). Government resources, $R$, are based on GDP figures. $\sigma$ represents the effectiveness of security forces in suppressing dissent. 
 
 The value of $\sigma$ was based on the ratio of total reported crime over total cleared crime. In 2014 there were over 9.4 million violent (murder, assault, rape) and property (theft, larceny, vandalism) crimes in the US. Of these crimes, 2.2 million were cleared. The ratio of these provides an approximate $\sigma$ value of 4 which is what was used as a starting value in the simulations. Due to data limitations regarding crime rates around the world, this initial value of $\sigma$ was applied to the other simulation parameters with minor changes to create theoretical variation. 
 
@@ -347,6 +352,7 @@ $A$ is based on the Political Rights scores from Freedom House on a scale of 1 b
 
 %Here is the table with the actual Parameter values. 
 
+\begin{spacing}{1}
 \begin{table}[]
 \footnotesize
 
@@ -355,6 +361,8 @@ $A$ is based on the Political Rights scores from Freedom House on a scale of 1 b
                     & \textbf{Freedonia} & \textbf{`Merika} & \textbf{Kleptopia} & \textbf{Cathay} & \textbf{Rentistan} & \textbf{Develpolus} & \textbf{Bellicostic} & \textbf{Hippieberg} \\ \hline
 \boldmath{$\alpha$}   & 0.9              & 0.8              & 0.1                & 0.4             & 0.5                & 0.5                 & 0.1                  & 0.9                 \\
 \boldmath{$\gamma$}   & 0.1                & 0.2              & 0.9                & 0.6             & 0.5                & 0.5                 & 0.9                  & 0.1                 \\
+\boldmath{$\rho$} & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+
 \textit{\textbf{R}} & 350,000,000        & 350,000,000      & 350,000,000        & 150,000,000     & 300,000,000        & 100,000,000         & 50,000,000           & 50,000,000          \\
 \boldmath{$\Phi$}     & 17,500,000         & 17,500,000       & 52,500,000         & 1,500,000       & 105,000,000        & 35,000,000          & 500,000              & 14,500,000          \\
 \boldmath{$\Omega$}   & 17,500,000         & 17,500,000       & 17,500,000         & 6,000,000       & 105,000,000        & 35,000.00           & 14,500,000           & 500,000             \\
@@ -365,6 +373,7 @@ $A$ is based on the Political Rights scores from Freedom House on a scale of 1 b
 \end{tabular}
 \caption{Parameter Values}
 \end{table}
+\end{spacing}
 
 \subsection{Initial Dissent}
 
@@ -419,6 +428,7 @@ Next we consider how robust various countries types are to various exogenous sho
 
 \begin{itemize}
 	\item \boldmath{$R$:} the government resources are severely cut. Examples include the president emptying the treasury and fleeing to a non-extraditing country, currency devaluation, or massive recession/depression. Whatever the reason, the state now has fewer resources available to it.  
+	%\item {\boldmath{$\rho$:}} price shock for the government in civil or security prices. Currency devaluation, sanctions, arm embargo.    
 	\item \boldmath{$\Omega,\Phi$:} the government is hit with new levels of corruption/incompetence and more resources must be spent on the anarchy parameters. 
 	\item \boldmath{$E$:} the quality of life suddenly drops. Mass joblessness, public health crisis, environmental degradation. 
 	\item \boldmath{$\sigma$:} the government is less effective at catching people that dissent. Propagation of social media eases coordination of protesters, the police strike, pressure from human rights groups.     
@@ -447,6 +457,46 @@ Figure 4 shows our countries reacting to a resource shock. Most of our countries
 
 The most interesting case is Rentistan, which suffers a high relative drop in stability. The fact that Rentistan seems the most vulnerable to a drop in resources makes sense given that the legitimacy of such regimes is often predicated upon their ability to provide for their citizens. When such a state is unable to provide the expected goods and services (or intimidate its citizens sufficiently) its stability will likely deteriorate. 
 
+
+%\subsubsection{$\rho$ shock, civil and security prices}  
+
+%\begin{figure}[htb]
+%\centering 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_c1.eps}} 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_c2.eps}} 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_c3.eps}} 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_c4.eps}}
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_c5.eps}}
+%\caption{$\rho$ Shock, Civil Prices}
+
+
+
+
+
+%\begin{figure}[htb]
+%\centering 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_s1.eps}} 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_s2.eps}} 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_s3.eps}} 
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_s4.eps}}
+%\subfigure{\includegraphics
+%[width=0.45\textwidth]{rho_Shock_s5.eps}}
+%\caption{$\rho$ Shock, Security Prices}
+
+
+
+
+
+
 \subsubsection{$\Phi$ and $\Omega$ Shocks} 
 
 \begin{figure}[htb]
@@ -462,7 +512,6 @@ The most interesting case is Rentistan, which suffers a high relative drop in st
 \subfigure{\includegraphics
 [width=0.45\textwidth]{Phi_Shock_5.eps}}
 \caption{$\Phi$ Shock}
-
 \end{figure}
 
 %Phi, government services 
@@ -527,7 +576,7 @@ Additionally, the minute results from the $E$ shock may be revealing a limitatio
 [width=0.45\textwidth]{Es_Shock_4.eps}}
 \subfigure{\includegraphics
 [width=0.45\textwidth]{Es_Shock_5.eps}}
-\subsubsection{Enforcement Shock}
+\caption{Enforcement Shock}
 
 \end{figure}
 

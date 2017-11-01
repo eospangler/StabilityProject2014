@@ -184,7 +184,6 @@ This theoretical model allows for better understanding of how shocks at the gove
 
 An issue in transitioning from the theoretical model to the empirical model, is how does one acquire an estimate for $D_t$, total dissent. Most other variables and parameters can be obtained through existing data or internal estimation. The spread of social media, specifically Twitter, allows us to capture people voicing dissent. A central premise of this project is that digital behavior is representative of physical behavior. This paper follows a similar method as Smith and Wooten (2016) and Carly et al. (2013), but expanded to capture the more open ended nature of political stability. 
 
-
 Our process began by first forming a list of words expected to be consistent with the language one would use to express dissent against the government. The list included words and phrases such as: ``police", ``rule of law", ``corruption", ``molotov", as well as the names of important political figures and institutions in our sample countries, Canada and Kenya. We then collect any tweet containing at least one of our words. Technical limitations bar collection of more than 1\% of all incoming Twitter traffic, constraining the amount of target words we would be able to collect from. 
 
 While by no means exhaustive, the goal was to collect as many tweets as possible that might express dissent against the government. The authors of this paper do not claim to be experts on either Canada or Kenya, but extensive research and care was taken to ensure that the collection list reflected the contemporary political landscape of each country. Initial data collection of tweets containing words from our predetermined list began June 13, 2016 and ran to September 11, 2016. 
@@ -216,16 +215,15 @@ Each regular expression is scored on a scale of 1 to 5, with 1 being low dissent
 \begin{center}$([^.?!]\star)(\backslash b(Leader)\backslash b)([^.?!]\star)(corrupt)$
 \end{center}
 
-\noindent This regular expression would capture any tweet that mentions the Leader and ‘corrupt’ in the same tweet. Since this is a fairly standard political critique, it would be scored as 2. The regular expression could also be expanded to included words that might convey a similar sentiment.
+\noindent This regular expression would capture any tweet that mentions the Leader and `corrupt' in the same tweet. Since this is a fairly standard political critique, it would be scored as 2. The regular expression could also be expanded to included words that might convey a similar sentiment.
 
 \begin{center}
-$([^.?!]*) (\backslash b(Leader)\backslash b)([^.?!]*)((corrupt)|(crook(ed)?)|(criminal))$ -Score 1
+$([^.?!]*) (\backslash b(Leader)\backslash b)([^.?!]*)((corrupt)|(crook(ed)?)|(criminal))$ -Score 2
 \end{center}
 
 \noindent This tweet also contains other inflammatory statements we would want to capture and score with the following regular expressions:  
 
 \vspace{.5 em}
-
 
 \begin{center}
 $([^.?!]*)(\backslash b(Leader)\backslash b)([^.?!]*)(tyrant)$ -Score 2
@@ -234,12 +232,10 @@ $([^.?!]*)(\backslash b(Leader)\backslash b)([^.?!]*)(tyrant)$ -Score 2
 $([^.?!]*) (\backslash b(Leader)\backslash b)([^.?!]*)((idiot(ic)?)|(stupid(ity)?)|(incompetent))$ -Score 1
 
 \vspace{.5 em}
-
 $([^.?!]*)(\backslash b(Leader)\backslash b)([^.?!]*)(impeach(ed)?)$ -Score 4
 \end{center}
 
-
-\noindent Based on how we've scored the regular expressions, the final score of this tweet would be 8. This score represents an individual's estimated $\hat{d_{i,t}}$. This tweet is used as an illustrative example of a single tweet containing multiple points of interest, but this is likely to be the minority of cases. Twitter has a 140 character limit, so in all likelihood most tweets will only contain a single regular expression.  
+\noindent Based on how we've scored the regular expressions, the final score of this tweet would be 9. This score represents an individual's estimated $\hat{d_{i,t}}$. This tweet is used as an illustrative example of a single tweet containing multiple points of interest, but this is likely to be the minority of cases. Twitter has a 140 character limit, so in all likelihood most tweets will only contain a single regular expression.  
 
 Individual scores are aggregated weekly across the Twitter population, $N_{Twitter}$, to form estimates of total dissent in a country, $\hat{D_t}$. 
 
@@ -281,6 +277,7 @@ Summary statistics from the regular expression analysis are presented in Table 1
 
 Note that this average only accounts for those that expressed some form of dissent online. Recall though that Canada has 7 million active users on Twitter and Kenya 700 thousand, most of whom elected to stay silent ($\hat{d_{i,t}}=0$). Roughly 1\% of Canadian Twitter users expressed dissent during this period, while 5\% of Kenyan Twitter users did. So relatively to their user populations, more Kenyans expressed dissent and at higher levels than Canadians.      
 
+\begin{spacing}{1}
 \begin{table}[]
 \centering
 \begin{tabular}{lcc}
@@ -298,6 +295,7 @@ Std. dev. $\hat{D_t}$ & 10,494.53 & 30,713.60 \\
 \end{tabular}
 \caption{Twitter Data Summary Statistics}
 \end{table}
+\end{spacing}
 
 Figure 2 shows the summed weekly estimated dissent levels for low(1-2), medium(3-5), and high(6+) dissent tweets and Figure 3 shows the combined total $\hat{D_t}$ for each country. Figures 2 and 3 show that even though there were less tweets in Kenya, on average there is a higher level of dissent in Kenya than Canada. This result makes sense given Kenya's previously stated issues. 
 
@@ -341,17 +339,16 @@ Another interesting result of our analysis can be seen in Figures 2 and 3. Towar
 
 The UK referendum on whether or not to continue membership in the European Union, colloquially known as `Brexit', occurred on June 23, 2016. The slight skew towards the beginning of July on the time line is a result of scaling the original time series from daily to weekly. Search history for `Brexit' from Google Trends (Figure 5) for each country, confirms that citizens from each country were interested in the events of Brexit. Given that Canada and Kenya were UK colonies and each maintains friendly relationships with the UK, it's logical that UK politics would be of interest to citizens of each. However, that relationship alone does not explain why we see a spike in dissent in each after Brexit. 
 
-A possible explanation is that the events of Brexit may have encouraged people to discuss their own country's issues. Since people use Twitter as a news source (Smith and Wooten, 2013; Twitter, 2016), it is entirely plausible that they logged on to Twitter to see/discuss what was going on with Brexit and then stayed to discuss political events relevant to their own country. This reveals an unexpected sensitivity to outside large scale events this type of analysis might have. However, as we know from the Arab Spring (The Economist 2016), events in one country can often inspire events in another. This is especially true when it comes to issues of political stability.  
+A possible explanation is that the events of Brexit may have encouraged people to discuss their own country's issues. Since people use Twitter as a news source (Smith and Wooten, 2013; Twitter, 2016), it is entirely plausible that they logged on to Twitter to see/discuss what was going on with Brexit and then stayed to discuss political events relevant to their own country. This reveals an unexpected sensitivity to outside large scale events this type of analysis might have. However, as we know from the Arab Spring (The Economist, 2016), events in one country can often inspire events in another. This is especially true when it comes to issues of political stability.  
 
 
 
 %We can't get estimates for Phi and Omega 
 
 %Put a little table with our values for GE, ME
-
+\begin{spacing}{1}
 \begin{table}[]
 \centering
-
 \begin{tabular}{lcc}
 \toprule	
  & \textbf{Canada} & \textbf{Kenya} \\ \hline
@@ -363,6 +360,7 @@ $\gamma$ & .586 & .241 \\ \hline
 \end{tabular}
 \caption{Estimation Values}
 \end{table}
+\end{spacing}
 
 Table 2 shows the 2016 values of government civil and military expenditures from each country along with their estimated preferences for each. Using the functional form provided by Equation (2), we can obtain a weighted weekly estimates of political stability. 
 
@@ -379,11 +377,11 @@ Figure 6 shows our final estimates of political stability for Canada and Kenya. 
 \section*{Conclusion}
 
 %What we did
-This paper has presented a new method of estimating public dissent and political stability. By collecting tweets expressing dissent against the government and weighting with government and military expenditures, we were able to obtain estimates of political stability for Canada and Kenya. Our estimates show that Canada is likely more political stable than Kenya. While this paper used data from Twitter as it's basis, the methodology could easily be employed to other similarly structured social media platforms one has access too.    
+This paper has presented a new method of estimating public dissent and political stability. By collecting tweets expressing dissent against the government and weighting with government and military expenditures, we were able to obtain estimates of political stability for Canada and Kenya. Our estimates show that Canada is likely more politically stable than Kenya. While this paper used data from Twitter as its basis, the methodology could easily be employed to other similarly structured social media platform one has access too.    
 
 %Why it's important
 
-Knowing what countries are potentially in crisis is important for several reasons. First, being able to intervene before a country falls apart is far easier than trying to reassemble the broken pieces. Second, these failed states often become havens for criminals, terrorists, and other misanthropes. Third, instability in one country has a nasty habit of leaking beyond its borders. The failed state of Somalia is an unfortunate testament to all three. As the whole world becomes more integrated knowing where potential crises may emerge becomes ever more critical. 
+Knowing what countries are potentially in crisis is important for several reasons. First, being able to intervene before a country falls apart is far easier than trying to reassemble the broken pieces. Second, these failed states often become havens for criminals, terrorists, and other misanthropes. Third, instability in one country has a nasty habit of leaking beyond its borders. The failed state of Somalia is an unfortunate testament to all three. As the whole world becomes more integrated knowing where crisis may emerge becomes ever more critical. 
 
 %Criticisms 
 
@@ -391,7 +389,7 @@ As important as this line of research is, it is not impervious to criticism. A p
 
 Another issue is that some governments have taken to manipulating social media for their own benefit (King, 2016). This is a concern but one that is likely overinflated. Only a few countries in the world have both the desire and the means to negatively affect social media platforms. Furthermore, a social media company's entire business is predicated upon its ability to maintain users. If consumers do not feel that they are getting an honest experience on a platform, they will go elsewhere. Thus it becomes the goal of multibillion dollar firms to counter the machinations of rogue states. 
 
-The final critique of using social media data is that we have inherent bias because these platforms tend to have a younger user base. This is certainly the case with Twitter users in Canada (Insights West, 2016) and Kenya (Simon et al., 2014), where the average Twitter user is in their twenties. However, Rothchild (2015) shows that a properly statistically weighted non representative sample can still be effective for poll forecasting. Additionally, this potential bias may even be an asset that enhances our measure. The demographic group most likely to use social media, the young, are also the most likely to advocate for large scale political change. Thus by forming the basis of our measure on dissent on social media, we're actually able to account for the group most likely to take to the streets.
+The final critique of using social media data is that we have inherent bias because these platforms tend to have a younger user base. This is certainly the case with Twitter users in Canada (Insights West, 2016) and Kenya (Simon et al., 2014), where the average Twitter user is in their twenties. However, Rothchild (2015) shows that a properly statistically weighted non-representative sample can still be effective for poll forecasting. Additionally, this potential bias may even be an asset that enhances our measure. The demographic group most likely to use social media, the young, are also the most likely to advocate for large scale political change. Thus by forming the basis of our measure on dissent on social media, we're actually able to account for the group most likely to take to the streets.
 
 %A possible criticism of this analysis is that even with our regular expressions we are not able to fully control and quantify the tone of a tweet. For example, how do we deal with sarcasm. To answer this potential criticism, we feel that any tweet containing a political message, even one clearly satirical in nature, does not happen in a vacuum. The tweet authors have encountered something in their life that causes them to respond. The fact that they've responded sarcastically is just a choice of phrasing and is inconsequential for our purposes. It only matters that they posted the tweet. The same logic can also be applied to people tweeting in defense of their government and institutions. Again, this is not happening in a vacuum; these people are reacting to something and we are capturing that in their tweet.   
 

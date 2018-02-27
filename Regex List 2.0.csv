@@ -1,0 +1,488 @@
+Regex ID,Regex Category,Regular Expression,Score
+1,Society,([^.?!]*)(\b(Kikuyu)\b)([^.?!]*),1
+2,Society,([^.?!]*)(\b(Luhya)\b)([^.?!]*),1
+3,Society,([^.?!]*)(\b(Luo)\b)([^.?!]*),1
+4,Society,([^.?!]*)(\b(Kalenjin)\b)([^.?!]*),1
+5,Society,([^.?!]*)(\b(Kamba)\b)([^.?!]*),1
+6,Society,([^.?!]*)(\b(Kisii)\b)([^.?!]*),1
+7,Society,([^.?!]*)(\b(Meru)\b)([^.?!]*),1
+8,Society,([^.?!]*)(\b(Kibera)\b)([^.?!]*),1
+9,Political ,([^.?!]*)(\b(nairobbery)\b)([^.?!]*),3
+10,Political ,([^.?!]*)(\b(Bensouda)\b)([^.?!]*)((ICC)|(International Criminal Court)),1
+11,Political ,([^.?!]*)(\b((International Criminal Court)|(ICC))\b)([^.?!]*)((Bensouda)),1
+12,Society,([^.?!]*)(\b(harambee)\b)([^.?!]*)(Kenya(ns)?),1
+13,Society,([^.?!]*)(\b(kenya(ns)?)\b)([^.?!]*)(harambee),1
+14,Political ,([^.?!]*)(\b((Ethics and Anti-Corruption Commission)|(EACC)|([@]EACCKenya))\b)([^.?!]*),1
+15,Political ,([^.?!]*)(\b((Independent Electoral and Boundaries Commission)|(IEBC)|([@]IEBCKenya))\b)([^.?!]*),1
+16,Political ,([^.?!]*)(\b((Orange Democratic Movement)|(Orange)|(ODM)|(National Super Alliance)|(NASA))\b)([^.?!]*)((kenya(ns)?),1
+17,Political ,([^.?!]*)(\b(kenya(ns)?)\b)([^.?!]*)((Orange Democratic Movement)|(Orange)|(ODM)|(National Super Alliance)|(NASA)),1
+18,Political ,([^.?!]*)(\b(Jubilee)\b)([^.?!]*)((kenya(ns)?),1
+19,Political ,([^.?!]*)(\b(kenya(ns)?)\b)([^.?!]*)(Jubilee),1
+20,Political ,([^.?!]*)(\b(([@]UKenyatta)|(Kenyatta('s)?))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+21,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)(([@]UKenyatta)|(Kenyatta('s)?)),1
+22,Political ,([^.?!]*)(\b(([@]UKenyatta)|(Kenyatta('s)?))\b)([^.?!]*)((tyrant)|(facist)|(dictator)|(despot(ic)?)|(abuse of power)|(undemocratic)|(authoritarian)),3
+23,Political ,([^.?!]*)(\b((tyrant)|(facist)|(dictator)|(despot(ic)?)|(abuse of power)|(undemocratic)|(authoritarian))\b)([^.?!]*)(([@]UKenyatta)|(Kenyatta('s)?)),3
+24,Political ,([^.?!]*)(\b(([@]UKenyatta)|(Kenyatta('s)?))\b)([^.?!]*)((jeuri)|(dikteta)|(dhalimu)),3
+25,Political ,([^.?!]*)(\b((jeuri)|(dikteta)|(dhalimu))\b)([^.?!]*)(([@]UKenyatta)|(Kenyatta('s)?)),3
+26,Political ,([^.?!]*)(\b(([@]UKenyatta)|(Kenyatta('s)?))\b)([^.?!]*)((integrity)|(unfit)),1
+27,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)(([@]UKenyatta)|(Kenyatta('s)?)),1
+28,Political ,([^.?!]*)(\b(([@]UKenyatta)|(Kenyatta('s)?))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+29,Political ,([^.?!]*)(\b((liar)|(lies?))\b)([^.?!]*)(([@]UKenyatta)|(Kenyatta('s)?)),2
+30,Political ,([^.?!]*)(\b(([@]UKenyatta)|(Kenyatta('s)?))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+31,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)(([@]UKenyatta)|(Kenyatta('s)?)),4
+32,Political ,([^.?!]*)(\b(([@]UKenyatta)|(Kenyatta('s)?))\b)([^.?!]*)((impeach)|(kick out)|(vote out)|(overturn)|(overthrow)),5
+33,Political ,([^.?!]*)(\b((impeach)|(kick out)|(vote out)|(overturn)|(overthrow))\b)([^.?!]*)(([@]UKenyatta)|(Kenyatta('s)?)),5
+34,Political ,([^.?!]*)(\b((Ruto('s)?)|([@]WilliamsRuto))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+35,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Ruto('s)?)|([@]WilliamsRuto)),1
+36,Political ,([^.?!]*)(\b((Ruto('s)?)|([@]WilliamsRuto))\b)([^.?!]*)((integrity)|(unfit)),1
+37,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Ruto('s)?)|([@]WilliamsRuto)),1
+38,Political ,([^.?!]*)(\b((Ruto('s)?)|([@]WilliamsRuto))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+39,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Ruto('s)?)|([@]WilliamsRuto)),2
+40,Political ,([^.?!]*)(\b((Ruto('s)?)|([@]WilliamsRuto))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+41,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Ruto('s)?)|([@]WilliamsRuto)),4
+42,Political ,([^.?!]*)(\b((Odinga('s)?)|([@]RailaOdinga))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+43,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Odinga('s)?)|([@]RailaOdinga)),1
+44,Political ,([^.?!]*)(\b((Odinga('s)?)|([@]RailaOdinga))\b)([^.?!]*)((integrity)|(unfit)),1
+45,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Odinga('s)?)|([@]RailaOdinga)),1
+46,Political ,([^.?!]*)(\b((Odinga('s)?)|([@]RailaOdinga))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+47,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Odinga('s)?)|([@]RailaOdinga)),2
+48,Political ,([^.?!]*)(\b((Odinga('s)?)|([@]RailaOdinga))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+49,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Odinga('s)?)|([@]RailaOdinga)),4
+50,Political ,([^.?!]*)(\b(Kibaki('s)?)\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+51,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)(Kibaki('s),1
+52,Political ,([^.?!]*)(\b(Kibaki('s)?)\b)([^.?!]*)((integrity)|(unfit)),1
+53,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)(Kibaki('s),1
+54,Political ,([^.?!]*)(\b(Kibaki('s)?)\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+55,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)(Kibaki('s),2
+56,Political ,([^.?!]*)(\b(Kibaki('s)?)\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+57,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)(Kibaki('s),4
+58,Political ,([^.?!]*)(\b((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),2
+59,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai)),1
+60,Political ,([^.?!]*)(\b((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai))\b)([^.?!]*)((integrity)|(unfit)),1
+61,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai)),1
+62,Political ,([^.?!]*)(\b((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+63,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai)),2
+64,Political ,([^.?!]*)(\b((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+65,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((attorney general muigai)|(ag muigai)|(AG Githu Muigai)|([@]Githumuigai)),4
+66,Political ,([^.?!]*)(\b((Speaker Muturi('s)?)|([@]SpeakerJBMuturi))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+67,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Speaker Muturi('s)?)|([@]SpeakerJBMuturi)),1
+68,Political ,([^.?!]*)(\b((Speaker Muturi('s)?)|([@]SpeakerJBMuturi))\b)([^.?!]*)((integrity)|(unfit)),1
+69,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Speaker Muturi('s)?)|([@]SpeakerJBMuturi)),1
+70,Political ,([^.?!]*)(\b((Speaker Muturi('s)?)|([@]SpeakerJBMuturi))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+71,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Speaker Muturi('s)?)|([@]SpeakerJBMuturi)),2
+72,Political ,([^.?!]*)(\b((Speaker Muturi('s)?)|([@]SpeakerJBMuturi))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+73,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Speaker Muturi('s)?)|([@]SpeakerJBMuturi)),4
+74,Political ,([^.?!]*)(\b((Speaker Laboso('s)?)|([@]TeamJoyceLaboso))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+75,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Speaker Laboso('s)?)|([@]TeamJoyceLaboso)),1
+76,Political ,([^.?!]*)(\b((Speaker Laboso('s)?)|([@]TeamJoyceLaboso))\b)([^.?!]*)((integrity)|(unfit)),1
+77,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Speaker Laboso('s)?)|([@]TeamJoyceLaboso)),1
+78,Political ,([^.?!]*)(\b((Speaker Laboso('s)?)|([@]TeamJoyceLaboso))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+79,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Speaker Laboso('s)?)|([@]TeamJoyceLaboso)),2
+80,Political ,([^.?!]*)(\b((Speaker Laboso('s)?)|([@]TeamJoyceLaboso))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+81,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Speaker Laboso('s)?)|([@]TeamJoyceLaboso)),4
+82,Political ,([^.?!]*)(\b((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+83,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko)),1
+84,Political ,([^.?!]*)(\b((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko))\b)([^.?!]*)((integrity)|(unfit)),1
+85,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko)),1
+86,Political ,([^.?!]*)(\b((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+87,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko)),2
+88,Political ,([^.?!]*)(\b((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+89,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Keriako Tobiko('s)?)|(DPP Tobiko('s)?)|([@]Keriakotobiko)),4
+90,Political ,([^.?!]*)(\b((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+91,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro)),1
+92,Political ,([^.?!]*)(\b((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro))\b)([^.?!]*)((integrity)|(unfit)),1
+93,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro)),1
+94,Political ,([^.?!]*)(\b((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+95,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro)),2
+96,Political ,([^.?!]*)(\b((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+97,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Speaker Ethuro('s)?)|(Sen(ator)? Ethuro('s)?)|([@]Speakerethuro)),4
+98,Political ,([^.?!]*)(\b(gen(eral)? Mwathethe('s)?)\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+99,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)(gen(eral)? Mwathethe('s)?),1
+100,Political ,([^.?!]*)(\b(gen(eral)? Mwathethe('s)?)\b)([^.?!]*)((integrity)|(unfit)),1
+101,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)(gen(eral)? Mwathethe('s)?),1
+102,Political ,([^.?!]*)(\b(gen(eral)? Mwathethe('s)?)\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+103,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)(gen(eral)? Mwathethe('s)?),2
+104,Political ,([^.?!]*)(\b(gen(eral)? Mwathethe('s)?)\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+105,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)(gen(eral)? Mwathethe('s)?),4
+106,Political ,([^.?!]*)(\b(Boinett('s)?)\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),1
+107,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)(Boinett('s)?),1
+108,Political ,([^.?!]*)(\b(Boinett('s)?)\b)([^.?!]*)((integrity)|(unfit)),1
+109,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)(Boinett('s)?),1
+110,Political ,([^.?!]*)(\b(Boinett('s)?)\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),2
+111,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)(Boinett('s)?),2
+112,Political ,([^.?!]*)(\b(Boinett('s)?)\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+113,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)(Boinett('s)?),4
+114,Political ,([^.?!]*)(\b((parliament of Kenya)|(Kenyan parliament))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons)),1
+115,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons))\b)([^.?!]*)((parliament of Kenya)|(Kenyan parliament)),1
+116,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((parliament of Kenya)|(Kenyan parliament)),1
+117,Political ,([^.?!]*)(\b((parliament of Kenya)|(Kenyan parliament))\b)([^.?!]*)((liars?)|(lies?)|(lying)|(lied)),2
+118,Political ,([^.?!]*)(\b((liars?)|(lies?)|(lying)|(lied))\b)([^.?!]*)((parliament of Kenya)|(Kenyan parliament)),2
+119,Political ,([^.?!]*)(\b((parliament of Kenya)|(Kenyan parliament))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+120,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((parliament of Kenya)|(Kenyan parliament)),4
+121,Political ,([^.?!]*)(\b((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons)),1
+122,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons))\b)([^.?!]*)((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE)),1
+123,Political ,([^.?!]*)(\b((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE))\b)([^.?!]*)((integrity)|(unfit)),1
+124,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE)),1
+125,Political ,([^.?!]*)(\b((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE))\b)([^.?!]*)((liars?)|(lies?)|(lying)|(lied)),2
+126,Political ,([^.?!]*)(\b((liars?)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE)),2
+127,Political ,([^.?!]*)(\b((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+128,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Kenyan National Assembly)|(National Assembly of Kenya)|([@]NAssemblyKE)),4
+129,Political ,([^.?!]*)(\b((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons)),1
+130,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons))\b)([^.?!]*)((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE)),1
+131,Political ,([^.?!]*)(\b((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE))\b)([^.?!]*)((integrity)|(unfit)),1
+132,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE)),1
+133,Political ,([^.?!]*)(\b((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE))\b)([^.?!]*)((liars?)|(lies?)|(lying)|(lied)),2
+134,Political ,([^.?!]*)(\b((liars?)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE)),2
+135,Political ,([^.?!]*)(\b((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),4
+136,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Senate of Kenya)|(Kenyan Senate)|([@]Senate_KE)),4
+137,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(economy),1
+138,Economic ,([^.?!]*)(\b((economy)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+139,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((unemployment)|(jobless(ness)?)),3
+140,Economic ,([^.?!]*)(\b((unemployment)|(jobless(ness)?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+141,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(poverty),3
+142,Economic ,([^.?!]*)(\b(poverty)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+143,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((wages?)|(incomes?)),1
+144,Economic ,([^.?!]*)(\b((wages?)|(incomes?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+145,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((inflation)|(prices?)),2
+146,Economic ,([^.?!]*)(\b((inflation)|(prices?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+147,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(deficit),1
+148,Economic ,([^.?!]*)(\b(deficit)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+149,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(tax(es)?),1
+150,Economic ,([^.?!]*)(\b(tax(es)?)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+151,Economic ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((economic depression)|(recession)),4
+152,Economic ,([^.?!]*)(\b((economic depression)|(recession))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),4
+153,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(nepotism),1
+154,Society,([^.?!]*)(\b(nepotism)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+155,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((electoral fraud)|(election fraud)|(illegitimate elections?)|(voter fraud)|(voter? tampering)),4
+156,Political ,([^.?!]*)(\b((electoral fraud)|(election fraud)|(illegitimate elections?)|(voter fraud)|(voter? tampering))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),4
+157,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(election violence),5
+158,Political ,([^.?!]*)(\b(election violence)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),5
+159,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(tribalism),1
+160,Society,([^.?!]*)(\b(tribalism)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+161,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(diaspora),1
+162,Society,([^.?!]*)(\b(diaspora)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+163,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(freedoms?),1
+164,Political ,([^.?!]*)(\b(freedoms?)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+165,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((civil rights?)|(civil liberties)|(civil liberty)),1
+166,Political ,([^.?!]*)(\b((civil rights?)|(civil liberties)|(civil liberty))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+167,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(human rights?),2
+168,Political ,([^.?!]*)(\b(human rights?)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+169,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((slums?)|(ghettos?)),2
+170,Society,([^.?!]*)(\b\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya))((slums?)|(ghettos?)),2
+171,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((injustices?)|(justice)|(udhalimu)|(haki)),1
+172,Political ,([^.?!]*)(\b((injustices?)|(justice)|(udhalimu)|(haki))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+173,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(rule of law),1
+174,Political ,([^.?!]*)(\b(rule of law)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+175,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(inequality),1
+176,Society,([^.?!]*)(\b(inequality)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+177,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((public health)|(health[\s]?care)),2
+178,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((public health)|(health[\s]?care)),1
+179,Quality of Life ,([^.?!]*)(\b((public health)|(health[\s]?care))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+180,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((AIDS)|(HIV)),1
+181,Quality of Life ,([^.?!]*)(\b((AIDS)|(HIV))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+182,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((pollution)|(clean water)|(environment(al)?)|(drought)),2
+183,Quality of Life ,([^.?!]*)(\b((pollution)|(clean water)|(environment(al)?)|(drought))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+184,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((climate change)|(global warming)),2
+185,Quality of Life ,([^.?!]*)(\b((climate change)|(global warming))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+186,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((famine)|(food shortages?)),4
+187,Quality of Life ,([^.?!]*)(\b((famine)|(food shortages?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),4
+188,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((outbreaks?)|(epidemics?)),4
+189,Quality of Life ,([^.?!]*)(\b((outbreaks?)|(epidemics?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),4
+190,Quality of Life ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((living conditions?)|(quality of life)),2
+191,Quality of Life ,([^.?!]*)(\b((living conditions?)|(quality of life))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+192,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((immigrants?)|(immigration)|(wahamiaji)),1
+193,Society,([^.?!]*)(\b((immigrants?)|(immigration)|(wahamiaji))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+194,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((refugees?)|(wakimbizi)),1
+195,Society,([^.?!]*)(\b((refugees?)|(wakimbizi))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+196,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((bribes?)|(bribery)|(graft)|(rushwa)|(Baksheesh)|(hongo)),3
+197,Society,([^.?!]*)(\b((bribes?)|(bribery)|(graft)|(rushwa)|(Baksheesh)|(hongo))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+198,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((police corruption)|(police brutality)|(police violence)|(police abuses?)|(corrupt police)),4
+199,Society,([^.?!]*)(\b((police corruption)|(police brutality)|(police violence)|(police abuses?)|(corrupt police))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),4
+200,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((extra[\s]?judicial killings?)|(police killings?)),5
+201,Society,([^.?!]*)(\b((extra[\s]?judicial killings?)|(police killings?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),5
+202,Security,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((al-shabaab)|(al[\s]?shabaab)|(terrorism)|(terrorists?)|(extremists?)|(militants?)|(insurgents?)),4
+203,Security,([^.?!]*)(\b((al-shabaab)|(al[\s]?shabaab)|(terrorism)|(terrorists?)|(extremists?)|(militants?)|(insurgents?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),4
+204,Security,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((car bombs?)|(suicide bomb(ing)?)|(assassination)|(assassinated?)),5
+205,Security,([^.?!]*)(\b((car bombs?)|(suicide bomb(ing)?)|(assassination)|(assassinated?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),5
+206,Security,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((crimes?)|(criminals?)),2
+207,Security,([^.?!]*)(\b((crimes?)|(criminals?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+208,Security,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((anarchy)|(lawless(ness)?)|(machafuko)|(wahalifu)),3
+209,Security,([^.?!]*)(\b((anarchy)|(lawless(ness)?)|(machafuko)|(wahalifu))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+210,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((political scandals?)|(political misconduct)),1
+211,Political ,([^.?!]*)(\b((political scandals?)|(political misconduct))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+212,Security,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((genocide)|(ethnic cleansing)|(mass killings?)),5
+213,Security,([^.?!]*)(\b((genocide)|(ethnic cleansing)|(mass killings?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),5
+214,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(propaganda),1
+215,Political ,([^.?!]*)(\b(propaganda)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+216,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(social unrest)|(public unrest)|(public order),2
+217,Political ,([^.?!]*)(\b(social unrest)|(public unrest)|(public order)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+218,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((public outcry)|(public outrage)),2
+219,Political ,([^.?!]*)(\b((public outcry)|(public outrage))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+220,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((government reforms?)|(policy reforms?)|(political reforms?)|(change in government)),1
+221,Political ,([^.?!]*)(\b((government reforms?)|(policy reforms?)|(political reforms?)|(change in government))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+222,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((protests?)|(mageuzi)),3
+223,Political ,([^.?!]*)(\b((protests?)|(mageuzi))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+224,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((rebellion)|(revolution)|(revolt)|(resistance)|(riots?)|(molotov)|(coup)|(uasi)|(upinzani)),5
+225,Political ,([^.?!]*)(\b((rebellion)|(revolution)|(revolt)|(resistance)|(riots?)|(molotov)|(coup)|(uasi)|(upinzani))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),5
+226,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((anti[\s]?gov(ernment)?)|(anti[-]gov(ernment)?)),3
+227,Political ,([^.?!]*)(\b((anti[\s]?gov(ernment)?)|(anti[-]gov(ernment)?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+228,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(political stability),3
+229,Political ,([^.?!]*)(\b(political stability)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+230,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((politically unstable)|(political instability)),3
+231,Political ,([^.?!]*)(\b((politically unstable)|(political instability))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+232,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((public dissent)|(civil disobedience)),3
+233,Political ,([^.?!]*)(\b((public dissent)|(civil disobedience))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+234,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((gov(ernment)? corruption)?|(corrupt gov(ernment)?)),2
+235,Political ,([^.?!]*)(\b((gov(ernment)? corruption)?|(corrupt gov(ernment)?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),2
+236,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)((bureacracy)|(bureacrats?)),1
+237,Political ,([^.?!]*)(\b((bureacracy)|(bureacrats?))\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+238,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(illegitimate government),3
+239,Political ,([^.?!]*)(\b(illegitimate government)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),3
+240,Political ,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(Brexit),1
+241,Political ,([^.?!]*)(\b(Brexit)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+242,Society,([^.?!]*)(\b((Kenya('s)?)|(kenyans?)|(wakenya))\b)([^.?!]*)(homeless(ness)?),1
+243,Society,([^.?!]*)(\b(homeless(ness)?)\b)([^.?!]*)((Kenya('s)?)|(kenyans?)|(wakenya)),1
+244,Political ,([^.?!]*)(\b(([#]cdnpoli)|([#]canpoli))\b)([^.?!]*),6
+245,Society,([^.?!]*)(\b((CBC)|(Canadian Broadcast Company))\b)([^.?!]*)((fake news)|(propaganda)),6
+246,Society,([^.?!]*)(\b((fake news)|(propaganda))\b)([^.?!]*)((CBC)|(Canadian Broadcast Company)),6
+247,Political,([^.?!]*)(\b((sovereignty)|(independence)|(independent))\b)([^.?!]*)(Qu[eé]bec),6
+248,Political,([^.?!]*)(\b(Qu[eé]bec)\b)([^.?!]*)((sovereignty)|(independence)|(independent)),6
+249,Political,([^.?!]*)(\b(Qu[eé]bec Solidaire)\b)([^.?!]*),6
+250,Society ,([^.?!]*)(\b((starlight tours?)|(midnight blue tours?)|(Saskatoon freezing deaths?))\b)([^.?!]*),9
+251,Political,([^.?!]*)(\b((@JustinTrudeau)|(Trudeau)|([@]CanadianPM))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+252,Political,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((@JustinTrudeau)|(Trudeau)|([@]CanadianPM)),6
+253,Political,([^.?!]*)(\b((@JustinTrudeau)|(Trudeau)|([@]CanadianPM))\b)([^.?!]*)((integrity)|(unfit)),6
+254,Political,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((@JustinTrudeau)|(Trudeau)|([@]CanadianPM)),6
+255,Political,([^.?!]*)(\b((@JustinTrudeau)|(Trudeau)|([@]CanadianPM))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+256,Political,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((@JustinTrudeau)|(Trudeau)|([@]CanadianPM)),7
+257,Political,([^.?!]*)(\b((@JustinTrudeau)|(Trudeau)|([@]CanadianPM))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+258,Political,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((@JustinTrudeau)|(Trudeau)|([@]CanadianPM)),9
+259,Political,([^.?!]*)(\b((@JustinTrudeau)|(Trudeau)|([@]CanadianPM))\b)([^.?!]*)((tyrant)|(facist)|(dictator)|(despot(ic)?)|(abuse of power)|(undemocratic)|(authoritarian)),8
+260,Political,([^.?!]*)(\b((tyrant)|(facist)|(dictator)|(despot(ic)?)|(abuse of power)|(undemocratic)|(authoritarian))\b)([^.?!]*)((@JustinTrudeau)|(Trudeau)|([@]CanadianPM)),8
+261,Political,([^.?!]*)(\b((@JustinTrudeau)|(Trudeau)|([@]CanadianPM))\b)([^.?!]*)((impeach)|(kick out)|(vote out)|(overturn)|(overthrow)),10
+262,Political,([^.?!]*)(\b((impeach)|(kick out)|(vote out)|(overturn)|(overthrow))\b)([^.?!]*)((@JustinTrudeau)|(Trudeau)|([@]CanadianPM)),10
+263,Political ,([^.?!]*)(\b(bailout)\b)([^.?!]*)(bombardier),6
+264,Political ,([^.?!]*)(\b(bombardier)\b)([^.?!]*)(bailout),6
+265,Political ,([^.?!]*)(\b((honourable David Johnston)|(gg David Johnston)|(governour general David johnston))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+266,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((honourable David Johnston)|(gg David Johnston)|(governour general David johnston)),6
+267,Political ,([^.?!]*)(\b((honourable David Johnston)|(gg David Johnston)|(governour general David johnston))\b)([^.?!]*)((integrity)|(unfit)),6
+268,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((honourable David Johnston)|(gg David Johnston)|(governour general David johnston)),6
+269,Political ,([^.?!]*)(\b((honourable David Johnston)|(gg David Johnston)|(governour general David johnston))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+270,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((honourable David Johnston)|(gg David Johnston)|(governour general David johnston)),7
+271,Political ,([^.?!]*)(\b((honourable David Johnston)|(gg David Johnston)|(governour general David johnston))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+272,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((honourable David Johnston)|(gg David Johnston)|(governour general David johnston)),9
+273,Political ,([^.?!]*)(\b((George Furey)|([@]GeorgeFureyNL))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+274,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((George Furey)|([@]GeorgeFureyNL)),6
+275,Political ,([^.?!]*)(\b((George Furey)|([@]GeorgeFureyNL))\b)([^.?!]*)((integrity)|(unfit)),6
+276,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((George Furey)|([@]GeorgeFureyNL)),6
+277,Political ,([^.?!]*)(\b((George Furey)|([@]GeorgeFureyNL))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+278,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((George Furey)|([@]GeorgeFureyNL)),7
+279,Political ,([^.?!]*)(\b((George Furey)|([@]GeorgeFureyNL))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+280,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((George Furey)|([@]GeorgeFureyNL)),9
+281,Political ,([^.?!]*)(\b((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+282,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker)),6
+283,Political ,([^.?!]*)(\b((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker))\b)([^.?!]*)((integrity)|(unfit)),6
+284,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker)),6
+285,Political ,([^.?!]*)(\b((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+286,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker)),7
+287,Political ,([^.?!]*)(\b((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+288,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Geoff Regan)|([@]geoffregan)|([@]HoCSpeaker)),9
+289,Political ,([^.?!]*)(\b(([@]stephenharper)|(Stephen Harper))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+290,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)(([@]stephenharper)|(Stephen Harper)),6
+291,Political ,([^.?!]*)(\b(([@]stephenharper)|(Stephen Harper))\b)([^.?!]*)((integrity)|(unfit)),6
+292,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)(([@]stephenharper)|(Stephen Harper)),6
+293,Political ,([^.?!]*)(\b(([@]stephenharper)|(Stephen Harper))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+294,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)(([@]stephenharper)|(Stephen Harper)),7
+295,Political ,([^.?!]*)(\b(([@]stephenharper)|(Stephen Harper))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+296,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)(([@]stephenharper)|(Stephen Harper)),9
+297,Political ,([^.?!]*)(\b(([@]ThomasMulcair)|(Tom Mulcair))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+298,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)(([@]ThomasMulcair)|(Tom Mulcair)),6
+299,Political ,([^.?!]*)(\b(([@]ThomasMulcair)|(Tom Mulcair))\b)([^.?!]*)((integrity)|(unfit)),6
+300,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)(([@]ThomasMulcair)|(Tom Mulcair)),6
+301,Political ,([^.?!]*)(\b(([@]ThomasMulcair)|(Tom Mulcair))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+302,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)(([@]ThomasMulcair)|(Tom Mulcair)),7
+303,Political ,([^.?!]*)(\b(([@]ThomasMulcair)|(Tom Mulcair))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+304,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)(([@]ThomasMulcair)|(Tom Mulcair)),9
+305,Political ,([^.?!]*)(\b(([@]AndrewScheer)|(Andrew Scheer))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+306,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)(([@]AndrewScheer)|(Andrew Scheer)),6
+307,Political ,([^.?!]*)(\b(([@]AndrewScheer)|(Andrew Scheer))\b)([^.?!]*)((integrity)|(unfit)),6
+308,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)(([@]AndrewScheer)|(Andrew Scheer)),6
+309,Political ,([^.?!]*)(\b(([@]AndrewScheer)|(Andrew Scheer))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+310,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)(([@]AndrewScheer)|(Andrew Scheer)),7
+311,Political ,([^.?!]*)(\b(([@]AndrewScheer)|(Andrew Scheer))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+312,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)(([@]AndrewScheer)|(Andrew Scheer)),9
+313,Political ,([^.?!]*)(\b((Claude Carignan)|([@]senatcarignan))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+314,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Claude Carignan)|([@]senatcarignan)),6
+315,Political ,([^.?!]*)(\b((Claude Carignan)|([@]senatcarignan))\b)([^.?!]*)((integrity)|(unfit)),6
+316,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Claude Carignan)|([@]senatcarignan)),6
+317,Political ,([^.?!]*)(\b((Claude Carignan)|([@]senatcarignan))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+318,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Claude Carignan)|([@]senatcarignan)),7
+319,Political ,([^.?!]*)(\b((Claude Carignan)|([@]senatcarignan))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+320,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Claude Carignan)|([@]senatcarignan)),9
+321,Political ,([^.?!]*)(\b((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)),6
+322,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?))\b)([^.?!]*)((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn)),6
+323,Political ,([^.?!]*)(\b((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn))\b)([^.?!]*)((integrity)|(unfit)),6
+324,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn)),6
+325,Political ,([^.?!]*)(\b((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn))\b)([^.?!]*)((liar)|(lies?)|(lying)|(lied)),7
+326,Political ,([^.?!]*)(\b((liar)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn)),7
+327,Political ,([^.?!]*)(\b((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+328,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Wilson-Raybould)|([@]Puglaas)|([@]MinJusticeEn)),9
+329,Political ,([^.?!]*)(\b((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons)),6
+330,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons))\b)([^.?!]*)((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament)),6
+331,Political ,([^.?!]*)(\b((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament))\b)([^.?!]*)((integrity)|(unfit)),6
+332,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament)),6
+333,Political ,([^.?!]*)(\b((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament))\b)([^.?!]*)((liars?)|(lies?)|(lying)|(lied)),7
+334,Political ,([^.?!]*)(\b((liars?)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament)),7
+335,Political ,([^.?!]*)(\b((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+336,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Parliament of Canada)|(Canada's Parliament)|(Canadian Parliament)),9
+337,Political ,([^.?!]*)(\b((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons)),6
+338,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons))\b)([^.?!]*)((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate)),6
+339,Political ,([^.?!]*)(\b((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate))\b)([^.?!]*)((integrity)|(unfit)),6
+340,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate)),6
+341,Political ,([^.?!]*)(\b((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate))\b)([^.?!]*)((liars?)|(lies?)|(lying)|(lied)),7
+342,Political ,([^.?!]*)(\b((liars?)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate)),7
+343,Political ,([^.?!]*)(\b((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+344,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Canadian Senate)|(Senate of Canada)|([@]SenateCA)|(Canada's Senate)),9
+345,Political ,([^.?!]*)(\b((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons)),6
+346,Political ,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons))\b)([^.?!]*)((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons)),6
+347,Political ,([^.?!]*)(\b((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons))\b)([^.?!]*)((integrity)|(unfit)),6
+348,Political ,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons)),6
+349,Political ,([^.?!]*)(\b((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons))\b)([^.?!]*)((liars?)|(lies?)|(lying)|(lied)),7
+350,Political ,([^.?!]*)(\b((liars?)|(lies?)|(lying)|(lied))\b)([^.?!]*)((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons)),7
+351,Political ,([^.?!]*)(\b((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+352,Political ,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((Canadian house of commons)|(House of commons of Canada)|(Canada's House of commons)|([@]OurCommons)),9
+353,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(economy),6
+354,Economy ,([^.?!]*)(\b(economy)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+355,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((unemployment)|(jobless(ness)?)),8
+356,Economy ,([^.?!]*)(\b((unemployment)|(jobless(ness)?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+357,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(poverty),8
+358,Economy ,([^.?!]*)(\b(poverty)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+359,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((wages?)|(incomes?)),6
+360,Economy ,([^.?!]*)(\b((wages?)|(incomes?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+361,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((inflation)|(prices?)),7
+362,Economy ,([^.?!]*)(\b((inflation)|(prices?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+363,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(deficit),6
+364,Economy ,([^.?!]*)(\b(deficit)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+365,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(tax(es)?),6
+366,Economy ,([^.?!]*)(\b(tax(es)?)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+367,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((economic depression)|(recession)),9
+368,Economy ,([^.?!]*)(\b((economic depression)|(recession))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),9
+369,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(employment insurance),6
+370,Economy ,([^.?!]*)(\b(employment insurance)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+371,Economy ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(old age security),6
+372,Economy ,([^.?!]*)(\b(old age security)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+373,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(first nations?),6
+374,Society,([^.?!]*)(\b(first nations?)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+375,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(circonvenir),7
+376,Political,([^.?!]*)(\b(circonvenir)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+377,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(nepotism),6
+378,Society,([^.?!]*)(\b(nepotism)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+379,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((electoral fraud)|(election fraud)|(illegitimate elections?)|(voter fraud)|(voter? tampering)),9
+380,Political,([^.?!]*)(\b((electoral fraud)|(election fraud)|(illegitimate elections?)|(voter fraud)|(voter? tampering))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),9
+381,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(election violence),10
+382,Political,([^.?!]*)(\b(election violence)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),10
+383,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((civil rights?)|(civil liberties)|(civil liberty),6
+384,Political,([^.?!]*)(\b((civil rights?)|(civil liberties)|(civil liberty)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+385,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(human rights?),7
+386,Political,([^.?!]*)(\b(human rights?)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+387,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((slums?)|(ghettos?)),7
+388,Society,([^.?!]*)(\b((slums?)|(ghettos?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+389,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((injustices?)|(justice)),6
+390,Political,([^.?!]*)(\b((injustices?)|(justice))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+391,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(rule of law),6
+392,Political,([^.?!]*)(\b(rule of law)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+393,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(inequality),6
+394,Society,([^.?!]*)(\b(inequality)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+395,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(homeless(ness)?),7
+396,Society,([^.?!]*)(\b(homeless(ness)?)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+397,Quality of Life ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((public health)|(health[\s]?care)),6
+398,Quality of Life ,([^.?!]*)(\b((public health)|(health[\s]?care))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+399,Quality of Life ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((AIDS)|(HIV)),6
+400,Quality of Life ,([^.?!]*)(\b((AIDS)|(HIV))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+401,Quality of Life ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((pollution)|(clean water)|(environment(al)?)|(drought)),7
+402,Quality of Life ,([^.?!]*)(\b((pollution)|(clean water)|(environment(al)?)|(drought))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+403,Quality of Life ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((climate change)|(global warming)),7
+404,Quality of Life ,([^.?!]*)(\b((climate change)|(global warming))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+405,Quality of Life ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((famine)|(food shortages?)),8
+406,Quality of Life ,([^.?!]*)(\b((famine)|(food shortages?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+407,Quality of Life ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((outbreaks?)|(epidemics?)),9
+408,Quality of Life ,([^.?!]*)(\b((outbreaks?)|(epidemics?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),9
+409,Quality of Life ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((living conditions?)|(quality of life)),7
+410,Quality of Life ,([^.?!]*)(\b((living conditions?)|(quality of life))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+411,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((immigrants?)|(immigration),6
+412,Society,([^.?!]*)(\b((immigrants?)|(immigration)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+413,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((refugees?),6
+414,Society,([^.?!]*)(\b((refugees?)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+415,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((bribes?)|(bribery)|(graft)),8
+416,Society,([^.?!]*)(\b((bribes?)|(bribery)|(graft))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+417,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((police corruption)|(police brutality)|(police violence)|(police abuses?)|(corrupt police)),9
+418,Society,([^.?!]*)(\b((police corruption)|(police brutality)|(police violence)|(police abuses?)|(corrupt police))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),9
+419,Society,([^.?!]*)(\b((mounties?)|(RMCP))\b)([^.?!]*)((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons)),6
+420,Society,([^.?!]*)(\b((stupid(ity)?)|(idiot(ic)?)|(incompetent)|(incompetency)|(moron(ic)?)|(idiots)|(morons))\b)([^.?!]*)((mounties?)|(RMCP)),6
+421,Society,([^.?!]*)(\b((mounties?)|(RMCP))\b)([^.?!]*)((integrity)|(unfit)),6
+422,Society,([^.?!]*)(\b((integrity)|(unfit))\b)([^.?!]*)((mounties?)|(RMCP)),6
+423,Society,([^.?!]*)(\b((mounties?)|(RMCP))\b)([^.?!]*)((liars?)|(lies?)|(lying)|(lied)),7
+424,Society,([^.?!]*)(\b((liars?)|(lies?)|(lying)|(lied))\b)([^.?!]*)((mounties?)|(RMCP)),7
+425,Society,([^.?!]*)(\b((mounties?)|(RMCP))\b)([^.?!]*)((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?)),9
+426,Society,([^.?!]*)(\b((corrupt(ion)?)|(crimes?)|(criminals?)|(thug(gery)?))\b)([^.?!]*)((mounties?)|(RMCP)),9
+427,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((extra[\s]?judicial killings?)|(police killings?)),10
+428,Society,([^.?!]*)(\b((extra[\s]?judicial killings?)|(police killings?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),10
+429,Security ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((terrorism)|(terrorists?)|(extremists?)|(militants?)|(insurgents?)|(ISIS)),9
+430,Security ,([^.?!]*)(\b((terrorism)|(terrorists?)|(extremists?)|(militants?)|(insurgents?)|(ISIS))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),9
+431,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(white nationalists?)|(white supremacy)|(white supremacists)|(Neo-Nazism)|(neo-nazis?)),9
+432,Society,([^.?!]*)(\b(white nationalists?)|(white supremacy)|(white supremacists)|(Neo-Nazism)|(neo-nazis?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),9
+433,Security ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((car bombs?)|(suicide bomb(ing)?)|(assassination)|(assassinated?)),10
+434,Security ,([^.?!]*)(\b((car bombs?)|(suicide bomb(ing)?)|(assassination)|(assassinated?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),10
+435,Security ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((crimes?)|(criminals?)),7
+436,Security ,([^.?!]*)(\b((crimes?)|(criminals?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+437,Security ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((anarchy)|(lawless(ness)?)),8
+438,Security ,([^.?!]*)(\b((anarchy)|(lawless(ness)?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+439,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((political scandals?)|(political misconduct)),6
+440,Political,([^.?!]*)(\b((political scandals?)|(political misconduct))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+441,Security ,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((genocide)|(ethnic cleansing)|(mass killings?)),10
+442,Security ,([^.?!]*)(\b((genocide)|(ethnic cleansing)|(mass killings?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),10
+443,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((social unrest)|(public unrest)|(public order)),7
+444,Political,([^.?!]*)(\b((social unrest)|(public unrest)|(public order))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+445,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((public outcry)|(public outrage)),7
+446,Political,([^.?!]*)(\b((public outcry)|(public outrage))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+447,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((government reforms?)|(policy reforms?)|(political reforms?)|(change in government)),6
+448,Political,([^.?!]*)(\b((government reforms?)|(policy reforms?)|(political reforms?)|(change in government))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+449,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((protests?),9
+450,Political,([^.?!]*)(\b((protests?)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),9
+451,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((rebellion)|(revolution)|(revolt)|(resistance)|(riots?)|(molotov)|(coup)),10
+452,Political,([^.?!]*)(\b((rebellion)|(revolution)|(revolt)|(resistance)|(riots?)|(molotov)|(coup))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),10
+453,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((anti[\s]?gov(ernment)?)|(anti[-]gov(ernment)?)),8
+454,Political,([^.?!]*)(\b((anti[\s]?gov(ernment)?)|(anti[-]gov(ernment)?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+455,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(political stability),8
+456,Political,([^.?!]*)(\b(political stability)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+457,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((politically unstable)|(political instability)),8
+458,Political,([^.?!]*)(\b((politically unstable)|(political instability))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+459,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((public dissent)|(civil disobedience)),8
+460,Political,([^.?!]*)(\b((public dissent)|(civil disobedience))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+461,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((gov(ernment)? corruption)?|(corrupt gov(ernment)?)),7
+462,Political,([^.?!]*)(\b((gov(ernment)? corruption)?|(corrupt gov(ernment)?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),7
+463,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)((bureacracy)|(bureacrats?)),6
+464,Political,([^.?!]*)(\b((bureacracy)|(bureacrats?))\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+465,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(illegitimate government),8
+466,Political,([^.?!]*)(\b(illegitimate government)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),8
+467,Political,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(ethics commissioner),6
+468,Political,([^.?!]*)(\b(ethics commissioner)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?)),6
+469,Society,([^.?!]*)(\b((Canada('s)?)|(Canadians?)|(canadiens?))\b)([^.?!]*)(propaganda),6
+470,Society,([^.?!]*)(\b(propaganda)\b)([^.?!]*)((Canada('s)?)|(Canadians?)|(canadiens?))   ,6
+471,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)((pro[-]EU)|(pro[\s]?EU)),11
+472,Brexit ,([^.?!]*)(\b((pro[-]EU)|(pro[\s]?EU))\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?))  ,11
+473,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)((anti[-]Brexit)|(pro[\s]?Brexit)),11
+474,Brexit ,([^.?!]*)(\b((anti[-]Brexit)|(pro[\s]?Brexit))\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?))                                                      ,11
+475,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)(vote remain),11
+476,Brexit ,([^.?!]*)(\b(vote remain)\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?))                                                      ,11
+477,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)(remain in the EU)|(remain in the European Union)|(stay in the EU)|(stay in the European Union),11
+478,Brexit ,([^.?!]*)(\b(remain in the EU)|(remain in the European Union)|(stay in the EU)|(stay in the European Union)\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?)),11
+479,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)((leave the EU)|(leave the European Union)),12
+480,Brexit ,([^.?!]*)(\b((leave the EU)|(leave the European Union))\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?)) ,12
+481,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)((anti[-]EU)|(pro[\s]?EU)),12
+482,Brexit ,([^.?!]*)(\b((anti[-]EU)|(pro[\s]?EU))\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?))                                                      ,12
+483,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)((pro[-]Brexit)|(pro[\s]?Brexit)),12
+484,Brexit ,([^.?!]*)(\b((pro[-]Brexit)|(pro[\s]?Brexit))\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?)) ,12
+485,Brexit ,([^.?!]*)(\b((UK('s)?)|(United Kingdom('s)?))\b)([^.?!]*)(vote leave),12
+486,Brexit ,([^.?!]*)(\b(vote leave)\b)([^.?!]*)((UK('s)?)|(United Kingdom('s)?)),12
+487,Brexit ,([^.?!]*)(\b([#]Brexit)\b)([^.?!]*),13

@@ -46,9 +46,9 @@
 
 %	\begin{center}
 
-\title{A Dynamic Model of Political Stability and Dissent\thanks{Conflicts of interest: none. This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.}}
+\title{A Dynamic Model of Dissent and Political Stability \thanks{Conflicts of interest: none. This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.}}
 
-\author{Ethan Spangler\thanks{Corresponding Author. Email: {\href{mailto:ethan.spangler@wsu.edu}{ethan.spangler@wsu.edu}}; Tel: 801-458-9923; Washington State University School of Economic Sciences Hulbert Hall 101, Pullman, WA 99164, United States}  \\
+\author{Ethan Spangler\thanks{Corresponding Author. Email: {\href{mailto:eospangler@gmail.com}{eospangler@gmail.com}}; Tel: 801-458-9923}\\%; Washington State University School of Economic Sciences Hulbert Hall 101, Pullman, WA 99164, United States}  \\
 Ben Smith\thanks{Email: {\href{mailto:bosmith@unomaha.edu}{bosmith@unomaha.edu}}; University of Nebraska-Omaha Mammel Hall, Suite 332, 6708 Pine Street, Omaha, NE 68182, United States}}
 
 %\vfill
@@ -81,41 +81,98 @@ The past decade has seen dramatic political shifts in both the developing and de
 
 While less explosive, the developed world has seen its own manifestations of political instability. A UK referendum rejected continued membership in the EU, a move that surprised much of the world. In the US, Donald Trump, a man that has never held public office, rode a wave of populist rhetoric into the White House; beating a candidate considered to be a political insider. Other Western countries have seen formerly fringe parties either be elected into office or make substantial legislative gains. In each case, populist policies and politicians were carried into office by a public that felt the previous governments had failed to address their concerns adequately (Judis, 2016).
 
-Surface analysis of the Arab Spring and Western populism may find few parallels between them, but at a deeper level the two are quite similar. In both cases, the governments of each failed to address the concerns of large sections of the public. The only difference between the two is that with the Arab Spring, there were no nonviolent means to enact change to the government whereas in the West there are non-violent means to change the government, i.e. voting. So while the means may have differed, riots vs. ballots, the effect was often the same, a change in government.  
+Surface analysis of the Arab Spring and Western populism may find few parallels between them, but at a deeper level the two are quite similar. In both cases, the governments of each failed to address the concerns of large sections of the public. The only difference between the two is that with the Arab Spring, there were no nonviolent means to enact change to the government whereas in the West there are non-violent means to change the government, i.e. voting. So while the means may have differed, riots vs. ballots, the effect was often the same, a change in government. Part of why these events were so surprising may be the under development of models connecting public dissent and a country's political stability. A better understanding of political stability is important because it can significantly impact economic growth (Alesina and Perotti, 1996; Jong-A-Pin, 2009; Aisen and Veiga, 2013). 
 
-Part of why these event were surprising for so many may be the lack of a model on how the interactions of a government and its citizens affects a country's political stability. It is common in economics to view the government as a benevolent social planner, a fictitious but theoretically convenient entity, seeking to maximize social welfare. Some theoretical developments have stepped away from absolute benevolence and introduce a measure of corruption (Acemoglu and Robinson, 2001), but the overall set up remains. A better understanding of political stability is important because it can significantly impact economic growth (Alesina and Perotti, 1996; Jong-A-Pin, 2009; Aisen and Veiga, 2013).
+%The role of dissent 
 
-This paper steps away from the social planner model and seeks to construct a model of governance more nuanced than the social planner and robust enough to account for both authoritarian and democratic countries. The purpose of this paper is to develop a dynamic theoretical model concerning the interactions between a non-altruistic government and its public and how that relationship affects political stability. Using simulations we are able to show that countries can display a consistent pattern of political instability but not succumb to governmental failure. Additionally, we find that governments that favor soft power tend to be more stable, regardless of total government resources. Overall we feel this is a model that can provide significant basis to new studies of political stability.  
+%on how the interactions of a government and its citizens affects a country's political stability. 
+
+%Part of why these events were so surprising may be the lack of a model on how the interactions of a government and its citizens affects a country's political stability. It is common in economics to view the government as a benevolent social planner, a fictitious but theoretically convenient entity, seeking to maximize social welfare. Some theoretical developments have stepped away from absolute benevolence and introduce a measure of corruption (Acemoglu and Robinson, 2001), but the overall set up remains. A better understanding of political stability is important because it can significantly impact economic growth (Alesina and Perotti, 1996; Jong-A-Pin, 2009; Aisen and Veiga, 2013).
+
+This paper develops a theoretical model concerning the dynamic interactions between a non-altruistic government and its public and how that relationship affects political stability. This paper constructs a model of governance robust enough to account for both authoritarian and democratic countries. Using simulations we are able to show that countries can display a consistent pattern of political instability but not succumb to governmental failure. Additionally, we find that governments that favor soft power tend to be more stable, regardless of total government resources. Overall we feel this model can provide basis for new studies of political stability.  
   
-The structure of this paper is as follows: a review of the literature concerning political stability, our theory on the structure of political stability, simulations and analysis, and finally conclusion.    
+The structure of this paper is as follows: a review of the literature concerning political stability, our theory on the structure of dissent and political stability, simulations and analysis, and finally conclusion.    
 
 \section{Related Literature}
 
+%Expand and work in Epstein (2002) ABM paper civil violence 
+
 The bulk of the literature concerning political stability focuses on the factors motivating revolt and revolution. Grossman (1991), Acemoglu and Robinson (2001), MacCulloch (2001 and 2005), Apolte (2012a) explore the role of income inequality in fomenting revolution. Other approaches concentrate on the role of regime types (Guttman and Reuveny, 2014) or government institutions (Goldstone et al., 2010; Acemoglu et al, 2012; Fukuyama 2014). The general findings of these works is that the more unequal a society is and the less effective its institutions, the more unstable the country will likely be. 
 
-Diverging from the top down macroeconomic approach, literature from the Public Choice field applies an individual agent approach. Tullock's (1971 and 1974) seminal works concerning the economics of rebellion focus on the paradoxical observation that while it seems inherently irrational for an individual to join a rebellion, objective evidence is to the contrary since revolutions have occurred and will continue to. In essence, the problem is how do people cooperate enough to form a functional rebellion. Tullock answers this problem by focusing on the potential material gains that could come from a successful rebellion. Kurrild-Klitgaard (1997), Apolte (2012a and 2012b), and Bueno de Mesquita (2010) all build from the foundation established by Tullock and offer their own solutions to the `paradox of rebellion' but remain within the game theoretic structure established by Tullock. 
+%Another body of literature has been focusing on what type of governement emerges after a transition (Acemoglu and Robinson, 2008; Acemoglu et al. 2010)
 
-The authors of this paper believe that the focus on revolution, though valuable, does not capture the entirety of the situation. Revolution is the end point of a long process. A nation can exist for a long time in a state of low political stability but not descend into revolt; i.e. be stable in its instability. Thus, in a departure from the literature, we will be focusing on the decisions and dynamics that precipitate a revolution. By focusing on the dynamics preceding a revolution, we avoid the theoretical difficulties that have hampered the collective action problem explored by the literature on the paradox of rebellion.  
+%They're all making the same binary choice. Rebel or not. 
 
-The model presented here has its roots in Buchanan and Tullock (1962) but extends it to incorporate Acemoglu and Robinson's (2001) self interested government. Our focus is on the dynamic interactions of a non-altruistic government and its citizenry. This paper bridges the institutional and public choice approaches to include both the effectiveness of government institutions and an individual's choice to dissent. The goal of this paper is not to predict the spark that ignites a revolution, but instead to examine the environment that allows a spark to turn into a revolution. Through simulation we explore how different countries with differing parameter values react and handle various exogenous shocks. 
+Diverging from the top down macroeconomic approach, literature from the Public Choice field applies an individual approach. Tullock's (1971 and 1974) seminal works concerning the economics of rebellion focus on the paradoxical observation that while it seems inherently irrational for an individual to join a rebellion, objective evidence is to the contrary since revolutions have occurred and will continue to. In essence, the problem is how do people cooperate enough to form a functional rebellion. 
 
-  
+Tullock answers this problem by focusing on the potential material gains that could come from a successful rebellion(1971 and 1974). Kurrild-Klitgaard (1997), Bueno de Mesquita (2010), and Apolte (2012a and 2012b) all build from the foundation by Tullock and offer their own solutions to the `paradox of rebellion' but remain within the game theoretic structure. A central element of these models is the individual making a binary choice of whether to rebel or not. 
+ 
+Clearly an important factor in the decision to rebel are the potential gains one might achieve but another critical component are the other participating members. The distinction between a few dissidents being rounded up by police and the complete upheaval of the political order is one of numbers. The concept of social 'tipping points' is discussed by Schelling (1978) and Gladwell (2000) and more formally modeled by Granovetter (1978). The idea is based upon the idea that an individual's decision to join a social movement, like a rebellion, is dependent on their own preferences for rebellion and how many individuals are already engaged in the movement. Kuran (1989) goes further, modeling the individual choice but extending it to show that there are thresholds with respect to political stability. Once these threshold are breached, a revolution can materialize unexpectedly. However, the individual is still making a binary choice of whether to rebel or not. 
 
-\section{Theoretical Model}
+%Rebellion is a level in our model! Not a binary choice!
+%Clean this up  
 
-`In perpetrating a revolution, there are two requirements: someone or something to revolt against and someone to actually show up and do the revolting.' (Allen 1975, p. 107). In this paper we adopt a similar mentality as Allen by incorporating the actions of both the government and the people. The model begins in period 0, the catalyst being the initial amount of total dissent, $D_0$. This $D_0$ can be thought of as either anarchists or remnants of the previous regime, their origin doesn't really matter just that it exists. The notion that some subsection of the population will always be dissatisfied with the government is in line with the `median voter theorem' (Congleton, 2003). A government then forms to manage and organize affairs, setting initial policy choices. The government maximizes political stability by choosing its level of public and security allocations, subject to a resource constraint and the level of discontent from the citizenry. In turn, each member of the public chooses their level of dissent based on their own preferences and the probability of punishment. This dynamic repeats until state failure, which we will explicitly define later. 
+The model presented in this paper diverges from the literature in two important ways. First, we view dissent as a level not binary. When a individual chooses to rebel against their government, it is not a simple dichotomist choice. Writing a strongly worded letter is not the same as storming the gates of the castle. By treating dissent as a level variable, it gives this model a high degree of nuance and to the best of the author's knowledge is the first to do so. 
+
+Second, the authors of this paper believe that the focus on revolution, though valuable, does not capture the entirety of the situation. Revolution is the end point of a long process. A nation can exist for a long time in a state of low political stability but not descend into revolt; i.e. be stable in its instability. Instead this model focusing on the decisions and dynamics that precipitate a revolution. By focusing on the dynamics preceding a revolution, we avoid the theoretical difficulties of the collective action problem explored by the paradox of rebellion literature.  
+
+The model presented here has its roots in Buchanan and Tullock (1962) but extends it to incorporate Acemoglu and Robinson's (2001) self interested government and Kuran's (1989) threshold. Our focus is on the dynamic interactions of a non-altruistic government and its citizenry. This paper bridges the institutional and public choice approaches to include both the effectiveness of government institutions and an individual's choice to dissent. The goal of this paper is not to predict the spark that ignites a revolution, but instead to examine the environment that allows a spark to turn into a revolution. Through simulation we explore how countries with differing parameter values react and handle various exogenous shocks. 
+
+%OUr parameters settings reflect institutional differences! Say that! 
+
+\section{Theory}
+
+%define political stability and individual dissent 
+Before delving into the the model, it is important to first establish our working definition of `political stability.' For the purposes of this paper, political stability, $\Lambda_t$, is defined as the ability of a government to survive an exogenous shock at time $t$. This makes $\Lambda_t$ a measure of governmental resiliency at a given point in time. Political stability is related to but different than political risk. Political risk is when a government negatively interferences with business operations (Kobrin, 1979). Political stability is related to how much control the government has. So long as $\Lambda_t>0$ the government continues to function. However, as $\Lambda_t\rightarrow 0$ the government's position becomes more precarious. Should $\Lambda_t \leq 0$ for a sustained period, then the government has failed.  
+
+\begin{figure}[htb]
+\centering 
+\includegraphics
+[width=0.45\textwidth]{Mutual_shock.eps} 
+\caption{Parallel Shock}
+\end{figure}
+
+This notion of governmental resiliency is illustrated in Figure 1. Here we have two countries of differing levels of $\Lambda_t$, Country$_j$ and Country$_k$. Both countries experience a shock that decreases each's political stability by the same magnitude. Because Country$_j$ was previously at a higher level of political stability than Country$_k$, the government of Country$_j$ survives while Country$_k$'s does not.
+
+Our definition of political stability is also less rigid than previous methods, allowing political stability to fluctuate realistically. It also allows a country to experience temporary crisis,$|Lambda_{t^*}$, without it fully failing. Figure 2 shows these situations graphically. In developing this theoretical model we felt it was important ground it in a narrative that closely adhered to reality.      
+
+\begin{figure}[htb]
+\centering 
+\subfigure{\includegraphics
+[width=0.45\textwidth]{Stable_Instability.eps}} 
+\subfigure{\includegraphics
+[width=0.45\textwidth]{Temporary_Crisis.eps}} 
+\caption{$\Phi$ Shock}
+\end{figure}
+
+
+
+
+
+
+
+\subsection{Model}
+
+%Discuss why a functional form.
+
+
+`In perpetrating a revolution, there are two requirements: someone or something to revolt against and someone to actually show up and do the revolting.' (Allen 1975, p. 107). In this paper we adopt a similar mentality as Allen by incorporating the actions of both the government and the people. The model begins in period 0, the catalyst being the initial amount of total dissent, $D_0$. This $D_0$ can be thought of as either anarchists or remnants of the previous regime. %The origin doesn't really matter that much, just that there exists some disgruntled element in society. 
+
+The notion that some subsection of the population will always be dissatisfied with the government is in line with the `median voter theorem' (Congleton, 2003) wherein any policy choice inevitably displease some portion of society. A government then forms to manage and organize affairs, setting initial policy choices. The government maximizes political stability by choosing its level of civil and security allocations, subject to a budget constraint and the level of discontent from the citizenry. In turn, each member of the public chooses their level of dissent based on their own constraints and preferences as well as the probability of punishment. This dynamic interaction repeats until state failure, which we will explicitly define later. 
+
+%Why did I do everything in an explicit functional form? Because I needed a functional form to do the simulations, so might as well same time and do that from the start.  
  
 \subsection{Individual's Problem}
 
-Initial framing of the individual's problem  begins in the general sense as a household problem, 
+Initial framing of the individual's problem begins in the general sense as a household problem, 
 
 \begin{equation}
-	U(c,l) \text{ s.t. } M|E
+	U(c,l) \text{ s.t. } M %& E 
 \end{equation}
 
-\noindent where utility, $U(c,l)$, is a function of consumption, $c$ and leisure, $l$, subject to an income constraint, $M$, and environmental/societal constraints, $E$. This represents the aspects of an individual's life that they have control over. However, there are some things an individual cannot control.  
+\noindent where utility, $U(c,l)$, is a function of consumption, $c$ and leisure, $l$, subject to an income, $M$,  constraint. This represents the aspects of an individual's life that they have control over. However, there are some things an individual cannot control.  
 
-The story is that in their daily lives, individuals face societal problems. It could be as mundane as a long line at the DMV\footnote{In the US, the Department of Motor Vehicles (DMV) is a notoriously inefficient government office.}. Perhaps they encountered a corrupt police officer. Another scenario could involve members of a different group harassing the individual. Maybe they saw a story about a wealthy, well-connected elite dodging criminal charges. Whatever the particular issue, it is a problem that the individual cannot solve themselves, but it has negatively affected their life. These are societal issues that only a government could properly address. However, the government is unable and/or unwilling to address these problems completely to the satisfaction of the individual. Without any direct power to alter their situation the individual does what people usually do in such situations, they dissent. 
+The story is that in their daily lives, individuals face societal problems. It could be as mundane as a long line at the DMV\footnote{In the US the Department of Motor Vehicles (DMV) is a notoriously inefficient government office in the US.}. Perhaps they encountered a corrupt police officer. Another scenario could involve members of a different group harassing the individual. Maybe they saw a story about a wealthy, well-connected elite dodging criminal charges. Whatever the particular issue, it is a problem that the individual cannot solve themselves, but it has negatively affected their life. These are societal issues that only a government could properly address. However, the government is unable and/or unwilling to address these problems completely to the satisfaction of the individual. Without any direct power to alter their situation the individual does what people usually do in such situations, they dissent. 
 
 Our origin for dissent is very similar to Gurr's (2015) concept of `relative deprivation' wherein the perceived difference between a person's value expectation and their value capabilities insights political violence. However, here we are emphasizing the relationship between the individual and their government. The incongruity between an individual's expectations of what a government should do and the reality of what a government does do is the origin of dissent.
 
@@ -127,9 +184,23 @@ Having already solved their household problem, the individual then uses a portio
 {\underset{d_{i,t}}{\text{max }}}  U_{i,t}= \frac{{d_{i,t}}^{{x}_i}}{g_t * E_{i,t}} - P_t \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)d_{i,t}^A
 \end{equation}
 
+\noindent where:
+\begin{itemize}
+	\item $d_{i,t}$ is individual dissent.  
+	\item ${x}_i$ is the individual's activism preference. 
+	\item $g_t$ is benefit from the government. 
+	\item $E_{i,t}$ is the individual environment/quality of life. 
+	\item $P_t \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)$ is the probability of being caught dissenting. 
+	\item $\bar{d}_{t-1}$ is average individual dissent from the previous period.  
+	\item $D_{t-1}$ total dissent from the previous period.
+	\item $S_t$ is government security goods and services. 
+	\item $\sigma$ is government policing efficiency. 
+	\item $A$ is the punishment parameter. 
+\end{itemize}
+ 
 $ d_{i,t} $ is the amount individual $i$ dissents in period $t$ and is treated as a level variable wherein each period an individual chooses their level of dissent based on the situation they find themselves in and their own preferences. We assume that dissent takes only non-negative values, $d_{i,t}\geq0$. Different levels of $d_{i,t}$ have different interpretations. An individual with $d_{i,t}=0$ is interpreted as not dissenting, this person is either content with the government or too scared to dissent. Alternatively a positive value of $d_{i,t}$ can be interpreted as being more active. On the low end, $d_{i,t}>0$, could be contacting government representatives, attending open forums, voting for opposition parties, or kvetching about politics with colleagues. At the extreme end, $d_{i,t}>>0$, dissent takes on a more active or revolutionary bent: protests, riots, molotovs. Since individuals dissent during time they would otherwise be using for leisure there is a maximum amount a single individual can dissent for a given period, ${d_{i,t}}^{max}$. 
 
-$x_i$ is the exponent that represents an individual's activism preference with respect to dissenting. We assume $x_i \sim logN(0,1)$, the Log-Normal PDF. Different values of $x_i$ have different interpretations. As show in Figure 1, an individual with a $x_i$ on the left of the distribution (the darker shades) could be seen an individual with high anxiety when it comes to dissenting. However, as we move to the right of the distribution (lighter shades), the individual becomes more amenable to dissent. Near the peak, these individuals might be comfortable discussing their frustrations among close peers (`dinner party dissenters') but more active actions is unlikely. As we move to the far right, each higher value of $x_i$ represents a more overt activist role the individual would be willing to undertake. Since we have made an assumption on the distribution of activism, this allows us to model how much dissent there will be in a country each period for given government policy choices.    
+$x_i$ is the exponent that represents an individual's activism preference with respect to dissenting. We assume $x_i \sim logN(0,1)$, the Log-Normal PDF. Different values of $x_i$ have different interpretations. As show in Figure 1, an individual with a $x_i$ on the left of the distribution (the darker shades) could be seen an individual with high anxiety when it comes to dissenting. However, as we move to the right of the distribution (lighter shades), the individual becomes more amenable to dissent. Near the peak, these individuals might be comfortable discussing their frustrations among close peers (`dinner party dissenters') but more active actions is unlikely. As we move to the far right, each higher value of $x_i$ represents a more overt activist role the individual would be willing to undertake. This notion that individuals have different activism preferences stems from Granovetter (1978). Since we have made an assumption on the distribution of activism, this allows us to model how much dissent there will be in a country each period for given government policy choices.    
 
 \begin{figure}[htb]
 \centering 
@@ -138,7 +209,7 @@ $x_i$ is the exponent that represents an individual's activism preference with r
 \caption{Activism Preference Distribution Plot, $x_i \sim logN(0,1)$}
 \end{figure}
 
-$E_{i,t}$ and $g_t$ reduce the amount of utility an individual gets from dissenting. $E_{i,t}$ is an exogenous parameter assessing an individual's environment each period and $0<E<1$. By environment we mean an individual's living situation within a country: unemployment, healthcare, safety, equality, etc. $E_{i,t}$ allows us to weigh the validity of dissent for comparisons across countries. Dissent in a country where conditions are good (`first world problems') are far less meaningful than in countries with more difficult situations. By weighing dissent based on the circumstances of a country, we are better able to establish a framework of political stability that works for both developed and developing countries. $g_t$ is per capita public resources from the government ($g_t=\frac{G_t}{N_t}$ where $N_t$ is the population) and is treated as given in the individual's problem. $g_t$ represents how much the government services are given to each citizen and is a transfer of resources or provision of services; however, the government cannot restrict who receives this, regardless of their level of dissent.   
+$E_{i,t}$ and $g_t$ reduce the amount of utility an individual gets from dissenting. $E_{i,t}$ is an exogenous parameter assessing an individual's environment each period and $0<E<1$. By environment we mean an individual's living situation within a country: unemployment, healthcare, safety, equality, etc. $E_{i,t}$ allows us to weigh the validity of dissent for comparisons across countries. Dissent in a country where conditions are good (`first world problems') are far less meaningful than in countries with more difficult situations. By weighing dissent based on the circumstances of a country, we are better able to establish a framework of political stability that works for both developed and developing countries. $g_t$ is per capita civil goods and services from the government ($g_t=\frac{G_t}{N_t}$ where $N_t$ is the population) and is treated as given in the individual's problem. $g_t$ represents how much  government goods and services are given to each citizen and is a transfer of resources or provision of services. The government cannot restrict who receives this, regardless of their level of dissent.   
 
 
 $ P_t \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \right)$ is a the probability of being caught dissenting against the government and it follows the Log-Normal PDF. $S_t$ is government resources spent on quelling dissent and is treated as given in the individual's problem. $D_{t-1}$ is the preexisting total dissent. $\bar{d}_{t-1}$ is the average individual dissent from the previous period. $\sigma$ represents policing effectiveness. For low $\sigma$ the police are extremely prompt at arresting those that dissent beyond acceptable limits. For higher $\sigma$ the probability of being arrested becomes more spread out. For practical empirical purposes $\sigma$ can be proxied by the ratio of $\frac{\text{Total Reported Crime}}{\text{Crimes Cleared}}$. While not perfect, it does provide some insight into police effectiveness. $A$ is the punishment parameter for dissenting and is structured such that $A>1$. In our model, severity of punishment is scaled according to an individual's level of dissent. 
@@ -147,10 +218,9 @@ An assumption with $P_t \left( \bar{d}_{t-1} \Bigg|\frac{D_{t-1}}{S_t},\sigma \r
 
 \subsection{Government's Problem} 
 
-In our view there is no reason to think a government solely seeks to maximize social welfare.  Evidence abounds with leaders less than sympathetic towards the plights of their constituents: North Korea, Syria, and unfortunately many others. The idea of a self interested government has been addressed previously, covering areas of budgetary maximization (Blais and Dion, 1990) and lobbying (Grossman and Helpman, 1994). However, here we take a different approach and follow a similar path as Bueno de Mesquita and Smith (2011) in that there are really only parameter differences between dictatorships and democracies. In our view, it seems that the primary goal of leaders is retaining power, obtaining some benefit contingent upon sustained stability. Thus it becomes the goal of the government to maximize political stability. 
+In our view there is no reason to think a government solely seeks to maximize social welfare.  Evidence abounds with leaders less than sympathetic towards the plights of their constituents: North Korea, Syria, and unfortunately many others. The idea of a self interested government has been addressed previously, it's first significant appearance being Downs (1957). The idea has evolved to cover areas of budgetary maximization (Blais and Dion, 1990) and lobbying (Grossman and Helpman, 1994). However, here we take a different approach and follow a similar path as Bueno de Mesquita and Smith (2011) in that there are really only parameter differences between dictatorships and democracies. In our view the primary goal of leaders is retaining power, regardless of regime type. Leaders must obtain some benefit from holding  power but it is contingent upon sustained stability. Thus it becomes the goal of the government to maximize political stability. 
 
-
-The government's problems begins with the with the leader's problem. As stated previously stated, leader receive some benefit from holding power. The leader could be taking funds from the treasury, receiving a portion of resource export profits, have firms they are heavily invested in receive lucrative no-bid government contracts, or a simple salary. Whatever the case, the leader only gets this benefit if they are in power and this benefit is exogenous from the rest of the system. So the leader seeks to maximize their own utility subject to political stability ($\Lambda_t$) remaining positive. 
+The government's problems begins with the with the leader's problem. Like in Acemoglu,  Egorov, and Sonin (2010), the leader receive some benefit from holding power. The leader could be taking funds from the treasury, receiving a portion of resource export profits, have firms they are heavily invested in receive lucrative no-bid government contracts, or a simple salary. Whatever the case, the leader only gets this benefit if they are in power and this benefit is exogenous from the rest of the system. So the leader seeks to maximize their own utility subject to political stability ($\Lambda_t$) remaining positive. 
 
 
 \vspace{.5 em}
@@ -162,8 +232,7 @@ The government's problems begins with the with the leader's problem. As stated p
 	\end{cases}
 \end{equation} 
 
-\noindent where $B_t$ is the benefit the leader receives from holding power. The leader only obtains this benefit when political stability is positive, thus reframing the government's objective to maximize stability rather than social welfare. In this framework, social welfare is more a means to an end rather than the goal in and of itself. 
-
+\noindent where $B_t$ is the benefit the leader receives from holding power. The leader only obtains this benefit when political stability is positive, thus reframing the government's objective to maximize stability rather than social welfare. In this framework, social welfare is a means to an end rather than the goal in and of itself. 
 
 \vspace{.5 em}
 
@@ -171,23 +240,50 @@ The government's problems begins with the with the leader's problem. As stated p
 \begin{equation}
 {\underset{G_t,S_t}{\text{max }}} \sum\limits_{t=1}^{T^*} \beta^t {\Lambda}_t = \sum\limits_{t=1}^{T^*} \beta^t\left(\frac{G_t}{D_{t-1}}-\Phi\right)^\alpha \left(\frac{S_t}{D_{t-1}}-\Omega\right)^\gamma   \text{s.t. } P_G G_t+P_S S_t=R_t
 \end{equation}
+\noindent where:
+\begin{itemize}
+	\item $\beta$ is the discount factor 
+	\item $T^*$ is the point of state failure 
+	\item $G_t$ is civil goods and services (carrot) 
+	\item $\alpha$ is the government preference for $G_t$ 
+	\item $S_t$ security goods and services (stick)
+	\item $\gamma$ is the government preference for $S_t$ 
+	\item $\Phi$ is minimum necessary amount of $G_t$
+	\item $\Omega$ is minimum necessary amount of $S_t$ 
+	\item $R_t$	is government resources
+	\item $P_G$ \& $P_S$ is prices for $G_t$ and $S_t$ 
+\end{itemize}
 
-It is the goal of the government to maximize stability over time. The stability function uses a Stone-Geary functional form. $G_t$ is government resources used for government services. Basically $G_t$ provides all the civil resources we expect a functioning government to provide (schools, hospitals, DMVs, etc). $S_t$ is security resources, used to suppress the population. If $G_t$ is the carrot, $S_t$ is the stick. $G_t$ and $S_t$ are the two tools the government uses to either placate/suppress the public and maintain order, with $P_G$ and $P_S$ their mutual prices . $R_t$ is government income available to the decision makers each period and is exogenous. This makes $P_G G_t+P_S S_t=R_t$ the government budget constraint. No government can spend unlimited amounts of resources, so they face a constraint. 
+The government maximizes stability over time. $G_t$ is government civil goods and services. Basically $G_t$ provides all the civil resources we expect a functioning government to provide (schools, hospitals, roads, etc). $S_t$ is security goods and services, used to suppress the population. If $G_t$ is the carrot, $S_t$ is the stick. $G_t$ and $S_t$ are the two tools the government uses to either placate/suppress the public and maintain order, with $P_G$ and $P_S$ their mutual prices . $R_t$ is government income available to the decision makers each period and is exogenous. This makes $P_G G_t+P_S S_t=R_t$ the government budget constraint. No government can spend unlimited amounts of resources, so they face a constraint. 
 
-$\Phi$ and $\Omega$, are the anarchy conditions, representing the minimum amount of public services and security resources needed in order for the government to function at even a basic level. If either of these minimum conditions are not met for whatever reason, such as an exogenous shock, stability goes to zero and there is a revolution. This is why the problem is maximized to $T^*$ not $\infty$, since all governments eventually fail. Should $\Lambda_t \leq 0$, that would signify the state has broken down and a revolution has taken place, resetting the system. $\beta^t$ is the government's discount factor for stability. 
+$\Phi$ and $\Omega$, are the anarchy conditions, representing the minimum amount of public and security goods and resources needed in order for the government to function at even a basic level. If either of these minimum conditions are not met for whatever reason, such as an exogenous shock, stability goes to zero and the state is in crisis. This is why the problem is maximized to $T^*$ not $\infty$, since all governments eventually fail. Should $\Lambda_t \leq 0$ continuously, that would signify the state has broken down and a revolution has taken place, resetting the system. $\beta^t$ is the government's discount factor for stability. 
 
-$\alpha$ and $\gamma $ are parameters representing how much a government favors using $G_t$ and $S_t$ respectively. It is assumed that $\alpha+\gamma=1$. One would expect a democracy to favor $G$ over $S$ ($\alpha > \gamma$) but the opposite would hold for a totalitarian regime ($\alpha < \gamma $). No country can forgo either completely; even the most kleptocratic and despotic regimes provide some form of service to citizens and utopian societies still have a police force.
+$\alpha$ and $\gamma $ are parameters representing how much a government favors using $G_t$ and $S_t$ respectively. It is assumed that $\alpha+\gamma=1$. One would expect a democracy to favor $G$ over $S$ ($\alpha > \gamma$) but the opposite would hold for a totalitarian regime ($\alpha < \gamma $). No country can forgo either completely. Even the most kleptocratic and despotic regimes provide some form of service to citizens and utopian societies still have a police force.
 
 $D_{t-1}$ is total dissent from the previous period. Dissent reduces the effectiveness of government policy and in turn makes it difficult for the government to retain power. Ruling those that do not wish to be controlled will always be more difficult than a placid population. Thus, the more dissent that exists in the system, the more difficult it will be for the government to maintain stability.  
 
-As shown, the government reacts to the previous period of dissent whereas the individual reacts to the current period. The result is that the government cannot keep up with the situation on the ground. This bureaucratic delay is the source of instability. When $D_t \approx D_{t-1}$ the instability is small and manageable, but when $D_t \not\approx D_{t-1}$ the state may misallocate resources and the possibility of state failure increases. Continued incongruences could result in the situation spiraling out of control. 
+As shown, the government reacts to the previous period of dissent whereas the individual reacts to the current period. The reason being is that information is costly so the government must act based on imperfect information. The result is that the government may not be able to keep up with the situation on the ground. This bureaucratic delay is the source of instability. When $D_t \approx D_{t-1}$ the instability is small and manageable, but when $D_t \not\approx D_{t-1}$ the state may misallocate resources and the possibility of state failure increases. Continued incongruences could result in the situation spiraling out of control. 
 
 %Absent from the model are prices and taxes. These were primarily left out to reduce unnecessary complexity, but there are theoretical and practical justifications as well. In government demand for military expenditures literature, models often include a ratio of military and civilian prices, $\frac{P_S}{P_G}$ (Sandler and Hartley, 2007). Unity is assumed between the two and the ratio cancels out. This assumption has some empirical backing showing that civilian and military prices do not differ (SIPRI, 1983), but has more recently been disputed (Solomon, 2005). Since most countries don't separately track military prices, we defer to the norms of the literature and do not include prices as a factor. 
 
+As stated earlier, institutions and norms play a critical role in maintaining a country's continued political stability. In this model, the institutions and norms of a country are not explicitly accounted for, but instead factor in through variation in the parameter values. A democracy would likely favor civil services over suppression and have low penalties for dissenting where as a dictatorship would do the opposite. A society that places a high value of civil disobedience may have a higher mean in $x_i$. A country with lots of corruption would see high values of $Phi$ and $\Omega$.   
+
+Absent from the model are taxes. These were primarily left out to reduce unnecessary complexity, but there are theoretical and practical justifications as well. One could argue that this is fatal omission of the model. After all one of the primary motivators of the US Revolution was taxes. However, over the course of 200 years the role of government and cultural norms concerning taxation have changed. Researchers have suggested that there is a `tax morale' wherein people do not seem to resent paying taxes (Djanali and Sheehan-Connor, 2012). This result is likely contingent upon the perceived quality of the government (Fox, 2001; Cummings et al., 2009). So the issue isn't taxation as a concept, it's paying taxes to a potentially corrupt government that is. This is something the model already accounts for and to include taxes would be a redundant.  
+
+%The government's problem is a variation of the Stone-Geary functional form. Why this strucutre? 
 
 
-Absent from the model are taxes. These were primarily left out to reduce unnecessary complexity, but there are theoretical and practical justifications as well. One could argue that this is fatal omission of the model. After all one of the primary motivators of the US Revolution was taxes. However, over the course of 200 years the role of government and cultural norms concerning taxation have changed. Researchers have suggested that there is a 'tax morale' wherein people do not seem to resent paying taxes (Djanali and Sheehan-Connor, 2012). This result is likely contingent upon the perceived quality of the government (Fox, 2001; Cummings et al., 2009). So the issue isn't taxation as a concept, it's paying taxes to a potentially corrupt government that is. This is something the model already accounts for and to include taxes would be a redundant.  
+%\subsection{Political instability and government failure} 
 
+%Explicitly define when a country would be politically unstable and when does government failure occur.  
+
+%In this model a country is regarded as as politically unstable if it's period to period change in its stability,$\Delta \Lambda$ is greater than 10\%. %maybe 25%? 
+
+%A government has failed if $\Lambda<0$ continuously.  
+ 
+ 
+ 
+ 
  
 \section{Solving the Model}
 
@@ -262,7 +358,7 @@ D_t	=& N_t \int_{0}^{x_{max}} {{d}_{i,t}}^* \frac{1}{x \sqrt{2\pi}}exp  \left( -
 \end{equation}
 
 
-A solution for total dissent cannot be analytically determined so we turn to numerical simulation, which will be discussed in Section 5. While an analytic solution was explored, the necessary additions and assumptions to make that possible would have been onerous as well as substantially reduce the parsimony of the model.  
+A solution for total dissent cannot be analytically determined so we turn to numerical simulation, which will be discussed in Section 5. 
 
 \subsection{Government Solution}
 
@@ -307,8 +403,10 @@ G_t=\frac{\alpha}{\gamma  +\alpha} \left[ R_t - D_{t-1} \left(\rho \Omega - \fra
 
 \section{Simulations} 
 
+Given that a complete analytic solution for the theoretical model is not possible, numerical simulation must be employed. While an analytic solution was explored, the necessary additions and assumptions to make that possible would have been onerous as well as substantially reduce the parsimony of the model. Turning to numerical simulations allows us to focus on retaining a coherent theoretical narrative without being constrained by superfluous mathematical neatness. Additionally simulation has become a vital tool in economics (Creal, 2012) as well as studies of political stability (Johnson, 1999; Epstein, 2002).  
 
-Given that a complete analytic solution for the theoretical model is not possible, numerical simulation must be employed. To do this we developed eight country archetypes to test. While there are endless possible combination of the parameters, these eight were chosen because they represent a broad range of characteristics and provide the most theoretical insight as to how differing parameter values affect stability. The values used in the simulations are based on extrapolations of real world data but are stylized to fit within the confines of the simulation. The explanation of each simulated country includes a list of which real world countries were used as a basis for forming the parameters values. 
+
+Our simulation center around eight country archetypes we developed. While there are endless possible combination of the parameters, these eight were chosen because they represent a broad range of characteristics and provide the most theoretical insight as to how differing parameter values affect stability. The values used in the simulations are based on extrapolations of real world data but are stylized to fit within the confines of the simulation. The explanation of each simulated country includes a list of which real world countries were used as a basis for forming the parameters values. 
 
 \begin{spacing}{1}
 \begin{table}[]
@@ -344,9 +442,9 @@ $A$ is based on the Political Rights scores from Freedom House on a scale of 1 b
 	\item \textbf{`Merika:} very similar to Freedonia in terms of preferences but slightly more disposed to using force to suppress dissent and slightly reduced quality of life. Countries used for parameter basis: Australia, South Korea, UK, and US. 
 	\item \textbf{Kleptopia:} the antithesis of Freedonia. Kleptopia is a wealthy developed state but instead prefers brute force methods to maintain stability. Kleptopia also has a lower quality of life for its citizens. Country used for parameter basis: Russia.  
 	\item \textbf{Cathay:} more balanced in preferences but with a slight list towards suppression. Is representative of states on the cusp of political and economic development. Punishment for dissenting is still quite high but quality of life is decent. Countries used for parameter basis: Brazil, China, India.   
-	\item \textbf{Rentistan:} typical wealthy rentier state. Has equal preferences for both government services and suppression but also has low quality of life for it's citizens and is prone to corruption and inefficiency. Countries used for parameter estimates: Nigeria, Qatar.\footnote{There was insufficient data available from other resource rich states, such as the Gulf States.} 
+	\item \textbf{Rentistan:} typical wealthy rentier state. Has equal preferences for both government services and suppression but also has low quality of life for it's citizens and is prone to corruption and inefficiency. Countries used for parameter basis: Nigeria, Qatar.\footnote{There was insufficient data available from other resource rich states, such as the Gulf States.} 
 	\item \textbf{Develpolus:} the prototypical developing nation. Has equal preferences in regards to methods of maintaining order but is poor, has a low quality of life, and the government is either inefficient, corrupt, or both; leading to higher fixed costs. Countries used for parameter basis: Jordan, Kenya, Nepal.  	
-	\item \textbf{Bellicostia:} similar to Kleptopia but lacks both the resources and skills. Resources are limited but are used primarily on suppression. Indicative of autocratic states.  Countries used for parameter estimates: Iran, Pakistan, Syria. 
+	\item \textbf{Bellicostia:} similar to Kleptopia but lacks both the resources and skills. Resources are limited but are used primarily on suppression. Indicative of autocratic states.  Countries used for parameter basis: Iran, Pakistan, Syria. 
 	\item \textbf{Hippieberg:} similar to Freedonia but lacks both the resources and skills. There is a preference for using government services over suppression but has few resources. Countries used for parameter basis: Bhutan, Uruguay, Baltic states.  
 \end{itemize}
 
@@ -358,7 +456,7 @@ $A$ is based on the Political Rights scores from Freedom House on a scale of 1 b
 
 \begin{tabular}{lcccccccc}
 \toprule
-                    & \textbf{Freedonia} & \textbf{`Merika} & \textbf{Kleptopia} & \textbf{Cathay} & \textbf{Rentistan} & \textbf{Develpolus} & \textbf{Bellicostic} & \textbf{Hippieberg} \\ \hline
+                    & \textbf{Freedonia} & \textbf{`Merika} & \textbf{Kleptopia} & \textbf{Cathay} & \textbf{Rentistan} & \textbf{Develpolus} & \textbf{Bellicostia} & \textbf{Hippieberg} \\ \hline
 \boldmath{$\alpha$}   & 0.9              & 0.8              & 0.1                & 0.4             & 0.5                & 0.5                 & 0.1                  & 0.9                 \\
 \boldmath{$\gamma$}   & 0.1                & 0.2              & 0.9                & 0.6             & 0.5                & 0.5                 & 0.9                  & 0.1                 \\
 \boldmath{$\rho$} & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
@@ -378,7 +476,9 @@ $A$ is based on the Political Rights scores from Freedom House on a scale of 1 b
 \subsection{Initial Dissent}
 
 
-The first set of simulations focus on how states adapt to different levels of initial dissent, $D_0$. Many new countries face high levels of initial dissent, which often affects their stability. After WWII, decolonizations resulted in the creation of many new countries. However, many of the governments of these young countries fell shortly after because they could never overcome the initial enmity of their creation. 
+The first set of simulations focus on how states adapt to different levels of initial dissent, $D_0$. Many new countries face high levels of initial dissent, which often affects their stability. After WWII, decolonizations resulted in the creation of many new countries. However, many of the governments of these young countries fell shortly after partly because they could never overcome the initial enmity of their creation. 
+
+%Should add a citation for this. Ask Zeb 
 
 The first simulations contrasts when countries form under low and high initial dissent. Figure 2, depicts a near perfect scenario wherein there is almost no initial dissent ($D_0 = 1$) while Figure 3 shows our countries starting with a high level of initial dissent ($D_0 = 100$). It should be noted that while it may seem that these are flat lines, there is period to period variation.  
 
@@ -399,7 +499,7 @@ In both Figures 2 and 3 we see that countries that rely more heavily on suppress
 \caption{Low Initial Dissent, $D_0=1$}
 \end{figure}
 
-Generally each country behaves very similarly in both the low and high initial dissent scenarios. The only difference being the lower average stability level in the high initial dissent. This can be seen most prevalently with Freedonia, `Merkia, and Bellicostia. Freedonia and `Merika see substantial drops on their level of stability but remain consistent. Bellicostia no longer has the initial spike in stability, but instead goes immediately into its oscillating pattern. Whether there is low or high initial dissent, it seems that the over all pattern for each country remains the same. The only difference is the high initial dissent scenario settles at a lower level of stability, making the countries more vulnerable to possible exogenous shocks that might arise.    
+Generally each country behaves very similarly in both the low and high initial dissent scenarios. The only difference being the lower average stability level in the high initial dissent. This can be seen most prevalently with Freedonia, `Merkia, and Bellicostia. Freedonia and `Merika see substantial drops on their level of stability but remain consistent. Bellicostia no longer has the initial spike in stability, but instead goes immediately into its oscillating pattern. Whether there is low or high initial dissent, it seems that the overall pattern for each country remains the same. The only difference is the high initial dissent scenario settles at a lower level of stability, making the countries more vulnerable to possible exogenous shocks that might arise.    
 
 \begin{figure}[htb]
 \centering 
@@ -592,11 +692,13 @@ Another interesting result is extreme oscillation of Cathay and Bellicostia. Eac
 
 Through this paper we believe we have formed a coherent theoretical narrative on how the interactions of a government and its citizenry determine a country's level of political stability. The importance of this work is that it establishes a framework for examining political stability, one that bridges the gap between the top and bottom viewpoints. Advanced numerical simulation have allowed us to overcome the limitations and restrictions an analytic solution would impose, while still allowing significant insight to be gained on the factors affecting political stability. 
  
-Our simulations show that a multitude of factors, at both the individual and the macro levels, can influence a state’s political stability. While it seems that the resources of the state is the most impactful in maintaining stability, merely being wealthy is not sufficient. How a state allocates resources between government services and security is what really seems to dictate overall stability, a preference for government services being the most stabilizing. 
+Our simulations show that a multitude of factors, at both the individual and the macro levels, can influence a state’s political stability. While it seems that the resources of the state is the most impactful in maintaining stability, merely being wealthy is not sufficient. How a state allocates resources between civil goods and services and security is what really seems to dictate overall stability. A preference for civil goods and services being the most stabilizing. 
+ 
+ %a bit about simulations providing a more organic solution
  
 A shortcoming of this paper is that the model only applies to cases of internal strife and does not take into account the role of outside influences. Additionally, this model presents a relatively homogenous state, but could easily be expanded to a state where there is factionalization or high inequality within the state. However, it must be stated that this is a preliminary model with significant room for expansion in future research endeavors. 
  
-Generally findings suggests that there are sets of parameter values that form loose Nash equilibria of stability, with some equilibria appearing to be more robust to shocks than others. States, both rich and poor, with preferences for government services as a means to maintain stability are the most consistently stable. States that rely more heavily on suppression and security, conversely, are more unstable. Additionally we have shown that a state can be stable in its instability, oscillating dramatically between periods but maintaining a consistent pattern over time. This finding aligns with the notion that there are many supposedly unstable countries, but large scale political upheavals remain relatively rare events. 
+Generally findings suggests that there are sets of parameter values that form loose Nash equilibria of stability, with some equilibria appearing to be more robust to shocks than others. States, both rich and poor, with preferences for civil goods services as a means to maintain stability are the most consistently stable. States that rely more heavily on suppression and security, conversely, are more unstable. Additionally we have shown that a state can be stable in its instability, oscillating dramatically between periods but maintaining a consistent pattern over time. This finding aligns with the notion that there are many supposedly unstable countries, but large scale political upheavals remain relatively rare events. 
  
 
  
